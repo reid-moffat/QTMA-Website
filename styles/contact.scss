@@ -1,5 +1,5 @@
 .contact-container {
-  margin-top: 104px;
+  margin-top: $navHeightLg;
   height: calc(100vh - 104px);
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -9,14 +9,14 @@
     grid-template-columns: 1fr;
   }
   @media only screen and(max-width:650px) {
-    width:100%;
+    width: 100%;
+    margin-top: $navHeightSm;
   }
 }
 .contact-subheading {
   font-size: 1.5rem;
   @media only screen and(max-width:650px) {
-  font-size: 1.2rem;
-
+    font-size: 1.2rem;
   }
 }
 .email-address {
@@ -27,13 +27,13 @@
     width: 80%;
   }
   @media only screen and(max-width:650px) {
-    width:350px;
+    width: 350px;
   }
   @media only screen and(max-width:428px) {
-    padding:1rem 0;
+    padding: 1rem 0;
   }
   @media only screen and(max-width:475px) {
-    width:310px;
+    width: 310px;
   }
 
   .contact-title-container {
@@ -54,7 +54,7 @@
   grid-template-columns: 1fr;
   grid-row-gap: 1.5rem;
   @media only screen and(max-width:1100px) {
-    display:flex;
+    display: flex;
     flex-direction: column;
   }
 
@@ -66,11 +66,11 @@
     padding-left: 1.2rem;
     @media only screen and(max-width:1100px) {
       font-size: 1.4rem;
-      padding:.8rem 0 .8rem 1.2rem;
+      padding: 0.8rem 0 0.8rem 1.2rem;
     }
     @media only screen and(max-width:650px) {
       font-size: 1.2rem;
-      padding: .2rem 0 .2rem 1.2rem;
+      padding: 0.2rem 0 0.2rem 1.2rem;
     }
   }
   .message-input {

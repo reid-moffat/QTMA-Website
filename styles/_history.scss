@@ -1,6 +1,10 @@
 .history-container {
-  margin-top: 104px;
+  margin-top: $navHeightLg;
   position: relative;
+  @media only screen and(max-width:650px) {
+  margin-top: $navHeightSm;
+
+  }
   h1 {
     padding-bottom: 6rem;
   }

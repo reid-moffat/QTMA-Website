@@ -37,7 +37,7 @@ export default function Product() {
       <Nav />
       <Layout>
         {product && (
-          <div className="product-container container">
+          <div className="product-container-id container">
             <div className="product-header-container">
               <h1 className="product-name">{product.productName}</h1>
               <p className="product-slogan">{product.slogan}</p>

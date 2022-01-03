@@ -53,8 +53,8 @@ export default function Home() {
           </div>
           <div className="club-description">
             <p>
-              Queen’s Tech and Media Association (QTMA) <br /> Canada’s premier product development club and
-              tech incubator.
+              Queen’s Tech and Media Association (QTMA) {!isMobile && <br />} Canada’s premier product
+              development club and tech incubator.
             </p>
           </div>
           {isMobile ? (

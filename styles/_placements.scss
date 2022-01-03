@@ -1,9 +1,12 @@
 .placements-container {
-  margin-top: 104px;
+  margin-top: $navHeightLg;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media only screen and(max-width:650px) {
+    margin-top: $navHeightSm;
+  }
   h1 {
     padding: 2rem 0 0 0;
   }

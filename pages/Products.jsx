@@ -7,7 +7,7 @@ import Stocked from "../public/assets/stocked.png";
 export default function Product() {
   return (
     <Layout background="#EDF5FC">
-      <div id="Products" className="product-container container">
+      <div id="Products" className="products-container container">
         <h1 className="section-title">Products</h1>
         <p className="product-subheading">
           This year, QTMA’s product teams are working on four exciting apps to tackle everyday student
