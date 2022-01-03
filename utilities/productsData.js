@@ -85,7 +85,6 @@ export default [
                 studentName: "Connor Colwill",
                 linkedin: "https://www.linkedin.com/in/connorcolwill/"
             },
-
         ],
         teamPhoto: Studii,
         photoXY:{

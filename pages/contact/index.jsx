@@ -28,7 +28,7 @@ export default function Contact() {
       try {
         if (validator.isEmail(email.current.value)) {
           const response = await axios.post(
-            `https://maker.ifttt.com/trigger/${process.env.NEXT_PUBLIC_EVENT_NAME}/with/key/${process.env.NEXT_PUBLIC_API_KEY}`,
+            `https://maker.ifttt.com/trigger/New_Email/with/key/bx66spDE0qGrEwyi0z6TpM`,
             JSON.stringify(contactData),
             { headers: { "Content-Type": "application/json" } }
           );
