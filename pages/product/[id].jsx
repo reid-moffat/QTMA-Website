@@ -46,7 +46,7 @@ export default function Product() {
               <h2 className="team-heading">The Team</h2>
               <div className="team-names">
                 {product.studentInfo.map((info,i) => (
-                  <a key={i} className="student-name" href={`/${info.linkedin}`} rel="noreferrer" target="_blank">
+                  <a key={i} className="student-name" href={info.linkedin} rel="noreferrer" target="_blank">
                     {info.studentName}
                   </a>
                 ))}
