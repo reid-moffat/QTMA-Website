@@ -21,7 +21,6 @@
 }
 .product-header-container {
   text-align: center;
-  margin-top: 4rem;
   padding: 2rem 0;
   background-color: #222831;
   width: 100%;
@@ -31,7 +30,7 @@
   align-items: center;
   color: white;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-
+  margin-top:9rem;
   .product-name {
     font-size: 3.4rem;
     @media only screen and(max-width:650px) {
@@ -50,8 +49,11 @@
 }
 .team-photo {
   display: flex;
-  width: 100%;
+  width: 70%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  @media only screen and(max-width:650px) {
+    width: 100%;
+  }
 }
 
 //Team Information
