@@ -17,14 +17,13 @@ export default function Team() {
               <Image src={FamilyPhoto} className="family-photo" />
             </div>
           </div>
-          {/* CO CHAIRS */}
           <p className="position-name">Co-Chairs</p>
           <div className="student-photos">
             {team
               .filter((student) => student.position === "Co-Chair")
               .map((student,i) => (
                 <div key={i} className="student-container">
-                  <img className="student-image" src={student.image.src} />
+                  <Image className="student-image" src={student.image} width={500} height={500}/>
                   <p className="student-name">{student.name}</p>
                   <p className="special-role">{student.specialRole}</p>
                 </div>
@@ -37,7 +36,7 @@ export default function Team() {
               .filter((student) => student.position === "Senior Developer")
               .map((student,i) => (
                 <div key={i} className="student-container">
-                  <img className="student-image" src={student.image.src} />
+                  <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
                 </div>
               ))}
@@ -49,7 +48,7 @@ export default function Team() {
               .filter((student) => student.position === "Developer")
               .map((student,i) => (
                 <div key={i} className="student-container">
-                  <img className="student-image" src={student.image.src} />
+                  <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
                 </div>
               ))}
@@ -61,7 +60,7 @@ export default function Team() {
               .filter((student) => student.position === "Advisor")
               .map((student,i) => (
                 <div key={i} className="student-container">
-                  <img className="student-image" src={student.image.src} />
+                  <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
                 </div>
               ))}
@@ -73,7 +72,7 @@ export default function Team() {
               .filter((student) => student.position === "Product Manager")
               .map((student,i) => (
                 <div key={i} className="student-container">
-                  <img className="student-image" src={student.image.src} />
+                  <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
                 </div>
               ))}
@@ -85,7 +84,7 @@ export default function Team() {
               .filter((student) => student.position === "Product Marketing Manager")
               .map((student,i) => (
                 <div key={i} className="student-container">
-                  <img className="student-image" src={student.image.src} />
+                  <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
                 </div>
               ))}
@@ -97,7 +96,7 @@ export default function Team() {
               .filter((student) => student.position === "Product Marketing Manager")
               .map((student,i) => (
                 <div key={i} className="student-container">
-                  <img className="student-image" src={student.image.src} />
+                  <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
                 </div>
               ))}
@@ -109,7 +108,7 @@ export default function Team() {
               .filter((student) => student.position === "Senior Business Analyst")
               .map((student,i) => (
                 <div key={i} className="student-container">
-                  <img className="student-image" src={student.image.src} />
+                  <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
                 </div>
               ))}
@@ -121,7 +120,7 @@ export default function Team() {
               .filter((student) => student.position === "Business Analyst")
               .map((student,i) => (
                 <div key={i} className="student-container">
-                  <img className="student-image" src={student.image.src} />
+                  <Image className="student-image" src={student.image} width={500} height={500}/>
                   <p className="student-name">{student.name}</p>
                 </div>
               ))}
@@ -133,7 +132,7 @@ export default function Team() {
               .filter((student) => student.position === "Director of Operation")
               .map((student,i) => (
                 <div key={i} className="student-container">
-                  <img className="student-image" src={student.image.src} />
+                  <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
                   <p className="special-role">{student.specialRole}</p>
                 </div>
@@ -146,7 +145,7 @@ export default function Team() {
               .filter((student) => student.position === "Frosh Representatives")
               .map((student,i) => (
                 <div key={i} className="student-container">
-                  <img className="student-image" src={student.image.src} />
+                  <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
                 </div>
               ))}
