@@ -1,6 +1,6 @@
 .home-container {
-  height: calc(100vh - 104px);
-  margin-top: 104px;
+  height: calc(100vh - $navHeightLg);
+  margin-top: $navHeightLg;
   position: relative;
   display: flex;
   align-items: center;
@@ -10,10 +10,7 @@
     padding: 0 1rem;
     justify-content: center;
     align-items: flex-start;
-  }
-  @media only screen and(max-width:650px) {
-    // height: calc(100vh - 80px);
-    // margin-top:80px;
+    margin-top:$navHeightSm;
   }
   @media only screen and(max-width:340px) {
     height: 100%;
@@ -35,7 +32,7 @@
 }
 .home-logo {
   @media only screen and(max-width:650px) {
-    width: 320px;
+    width: 250px;
   }
   @media only screen and(max-width:390px) {
     width: 280px;
@@ -55,6 +52,9 @@
     font-size: 1.5rem;
     color: white;
     line-height: 35px;
+    @media only screen and(max-width:650px) {
+      font-size:1.1rem;
+    }
     @media only screen and(max-width:340px) {
       font-size:1.2rem;
       line-height: 32px;
@@ -85,7 +85,7 @@
 }
 .startup-art-container {
   @media only screen and(max-width:650px) {
-    width: 220px;
+    width: 190px;
   }
   @media only screen and(max-width:390px) {
     width: 190px;

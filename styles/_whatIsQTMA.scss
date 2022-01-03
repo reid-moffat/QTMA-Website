@@ -13,6 +13,9 @@
   text-align: center;
   font-size: 1.3rem;
   line-height: 35px;
+  @media only screen and(max-width:650px) {
+    font-size: 1.1rem;
+  }
   @media only screen and(max-width:900px) {
     padding: 0 2rem;
   }
