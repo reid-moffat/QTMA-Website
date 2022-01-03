@@ -8,7 +8,7 @@ export default function ProgramTimeline() {
       <div className="program-timeline-container container">
         <h1 className="section-title">Program Timeline</h1>
         <div className="timeline-container">
-          <Carousel emulateTouch={true} autoPlay={false} infiniteLoop={true}>
+          <Carousel emulateTouch={true} autoPlay={true} infiniteLoop={true}>
             {timelineData.map((info, i) => (
               <div key={i} className="timeline-content">
                 <h2 className="timeline-event">{info.title}</h2>
