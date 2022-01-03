@@ -1,57 +1,57 @@
-const Alice = require("../public/assets/Alice.jpg")
-const Allen = require("../public/assets/Allen_Chen.jpg")
-const Aman = require("../public/assets/Aman.jpg")
-const Ben = require("../public/assets/Ben_Minor.jpg")
-const Catherine = require("../public/assets/Catherine_Pham.jpg")
-const Chole = require("../public/assets/Chloe_Hung.jpg")
-const David = require("../public/assets/David_Choo.jpg")
-const Doris = require("../public/assets/Doris_Zhuo.jpg")
-const Egor = require("../public/assets/Egor.jpg")
-const Emily = require("../public/assets/Emily_Zhao.jpg")
-const Ethan = require("../public/assets/Ethan.jpg")
-const Graham = require("../public/assets/Graham_Carkner.jpg")
-const Helen = require("../public/assets/Helen_Xu.jpg")
-const Isabella = require("../public/assets/Isabella_Enriquez.jpg")
-const Jason = require("../public/assets/Jason.png")
-const Jessica = require("../public/assets/Jessica_Li.jpg")
-const Julien = require("../public/assets/Julien_Lin.jpg")
-const Kevin_Ding = require("../public/assets/Kevin_Ding.jpg")
-const Kevin_Liang = require("../public/assets/Kevin_Liang.jpg")
-const Kevin_Yu = require("../public/assets/Kevin_Yu.jpg")
-const Khao = require("../public/assets/Khoa_Nguyen.jpg")
-const Krishaan = require("../public/assets/Krishaan.jpg")
-const Lexi = require("../public/assets/Lexi_Locca.jpg")
-const Lia = require("../public/assets/Lia_Mason.jpg")
-const Mahir = require("../public/assets/Mahir_Hamid.jpg")
-const Manush = require("../public/assets/Manush.jpg")
-const Matthew = require("../public/assets/Matthew_Maceachern.jpg")
-const Mudra = require("../public/assets/Mudra.jpg")
-const Olivia = require("../public/assets/Olivia_Xu.jpg")
-const Randy = require("../public/assets/Randy_Shao.jpg")
-const Reid = require("../public/assets/Reid.jpg")
-const Richard = require("../public/assets/Richard.jpg")
-const noPhoto = require("../public/assets/JohnnyBravo.png")
-const Aaron = require("../public/assets/Aaron_Chen.jpg")
-const Arsh = require("../public/assets/Arsh_Kochhar.jpeg")
-const Benny = require("../public/assets/Benny_Lam.jpg")
-const Chris = require("../public/assets/Chris_Power.jpg")
-const Connor = require("../public/assets/Connor_Colwill.png")
-const Dene = require("../public/assets/Dene.jpeg")
-const Dylan = require("../public/assets/Dylan_Ratti.jpeg")
-const Eesha = require("../public/assets/Eesha_Kohli.jpg")
-const Eunice = require("../public/assets/Eunice_Choi.png")
-const Grady = require("../public/assets/Grady_Palfrey.jpg")
-const Jacob = require("../public/assets/Jacob_Xu.jpeg")
-const Kevin_Quijalvo = require("../public/assets/Kevin_Quijalvo.jpg")
-const Kevin_Subagaren = require("../public/assets/Kevin_Subagaren.jpg")
-const Kevin_Wu = require("../public/assets/Kevin_Wu.jpg")
-const Mark = require("../public/assets/Mark_Gragtmans.jpg")
-const Naomi = require("../public/assets/Naomi.jpg")
-const Ronan = require("../public/assets/Ronan_Almeida.jpg")
-const Sola = require("../public/assets/Sola_Ebina.jpg")
-const Truman = require("../public/assets/Truman_Be.jpg")
-const Zaais = require("../public/assets/Zaais_Van_Zyl.jpg")
-const Vicky = require("../public/assets/Vicky_Deng.jpg")
+const Alice = "/assets/Alice.jpg"
+const Allen = "/assets/Allen_Chen.jpg"
+const Aman = "/assets/Aman.jpg"
+const Ben = "/assets/Ben_Minor.jpg"
+const Catherine = "/assets/Catherine_Pham.jpg"
+const Chole = "/assets/Chloe_Hung.jpg"
+const David = "/assets/David_Choo.jpg"
+const Doris = "/assets/Doris_Zhuo.jpg"
+const Egor = "/assets/Egor.jpg"
+const Emily = "/assets/Emily_Zhao.jpg"
+const Ethan = "/assets/Ethan.jpg"
+const Graham = "/assets/Graham_Carkner.jpg"
+const Helen = "/assets/Helen_Xu.jpg"
+const Isabella = "/assets/Isabella_Enriquez.jpg"
+const Jason = "/assets/Jason.png"
+const Jessica = "/assets/Jessica_Li.jpg"
+const Julien = "/assets/Julien_Lin.jpg"
+const Kevin_Ding = "/assets/Kevin_Ding.jpg"
+const Kevin_Liang = "/assets/Kevin_Liang.jpg"
+const Kevin_Yu = "/assets/Kevin_Yu.jpg"
+const Khao = "/assets/Khoa_Nguyen.jpg"
+const Krishaan = "/assets/Krishaan.jpg"
+const Lexi = "/assets/Lexi_Locca.jpg"
+const Lia = "/assets/Lia_Mason.jpg"
+const Mahir = "/assets/Mahir_Hamid.jpg"
+const Manush = "/assets/Manush.jpg"
+const Matthew = "/assets/Matthew_Maceachern.jpg"
+const Mudra = "/assets/Mudra.jpg"
+const Olivia = "/assets/Olivia_Xu.jpg"
+const Randy = "/assets/Randy_Shao.jpg"
+const Reid = "/assets/Reid.jpg"
+const Richard = "/assets/Richard.jpg"
+const noPhoto = "/assets/JohnnyBravo.png"
+const Aaron = "/assets/Aaron_Chen.jpg"
+const Arsh = "/assets/Arsh_Kochhar.jpeg"
+const Benny = "/assets/Benny_Lam.jpg"
+const Chris = "/assets/Chris_Power.jpg"
+const Connor = "/assets/Connor_Colwill.png"
+const Dene = "/assets/Dene.jpeg"
+const Dylan = "/assets/Dylan_Ratti.jpeg"
+const Eesha = "/assets/Eesha_Kohli.jpg"
+const Eunice = "/assets/Eunice_Choi.png"
+const Grady = "/assets/Grady_Palfrey.jpg"
+const Jacob = "/assets/Jacob_Xu.jpeg"
+const Kevin_Quijalvo = "/assets/Kevin_Quijalvo.jpg"
+const Kevin_Subagaren = "/assets/Kevin_Subagaren.jpg"
+const Kevin_Wu = "/assets/Kevin_Wu.jpg"
+const Mark = "/assets/Mark_Gragtmans.jpg"
+const Naomi = "/assets/Naomi.jpg"
+const Ronan = "/assets/Ronan_Almeida.jpg"
+const Sola = "/assets/Sola_Ebina.jpg"
+const Truman = "/assets/Truman_Be.jpg"
+const Zaais = "/assets/Zaais_Van_Zyl.jpg"
+const Vicky = "/assets/Vicky_Deng.jpg"
 
 export default [
     {
@@ -217,7 +217,7 @@ export default [
         specialRole: ""
     },
     {
-        image: noPhoto,
+        image:noPhoto,
         name: "Riya Shah",
         position: "Product Manager",
         specialRole: ""

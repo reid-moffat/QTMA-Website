@@ -93,7 +93,7 @@ export default function Team() {
           <p className="position-name">UI/UX Designers</p>
           <div className="student-photos">
             {team
-              .filter((student) => student.position === "Product Marketing Manager")
+              .filter((student) => student.position === "UI/UX Designer")
               .map((student,i) => (
                 <div key={i} className="student-container">
                   <Image className="student-image" src={student.image} width={500} height={500} />
