@@ -66,7 +66,7 @@ export default function Contact() {
               <p className="contact-subheading">
                 You can reach us through the form below or by sending an email to{" "}
                 <a className="email-address" href="mailto:qtmaweb@gmail.com">
-                  qtmaexec@gmail.com
+                  qtmaweb@gmail.com
                 </a>
               </p>
             </div>
