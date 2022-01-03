@@ -1,57 +1,57 @@
-import Alice from "../public/assets/Alice.jpg"
-import Allen from "../public/assets/Allen_Chen.jpg"
-import Aman from "../public/assets/Aman.jpg"
-import Ben from "../public/assets/Ben_Minor.jpg"
-import Catherine from "../public/assets/Catherine_Pham.jpg"
-import Chole from "../public/assets/Chloe_Hung.jpg"
-import David from "../public/assets/David_Choo.jpg"
-import Doris from "../public/assets/Doris_Zhuo.jpg"
-import Egor from "../public/assets/Egor.jpg"
-import Emily from "../public/assets/Emily_Zhao.jpg"
-import Ethan from "../public/assets/Ethan.jpg"
-import Graham from "../public/assets/Graham_Carkner.jpg"
-import Helen from "../public/assets/Helen_Xu.jpg"
-import Isabella from "../public/assets/Isabella_Enriquez.jpg"
-import Jason from "../public/assets/Jason.png"
-import Jessica from "../public/assets/Jessica_Li.jpg"
-import Julien from "../public/assets/Julien_Lin.jpg"
-import Kevin_Ding from "../public/assets/Kevin_Ding.jpg"
-import Kevin_Liang from "../public/assets/Kevin_Liang.jpg"
-import Kevin_Yu from "../public/assets/Kevin_Yu.jpg"
-import Khao from "../public/assets/Khoa_Nguyen.jpg"
-import Krishaan from "../public/assets/Krishaan.jpg"
-import Lexi from "../public/assets/Lexi_Locca.jpg"
-import Lia from "../public/assets/Lia_Mason.jpg"
-import Mahir from "../public/assets/Mahir_Hamid.jpg"
-import Manush from "../public/assets/Manush.jpg"
-import Matthew from "../public/assets/Matthew_Maceachern.jpg"
-import Mudra from "../public/assets/Mudra.jpg"
-import Olivia from "../public/assets/Olivia_Xu.jpg"
-import Randy from "../public/assets/Randy_Shao.jpg"
-import Reid from "../public/assets/Reid.jpg"
-import Richard from "../public/assets/Richard.jpg"
-import noPhoto from "../public/assets/JohnnyBravo.png"
-import Aaron from "../public/assets/Aaron_Chen.jpg"
-import Arsh from "../public/assets/Arsh_Kochhar.jpeg"
-import Benny from "../public/assets/Benny_Lam.jpg"
-import Chris from "../public/assets/Chris_Power.jpg"
-import Connor from "../public/assets/Connor_Colwill.png"
-import Dene from "../public/assets/Dene.jpeg"
-import Dylan from "../public/assets/Dylan_Ratti.jpeg"
-import Eesha from "../public/assets/Eesha_Kohli.jpg"
-import Eunice from "../public/assets/Eunice_Choi.png"
-import Grady from "../public/assets/Grady_Palfrey.jpg"
-import Jacob from "../public/assets/Jacob_Xu.jpeg"
-import Kevin_Quijalvo from "../public/assets/Kevin_Quijalvo.jpg"
-import Kevin_Subagaren from "../public/assets/Kevin_Subagaren.jpg"
-import Kevin_Wu from "../public/assets/Kevin_Wu.jpg"
-import Mark from "../public/assets/Mark_Gragtmans.jpg"
-import Naomi from "../public/assets/Naomi.jpg"
-import Ronan from "../public/assets/Ronan_Almeida.jpg"
-import Sola from "../public/assets/Sola_Ebina.jpg"
-import Truman from "../public/assets/Truman_Be.jpg"
-import Zaais from "../public/assets/Zaais_Van_Zyl.jpg"
-import Vicky from "../public/assets/Vicky_Deng.jpg"
+const Alice = require("../public/assets/Alice.jpg")
+const Allen = require("../public/assets/Allen_Chen.jpg")
+const Aman = require("../public/assets/Aman.jpg")
+const Ben = require("../public/assets/Ben_Minor.jpg")
+const Catherine = require("../public/assets/Catherine_Pham.jpg")
+const Chole = require("../public/assets/Chloe_Hung.jpg")
+const David = require("../public/assets/David_Choo.jpg")
+const Doris = require("../public/assets/Doris_Zhuo.jpg")
+const Egor = require("../public/assets/Egor.jpg")
+const Emily = require("../public/assets/Emily_Zhao.jpg")
+const Ethan = require("../public/assets/Ethan.jpg")
+const Graham = require("../public/assets/Graham_Carkner.jpg")
+const Helen = require("../public/assets/Helen_Xu.jpg")
+const Isabella = require("../public/assets/Isabella_Enriquez.jpg")
+const Jason = require("../public/assets/Jason.png")
+const Jessica = require("../public/assets/Jessica_Li.jpg")
+const Julien = require("../public/assets/Julien_Lin.jpg")
+const Kevin_Ding = require("../public/assets/Kevin_Ding.jpg")
+const Kevin_Liang = require("../public/assets/Kevin_Liang.jpg")
+const Kevin_Yu = require("../public/assets/Kevin_Yu.jpg")
+const Khao = require("../public/assets/Khoa_Nguyen.jpg")
+const Krishaan = require("../public/assets/Krishaan.jpg")
+const Lexi = require("../public/assets/Lexi_Locca.jpg")
+const Lia = require("../public/assets/Lia_Mason.jpg")
+const Mahir = require("../public/assets/Mahir_Hamid.jpg")
+const Manush = require("../public/assets/Manush.jpg")
+const Matthew = require("../public/assets/Matthew_Maceachern.jpg")
+const Mudra = require("../public/assets/Mudra.jpg")
+const Olivia = require("../public/assets/Olivia_Xu.jpg")
+const Randy = require("../public/assets/Randy_Shao.jpg")
+const Reid = require("../public/assets/Reid.jpg")
+const Richard = require("../public/assets/Richard.jpg")
+const noPhoto = require("../public/assets/JohnnyBravo.png")
+const Aaron = require("../public/assets/Aaron_Chen.jpg")
+const Arsh = require("../public/assets/Arsh_Kochhar.jpeg")
+const Benny = require("../public/assets/Benny_Lam.jpg")
+const Chris = require("../public/assets/Chris_Power.jpg")
+const Connor = require("../public/assets/Connor_Colwill.png")
+const Dene = require("../public/assets/Dene.jpeg")
+const Dylan = require("../public/assets/Dylan_Ratti.jpeg")
+const Eesha = require("../public/assets/Eesha_Kohli.jpg")
+const Eunice = require("../public/assets/Eunice_Choi.png")
+const Grady = require("../public/assets/Grady_Palfrey.jpg")
+const Jacob = require("../public/assets/Jacob_Xu.jpeg")
+const Kevin_Quijalvo = require("../public/assets/Kevin_Quijalvo.jpg")
+const Kevin_Subagaren = require("../public/assets/Kevin_Subagaren.jpg")
+const Kevin_Wu = require("../public/assets/Kevin_Wu.jpg")
+const Mark = require("../public/assets/Mark_Gragtmans.jpg")
+const Naomi = require("../public/assets/Naomi.jpg")
+const Ronan = require("../public/assets/Ronan_Almeida.jpg")
+const Sola = require("../public/assets/Sola_Ebina.jpg")
+const Truman = require("../public/assets/Truman_Be.jpg")
+const Zaais = require("../public/assets/Zaais_Van_Zyl.jpg")
+const Vicky = require("../public/assets/Vicky_Deng.jpg")
 
 export default [
     {
@@ -217,7 +217,7 @@ export default [
         specialRole: ""
     },
     {
-        image:noPhoto,
+        image: noPhoto,
         name: "Riya Shah",
         position: "Product Manager",
         specialRole: ""
