@@ -4,10 +4,15 @@ import FamilyPhoto from "../../public/assets/FamilyPhoto.jpg";
 import Nav from "../Nav";
 import team from "../../utilities/teamData";
 import { useEffect } from "react/cjs/react.development";
-
+import Head from "next/head";
 export default function Team() {
   return (
     <>
+      <Head>
+        <meta name="description" content="2020/2021 Team" />
+        <title>QTMA</title>
+        <meta name="og:title" content={"QTMA"} />
+      </Head>
       <Nav />
       <Layout background={"#edf5fc"}>
         <div className="history-container container">
@@ -21,9 +26,9 @@ export default function Team() {
           <div className="student-photos">
             {team
               .filter((student) => student.position === "Co-Chair")
-              .map((student,i) => (
+              .map((student, i) => (
                 <div key={i} className="student-container">
-                  <Image className="student-image" src={student.image} width={500} height={500}/>
+                  <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
                   <p className="special-role">{student.specialRole}</p>
                 </div>
@@ -34,7 +39,7 @@ export default function Team() {
           <div className="student-photos">
             {team
               .filter((student) => student.position === "Senior Developer")
-              .map((student,i) => (
+              .map((student, i) => (
                 <div key={i} className="student-container">
                   <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
@@ -46,7 +51,7 @@ export default function Team() {
           <div className="student-photos">
             {team
               .filter((student) => student.position === "Developer")
-              .map((student,i) => (
+              .map((student, i) => (
                 <div key={i} className="student-container">
                   <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
@@ -58,7 +63,7 @@ export default function Team() {
           <div className="student-photos">
             {team
               .filter((student) => student.position === "Advisor")
-              .map((student,i) => (
+              .map((student, i) => (
                 <div key={i} className="student-container">
                   <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
@@ -70,7 +75,7 @@ export default function Team() {
           <div className="student-photos">
             {team
               .filter((student) => student.position === "Product Manager")
-              .map((student,i) => (
+              .map((student, i) => (
                 <div key={i} className="student-container">
                   <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
@@ -82,7 +87,7 @@ export default function Team() {
           <div className="student-photos">
             {team
               .filter((student) => student.position === "Product Marketing Manager")
-              .map((student,i) => (
+              .map((student, i) => (
                 <div key={i} className="student-container">
                   <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
@@ -94,7 +99,7 @@ export default function Team() {
           <div className="student-photos">
             {team
               .filter((student) => student.position === "UI/UX Designer")
-              .map((student,i) => (
+              .map((student, i) => (
                 <div key={i} className="student-container">
                   <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
@@ -106,7 +111,7 @@ export default function Team() {
           <div className="student-photos">
             {team
               .filter((student) => student.position === "Senior Business Analyst")
-              .map((student,i) => (
+              .map((student, i) => (
                 <div key={i} className="student-container">
                   <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
@@ -118,9 +123,9 @@ export default function Team() {
           <div className="student-photos">
             {team
               .filter((student) => student.position === "Business Analyst")
-              .map((student,i) => (
+              .map((student, i) => (
                 <div key={i} className="student-container">
-                  <Image className="student-image" src={student.image} width={500} height={500}/>
+                  <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
                 </div>
               ))}
@@ -130,7 +135,7 @@ export default function Team() {
           <div className="student-photos">
             {team
               .filter((student) => student.position === "Director of Operation")
-              .map((student,i) => (
+              .map((student, i) => (
                 <div key={i} className="student-container">
                   <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
@@ -143,7 +148,7 @@ export default function Team() {
           <div className="student-photos">
             {team
               .filter((student) => student.position === "Frosh Representatives")
-              .map((student,i) => (
+              .map((student, i) => (
                 <div key={i} className="student-container">
                   <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>

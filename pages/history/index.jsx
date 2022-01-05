@@ -5,20 +5,40 @@ import Expansion from "../../public/assets/Expansion.png";
 import Initiatives from "../../public/assets/Initiatives.png";
 import FamilyPhoto from "../../public/assets/FamilyPhoto.jpg";
 import Nav from "../Nav";
+import Head from "next/head";
 
 export default function History() {
   return (
     <>
+      <Head>
+        <meta
+          name="description"
+          content="To reach a wider audience, QTMA partners with Queen’s clubs, including the Queen’s Startup
+          Summit (QSS) and Queen’s Entrepreneurs Competition (QEC), as well as companies such as
+          Shopify, IBM, Microsoft, Hitachi, Deloitte, and Trend Micro. Additional initiatives are
+          launched including tech recruiting panels and a fintech hackathon."
+        />
+        <title>QTMA</title>
+        <meta name="og:title" content={"QTMA"} />
+      </Head>
       <Nav />
       <Layout background={"#edf5fc"}>
         <div className="history-container container">
           <h1 className="section-title">Our History</h1>
           <div className="history-events-container">
             <div className="main-timeline"></div>
-            <div className="timeline-1"><div className="dot"></div></div>
-            <div className="timeline-2"><div className="dot"></div></div>
-            <div className="timeline-3"><div className="dot"></div></div>
-            <div className="timeline-4"><div className="dot"></div></div>
+            <div className="timeline-1">
+              <div className="dot"></div>
+            </div>
+            <div className="timeline-2">
+              <div className="dot"></div>
+            </div>
+            <div className="timeline-3">
+              <div className="dot"></div>
+            </div>
+            <div className="timeline-4">
+              <div className="dot"></div>
+            </div>
 
             <div className="event">
               <div className="event-content">

@@ -11,7 +11,12 @@ export default function Products() {
   return (
     <>
       <Nav />
-      <Layout background="#EDF5FC">
+      <Layout
+        background="#EDF5FC"
+        metaInfo={
+          "This year, QTMA’s product teams are working on four exciting apps to tackle everyday student problems."
+        }
+      >
         <div id="Products" className="product-container product-page container">
           <h1 className="section-title">Products</h1>
           <p className="product-subheading">

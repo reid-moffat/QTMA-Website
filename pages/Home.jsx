@@ -45,7 +45,10 @@ export default function Home() {
     }
   }, [width]);
   return (
-    <Layout background="#0072ff" home={true}>
+    <Layout
+      background="#0072ff"
+      home={true}
+    >
       <section id="home" className="home-container container">
         <div className="text-container">
           <div className="home-logo">

@@ -6,10 +6,20 @@ import Studii from "../../public/assets/studii.png";
 import Stocked from "../../public/assets/stocked.png";
 import Nav from "../Nav";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Products() {
   return (
     <>
+      <Head>
+        <meta
+          name="description"
+          content="This year, QTMA’s product teams are working on four exciting apps to tackle everyday student
+            problems."
+        />
+        <title>QTMA</title>
+        <meta name="og:title" content={"QTMA"} />
+      </Head>
       <Nav />
       <Layout background="#EDF5FC">
         <div id="Products" className="product-container product-page container">

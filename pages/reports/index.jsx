@@ -1,14 +1,16 @@
 import Layout from "../../components/layout";
-import Image from "next/image";
-import Founding from "../../public/assets/Founding.png";
-import Expansion from "../../public/assets/Expansion.png";
-import Initiatives from "../../public/assets/Initiatives.png";
 import { HiOutlineDocumentDownload } from "react-icons/hi";
 import Nav from "../Nav";
+import Head from "next/head";
 
 export default function Report() {
   return (
     <>
+      <Head>
+        <meta name="description" content="Recruiting Guide & Research Update" />
+        <title>QTMA</title>
+        <meta name="og:title" content={"QTMA"} />
+      </Head>
       <Nav />
       <Layout background={"#edf5fc"}>
         <div className="history-container container">
@@ -19,7 +21,7 @@ export default function Report() {
               <HiOutlineDocumentDownload></HiOutlineDocumentDownload>
             </p>
           </a>
-          <a className="research-container" href="/ReportForms/2018_Research_Update.pdf" >
+          <a className="research-container" href="/ReportForms/2018_Research_Update.pdf">
             <p>Research Update</p>
             <p className="download-icon">
               <HiOutlineDocumentDownload></HiOutlineDocumentDownload>

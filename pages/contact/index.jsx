@@ -5,6 +5,7 @@ import Nav from "../Nav";
 import React, { useState, useEffect, useRef } from "react";
 import validator from "validator";
 import axios from "axios";
+import Head from "next/head";
 
 export default function Contact() {
   const email = useRef();
@@ -52,6 +53,14 @@ export default function Contact() {
 
   return (
     <>
+      <Head>
+        <meta
+          name="description"
+          content="You can reach us through the form below or by sending an email to qtmaweb@gmail.com"
+        />
+        <title>QTMA</title>
+        <meta name="og:title" content={"QTMA"} />
+      </Head>
       <Nav />
       <Layout background="#EDF5FC">
         <div className="contact-container container">

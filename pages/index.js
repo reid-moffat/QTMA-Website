@@ -31,6 +31,7 @@ export default function Main() {
         />
         <link rel="icon" href="/favicon.ico" />
         <title>QTMA</title>
+        <link rel="icon" href="/favicon.ico" />
         <meta name="og:title" content={"QTMA"} />
       </Head>
       <Layout>
