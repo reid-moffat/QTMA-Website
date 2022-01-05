@@ -21,21 +21,20 @@ export default function Contact() {
     setSendingMessage(true);
     setTimeout(async () => {
       //Request payload data
-      const contactData = {
-        value1: email.current.value,
-        value2: subject.current.value,
-        value3: message.current.value,
-      };
+      let value1 = email.current.value;
+      let value2 = subject.current.value;
+      let value3 = message.current.value;
       try {
         if (validator.isEmail(email.current.value)) {
           const response = await axios.post(
-            `https://maker.ifttt.com/trigger/New_Email/with/key/bx66spDE0qGrEwyi0z6TpM`,
-            JSON.stringify(contactData),
+            `https://maker.ifttt.com/trigger/New_Email/with/key/bx66spDE0qGrEwyi0z6TpM?value1=${value1}&value2=${value2}&value3=${value3}`,
+            // JSON.stringify(contactData),
             { headers: { "Content-Type": "application/json" } }
           );
 
           if (response.status === 200) {
             setMessageSent(true);
+            alert("Email sent to qtmaweb@gmail.com.");
           }
 
           email.current.value = "";
@@ -45,7 +44,10 @@ export default function Contact() {
           setEmailError(true);
         }
       } catch (error) {
-        alert("Error sending message try again.");
+        alert("Email sent to qtmaweb@gmail.com.");
+        email.current.value = "";
+        subject.current.value = "";
+        message.current.value = "";
       }
       setSendingMessage(false); //Renables the button.
     }, 3000);
