@@ -59,10 +59,16 @@
   object-position: top;
   border-radius: 50% !important;
   justify-self: center;
-
+}
+.special-role{
+  padding: .5rem 0 0 0;
 }
 .student-photos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+.linkedIn{
+  font-size:2.5rem;
+  padding: .5rem 0;
 }

@@ -3,7 +3,7 @@ import Image from "next/image";
 import FamilyPhoto from "../../public/assets/FamilyPhoto.jpg";
 import Nav from "../Nav";
 import team from "../../utilities/teamData";
-import { useEffect } from "react/cjs/react.development";
+import { AiFillLinkedin } from "react-icons/ai";
 import Head from "next/head";
 export default function Team() {
   return (
@@ -31,6 +31,9 @@ export default function Team() {
                   <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
                   <p className="special-role">{student.specialRole}</p>
+                  <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
+                    <AiFillLinkedin />
+                  </a>
                 </div>
               ))}
           </div>
@@ -43,6 +46,9 @@ export default function Team() {
                 <div key={i} className="student-container">
                   <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
+                  <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
+                    <AiFillLinkedin />
+                  </a>
                 </div>
               ))}
           </div>
@@ -55,6 +61,9 @@ export default function Team() {
                 <div key={i} className="student-container">
                   <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
+                  <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
+                    <AiFillLinkedin />
+                  </a>
                 </div>
               ))}
           </div>
@@ -67,6 +76,9 @@ export default function Team() {
                 <div key={i} className="student-container">
                   <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
+                  <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
+                    <AiFillLinkedin />
+                  </a>
                 </div>
               ))}
           </div>
@@ -79,6 +91,9 @@ export default function Team() {
                 <div key={i} className="student-container">
                   <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
+                  <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
+                    <AiFillLinkedin />
+                  </a>
                 </div>
               ))}
           </div>
@@ -91,6 +106,9 @@ export default function Team() {
                 <div key={i} className="student-container">
                   <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
+                  <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
+                    <AiFillLinkedin />
+                  </a>
                 </div>
               ))}
           </div>
@@ -103,6 +121,9 @@ export default function Team() {
                 <div key={i} className="student-container">
                   <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
+                  <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
+                    <AiFillLinkedin />
+                  </a>
                 </div>
               ))}
           </div>
@@ -115,6 +136,9 @@ export default function Team() {
                 <div key={i} className="student-container">
                   <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
+                  <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
+                    <AiFillLinkedin />
+                  </a>
                 </div>
               ))}
           </div>
@@ -127,6 +151,9 @@ export default function Team() {
                 <div key={i} className="student-container">
                   <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
+                  <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
+                    <AiFillLinkedin />
+                  </a>
                 </div>
               ))}
           </div>
@@ -140,6 +167,9 @@ export default function Team() {
                   <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
                   <p className="special-role">{student.specialRole}</p>
+                  <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
+                    <AiFillLinkedin />
+                  </a>
                 </div>
               ))}
           </div>
@@ -152,6 +182,24 @@ export default function Team() {
                 <div key={i} className="student-container">
                   <Image className="student-image" src={student.image} width={500} height={500} />
                   <p className="student-name">{student.name}</p>
+                  <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
+                    <AiFillLinkedin />
+                  </a>
+                </div>
+              ))}
+          </div>
+          {/* WEB DEVELOPERS */}
+          <p className="position-name">Web Developer</p>
+          <div className="student-photos">
+            {team
+              .filter((student) => student.position === "Web Developer")
+              .map((student, i) => (
+                <div key={i} className="student-container">
+                  <Image className="student-image" src={student.image} width={500} height={500} />
+                  <p className="student-name">{student.name}</p>
+                  <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
+                    <AiFillLinkedin />
+                  </a>
                 </div>
               ))}
           </div>

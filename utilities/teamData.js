@@ -58,319 +58,372 @@ export default [
         image: Mudra,
         name: "Mudra Patel",
         position: "Co-Chair",
-        specialRole: "Product Lead"
+        specialRole: "Product Lead",
+        linkedIn: "https://www.linkedin.com/in/mudrapatel/"
     },
     {
         image: Aman,
         name: "Aman Dhaliwal",
         position: "Co-Chair",
-        specialRole: "Development Lead"
+        specialRole: "Development Lead",
+        linkedIn: "https://www.linkedin.com/in/amandhaliwal44/"
     },
     {
         image: Kevin_Ding,
         name: "Kevin Ding",
         position: "Co-Chair",
-        specialRole: "Business Lead"
+        specialRole: "Business Lead",
+        linkedIn: "https://www.linkedin.com/in/kevding/"
     },
     {
         image: Alice,
         name: "Alice Qi",
         position: "Co-Chair",
-        specialRole: "Business Lead"
+        specialRole: "Business Lead",
+        linkedIn: "https://www.linkedin.com/company/queen's-technology-and-media-association/mycompany/"
     },
     {
         image: Truman,
         name: "Truman Be",
         position: "Senior Developer",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/truman-be/"
     },
     {
         image: Ben,
         name: "Ben Minor",
         position: "Senior Developer",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/ben-minor/"
     },
     {
         image: Kevin_Quijalvo,
         name: "Kevin Quijalvo",
         position: "Senior Developer",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/marc-quijalvo/"
     },
     {
         image: Emily,
         name: "Emily Zhao",
         position: "Senior Developer",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/emily-zhaoo/"
     },
     {
         image: Ronan,
         name: "Ronan Almeida",
         position: "Developer",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/ronanalmeida/"
     },
     {
         image: Connor,
         name: "Connor Colwill",
         position: "Developer",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/connorcolwill/"
     },
     {
         image: Isabella,
         name: "Isabella Enriquez",
         position: "Developer",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/isabellaenriquez/"
     },
     {
         image: Lexi,
         name: "Lexi Locca",
         position: "Developer",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/company/queen's-technology-and-media-association/mycompany/"
     },
     {
         image: Jessica,
         name: "Jessica Li",
         position: "Developer",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/jessica-a-li/"
     },
     {
         image: Kevin_Liang,
         name: "Kevin Liang",
         position: "Developer",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/kevin-liang-32b9791aa/"
     },
     {
         image: Matthew,
         name: "Matthew MacEachern",
         position: "Developer",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/matthew-maceachern/"
     },
     {
         image: Lia,
         name: "Lia Mason",
         position: "Developer",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/lia-k-mason/"
     },
     {
         image: Reid,
         name: "Reid Evans",
         position: "Developer",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/reid-moffat/"
     },
     {
         image: Khao,
         name: "Khoa Nguyen",
         position: "Developer",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/khoa-nguyen-438a5417a/"
     },
     {
         image: Grady,
         name: "Grady Palfrey",
         position: "Developer",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/gradypalfrey/"
     },
     {
         image: Kevin_Subagaren,
         name: "Kevin Subagaran",
         position: "Developer",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/kevin-s-a76b741b0/"
     },
     {
         image: Mark,
         name: "Mark Gragtmans",
         position: "Advisor",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/mark-gragtmans/"
     },
     {
         image: Arsh,
         name: "Arsh Kochhar",
         position: "Advisor",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/arshkochhar/"
     },
     {
         image: Jason,
         name: "Jason Yang",
         position: "Advisor",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/jason-z-yang/"
     },
     {
         image: Zaais,
         name: "Zaais Van Zyl",
         position: "Advisor",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/zaais-van-zyl/"
     },
     {
         image: Ethan,
         name: "Ethan Bonnardeaux",
         position: "Product Manager",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/ethan-bonnardeaux/"
     },
     {
         image: Julien,
         name: "Julien Lin",
         position: "Product Manager",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/julien-lin/"
     },
     {
         image: noPhoto,
         name: "Riya Shah",
         position: "Product Manager",
-        specialRole: ""
-    },
-    {
-        image: Richard,
-        name: "Richard Li",
-        position: "Product Manager",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/riya-shah-queens-university/"
     },
     {
         image: Vicky,
         name: "Vicky Deng",
         position: "Product Marketing Manager",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/dengvicky/"
     },
     {
         image: Chole,
         name: "Chloe Hung",
         position: "Product Marketing Manager",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/chloe-hung/"
     },
     {
         image: Eesha,
         name: "Eesha Kohli",
         position: "Product Marketing Manager",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/eesha-kohli/"
     },
     {
         image: Helen,
         name: "Helen Xu",
         position: "Product Marketing Manager",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/helencxu/"
     },
     {
         image: Graham,
         name: "Graham Carkner",
         position: "UI/UX Designer",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/gcarkner/"
     },
     {
         image: Randy,
         name: "Randy Shao",
         position: "UI/UX Designer",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/randyshao/"
     },
     {
         image: Doris,
         name: "Doris Zhuo",
         position: "UI/UX Designer",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/doris-zhuo/"
+    },
+    {
+        image: Richard,
+        name: "Richard Li",
+        position: "Senior Business Analyst",
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/richardliqu/"
     },
     {
         image: Dylan,
         name: "Dylan Ratti",
         position: "Senior Business Analyst",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/dylan-ratti/"
     },
     {
         image: Aaron,
         name: "Aaron Chen",
         position: "Business Analyst",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/aaron-chen-44306b135/"
     },
     {
         image: David,
         name: "David Choo",
         position: "Business Analyst",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/david-j-choo/"
     },
     {
         image: Mahir,
         name: "Mahir Hamid",
         position: "Business Analyst",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/mahirhamid/"
     },
     {
         image: Naomi,
         name: "Naomi Junatas",
         position: "Business Analyst",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/naomijunatas/"
     },
     {
         image: Chris,
         name: "Chris Power",
         position: "Business Analyst",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/chris-power-canada/"
     },
     {
         image: Kevin_Wu,
         name: "Kevin Wu",
         position: "Business Analyst",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/wu-kevin/"
     },
     {
         image: Jacob,
         name: "Jacob Xu",
         position: "Business Analyst",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/jacobx/"
     },
     {
         image: Dene,
         name: "Dene Bezuidenhout",
         position: "Director of Operation",
-        specialRole: "Marketing"
+        specialRole: "Marketing",
+        linkedIn: "https://www.linkedin.com/in/denebezuidenhout/"
     },
     {
         image: Sola,
         name: "Sola Ebina",
         position: "Director of Operation",
-        specialRole: "Marketing"
+        specialRole: "Marketing",
+        linkedIn: "https://www.linkedin.com/in/solaebina/"
     },
     {
         image: Allen,
         name: "Allen Chen",
         position: "Internal Affairs",
-        specialRole: "Internal Affairs"
+        specialRole: "Internal Affairs",
+        linkedIn: "https://www.linkedin.com/in/allen-chen0/"
     },
     {
         image: Benny,
         name: "Benny Lam",
         position: "Director of Operation",
-        specialRole: "Sponsorships"
+        specialRole: "Sponsorships",
+        linkedIn: "https://www.linkedin.com/in/bennylam116/"
     },
     {
         image: Catherine,
         name: "Catherine Pham",
         position: "Director of Operation",
-        specialRole: "Sponsorships"
+        specialRole: "Sponsorships",
+        linkedIn: "https://www.linkedin.com/in/catherinepham123/"
     },
     {
         image: Krishaan,
         name: "Krishaan Thyagarajan",
         position: "Frosh Representatives",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/krishaan-thyagarajan/"
     },
     {
         image: Egor,
         name: "Egor Petrov",
         position: "Frosh Representatives",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/egorpetrov1402/"
     },
     {
         image: Manush,
         name: "Manush Patel",
         position: "Frosh Representatives",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/manushpatel/"
     },
     {
         image: Olivia,
         name: "Olivia Xu",
         position: "Frosh Representatives",
-        specialRole: ""
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/olivia-xu-057a27171/"
     },
     {
         image: Kevin_Yu,
         name: "Kevin Yu",
-        position: "Frosh Representatives",
-        specialRole: ""
+        position: "Web Developer",
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/kevin-yu-246147199/"
     },
 
 ]
