@@ -87,13 +87,13 @@ export default function History() {
             </div>
             <div className="event">
               <div className="event-content">
-                <h3>2020-2021</h3>
+                <h3>2019 - Present</h3>
                 <h2>Innovation</h2>
                 <p>
-                  To reach a wider audience, QTMA partners with Queen’s clubs, including the Queen’s Startup
-                  Summit (QSS) and Queen’s Entrepreneurs Competition (QEC), as well as companies such as
-                  Shopify, IBM, Microsoft, Hitachi, Deloitte, and Trend Micro. Additional initiatives are
-                  launched including tech recruiting panels and a fintech hackathon.
+                  QTMA continues its mandate of making Queen’s University a leading tech hub in Canada by
+                  becoming a full year product incubator. Across 4 interdisciplinary product teams, students
+                  work together to build tangible products that can be showcased and launched, providing them
+                  with a realistic preview of the industry and growing their network in the tech community.
                 </p>
               </div>
               <div className="event-image">

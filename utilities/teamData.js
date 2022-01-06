@@ -205,20 +205,20 @@ export default [
         specialRole: ""
     },
     {
-        image: Eunice,
-        name: "Eunice Choi",
-        position: "Product Manager",
-        specialRole: ""
-    },
-    {
         image: Julien,
         name: "Julien Lin",
         position: "Product Manager",
         specialRole: ""
     },
     {
-        image:noPhoto,
+        image: noPhoto,
         name: "Riya Shah",
+        position: "Product Manager",
+        specialRole: ""
+    },
+    {
+        image: Richard,
+        name: "Richard Li",
         position: "Product Manager",
         specialRole: ""
     },
@@ -262,12 +262,6 @@ export default [
         image: Doris,
         name: "Doris Zhuo",
         position: "UI/UX Designer",
-        specialRole: ""
-    },
-    {
-        image: Richard,
-        name: "Richard Li",
-        position: "Senior Business Analyst",
         specialRole: ""
     },
     {
