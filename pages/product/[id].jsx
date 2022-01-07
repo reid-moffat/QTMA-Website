@@ -17,6 +17,9 @@ export const getStaticPaths = async () => {
       { params: { id: "Eagle" } },
       { params: { id: "Pronto" } },
       { params: { id: "Voluntera" } },
+      { params: { id: "Studii" } },
+      { params: { id: "Hungover" } },
+      { params: { id: "Wob" } },
       { params: { id: "Stocked" } },
     ],
     fallback: false,
@@ -45,44 +48,54 @@ export default function Product() {
               <h1 className="product-name">{product.productName}</h1>
               <p className="product-slogan">{product.slogan}</p>
             </div>
-            {/* <div className="team-container">
-              <h2 className="team-heading">The Team</h2>
-              <div className="team-names">
-                {product.studentInfo.map((info,i) => (
-                  <a key={i} className="student-name" href={info.linkedin} rel="noreferrer" target="_blank">
-                    {info.studentName}
-                  </a>
-                ))}
+
+            {product.teamPhoto !== "" && (
+              <div className="team-container">
+                <h2 className="team-heading">The Team</h2>
+                <div className="team-names">
+                  {product.studentInfo.map((info, i) => (
+                    <a key={i} className="student-name" href={info.linkedin} rel="noreferrer" target="_blank">
+                      {info.studentName}
+                    </a>
+                  ))}
+                </div>
+                <div className="team-photo">
+                  <Image
+                    src={product.teamPhoto}
+                    width={product.photoXY.width}
+                    height={product.photoXY.height}
+                  />
+                </div>
               </div>
-              <div className="team-photo">
-                <Image
-                  src={product.teamPhoto}
-                  width={product.photoXY.width}
-                  height={product.photoXY.height}
-                />
+            )}
+
+            {product.teamPhoto !== "" && (
+              <div className="overview-container">
+                <h2 className="overview-heading">Product Overview</h2>
+                <p className="product-desc">{product.productOverview}</p>
               </div>
-            </div> */}
-            {/* <div className="overview-container">
-              <h2 className="overview-heading">Product Overview</h2>
-              <p className="product-desc">{product.productOverview}</p>
-            </div> */}
+            )}
+
             <div className="pitch-container">
               <h2 className="pitch-heading">Product Pitch</h2>
               <iframe className="product-pdf" type="pdf" src={product.productPitch}></iframe>
             </div>
-            {/* <div className="demo-container">
-              <h2 className="demo-heading">Product Demo</h2>
-              <FileViewer
-              className="demo-video"
-                width="560"
-                height="315"
-                src={product.productDemo}
-                title="YouTube video player"
-                // frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                // allowfullscreen
-              ></FileViewer>
-            </div> */}
+
+            {product.teamPhoto !== "" && (
+              <div className="demo-container">
+                <h2 className="demo-heading">Product Demo</h2>
+                <iframe
+                  className="demo-video"
+                  width="560"
+                  height="315"
+                  src={product.productDemo}
+                  title="YouTube video player"
+                  // frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  // allowfullscreen
+                ></iframe>
+              </div>
+            )}
           </div>
         )}
       </Layout>

@@ -6,9 +6,9 @@ import Studii from "../public/assets/studii.png";
 import Stocked from "../public/assets/stocked.png";
 import Nav from "./Nav";
 import Link from "next/link";
-import Pronto from "../public/assets/Pronto_Logo.png"
-import Voluntera from "../public/assets/Voluntera_Logo.png"
-import Eagle from "../public/assets/Eagle_Logo.png"
+import Pronto from "../public/assets/Pronto_Logo.png";
+import Voluntera from "../public/assets/Voluntera_Logo.png";
+import Eagle from "../public/assets/Eagle_Logo.png";
 
 export default function Products() {
   return (

@@ -44,7 +44,7 @@ export default function Testimonials() {
             </div>
             <div className="alumni-info">
               <h2 className="alumni-name">Justin Herlick</h2>
-              <h3 className="alumni-title">Business Operations & Strategy @ Shopify</h3>
+              <h3 className="alumni-title">Co-founder @ Pine</h3>
             </div>
             <p className="alumni-desc">
               “When I founded QTMA over 5 years ago I had no idea how large it would become. Looking back now
