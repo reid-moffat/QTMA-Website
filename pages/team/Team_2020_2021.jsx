@@ -37,6 +37,21 @@ export default function Team() {
                 </div>
               ))}
           </div>
+          {/* Product Managers */}
+          <p className="position-name">Product Managers</p>
+          <div className="student-photos">
+            {team
+              .filter((student) => student.position === "Product Manager")
+              .map((student, i) => (
+                <div key={i} className="student-container">
+                  <Image className="student-image" src={student.image} width={500} height={500} />
+                  <p className="student-name">{student.name}</p>
+                  <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
+                    <AiFillLinkedin />
+                  </a>
+                </div>
+              ))}
+          </div>
           {/* SENIOR DEVELOPERS */}
           <p className="position-name">Senior Developers</p>
           <div className="student-photos">
@@ -72,21 +87,6 @@ export default function Team() {
           <div className="student-photos">
             {team
               .filter((student) => student.position === "Advisor")
-              .map((student, i) => (
-                <div key={i} className="student-container">
-                  <Image className="student-image" src={student.image} width={500} height={500} />
-                  <p className="student-name">{student.name}</p>
-                  <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
-                    <AiFillLinkedin />
-                  </a>
-                </div>
-              ))}
-          </div>
-          {/* Product Managers */}
-          <p className="position-name">Product Managers</p>
-          <div className="student-photos">
-            {team
-              .filter((student) => student.position === "Product Manager")
               .map((student, i) => (
                 <div key={i} className="student-container">
                   <Image className="student-image" src={student.image} width={500} height={500} />
