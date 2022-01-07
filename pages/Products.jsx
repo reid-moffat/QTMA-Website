@@ -6,6 +6,9 @@ import Studii from "../public/assets/studii.png";
 import Stocked from "../public/assets/stocked.png";
 import Nav from "./Nav";
 import Link from "next/link";
+import Pronto from "../public/assets/Pronto_Logo.png"
+import Voluntera from "../public/assets/Voluntera_Logo.png"
+import Eagle from "../public/assets/Eagle_Logo.png"
 
 export default function Products() {
   return (
@@ -20,35 +23,35 @@ export default function Products() {
         <div id="Products" className="product-container product-page container">
           <h1 className="section-title">Products</h1>
           <p className="product-subheading">
-            This year, QTMA’s product teams are working on four exciting apps to tackle everyday student
+            Over the past years, QTMA’s product teams worked on exciting apps to tackle everyday student
             problems.
           </p>
           <div className="products-container">
-            <Link href="/product/Hungover">
+            <Link href="/product/Eagle">
               <div className="product">
                 <div className="product-info">
-                  <h3>Hungover</h3>
-                  <p>Taking your pregame to the next level</p>
+                  <h3>Eagle</h3>
+                  <p>Your delivery service companion</p>
                 </div>
-                <Image src={HungOver} width={120} height={133.13} />
+                <Image src={Eagle} width={200} height={122} />
               </div>
             </Link>
-            <Link href="/product/Wob">
+            <Link href="/product/Pronto">
               <div className="product">
                 <div className="product-info">
-                  <h3>Wob</h3>
-                  <p>Get the latest word on the street.</p>
+                  <h3>Pronto</h3>
+                  <p>Convenient lending for everyone</p>
                 </div>
-                <Image src={Wob} width={151.4} height={90} />
+                <Image src={Pronto} width={120} height={116} />
               </div>
             </Link>
-            <Link href="/product/Studii">
+            <Link href="/product/Voluntera">
               <div className="product">
                 <div className="product-info">
-                  <h3>Studii</h3>
-                  <p>Academic collaboration at your fingertips</p>
+                  <h3>Voluntera</h3>
+                  <p>The one-stop shop for social impact</p>
                 </div>
-                <Image src={Studii} width={176.21} height={59} />
+                <Image src={Voluntera} width={250} height={60} />
               </div>
             </Link>
             <Link href="/product/Stocked">

@@ -52,7 +52,8 @@ const Sola = "/assets/Sola_Ebina.png"
 const Truman = "/assets/Truman_Be.jpg"
 const Zaais = "/assets/Zaais_Van_Zyl.jpg"
 const Vicky = "/assets/Vicky_Deng.jpg"
-
+const Flora = "/assets/Flora_Lin.png"
+const Riyah = "/assets/Riya_Shah.jpg"
 export default [
     {
         image: Mudra,
@@ -223,6 +224,13 @@ export default [
         linkedIn: "https://www.linkedin.com/in/zaais-van-zyl/"
     },
     {
+        image: Richard,
+        name: "Richard Li",
+        position: "Product Manager",
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/richardliqu/"
+    },
+    {
         image: Ethan,
         name: "Ethan Bonnardeaux",
         position: "Product Manager",
@@ -237,7 +245,7 @@ export default [
         linkedIn: "https://www.linkedin.com/in/julien-lin/"
     },
     {
-        image: noPhoto,
+        image: Riyah,
         name: "Riya Shah",
         position: "Product Manager",
         specialRole: "",
@@ -272,6 +280,13 @@ export default [
         linkedIn: "https://www.linkedin.com/in/helencxu/"
     },
     {
+        image: Flora,
+        name: "Flora Lin",
+        position: "UI/UX Designer",
+        specialRole: "",
+        linkedIn: "https://www.linkedin.com/in/~flora/"
+    },
+    {
         image: Graham,
         name: "Graham Carkner",
         position: "UI/UX Designer",
@@ -291,13 +306,6 @@ export default [
         position: "UI/UX Designer",
         specialRole: "",
         linkedIn: "https://www.linkedin.com/in/doris-zhuo/"
-    },
-    {
-        image: Richard,
-        name: "Richard Li",
-        position: "Senior Business Analyst",
-        specialRole: "",
-        linkedIn: "https://www.linkedin.com/in/richardliqu/"
     },
     {
         image: Dylan,
