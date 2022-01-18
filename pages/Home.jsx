@@ -45,14 +45,11 @@ export default function Home() {
     }
   }, [width]);
   return (
-    <Layout
-      background="#0072ff"
-      home={true}
-    >
+    <Layout background="#0072ff" home={true}>
       <section id="home" className="home-container container">
         <div className="text-container">
           <div className="home-logo">
-            <Image src={qtmaLogo} width={346} height={93.71} className="QTMA-logo" />
+            <Image alt="QTMA logo" src={qtmaLogo} width={346} height={93.71} className="QTMA-logo" />
           </div>
           <div className="club-description">
             <p>
@@ -62,7 +59,7 @@ export default function Home() {
           </div>
           {isMobile ? (
             <div className="startup-art-container">
-              <Image src={startup} width={452} height={462.17} className="startup-art" />
+              <Image alt="illustration" src={startup} width={452} height={462.17} className="startup-art" />
             </div>
           ) : (
             ""
@@ -73,7 +70,7 @@ export default function Home() {
         </div>
         {!isMobile ? (
           <div className="startup-art-container">
-            <Image src={startup} width={452} height={462.17} className="startup-art" />
+            <Image alt="illustration" src={startup} width={452} height={462.17} className="startup-art" />
           </div>
         ) : (
           ""

@@ -17,13 +17,13 @@ export default function WhatIsQTMA() {
         </div>
         <div className="about-illustration-container">
           <div className="about-illustration">
-            <Image src={Business} width={316} height={300} />
+            <Image alt="illustration" src={Business} width={316} height={300} />
           </div>
           <div className="about-illustration">
-            <Image src={ComSci} width={316} height={300} />
+            <Image alt="illustration" src={ComSci} width={316} height={300} />
           </div>
           <div className="about-illustration">
-            <Image src={Engineer} width={316} height={300} />
+            <Image alt="illustration" src={Engineer} width={316} height={300} />
           </div>
         </div>
       </section>

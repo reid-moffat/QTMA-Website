@@ -38,67 +38,67 @@ export default function Products() {
             problems.
           </p>
           <div className="products-container2">
-            <Link href="/product/Eagle">
+            <Link passHref href="/product/Eagle">
               <div className="product2">
                 <div className="product-info2">
                   <h3>Eagle</h3>
                   <p>Your delivery service companion</p>
                 </div>
-                <Image src={Eagle} width={200} height={122} />
+                <Image alt="Product Logo" src={Eagle} width={200} height={122} />
               </div>
             </Link>
-            <Link href="/product/Pronto">
+            <Link passHref href="/product/Pronto">
               <div className="product2">
                 <div className="product-info2">
                   <h3>Pronto</h3>
                   <p>Convenient lending for everyone</p>
                 </div>
-                <Image src={Pronto} width={120} height={116} />
+                <Image alt="Product Logo" src={Pronto} width={120} height={116} />
               </div>
             </Link>
-            <Link href="/product/Voluntera">
+            <Link passHref href="/product/Voluntera">
               <div className="product2">
                 <div className="product-info2">
                   <h3>Voluntera</h3>
                   <p>The one-stop shop for social impact</p>
                 </div>
-                <Image src={Voluntera} width={250} height={60} />
+                <Image alt="Product Logo" src={Voluntera} width={250} height={60} />
               </div>
             </Link>
-            <Link href="/product/Stocked">
+            <Link passHref href="/product/Stocked">
               <div className="product2">
                 <div className="product-info2">
                   <h3>Stocked</h3>
                   <p>The best a fridge can get.</p>
                 </div>
-                <Image src={Stocked} width={252.59} height={62} />
+                <Image alt="Product Logo" src={Stocked} width={252.59} height={62} />
               </div>
             </Link>
-            <Link href="/product/Hungover">
+            <Link passHref href="/product/Hungover">
               <div className="product2">
                 <div className="product-info2">
                   <h3>Hungover</h3>
                   <p>Taking your pregame to the next level</p>
                 </div>
-                <Image src={HungOver} width={120} height={133.13} />
+                <Image alt="Product Logo" src={HungOver} width={120} height={133.13} />
               </div>
             </Link>
-            <Link href="/product/Wob">
+            <Link passHref href="/product/Wob">
               <div className="product2">
                 <div className="product-info2">
                   <h3>Wob</h3>
                   <p>Get the latest word on the street.</p>
                 </div>
-                <Image src={Wob} width={151.4} height={90} />
+                <Image alt="Product Logo" src={Wob} width={151.4} height={90} />
               </div>
             </Link>
-            <Link href="/product/Studii">
+            <Link passHref href="/product/Studii">
               <div className="product2">
                 <div className="product-info2">
                   <h3>Studii</h3>
                   <p>Academic collaboration at your fingertips</p>
                 </div>
-                <Image src={Studii} width={176.21} height={59} />
+                <Image alt="Product Logo" src={Studii} width={176.21} height={59} />
               </div>
             </Link>
           </div>

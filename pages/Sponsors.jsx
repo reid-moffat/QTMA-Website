@@ -10,13 +10,13 @@ export default function Sponsors() {
         <h1 className="section-title">Our Sponsors</h1>
         <div className="sponsors">
           <div className="sponsor">
-            <Image src={Sponsor1} height={155} width={272.02} />
+            <Image alt="Sponsor logo" src={Sponsor1} height={155} width={272.02} />
           </div>
           <div className="sponsor">
-            <Image src={Sponsor3} height={155} width={451.59} />
+            <Image alt="Sponsor logo" src={Sponsor3} height={155} width={451.59} />
           </div>
           <div className="sponsor">
-            <Image src={Sponsor2} height={155} width={155} />
+            <Image alt="Sponsor logo" src={Sponsor2} height={155} width={155} />
           </div>
         </div>
       </div>

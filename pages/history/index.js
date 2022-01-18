@@ -51,7 +51,7 @@ export default function History() {
                 </p>
               </div>
               <div className="event-image">
-                <Image src={Founding} width={508} height={346} />
+                <Image alt="Event photo" src={Founding} width={508} height={346} />
               </div>
             </div>
             <div className="event">
@@ -67,7 +67,7 @@ export default function History() {
                 </p>
               </div>
               <div className="event-image">
-                <Image src={Expansion} width={508} height={337.64} />
+                <Image alt="Event photo" src={Expansion} width={508} height={337.64} />
               </div>
             </div>
             <div className="event">
@@ -82,7 +82,7 @@ export default function History() {
                 </p>
               </div>
               <div className="event-image">
-                <Image src={Initiatives} width={531} height={354} />
+                <Image alt="Event photo" src={Initiatives} width={531} height={354} />
               </div>
             </div>
             <div className="event">
@@ -97,7 +97,7 @@ export default function History() {
                 </p>
               </div>
               <div className="event-image">
-                <Image src={FamilyPhoto} width={1000} height={527} />
+                <Image alt="Event photo" src={FamilyPhoto} width={1000} height={527} />
               </div>
             </div>
           </div>

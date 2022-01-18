@@ -120,7 +120,7 @@ export default function Contact() {
             </button>
           </form>
           <div className="email-illustration">
-            <Image src={Email} width={444} height={437.87} />
+            <Image alt="illustration" src={Email} width={444} height={437.87} />
           </div>
         </div>
       </Layout>

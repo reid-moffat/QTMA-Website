@@ -62,8 +62,8 @@ export default function Nav() {
             <AiOutlineMenu />
           </div>
           <div className="logo-container">
-            <Link href="/">
-              <Image src={qtmaLogo} className="nav-logo" height={41.71} width={154} />
+            <Link passHref href="/">
+              <Image alt="QTMA logo" src={qtmaLogo} className="nav-logo" height={41.71} width={154} />
             </Link>
           </div>
           <div

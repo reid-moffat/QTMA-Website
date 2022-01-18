@@ -30,13 +30,13 @@ export default function Product() {
   const router = useRouter();
   const queryId = router.query.id;
   const [product, setProduct] = useState();
-  console.log(queryId);
+
   useEffect(() => {
     const details = productData.filter((productObj) => {
       return productObj.productName === queryId;
     });
     setProduct(details[0]);
-  }, []);
+  }, [queryId]);
 
   return (
     <>
@@ -61,6 +61,7 @@ export default function Product() {
                 </div>
                 <div className="team-photo">
                   <Image
+                    alt="team photo"
                     src={product.teamPhoto}
                     width={product.photoXY.width}
                     height={product.photoXY.height}
