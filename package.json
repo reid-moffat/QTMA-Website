@@ -2,8 +2,11 @@
   "name": "qtma_website",
   "private": true,
   "scripts": {
-    "build": "next build && next export -o build",
-    "start": "next dev"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "axios": "^0.24.0",
