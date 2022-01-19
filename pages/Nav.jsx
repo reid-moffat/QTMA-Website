@@ -82,7 +82,7 @@ export default function Nav() {
             <Link className="nav-links" href="/history">
               <a className={router.pathname == "/history" ? "active-link" : "nav-link"}>History</a>
             </Link>
-            <Link className="nav-links" href="/team/Team_2020_2021">
+            <Link className="nav-links" href="/team">
               <a className={router.pathname == "/team/Team_2020_2021" ? "active-link" : "nav-link"}>Team</a>
             </Link>
             <Link className="nav-links" href="/placements">
