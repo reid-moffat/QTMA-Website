@@ -8,8 +8,8 @@ module.exports = {
         permanent: true,
       },
       {
-        source: '/all_products.html',
-        destination: '/products',
+        source: '/products.html',
+        destination: '/all_products',
         permanent: true,
       },
       {
