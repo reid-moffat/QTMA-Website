@@ -23,7 +23,7 @@ module.exports = {
         permanent: true,
       },
       {
-        source: '/placements.html',
+        source: '/placement.html',
         destination: '/placements',
         permanent: true,
       },
