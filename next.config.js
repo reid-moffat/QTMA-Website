@@ -9,7 +9,7 @@ module.exports = {
       },
       {
         source: '/all_products.html',
-        destination: '/all_products',
+        destination: '/products',
         permanent: true,
       },
       {
