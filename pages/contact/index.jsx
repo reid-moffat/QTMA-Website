@@ -7,6 +7,14 @@ import validator from "validator";
 import axios from "axios";
 import Head from "next/head";
 
+
+export async function getStaticProps({ params }) {
+  return {
+    props: {
+    }
+  };
+}
+
 export default function Contact() {
   const email = useRef();
   const subject = useRef();

@@ -11,6 +11,14 @@ import ProgramTimeline from './ProgramTimeline';
 import Testimonials from './Testimonials';
 import Sponsors from "./Sponsors";
 import Footer from "./footer";
+
+export async function getStaticProps({ params }) {
+  return {
+    props: {
+    }
+  };
+}
+
 export default function Main() {
   return (
     <>

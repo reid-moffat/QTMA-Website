@@ -5,6 +5,13 @@ import Nav from "../Nav";
 import team from "../../utilities/teamData";
 import { AiFillLinkedin } from "react-icons/ai";
 import Head from "next/head";
+
+export async function getStaticProps({ params }) {
+  return {
+    props: {},
+  };
+}
+
 export default function Team() {
   return (
     <>
@@ -28,7 +35,13 @@ export default function Team() {
               .filter((student) => student.position === "Co-Chair")
               .map((student, i) => (
                 <div key={i} className="student-container">
-                  <Image alt="Student photo" className="student-image" src={student.image} width={500} height={500} />
+                  <Image
+                    alt="Student photo"
+                    className="student-image"
+                    src={student.image}
+                    width={500}
+                    height={500}
+                  />
                   <p className="student-name">{student.name}</p>
                   <p className="special-role">{student.specialRole}</p>
                   <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
@@ -44,7 +57,13 @@ export default function Team() {
               .filter((student) => student.position === "Product Manager")
               .map((student, i) => (
                 <div key={i} className="student-container">
-                  <Image alt="Student photo" className="student-image" src={student.image} width={500} height={500} />
+                  <Image
+                    alt="Student photo"
+                    className="student-image"
+                    src={student.image}
+                    width={500}
+                    height={500}
+                  />
                   <p className="student-name">{student.name}</p>
                   <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
                     <AiFillLinkedin />
@@ -59,7 +78,13 @@ export default function Team() {
               .filter((student) => student.position === "Senior Developer")
               .map((student, i) => (
                 <div key={i} className="student-container">
-                  <Image alt="Student photo" className="student-image" src={student.image} width={500} height={500} />
+                  <Image
+                    alt="Student photo"
+                    className="student-image"
+                    src={student.image}
+                    width={500}
+                    height={500}
+                  />
                   <p className="student-name">{student.name}</p>
                   <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
                     <AiFillLinkedin />
@@ -74,7 +99,13 @@ export default function Team() {
               .filter((student) => student.position === "Developer")
               .map((student, i) => (
                 <div key={i} className="student-container">
-                  <Image alt="Student photo" className="student-image" src={student.image} width={500} height={500} />
+                  <Image
+                    alt="Student photo"
+                    className="student-image"
+                    src={student.image}
+                    width={500}
+                    height={500}
+                  />
                   <p className="student-name">{student.name}</p>
                   <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
                     <AiFillLinkedin />
@@ -89,7 +120,13 @@ export default function Team() {
               .filter((student) => student.position === "Advisor")
               .map((student, i) => (
                 <div key={i} className="student-container">
-                  <Image alt="Student photo" className="student-image" src={student.image} width={500} height={500} />
+                  <Image
+                    alt="Student photo"
+                    className="student-image"
+                    src={student.image}
+                    width={500}
+                    height={500}
+                  />
                   <p className="student-name">{student.name}</p>
                   <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
                     <AiFillLinkedin />
@@ -104,7 +141,13 @@ export default function Team() {
               .filter((student) => student.position === "Product Marketing Manager")
               .map((student, i) => (
                 <div key={i} className="student-container">
-                  <Image alt="Student photo" className="student-image" src={student.image} width={500} height={500} />
+                  <Image
+                    alt="Student photo"
+                    className="student-image"
+                    src={student.image}
+                    width={500}
+                    height={500}
+                  />
                   <p className="student-name">{student.name}</p>
                   <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
                     <AiFillLinkedin />
@@ -119,7 +162,13 @@ export default function Team() {
               .filter((student) => student.position === "UI/UX Designer")
               .map((student, i) => (
                 <div key={i} className="student-container">
-                  <Image alt="Student photo" className="student-image" src={student.image} width={500} height={500} />
+                  <Image
+                    alt="Student photo"
+                    className="student-image"
+                    src={student.image}
+                    width={500}
+                    height={500}
+                  />
                   <p className="student-name">{student.name}</p>
                   <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
                     <AiFillLinkedin />
@@ -134,7 +183,13 @@ export default function Team() {
               .filter((student) => student.position === "Senior Business Analyst")
               .map((student, i) => (
                 <div key={i} className="student-container">
-                  <Image alt="Student photo" className="student-image" src={student.image} width={500} height={500} />
+                  <Image
+                    alt="Student photo"
+                    className="student-image"
+                    src={student.image}
+                    width={500}
+                    height={500}
+                  />
                   <p className="student-name">{student.name}</p>
                   <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
                     <AiFillLinkedin />
@@ -149,7 +204,13 @@ export default function Team() {
               .filter((student) => student.position === "Business Analyst")
               .map((student, i) => (
                 <div key={i} className="student-container">
-                  <Image alt="Student photo" className="student-image" src={student.image} width={500} height={500} />
+                  <Image
+                    alt="Student photo"
+                    className="student-image"
+                    src={student.image}
+                    width={500}
+                    height={500}
+                  />
                   <p className="student-name">{student.name}</p>
                   <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
                     <AiFillLinkedin />
@@ -164,7 +225,13 @@ export default function Team() {
               .filter((student) => student.position === "Director of Operation")
               .map((student, i) => (
                 <div key={i} className="student-container">
-                  <Image alt="Student photo" className="student-image" src={student.image} width={500} height={500} />
+                  <Image
+                    alt="Student photo"
+                    className="student-image"
+                    src={student.image}
+                    width={500}
+                    height={500}
+                  />
                   <p className="student-name">{student.name}</p>
                   <p className="special-role">{student.specialRole}</p>
                   <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
@@ -180,7 +247,13 @@ export default function Team() {
               .filter((student) => student.position === "Frosh Representatives")
               .map((student, i) => (
                 <div key={i} className="student-container">
-                  <Image alt="Student photo" className="student-image" src={student.image} width={500} height={500} />
+                  <Image
+                    alt="Student photo"
+                    className="student-image"
+                    src={student.image}
+                    width={500}
+                    height={500}
+                  />
                   <p className="student-name">{student.name}</p>
                   <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
                     <AiFillLinkedin />
@@ -195,7 +268,13 @@ export default function Team() {
               .filter((student) => student.position === "Web Developer")
               .map((student, i) => (
                 <div key={i} className="student-container">
-                  <Image alt="Student photo" className="student-image" src={student.image} width={500} height={500} />
+                  <Image
+                    alt="Student photo"
+                    className="student-image"
+                    src={student.image}
+                    width={500}
+                    height={500}
+                  />
                   <p className="student-name">{student.name}</p>
                   <a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
                     <AiFillLinkedin />

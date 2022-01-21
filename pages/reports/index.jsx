@@ -3,6 +3,14 @@ import { HiOutlineDocumentDownload } from "react-icons/hi";
 import Nav from "../Nav";
 import Head from "next/head";
 
+
+export async function getStaticProps({ params }) {
+  return {
+    props: {
+    }
+  };
+}
+
 export default function Report() {
   return (
     <>

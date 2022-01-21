@@ -21,6 +21,14 @@ import Recruit17 from "../../public/assets/recruit17.png";
 import Recruit18 from "../../public/assets/recruit18.png";
 import Recruit19 from "../../public/assets/recruit19.png";
 import Head from "next/head";
+
+export async function getStaticProps({ params }) {
+  return {
+    props: {
+    }
+  };
+}
+
 export default function Placements() {
   return (
     <>

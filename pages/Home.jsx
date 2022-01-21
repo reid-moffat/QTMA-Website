@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 import { Link as SLink } from "react-scroll";
 import React, { useState, useEffect } from "react";
 
+
 function getWindowDimensions() {
   if (typeof window !== "undefined") {
     const { innerWidth: width, innerHeight: height } = window;
@@ -44,12 +45,13 @@ export default function Home() {
       setIsMobile(false);
     }
   }, [width]);
+  console.log(qtmaLogo);
   return (
     <Layout background="#0072ff" home={true}>
       <section id="home" className="home-container container">
         <div className="text-container">
           <div className="home-logo">
-            <Image alt="QTMA logo" src={qtmaLogo} width={346} height={93.71} className="QTMA-logo" />
+            <Image alt="QTMA logo" src={qtmaLogo.src} width={346} height={93.71} className="QTMA-logo" />
           </div>
           <div className="club-description">
             <p>
