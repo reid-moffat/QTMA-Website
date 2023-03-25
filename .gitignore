@@ -30,8 +30,8 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
-# vercel
-.vercel
+# Next.js build output
+.next
 
 General_Notes.txt
 TeamDataCopy.txt
