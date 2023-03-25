@@ -1,10 +1,10 @@
-import Layout from "../../components/layout";
+import Layout from "../components/layout";
 import Image from "next/image";
-import Founding from "../../public/assets/Founding.png";
-import Expansion from "../../public/assets/Expansion.png";
-import Initiatives from "../../public/assets/Initiatives.png";
-import FamilyPhoto from "../../public/assets/FamilyPhoto.jpg";
-import Nav from "../Nav";
+import Founding from "../public/assets/Founding.png";
+import Expansion from "../public/assets/Expansion.png";
+import Initiatives from "../public/assets/Initiatives.png";
+import FamilyPhoto from "../public/assets/FamilyPhoto.jpg";
+import Nav from "./Nav";
 import Head from "next/head";
 
 export async function getStaticProps({ params }) {
