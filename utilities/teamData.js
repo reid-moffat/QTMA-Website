@@ -169,7 +169,7 @@ export default [
     },
     {
         image: Reid,
-        name: "Reid Moffat",
+        name: "Reid moffat",
         position: "Developer",
         specialRole: "",
         linkedIn: "https://www.linkedin.com/in/reid-moffat/"
