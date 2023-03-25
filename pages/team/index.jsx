@@ -16,14 +16,14 @@ export default function Team() {
   return (
     <>
       <Head>
-        <meta name="description" content="2020/2021 Team" />
+        <meta name="description" content="2021/2022 Team" />
         <title>QTMA</title>
         <meta name="og:title" content={"QTMA"} />
       </Head>
       <Nav />
       <Layout background={"#edf5fc"}>
         <div className="history-container container">
-          <h1 className="section-title">2020/2021 Team</h1>
+          <h1 className="section-title">2021/2022 Team</h1>
           <div className="family-photo-container">
             <div className="family-border">
               <Image alt="Team Photo" src={FamilyPhoto} className="family-photo" />
