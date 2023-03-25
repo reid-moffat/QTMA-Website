@@ -1,8 +1,8 @@
-import Layout from "../components/layout";
+import Layout from "../../components/layout";
 import Image from "next/image";
-import Zack from "../public/assets/Zack.png";
-import Jamyang from "../public/assets/Jamyang.png";
-import Justin from "../public/assets/Justin.png";
+import Zack from "../../public/assets/Zack.png";
+import Jamyang from "../../public/assets/Jamyang.png";
+import Justin from "../../public/assets/Justin.png";
 export default function Testimonials() {
   return (
     <Layout background="#EDF5FC">

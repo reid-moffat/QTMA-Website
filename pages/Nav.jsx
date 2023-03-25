@@ -76,8 +76,8 @@ export default function Nav() {
             <Link className="nav-links" href="/">
               <a className={router.pathname == "/" ? "active-link" : "nav-link"}>Home</a>
             </Link>
-            <Link className="nav-links" href="/all_products">
-              <a className={router.pathname == "/all_products" ? "active-link" : "nav-link"}>Products</a>
+            <Link className="nav-links" href="/products">
+              <a className={router.pathname == "/products" ? "active-link" : "nav-link"}>Products</a>
             </Link>
             <Link className="nav-links" href="/history">
               <a className={router.pathname == "/history" ? "active-link" : "nav-link"}>History</a>

@@ -1,8 +1,8 @@
-import Layout from "../components/layout";
+import Layout from "../../components/layout";
 import Image from "next/image";
-import TeamStructureLg from "../public/assets/TeamStructureLg.png";
-import TeamStructureSm1 from "../public/assets/TeamStructureSm1.png";
-import TeamStructureSm2 from "../public/assets/TeamStructureSm2.png";
+import TeamStructureLg from "../../public/assets/TeamStructureLg.png";
+import TeamStructureSm1 from "../../public/assets/TeamStructureSm1.png";
+import TeamStructureSm2 from "../../public/assets/TeamStructureSm2.png";
 
 export default function OurTeamStructure() {
   return (

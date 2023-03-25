@@ -1,8 +1,8 @@
-import Layout from "../components/layout";
+import Layout from "../../components/layout";
 import Image from "next/image";
-import Sponsor1 from "../public/assets/Sponsor1.png";
-import Sponsor2 from "../public/assets/Sponsor2.png";
-import Sponsor3 from "../public/assets/Sponsor3.png";
+import Sponsor1 from "../../public/assets/Sponsor1.png";
+import Sponsor2 from "../../public/assets/Sponsor2.png";
+import Sponsor3 from "../../public/assets/Sponsor3.png";
 export default function Sponsors() {
   return (
     <Layout>

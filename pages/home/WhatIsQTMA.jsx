@@ -1,8 +1,8 @@
-import Layout from "../components/layout";
+import Layout from "../../components/layout";
 import Image from "next/image";
-import Business from "../public/assets/Business.png";
-import ComSci from "../public/assets/Computer_Scientist.png";
-import Engineer from "../public/assets/Engineer.png";
+import Business from "../../public/assets/Business.png";
+import ComSci from "../../public/assets/Computer_Scientist.png";
+import Engineer from "../../public/assets/Engineer.png";
 export default function WhatIsQTMA() {
   return (
     <Layout background="white">
