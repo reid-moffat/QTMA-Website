@@ -1,7 +1,7 @@
-import Hungover from "../../public/assets/Products/Team_Hungover.png"
-import Wob from "../../public/assets/Products/Team_Wob.jpeg"
-import Studii from "../../public/assets/Products/Team_Studii.jpeg"
-import Stocked from "../../public/assets/Products/Team_Stocked.jpeg"
+import Hungover from "../public/assets/Products/Team_Hungover.png"
+import Wob from "../public/assets/Products/Team_Wob.jpeg"
+import Studii from "../public/assets/Products/Team_Studii.jpeg"
+import Stocked from "../public/assets/Products/Team_Stocked.jpeg"
 
 export default [
     {
