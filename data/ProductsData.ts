@@ -1,7 +1,7 @@
-import Hungover from "../public/assets/Products/Team_Hungover.png"
-import Wob from "../public/assets/Products/Team_Wob.jpeg"
-import Studii from "../public/assets/Products/Team_Studii.jpeg"
-import Stocked from "../public/assets/Products/Team_Stocked.jpeg"
+const Hungover = "/assets/Products/Team_Hungover.png"
+const Wob = "/assets/Products/Team_Wob.jpeg"
+const Studii = "/assets/Products/Team_Studii.jpeg"
+const Stocked = "/assets/Products/Team_Stocked.jpeg"
 
 export default [
     {

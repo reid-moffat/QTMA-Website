@@ -1,7 +1,7 @@
 import Layout from "../../components/layout";
 import Nav from "../Nav";
 import React, { useEffect, useState } from "react";
-import productData from "../../data/productsData";
+import productData from "../../data/ProductsData";
 import Image from "next/image";
 import { useRouter } from "next/router";
 // import PDF from "/public/assets/Eagle Pitch.pdf";

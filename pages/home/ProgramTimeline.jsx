@@ -1,7 +1,7 @@
 import Layout from "../../components/layout";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import timelineData from "../../data/timelineData";
+import timelineData from "../../data/TimelineData";
 
 export default function ProgramTimeline() {
     return (
@@ -14,7 +14,7 @@ export default function ProgramTimeline() {
                             <div key={ i } className="timeline-content">
                                 <h2 className="timeline-event">{ info.title }</h2>
                                 <h4 className="timeline-date">{ info.date }</h4>
-                                <p className="timeline-desc">{ info.desc }</p>
+                                <p className="timeline-desc">{ info.description }</p>
                             </div>
                         )) }
                     </Carousel>

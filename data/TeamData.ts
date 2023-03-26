@@ -1,5 +1,5 @@
 const Alice = "/assets/Members/Alice.jpg"
-const Allen = "/assets/Members/Allen_Chen.jpg"
+const Allen = "/assets/Members/Allen_Chen.png"
 const Aman = "/assets/Members/Aman.jpg"
 const Ben = "/assets/Members/Ben_Minor.jpg"
 const Catherine = "/assets/Members/Catherine_Pham.jpg"
@@ -31,7 +31,7 @@ const Randy = "/assets/Members/Randy_Shao.jpg"
 const Reid = "/assets/Members/Reid.jpg"
 const Richard = "/assets/Members/Richard.jpg"
 const noPhoto = "/assets/Members/JohnnyBravo.png"
-const Aaron = "/assets/Members/Aaron_Chen.jpg"
+const Aaron = "/assets/Members/Aaron_Chen.png"
 const Arsh = "/assets/Members/Arsh_Kochhar.jpeg"
 const Benny = "/assets/Members/Benny_Lam.jpg"
 const Chris = "/assets/Members/Chris_Power.png"
@@ -54,6 +54,10 @@ const Zaais = "/assets/Members/Zaais_Van_Zyl.jpg"
 const Vicky = "/assets/Members/Vicky_Deng.jpg"
 const Flora = "/assets/Members/Flora_Lin.png"
 const Riyah = "/assets/Members/Riya_Shah.jpg"
+
+const getImage = () => {
+    return '/assets/Members/';
+};
 
 enum Positions {
     CoChair,

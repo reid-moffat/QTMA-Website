@@ -2,7 +2,7 @@ import Layout from "../../components/layout";
 import Image from "next/image";
 import FamilyPhoto from "../../public/assets/Members/FamilyPhoto.jpg";
 import Nav from "../Nav";
-import { Positions, ClubMembers } from "../../data/teamData.ts";
+import { Positions, ClubMembers } from "../../data/TeamData.ts";
 import { AiFillLinkedin } from "react-icons/ai";
 import Head from "next/head";
 
