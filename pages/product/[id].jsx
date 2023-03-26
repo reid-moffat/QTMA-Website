@@ -1,7 +1,7 @@
 import Layout from "../../components/layout";
 import Nav from "../Nav";
 import React, { useEffect, useState } from "react";
-import productData from "../../utilities/productsData";
+import productData from "./productsData";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import dynamic from "next/dynamic";

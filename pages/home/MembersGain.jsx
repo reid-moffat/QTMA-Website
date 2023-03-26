@@ -1,9 +1,9 @@
 import Layout from "../../components/layout";
 import Image from "next/image";
-import Box from "../../public/assets/Box.png";
-import FlashLight from "../../public/assets/Flashlight.png";
-import Rocket from "../../public/assets/Rocket.png";
-import Whiteboard from "../../public/assets/Whiteboard.png";
+import Box from "../../public/assets/Visuals/Box.png";
+import FlashLight from "../../public/assets/Visuals/Flashlight.png";
+import Rocket from "../../public/assets/Visuals/Rocket.png";
+import Whiteboard from "../../public/assets/Visuals/Whiteboard.png";
 export default function MembersGain() {
   return (
     <Layout background="#0072FF">

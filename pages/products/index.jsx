@@ -1,16 +1,16 @@
 import Layout from "../../components/layout";
 import Image from "next/image";
-import HungOver from "../../public/assets/hungover.png";
-import Wob from "../../public/assets/wob_logo.png";
-import Studii from "../../public/assets/studii.png";
-import Stocked from "../../public/assets/stocked.png";
+import HungOver from "../../public/assets/Products/hungover.png";
+import Wob from "../../public/assets/Products/wob_logo.png";
+import Studii from "../../public/assets/Products/studii.png";
+import Stocked from "../../public/assets/Products/stocked.png";
 import Nav from "../Nav";
 import Link from "next/link";
 import Head from "next/head";
 import Product from "../Products";
-import Pronto from "../../public/assets/Pronto_Logo.png";
-import Voluntera from "../../public/assets/Voluntera_Logo.png";
-import Eagle from "../../public/assets/Eagle_Logo.png";
+import Pronto from "../../public/assets/Products/Pronto_Logo.png";
+import Voluntera from "../../public/assets/Products/Voluntera_Logo.png";
+import Eagle from "../../public/assets/Products/Eagle_Logo.png";
 
 export default function Products() {
   return (

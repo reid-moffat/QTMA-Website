@@ -1,6 +1,6 @@
 import Layout from "../../components/layout";
 import Image from "next/image";
-import Email from "../../public/assets/Email.png";
+import Email from "../../public/assets/Visuals/Email.png";
 import Nav from "../Nav";
 import React, { useState, useEffect, useRef } from "react";
 import validator from "validator";

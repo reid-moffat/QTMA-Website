@@ -1,8 +1,8 @@
 import Layout from "../../components/layout";
 import Image from "next/image";
-import FamilyPhoto from "../../public/assets/FamilyPhoto.jpg";
+import FamilyPhoto from "../../public/assets/Members/FamilyPhoto.jpg";
 import Nav from "../Nav";
-import team from "../../utilities/teamData";
+import team from "./teamData";
 import { AiFillLinkedin } from "react-icons/ai";
 import Head from "next/head";
 

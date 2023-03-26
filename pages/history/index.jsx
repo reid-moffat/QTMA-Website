@@ -1,9 +1,9 @@
 import Layout from "../../components/layout";
 import Image from "next/image";
-import Founding from "../../public/assets/Founding.png";
-import Expansion from "../../public/assets/Expansion.png";
-import Initiatives from "../../public/assets/Initiatives.png";
-import FamilyPhoto from "../../public/assets/FamilyPhoto.jpg";
+import Founding from "../../public/assets/Data/Founding.png";
+import Expansion from "../../public/assets/Data/Expansion.png";
+import Initiatives from "../../public/assets/Data/Initiatives.png";
+import FamilyPhoto from "../../public/assets/Members/FamilyPhoto.jpg";
 import Nav from "../Nav";
 import Head from "next/head";
 

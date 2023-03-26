@@ -1,4 +1,4 @@
-import qtmaLogo from "../public/assets/QTMA_logo.png";
+import qtmaLogo from "../public/assets/Data/QTMA_logo.png";
 import Image from "next/image";
 import Layout from "../components/layout";
 import Link from "next/link";
