@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Layout from '../components/layout';
 import Home from "./Home";
 import Nav from "./Nav";
@@ -13,42 +12,41 @@ import Sponsors from "./home/Sponsors";
 import Footer from "../components/footer";
 
 export async function getStaticProps({ params }) {
-  return {
-    props: {
-    }
-  };
+    return {
+        props: {}
+    };
 }
 
 export default function Main() {
-  return (
-    <>
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <meta name="google-site-verification" content="OBns1OJgPEnUS6kxBHuLtfYJJe_YB8BAInF6h1rjfTo" />
-        <meta
-          name="description"
-          content="QTMA hires 12 Developers, 4 Product Manager, 4 Designers, 8 Business Analysts to complete our product teams. We also hire various operating roles. Applications include a written application and interview with the incoming Co - Chairs."
-        />
-        <link rel="icon" href="/favicon.ico" />
-        <title>QTMA</title>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="og:title" content={"QTMA"} />
-      </Head>
-      <Layout>
-        <div className="index-container">
-          <Nav />
-          <Home />
-          <WhatIsQTMA />
-          <Product />
-          <OurTeamStructure />
-          <MembersGain />
-          <ProgramTimeline />
-          <Testimonials />
-          <Sponsors />
-          <Footer />
-        </div>
-      </Layout>
-    </>
-  )
+    return (
+        <>
+            <Head>
+                <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                <link rel="preconnect" href="https://fonts.gstatic.com"/>
+                <meta name="google-site-verification" content="OBns1OJgPEnUS6kxBHuLtfYJJe_YB8BAInF6h1rjfTo"/>
+                <meta
+                    name="description"
+                    content="QTMA hires 12 Developers, 4 Product Manager, 4 Designers, 8 Business Analysts to complete our product teams. We also hire various operating roles. Applications include a written application and interview with the incoming Co - Chairs."
+                />
+                <link rel="icon" href="/favicon.ico"/>
+                <title>QTMA</title>
+                <link rel="icon" href="/favicon.ico"/>
+                <meta name="og:title" content={ "QTMA" }/>
+            </Head>
+            <Layout>
+                <div className="index-container">
+                    <Nav/>
+                    <Home/>
+                    <WhatIsQTMA/>
+                    <Product/>
+                    <OurTeamStructure/>
+                    <MembersGain/>
+                    <ProgramTimeline/>
+                    <Testimonials/>
+                    <Sponsors/>
+                    <Footer/>
+                </div>
+            </Layout>
+        </>
+    )
 }

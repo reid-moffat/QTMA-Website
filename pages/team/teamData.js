@@ -434,5 +434,4 @@ export default [
         specialRole: "",
         linkedIn: "https://www.linkedin.com/in/kevin-yu-246147199/"
     },
-
 ]
