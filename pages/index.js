@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Layout from '../components/layout';
 import Home from "./Home";
 import Nav from "./Nav";
-import Product from './Products';
+import Product from './products';
 import WhatIsQTMA from './home/WhatIsQTMA';
 import OurTeamStructure from './home/OurTeamStructure';
 import MembersGain from "./home/MembersGain";
