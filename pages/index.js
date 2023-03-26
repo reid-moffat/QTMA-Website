@@ -10,7 +10,7 @@ import MembersGain from "./home/MembersGain";
 import ProgramTimeline from './home/ProgramTimeline';
 import Testimonials from './home/Testimonials';
 import Sponsors from "./home/Sponsors";
-import Footer from "./footer";
+import Footer from "../components/footer";
 
 export async function getStaticProps({ params }) {
   return {
