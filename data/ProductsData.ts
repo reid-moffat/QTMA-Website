@@ -1,9 +1,25 @@
-const Hungover = "/assets/Products/Team_Hungover.png"
-const Wob = "/assets/Products/Team_Wob.jpeg"
-const Studii = "/assets/Products/Team_Studii.jpeg"
-const Stocked = "/assets/Products/Team_Stocked.jpeg"
+/**
+ * Data for all current and previous products
+ */
 
-export default [
+const getTeamPhoto = (name: string) => `/assets/Products/Team_${name}.png`;
+const getPitch = (name: string) => `/assets/Products/Pitches/${name}.pdf`;
+
+interface IProductData {
+    productName: string;
+    slogan: string;
+    studentInfo: {
+        studentName: string;
+        linkedin: string;
+    }[];
+    teamPhoto: string;
+    photoXY: object;
+    productOverview: string;
+    productPitch: string;
+    productDemo: string;
+}
+
+const ProductData: IProductData[] = [
     {
         productName: "Eagle",
         slogan: "Your Delivery Service Companion",
@@ -11,7 +27,7 @@ export default [
         teamPhoto: "",
         photoXY: {},
         productOverview: "",
-        productPitch: "https://drive.google.com/file/d/1VSJXlOgTO5NxiECN6_l47dwhKzg5qfbY/preview",
+        productPitch: getPitch("Eagle"),
         productDemo: ""
     },
     {
@@ -21,7 +37,7 @@ export default [
         teamPhoto: "",
         photoXY: {},
         productOverview: "",
-        productPitch: "https://drive.google.com/file/d/1dCrv35CFuU0d9SFbdSWfk9PL5MBNSpQ4/preview",
+        productPitch: getPitch("Pronto"),
         productDemo: ""
     },
     {
@@ -31,7 +47,7 @@ export default [
         teamPhoto: "",
         photoXY: {},
         productOverview: "",
-        productPitch: "https://drive.google.com/file/d/1_TLkG5xfnBZH1ChI3_dtFPE_JZi7N7GD/preview",
+        productPitch: getPitch("Voluntera"),
         productDemo: ""
     },
     {
@@ -71,13 +87,13 @@ export default [
                 linkedin: "#"
             },
         ],
-        teamPhoto: Hungover,
+        teamPhoto: getTeamPhoto("Hungover"),
         photoXY: {
             width: 2000,
             height: 1470
         },
         productOverview: "Hangover is a social gaming app inspired by Cards Against Humanity and Kahoot. Enter a lobby to play with your friends, with one as the Host. Each round, the players will answer a mixture of different question types for the Host to judge at the end. The Host decides on a punishment (e.g. take a shot), a winner, and a loser. The loser must take the punishment while the winner can give the punishment to another player. The loser is then the new host for the subsequent round. Let Hangover be the perfect addition to your night!",
-        productPitch: "https://drive.google.com/file/d/1syz63NtSMzpCCpTUzwy98LEC7MG_5eXN/preview",
+        productPitch: getPitch("Hungover"),
         productDemo: "https://www.youtube.com/embed/xOm3xY2QCik",
     },
     {
@@ -117,7 +133,7 @@ export default [
                 linkedin: "https://www.linkedin.com/in/connorcolwill/"
             },
         ],
-        teamPhoto: Studii,
+        teamPhoto: getTeamPhoto("Studii"),
         photoXY: {
             width: 2000,
             height: 1333
@@ -163,13 +179,13 @@ export default [
                 linkedin: "#"
             },
         ],
-        teamPhoto: Wob,
+        teamPhoto: getTeamPhoto("Wob"),
         photoXY: {
             width: 2000,
             height: 1333
         },
         productOverview: "A geo-based, anti-harassment conscious anonymosus messaging and content platform meant to strengthen relationships in local communities.",
-        productPitch: "https://drive.google.com/file/d/12L1g2i0jfFTIdwx4gLVlT23upqwYyyrX/preview",
+        productPitch: getPitch("Wob"),
         productDemo: "https://www.youtube.com/embed/6dHJOGqdT8M",
     },
     {
@@ -209,13 +225,15 @@ export default [
                 linkedin: ""
             },
         ],
-        teamPhoto: Stocked,
+        teamPhoto: getTeamPhoto("Stocked"),
         photoXY: {
             width: 2000,
             height: 1333
         },
         productOverview: "As a mobile app for both iOS and Android, Stocked is a dynamic meal generator which minimizes the shopping you need to do by suggesting recipes based on the ingredients already in your fridge. Other features include a receipt scanner and expiration tracker that helps save time and money.",
-        productPitch: "https://drive.google.com/file/d/1IjwvR-u9uheQGK52sFAtAv_jjgalYuA3/preview",
+        productPitch: getPitch("Stocked"),
         productDemo: "https://www.youtube.com/embed/JghgqwDF0NU",
     },
 ]
+
+export default ProductData;

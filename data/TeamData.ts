@@ -1,63 +1,8 @@
-const Alice = "/assets/Members/Alice.jpg"
-const Allen = "/assets/Members/Allen_Chen.png"
-const Aman = "/assets/Members/Aman.jpg"
-const Ben = "/assets/Members/Ben_Minor.jpg"
-const Catherine = "/assets/Members/Catherine_Pham.jpg"
-const Chole = "/assets/Members/Chloe_Hung.jpg"
-const David = "/assets/Members/David_Choo.jpg"
-const Doris = "/assets/Members/Doris_Zhuo.jpg"
-const Egor = "/assets/Members/Egor.jpg"
-const Emily = "/assets/Members/Emily_Zhao.jpg"
-const Ethan = "/assets/Members/Ethan.jpg"
-const Graham = "/assets/Members/Graham_Carkner.jpg"
-const Helen = "/assets/Members/Helen_Xu.jpg"
-const Isabella = "/assets/Members/Isabella_Enriquez.jpg"
-const Jason = "/assets/Members/Jason.png"
-const Jessica = "/assets/Members/Jessica_Li.jpg"
-const Julien = "/assets/Members/Julien_Lin.jpg"
-const Kevin_Ding = "/assets/Members/Kevin_Ding.jpg"
-const Kevin_Liang = "/assets/Members/Kevin_Liang.jpg"
-const Kevin_Yu = "/assets/Members/Kevin_Yu.jpg"
-const Khao = "/assets/Members/Khoa_Nguyen.jpg"
-const Krishaan = "/assets/Members/Krishaan.jpg"
-const Lexi = "/assets/Members/Lexi_Locca.jpg"
-const Lia = "/assets/Members/Lia_Mason.jpg"
-const Mahir = "/assets/Members/Mahir_Hamid.jpg"
-const Manush = "/assets/Members/Manush.jpg"
-const Matthew = "/assets/Members/Matthew_MacEachern.png"
-const Mudra = "/assets/Members/Mudra.jpg"
-const Olivia = "/assets/Members/Olivia_Xu.jpg"
-const Randy = "/assets/Members/Randy_Shao.jpg"
-const Reid = "/assets/Members/Reid.jpg"
-const Richard = "/assets/Members/Richard.jpg"
-const noPhoto = "/assets/Members/JohnnyBravo.png"
-const Aaron = "/assets/Members/Aaron_Chen.png"
-const Arsh = "/assets/Members/Arsh_Kochhar.jpeg"
-const Benny = "/assets/Members/Benny_Lam.jpg"
-const Chris = "/assets/Members/Chris_Power.png"
-const Connor = "/assets/Members/Connor_Colwill.png"
-const Dene = "/assets/Members/Dene.jpeg"
-const Dylan = "/assets/Members/Dylan_Ratti.jpeg"
-const Eesha = "/assets/Members/Eesha_Kohli.png"
-const Eunice = "/assets/Members/Eunice_Choi.png"
-const Grady = "/assets/Members/Grady_Palfrey.jpg"
-const Jacob = "/assets/Members/Jacob_Xu.jpeg"
-const Kevin_Quijalvo = "/assets/Members/Kevin_Quijalvo.jpg"
-const Kevin_Subagaren = "/assets/Members/Kevin_Subagaren.jpg"
-const Kevin_Wu = "/assets/Members/Kevin_Wu.jpg"
-const Mark = "/assets/Members/Mark_Gragtmans.jpg"
-const Naomi = "/assets/Members/Naomi.jpg"
-const Ronan = "/assets/Members/Ronan_Almeida.jpg"
-const Sola = "/assets/Members/Sola_Ebina.png"
-const Truman = "/assets/Members/Truman_Be.jpg"
-const Zaais = "/assets/Members/Zaais_Van_Zyl.jpg"
-const Vicky = "/assets/Members/Vicky_Deng.jpg"
-const Flora = "/assets/Members/Flora_Lin.png"
-const Riyah = "/assets/Members/Riya_Shah.jpg"
+/**
+ * Data for all QTMA members
+ */
 
-const getImage = () => {
-    return '/assets/Members/';
-};
+const getImage = (name: string) => `/assets/Members/${name}.png`;
 
 enum Positions {
     CoChair,
@@ -74,383 +19,391 @@ enum Positions {
     WebDev,
 }
 
-const ClubMembers = [
+interface IClubMember {
+    image: string;
+    name: string;
+    position: Positions;
+    subPosition: string;
+    linkedIn: string;
+}
+
+const ClubMembers: IClubMember[] = [
     {
-        image: Mudra,
+        image: getImage("Mudra"),
         name: "Mudra Patel",
         position: Positions.CoChair,
-        specialRole: "Product Lead",
+        subPosition: "Product Lead",
         linkedIn: "https://www.linkedin.com/in/mudrapatel/"
     },
     {
-        image: Aman,
+        image: getImage("Aman"),
         name: "Aman Dhaliwal",
         position: Positions.CoChair,
-        specialRole: "Development Lead",
+        subPosition: "Development Lead",
         linkedIn: "https://www.linkedin.com/in/amandhaliwal44/"
     },
     {
-        image: Kevin_Ding,
+        image: getImage("Kevin_Ding"),
         name: "Kevin Ding",
         position: Positions.CoChair,
-        specialRole: "Business Lead",
+        subPosition: "Business Lead",
         linkedIn: "https://www.linkedin.com/in/kevding/"
     },
     {
-        image: Alice,
+        image: getImage("Alice"),
         name: "Alice Qi",
         position: Positions.CoChair,
-        specialRole: "Business Lead",
+        subPosition: "Business Lead",
         linkedIn: "https://www.linkedin.com/company/queen's-technology-and-media-association/mycompany/"
     },
     {
-        image: Truman,
+        image: getImage("Truman_Be"),
         name: "Truman Be",
         position: Positions.SeniorDeveloper,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/truman-be/"
     },
     {
-        image: Ben,
+        image: getImage("Ben_Minor"),
         name: "Ben Minor",
         position: Positions.SeniorDeveloper,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/ben-minor/"
     },
     {
-        image: Kevin_Quijalvo,
+        image: getImage("Kevin_Quijalvo"),
         name: "Kevin Quijalvo",
         position: Positions.SeniorDeveloper,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/marc-quijalvo/"
     },
     {
-        image: Emily,
+        image: getImage("Emily_Zhao"),
         name: "Emily Zhao",
         position: Positions.SeniorDeveloper,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/emily-zhaoo/"
     },
     {
-        image: Ronan,
+        image: getImage("Ronan_Almeida"),
         name: "Ronan Almeida",
         position: Positions.Developer,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/ronanalmeida/"
     },
     {
-        image: Connor,
+        image: getImage("Connor_Colwill"),
         name: "Connor Colwill",
         position: Positions.Developer,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/connorcolwill/"
     },
     {
-        image: Isabella,
+        image: getImage("Isabella_Enriquez"),
         name: "Isabella Enriquez",
         position: Positions.Developer,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/isabellaenriquez/"
     },
     {
-        image: Lexi,
+        image: getImage("Lexi_Locca"),
         name: "Lexi Locca",
         position: Positions.Developer,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/company/queen's-technology-and-media-association/mycompany/"
     },
     {
-        image: Jessica,
+        image: getImage("Jessica_Li"),
         name: "Jessica Li",
         position: Positions.Developer,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/jessica-a-li/"
     },
     {
-        image: Kevin_Liang,
+        image: getImage("Kevin_Liang"),
         name: "Kevin Liang",
         position: Positions.Developer,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/kevin-liang-32b9791aa/"
     },
     {
-        image: Matthew,
+        image: getImage("Matthew_MacEachern"),
         name: "Matthew MacEachern",
         position: Positions.Developer,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/matthew-maceachern/"
     },
     {
-        image: Lia,
+        image: getImage("Lia_Mason"),
         name: "Lia Mason",
         position: Positions.Developer,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/lia-k-mason/"
     },
     {
-        image: Reid,
+        image: getImage("Reid"),
         name: "Reid Moffat",
         position: Positions.Developer,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/reid-moffat/"
     },
     {
-        image: Khao,
+        image: getImage("Khoa_Nguyen"),
         name: "Khoa Nguyen",
         position: Positions.Developer,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/khoa-nguyen-438a5417a/"
     },
     {
-        image: Grady,
+        image: getImage("Grady_Palfrey"),
         name: "Grady Palfrey",
         position: Positions.Developer,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/gradypalfrey/"
     },
     {
-        image: Kevin_Subagaren,
+        image: getImage("Kevin_Subagaren"),
         name: "Kevin Subagaran",
         position: Positions.Developer,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/kevin-s-a76b741b0/"
     },
     {
-        image: Mark,
+        image: getImage("Mark_Gragtmans"),
         name: "Mark Gragtmans",
         position: Positions.Advisor,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/mark-gragtmans/"
     },
     {
-        image: Arsh,
+        image: getImage("Arsh_Kochhar"),
         name: "Arsh Kochhar",
         position: Positions.Advisor,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/arshkochhar/"
     },
     {
-        image: Jason,
+        image: getImage("Jason"),
         name: "Jason Yang",
         position: Positions.Advisor,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/jason-z-yang/"
     },
     {
-        image: Zaais,
+        image: getImage("Zaais_Van_Zyl"),
         name: "Zaais Van Zyl",
         position: Positions.Advisor,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/zaais-van-zyl/"
     },
     {
-        image: Richard,
+        image: getImage("Richard"),
         name: "Richard Li",
         position: Positions.ProductManager,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/richardliqu/"
     },
     {
-        image: Ethan,
+        image: getImage("Ethan"),
         name: "Ethan Bonnardeaux",
         position: Positions.ProductManager,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/ethan-bonnardeaux/"
     },
     {
-        image: Julien,
+        image: getImage("Julien_Lin"),
         name: "Julien Lin",
         position: Positions.ProductManager,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/julien-lin/"
     },
     {
-        image: Riyah,
+        image: getImage("Riya_Shah"),
         name: "Riya Shah",
         position: Positions.ProductManager,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/riya-shah-queens-university/"
     },
     {
-        image: Vicky,
+        image: getImage("Vicky_Deng"),
         name: "Vicky Deng",
         position: Positions.ProductMarketingManager,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/dengvicky/"
     },
     {
-        image: Chole,
+        image: getImage("Chloe_Hung"),
         name: "Chloe Hung",
         position: Positions.ProductMarketingManager,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/chloe-hung/"
     },
     {
-        image: Eesha,
+        image: getImage("Eesha_Kohli"),
         name: "Eesha Kohli",
         position: Positions.ProductMarketingManager,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/eesha-kohli/"
     },
     {
-        image: Helen,
+        image: getImage("Helen_Xu"),
         name: "Helen Xu",
         position: Positions.ProductMarketingManager,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/helencxu/"
     },
     {
-        image: Flora,
+        image: getImage("Flora_Lin"),
         name: "Flora Lin",
         position: Positions.UIUX,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/~flora/"
     },
     {
-        image: Graham,
+        image: getImage("Graham_Carkner"),
         name: "Graham Carkner",
         position: Positions.UIUX,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/gcarkner/"
     },
     {
-        image: Randy,
+        image: getImage("Randy_Shao"),
         name: "Randy Shao",
         position: Positions.UIUX,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/randyshao/"
     },
     {
-        image: Doris,
+        image: getImage("Doris_Zhuo"),
         name: "Doris Zhuo",
         position: Positions.UIUX,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/doris-zhuo/"
     },
     {
-        image: Dylan,
+        image: getImage("Dylan_Ratti"),
         name: "Dylan Ratti",
         position: Positions.SeniorBA,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/dylan-ratti/"
     },
     {
-        image: Aaron,
+        image: getImage("Aaron_Chen"),
         name: "Aaron Chen",
         position: Positions.BA,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/aaron-chen-44306b135/"
     },
     {
-        image: David,
+        image: getImage("David_Choo"),
         name: "David Choo",
         position: Positions.BA,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/david-j-choo/"
     },
     {
-        image: Mahir,
+        image: getImage("Mahir_Hamid"),
         name: "Mahir Hamid",
         position: Positions.BA,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/mahirhamid/"
     },
     {
-        image: Naomi,
+        image: getImage("Naomi"),
         name: "Naomi Junatas",
         position: Positions.BA,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/naomijunatas/"
     },
     {
-        image: Chris,
+        image: getImage("Chris_Power"),
         name: "Chris Power",
         position: Positions.BA,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/chris-power-canada/"
     },
     {
-        image: Kevin_Wu,
+        image: getImage("Kevin_Wu"),
         name: "Kevin Wu",
         position: Positions.BA,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/wu-kevin/"
     },
     {
-        image: Jacob,
+        image: getImage("Jacob_Xu"),
         name: "Jacob Xu",
         position: Positions.BA,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/jacobx/"
     },
     {
-        image: Dene,
+        image: getImage("Dene"),
         name: "Dene Bezuidenhout",
         position: Positions.Operations,
-        specialRole: "Marketing",
+        subPosition: "Marketing",
         linkedIn: "https://www.linkedin.com/in/denebezuidenhout/"
     },
     {
-        image: Sola,
+        image: getImage("Sola_Ebina"),
         name: "Sola Ebina",
         position: Positions.Operations,
-        specialRole: "Marketing",
+        subPosition: "Marketing",
         linkedIn: "https://www.linkedin.com/in/solaebina/"
     },
     {
-        image: Allen,
+        image: getImage("Allen_Chen"),
         name: "Allen Chen",
         position: Positions.Operations,
-        specialRole: "Internal Affairs",
+        subPosition: "Internal Affairs",
         linkedIn: "https://www.linkedin.com/in/allen-chen0/"
     },
     {
-        image: Benny,
+        image: getImage("Benny_Lam"),
         name: "Benny Lam",
         position: Positions.Operations,
-        specialRole: "Sponsorships",
+        subPosition: "Sponsorships",
         linkedIn: "https://www.linkedin.com/in/bennylam116/"
     },
     {
-        image: Catherine,
+        image: getImage("Catherine_Pham"),
         name: "Catherine Pham",
         position: Positions.Operations,
-        specialRole: "Sponsorships",
+        subPosition: "Sponsorships",
         linkedIn: "https://www.linkedin.com/in/catherinepham123/"
     },
     {
-        image: Krishaan,
+        image: getImage("Krishaan"),
         name: "Krishaan Thyagarajan",
         position: Positions.FroshRep,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/krishaan-thyagarajan/"
     },
     {
-        image: Egor,
+        image: getImage("Egor"),
         name: "Egor Petrov",
         position: Positions.FroshRep,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/egorpetrov1402/"
     },
     {
-        image: Manush,
+        image: getImage("Manush"),
         name: "Manush Patel",
         position: Positions.FroshRep,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/manushpatel/"
     },
     {
-        image: Olivia,
+        image: getImage("Olivia_Xu"),
         name: "Olivia Xu",
         position: Positions.FroshRep,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/olivia-xu-057a27171/"
     },
     {
-        image: Kevin_Yu,
+        image: getImage("Kevin_Yu"),
         name: "Kevin Yu",
         position: Positions.WebDev,
-        specialRole: "",
+        subPosition: "",
         linkedIn: "https://www.linkedin.com/in/kevin-yu-246147199/"
     },
 ]

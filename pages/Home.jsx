@@ -46,7 +46,7 @@ export default function Home() {
             setIsMobile(false);
         }
     }, [width]);
-    console.log(qtmaLogo);
+
     return (
         <Layout background="#0072ff" home={ true }>
             <section id="home" className="home-container container">
