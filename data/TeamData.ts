@@ -2,7 +2,7 @@
  * Data for all QTMA members
  */
 
-const getImage = (name: string) => `/assets/Members/${name}.png`;
+const getImage = (name: string) => `/assets/Members/2021-2022/${name}.png`;
 
 enum Positions {
     CoChair,

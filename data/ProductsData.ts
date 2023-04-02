@@ -2,8 +2,8 @@
  * Data for all current and previous products
  */
 
-const getTeamPhoto = (name: string) => `/assets/Products/Team_${name}.png`;
-const getPitch = (name: string) => `/assets/Products/Pitches/${name}.pdf`;
+const getTeamPhoto = (name: string, year: string) => `/assets/Products/${year}/${name}_Team.png`;
+const getPitch = (name: string, year: string) => `/assets/Products/${year}/Pitches/${name}_Pitch.pdf`;
 
 interface IProductData {
     productName: string;
@@ -27,7 +27,7 @@ const ProductData: IProductData[] = [
         teamPhoto: "",
         photoXY: {},
         productOverview: "",
-        productPitch: getPitch("Eagle"),
+        productPitch: getPitch("Eagle", "2020-2021"),
         productDemo: ""
     },
     {
@@ -37,7 +37,7 @@ const ProductData: IProductData[] = [
         teamPhoto: "",
         photoXY: {},
         productOverview: "",
-        productPitch: getPitch("Pronto"),
+        productPitch: getPitch("Pronto", "2020-2021"),
         productDemo: ""
     },
     {
@@ -47,7 +47,7 @@ const ProductData: IProductData[] = [
         teamPhoto: "",
         photoXY: {},
         productOverview: "",
-        productPitch: getPitch("Voluntera"),
+        productPitch: getPitch("Voluntera", "2020-2021"),
         productDemo: ""
     },
     {
@@ -87,13 +87,13 @@ const ProductData: IProductData[] = [
                 linkedin: "#"
             },
         ],
-        teamPhoto: getTeamPhoto("Hungover"),
+        teamPhoto: getTeamPhoto("Hungover", "2019-2020"),
         photoXY: {
             width: 2000,
             height: 1470
         },
         productOverview: "Hangover is a social gaming app inspired by Cards Against Humanity and Kahoot. Enter a lobby to play with your friends, with one as the Host. Each round, the players will answer a mixture of different question types for the Host to judge at the end. The Host decides on a punishment (e.g. take a shot), a winner, and a loser. The loser must take the punishment while the winner can give the punishment to another player. The loser is then the new host for the subsequent round. Let Hangover be the perfect addition to your night!",
-        productPitch: getPitch("Hungover"),
+        productPitch: getPitch("Hungover", "2019-2020"),
         productDemo: "https://www.youtube.com/embed/xOm3xY2QCik",
     },
     {
@@ -133,7 +133,7 @@ const ProductData: IProductData[] = [
                 linkedin: "https://www.linkedin.com/in/connorcolwill/"
             },
         ],
-        teamPhoto: getTeamPhoto("Studii"),
+        teamPhoto: getTeamPhoto("Studii", "2019-2020"),
         photoXY: {
             width: 2000,
             height: 1333
@@ -179,13 +179,13 @@ const ProductData: IProductData[] = [
                 linkedin: "#"
             },
         ],
-        teamPhoto: getTeamPhoto("Wob"),
+        teamPhoto: getTeamPhoto("Wob", "2019-2020"),
         photoXY: {
             width: 2000,
             height: 1333
         },
         productOverview: "A geo-based, anti-harassment conscious anonymosus messaging and content platform meant to strengthen relationships in local communities.",
-        productPitch: getPitch("Wob"),
+        productPitch: getPitch("Wob", "2019-2020"),
         productDemo: "https://www.youtube.com/embed/6dHJOGqdT8M",
     },
     {
@@ -225,13 +225,13 @@ const ProductData: IProductData[] = [
                 linkedin: ""
             },
         ],
-        teamPhoto: getTeamPhoto("Stocked"),
+        teamPhoto: getTeamPhoto("Stocked", "2020-2021"),
         photoXY: {
             width: 2000,
             height: 1333
         },
         productOverview: "As a mobile app for both iOS and Android, Stocked is a dynamic meal generator which minimizes the shopping you need to do by suggesting recipes based on the ingredients already in your fridge. Other features include a receipt scanner and expiration tracker that helps save time and money.",
-        productPitch: getPitch("Stocked"),
+        productPitch: getPitch("Stocked", "2020-2021"),
         productDemo: "https://www.youtube.com/embed/JghgqwDF0NU",
     },
 ]
