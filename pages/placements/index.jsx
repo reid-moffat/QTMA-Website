@@ -1,6 +1,8 @@
 import Layout from "../../components/layout";
 import Image from "next/image";
 import Nav from "../Nav";
+import Head from "next/head";
+
 import Recruit1 from "../../public/assets/Data/Placements/recruit1.png";
 import Recruit2 from "../../public/assets/Data/Placements/recruit2.png";
 import Recruit3 from "../../public/assets/Data/Placements/recruit3.png";
@@ -20,7 +22,7 @@ import Recruit16 from "../../public/assets/Data/Placements/recruit16.png";
 import Recruit17 from "../../public/assets/Data/Placements/recruit17.png";
 import Recruit18 from "../../public/assets/Data/Placements/recruit18.png";
 import Recruit19 from "../../public/assets/Data/Placements/recruit19.png";
-import Head from "next/head";
+
 
 export async function getStaticProps({ params }) {
     return {

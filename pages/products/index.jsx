@@ -4,7 +4,7 @@ import Nav from "../Nav";
 import Link from "next/link";
 import Head from "next/head";
 
-const getLogo = (name, year) => `../../public/assets/Products/${year}/${name}_Logo.png`;
+const getLogo = (name, year) => `/assets/Products/${year}/${name}_Logo.png`;
 
 export default function Products() {
     return (
