@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import productData from "../../data/ProductsData";
 import Image from "next/image";
 import { useRouter } from "next/router";
-// import PDF from "/public/assets/Eagle Pitch.pdf";
 
 export const getStaticProps = async () => {
     return { props: {} };
