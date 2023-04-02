@@ -13,13 +13,15 @@ export const getStaticProps = async () => {
 export const getStaticPaths = async () => {
     return {
         paths: [
+            // 2020-2021
             { params: { id: "Eagle" } },
             { params: { id: "Pronto" } },
             { params: { id: "Voluntera" } },
+            { params: { id: "Stocked" } },
+            // 2019-2020
             { params: { id: "Studii" } },
             { params: { id: "Hungover" } },
             { params: { id: "Wob" } },
-            { params: { id: "Stocked" } },
         ],
         fallback: false,
     };
@@ -31,9 +33,7 @@ export default function Product() {
     const [product, setProduct] = useState();
 
     useEffect(() => {
-        const details = productData.filter((productObj) => {
-            return productObj.productName === queryId;
-        });
+        const details = productData.filter((productObj) => productObj.productName === queryId);
         setProduct(details[0]);
     }, [queryId]);
 
