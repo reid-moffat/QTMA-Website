@@ -3,33 +3,34 @@
  */
 
 import MatthewMacEachern from "../public/assets/Members/2023-2024/Matthew_MacEachern.png";
+import AlisonXia from "../public/assets/Members/2023-2024/Alison_Xia.png";
+import EgorPetrov from "../public/assets/Members/2023-2024/Egor_Petrov.png";
 
-/*
-enum Positions {
-    CoChair,
-    SeniorDeveloper,
-    Developer,
-    Advisor,
-    ProductManager,
-    ProductMarketingManager,
-    UIUX,
-    SeniorBA,
-    BA,
-    Operations,
-    FroshRep,
-    WebDev,
-}
+import JadeWei from "../public/assets/Members/2023-2024/Jade_Wei.png";
+import ReidMoffat from "../public/assets/Members/2023-2024/Reid_Moffat.png";
+import CainSusko from "../public/assets/Members/2023-2024/Cain_Susko.png";
+import YvesAlikalfic from "../public/assets/Members/2023-2024/Yves_Alikalfic.png";
 
-interface IClubMember {
-    image: string;
-    name: string;
-    position: Positions;
-    subPosition: string;
-    linkedIn: string;
-}
-*/
+const Positions = [
+    "Co-Chair",
+    "Senior Developer",
+    "Developer",
+    "Advisor",
+    "ProductManager",
+    "ProductMarketingManager",
+    "UIUX",
+    "SeniorBA",
+    "BA",
+    "Operations",
+    "FroshRep",
+    "WebDev",
+];
 
 const generateMemberData = (image, name, position, linkedin = "", subPosition = "") => {
+    if (!Positions.includes(position)) {
+        throw new Error(`'${position}' is not a valid position`);
+    }
+
     return {
         image: image,
         name: name,
@@ -42,10 +43,15 @@ const generateMemberData = (image, name, position, linkedin = "", subPosition = 
 const ClubMembers = [
     // Co-chairs
     generateMemberData(MatthewMacEachern, "Matthew MacEachern", "Co-Chair"),
-    //generateMemberData("Alison Xia", Positions.CoChair),
-    //generateMemberData("Egor Petrov", Positions.CoChair),
+    generateMemberData(AlisonXia, "Alison Xia", "Co-Chair"),
+    generateMemberData(EgorPetrov, "Egor Petrov", "Co-Chair"),
 
     // Sr. devs
+    generateMemberData(JadeWei, "Jade Wei", "Senior Developer"),
+    generateMemberData(ReidMoffat, "Reid Moffat", "Senior Developer"),
+    generateMemberData(CainSusko, "Cain Susko", "Senior Developer"),
+    generateMemberData(YvesAlikalfic, "Yves Alikalfic", "Senior Developer"),
+
     /*
     {
         image: getImage("Truman_Be"),
@@ -404,4 +410,4 @@ const ClubMembers = [
     */
 ]
 
-export default ClubMembers;
+export { Positions, ClubMembers };

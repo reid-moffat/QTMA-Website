@@ -2,66 +2,11 @@ import Layout from "../../components/layout";
 import Image from "next/image";
 import FamilyPhoto from "../../public/assets/Members/2021-2022/FamilyPhoto.png";
 import Nav from "../Nav";
-import ClubMembers from "../../data/TeamData.js";
+import { Positions, ClubMembers } from "../../data/TeamData.js";
 import { AiFillLinkedin } from "react-icons/ai";
 import Head from "next/head";
 
 const Team = () => {
-    /*
-    const MemberCategories = [
-        {
-            name: "Co-Chairs",
-            position: Positions.CoChair,
-        },
-        {
-            name: "Product Managers",
-            position: Positions.ProductManager,
-        },
-        {
-            name: "Senior Developers",
-            position: Positions.SeniorDeveloper,
-        },
-        {
-            name: "Developers",
-            position: Positions.Developer,
-        },
-        {
-            name: "Advisors",
-            position: Positions.Advisor,
-        },
-        {
-            name: "Product Marketing Managers",
-            position: Positions.ProductMarketingManager,
-        },
-        {
-            name: "UI/UX Designers",
-            position: Positions.UIUX,
-        },
-        {
-            name: "Senior Business Analysts",
-            position: Positions.SeniorBA,
-        },
-        {
-            name: "Business Analysts",
-            position: Positions.BA,
-        },
-        {
-            name: "Directors of Operations",
-            position: Positions.Operations,
-        },
-        {
-            name: "Frosh Representatives",
-            position: Positions.FroshRep,
-        },
-        {
-            name: "Web Developers",
-            position: Positions.WebDev,
-        },
-    ];
-     */
-    const MemberCategories = [
-        "Co-Chair",
-    ];
 
     const renderClubMembers = () => {
         const renderSpecialRole = (student) => {
@@ -70,9 +15,9 @@ const Team = () => {
             }
         };
 
-        return MemberCategories.map(category => (
+        return Positions.map(category => (
             <>
-                <p className="position-name">{category + "s"}</p>
+                <p className="position-name">{category + (category.endsWith("s") ? "" : "s")}</p>
                 <div className="student-photos">
                     { ClubMembers
                         .filter((student) => student.position === category)
