@@ -52,123 +52,28 @@ const ClubMembers = [
     generateMemberData(CainSusko, "Cain Susko", "Senior Developer"),
     generateMemberData(YvesAlikalfic, "Yves Alikalfic", "Senior Developer"),
 
-    /*
-    {
-        image: getImage("Truman_Be"),
-        name: "Truman Be",
-        position: Positions.SeniorDeveloper,
-        subPosition: "",
-        linkedIn: "https://www.linkedin.com/in/truman-be/"
-    },
-    {
-        image: getImage("Ben_Minor"),
-        name: "Ben Minor",
-        position: Positions.SeniorDeveloper,
-        subPosition: "",
-        linkedIn: "https://www.linkedin.com/in/ben-minor/"
-    },
-    {
-        image: getImage("Kevin_Quijalvo"),
-        name: "Kevin Quijalvo",
-        position: Positions.SeniorDeveloper,
-        subPosition: "",
-        linkedIn: "https://www.linkedin.com/in/marc-quijalvo/"
-    },
-    {
-        image: getImage("Emily_Zhao"),
-        name: "Emily Zhao",
-        position: Positions.SeniorDeveloper,
-        subPosition: "",
-        linkedIn: "https://www.linkedin.com/in/emily-zhaoo/"
-    },
-
     // Devs
-    {
-        image: getImage("Ronan_Almeida"),
-        name: "Ronan Almeida",
-        position: Positions.Developer,
-        subPosition: "",
-        linkedIn: "https://www.linkedin.com/in/ronanalmeida/"
-    },
-    {
-        image: getImage("Connor_Colwill"),
-        name: "Connor Colwill",
-        position: Positions.Developer,
-        subPosition: "",
-        linkedIn: "https://www.linkedin.com/in/connorcolwill/"
-    },
-    {
-        image: getImage("Isabella_Enriquez"),
-        name: "Isabella Enriquez",
-        position: Positions.Developer,
-        subPosition: "",
-        linkedIn: "https://www.linkedin.com/in/isabellaenriquez/"
-    },
-    {
-        image: getImage("Lexi_Locca"),
-        name: "Lexi Locca",
-        position: Positions.Developer,
-        subPosition: "",
-        linkedIn: "https://www.linkedin.com/company/queen's-technology-and-media-association/mycompany/"
-    },
-    {
-        image: getImage("Jessica_Li"),
-        name: "Jessica Li",
-        position: Positions.Developer,
-        subPosition: "",
-        linkedIn: "https://www.linkedin.com/in/jessica-a-li/"
-    },
-    {
-        image: getImage("Kevin_Liang"),
-        name: "Kevin Liang",
-        position: Positions.Developer,
-        subPosition: "",
-        linkedIn: "https://www.linkedin.com/in/kevin-liang-32b9791aa/"
-    },
-    {
-        image: getImage("Matthew_MacEachern"),
-        name: "Matthew MacEachern",
-        position: Positions.Developer,
-        subPosition: "",
-        linkedIn: "https://www.linkedin.com/in/matthew-maceachern/"
-    },
-    {
-        image: getImage("Lia_Mason"),
-        name: "Lia Mason",
-        position: Positions.Developer,
-        subPosition: "",
-        linkedIn: "https://www.linkedin.com/in/lia-k-mason/"
-    },
-    {
-        image: getImage("Reid"),
-        name: "Reid Moffat",
-        position: Positions.Developer,
-        subPosition: "",
-        linkedIn: "https://www.linkedin.com/in/reid-moffat/"
-    },
-    {
-        image: getImage("Khoa_Nguyen"),
-        name: "Khoa Nguyen",
-        position: Positions.Developer,
-        subPosition: "",
-        linkedIn: "https://www.linkedin.com/in/khoa-nguyen-438a5417a/"
-    },
-    {
-        image: getImage("Grady_Palfrey"),
-        name: "Grady Palfrey",
-        position: Positions.Developer,
-        subPosition: "",
-        linkedIn: "https://www.linkedin.com/in/gradypalfrey/"
-    },
-    {
-        image: getImage("Kevin_Subagaren"),
-        name: "Kevin Subagaran",
-        position: Positions.Developer,
-        subPosition: "",
-        linkedIn: "https://www.linkedin.com/in/kevin-s-a76b741b0/"
-    },
+    /*
+    generateMemberData(JulianBrickman, "Julian Brickman", "Developer"),
+    generateMemberData(SophieEllwood, "Sophie Ellwood", "Developer"),
+    generateMemberData(MichaelHan, "Michael Han", "Developer"),
 
+    generateMemberData(ConnorRewa, "Connor Rewa", "Developer"),
+    generateMemberData(DharsanRavindran, "Dharsan Ravindran", "Developer"),
+    generateMemberData(XimingYu, "Ximing Yu", "Developer"),
 
+    generateMemberData(SavannahHan, "Savannah Han", "Developer"),
+    generateMemberData(ConnorLeung, "Connor Leung", "Developer"),
+    generateMemberData(DanielJoseph, "Daniel Joseph", "Developer"),
+    generateMemberData(ShakibAbsar, "Shakib Absar", "Developer"),
+
+    generateMemberData(AlBarAjiboye, "Al-Bar Ajiboye", "Developer"),
+    generateMemberData(MattDobaj, "Matt Dobaj", "Developer"),
+    generateMemberData(KeelyMcSpurren, "Keely McSpurren", "Developer"),
+    */
+
+    // Sr. BAs
+    /*
     {
         image: getImage("Mark_Gragtmans"),
         name: "Mark Gragtmans",
