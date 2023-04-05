@@ -2,11 +2,12 @@ import Layout from "../../components/layout";
 import Image from "next/image";
 import FamilyPhoto from "../../public/assets/Members/2021-2022/FamilyPhoto.png";
 import Nav from "../Nav";
-import { Positions, ClubMembers } from "../../data/TeamData.ts";
+import ClubMembers from "../../data/TeamData.js";
 import { AiFillLinkedin } from "react-icons/ai";
 import Head from "next/head";
 
 const Team = () => {
+    /*
     const MemberCategories = [
         {
             name: "Co-Chairs",
@@ -57,20 +58,24 @@ const Team = () => {
             position: Positions.WebDev,
         },
     ];
+     */
+    const MemberCategories = [
+        "Co-Chair",
+    ];
 
     const renderClubMembers = () => {
         const renderSpecialRole = (student) => {
-            if (student.specialRole) {
-                return <p className="special-role">{ student.specialRole }</p>;
+            if (student.subPosition) {
+                return <p className="special-role">{ student.subPosition }</p>;
             }
         };
 
         return MemberCategories.map(category => (
             <>
-                <p className="position-name">{category.name}</p>
+                <p className="position-name">{category + "s"}</p>
                 <div className="student-photos">
                     { ClubMembers
-                        .filter((student) => student.position === category.position)
+                        .filter((student) => student.position === category)
                         .map((student, i) => (
                             <div key={ i } className="student-container">
                                 <Image
