@@ -24,14 +24,14 @@ import ReidMoffat from "../public/assets/Members/2023-2024/Reid_Moffat.png";
 import CainSusko from "../public/assets/Members/2023-2024/Cain_Susko.png";
 import YvesAlikalfic from "../public/assets/Members/2023-2024/Yves_Alikalfic.png";
 
-//import JulianBrickman from "../public/assets/Members/2023-2024/Julian_Brickman.png";
-//import SophieEllwood from "../public/assets/Members/2023-2024/Sophie_Ellwood.png";
+import JulianBrickman from "../public/assets/Members/2023-2024/Julian_Brickman.png";
+import SophieEllwood from "../public/assets/Members/2023-2024/Sophie_Ellwood.png";
 import MichaelHan from "../public/assets/Members/2023-2024/Michael_Han.png";
-//import ConnorRewa from "../public/assets/Members/2023-2024/Connor_Rewa.png";
-//import DharsanRavindran from "../public/assets/Members/2023-2024/Dharsan_Ravindran.png";
-//import XimingYu from "../public/assets/Members/2023-2024/Ximing_Yu.png";
+import ConnorRewa from "../public/assets/Members/2023-2024/Connor_Rewa.png";
+import DharsanRavindran from "../public/assets/Members/2023-2024/Dharsan_Ravindran.png";
+import XimingYu from "../public/assets/Members/2023-2024/Ximing_Yu.png";
 import SavannahHan from "../public/assets/Members/2023-2024/Savannah_Han.png";
-//import ConnorLeung from "../public/assets/Members/2023-2024/Connor_Leung.png";
+import ConnorLeung from "../public/assets/Members/2023-2024/Connor_Leung.png";
 import DanielJoseph from "../public/assets/Members/2023-2024/Daniel_Joseph.png";
 import ShakibAbsar from "../public/assets/Members/2023-2024/Shakib_Absar.png";
 import AlBarrAjiboye from "../public/assets/Members/2023-2024/Al-Barr_Ajiboye.png";
@@ -42,21 +42,21 @@ import ShabichaSureshkumar from "../public/assets/Members/2023-2024/Shabicha_Sur
 import AmandaLi from "../public/assets/Members/2023-2024/Amanda_Li.png";
 import ErinZhang from "../public/assets/Members/2023-2024/Erin_Zhang.png";
 import MikeNguyen from "../public/assets/Members/2023-2024/Mike_Nguyen.png";
-//import JasmineGao from "../public/assets/Members/2023-2024/Jasmine_Gao.png";
+import JasmineGao from "../public/assets/Members/2023-2024/Jasmine_Gao.png";
 
-//import AidanBrown from "../public/assets/Members/2023-2024/Aidan_Brown.png";
+import AidanBrown from "../public/assets/Members/2023-2024/Aidan_Brown.png";
 import BeatriceBeneciaSetiawan from "../public/assets/Members/2023-2024/Beatrice_Benecia_Setiawan.png";
 import StevenVuong from "../public/assets/Members/2023-2024/Steven_Vuong.png";
-//import NickArchambault from "../public/assets/Members/2023-2024/Nick_Archambault.png";
+import NickArchambault from "../public/assets/Members/2023-2024/Nick_Archambault.png";
 
-//import VasiliPiliouras from "../public/assets/Members/2023-2024/Vasili_Piliouras.png";
+import VasiliPiliouras from "../public/assets/Members/2023-2024/Vasili_Piliouras.png";
 import JennieChoi from "../public/assets/Members/2023-2024/Jennie_Choi.png";
 import HannahHe from "../public/assets/Members/2023-2024/Hannah_He.png";
 import WilliamDu from "../public/assets/Members/2023-2024/William_Du.png";
 import AminahRizvan from "../public/assets/Members/2023-2024/Aminah_Rizvan.png";
 import MarcusHui from "../public/assets/Members/2023-2024/Marcus_Hui.png";
 import CynthiaChoi from "../public/assets/Members/2023-2024/Cynthia_Choi.png";
-//import CalireHu from "../public/assets/Members/2023-2024/Calire_Hu.png";
+import ClaireHu from "../public/assets/Members/2023-2024/Claire_Hu.png";
 import EmanuelPiccinini from "../public/assets/Members/2023-2024/Emanuel_Piccinini.png";
 
 const Positions = [
@@ -114,16 +114,16 @@ const ClubMembers = [
     generateMemberData(YvesAlikalfic, "Yves Alikalfic", "Senior Developer"),
 
     // Devs
-    //generateMemberData(JulianBrickman, "Julian Brickman", "Developer"),
-    //generateMemberData(SophieEllwood, "Sophie Ellwood", "Developer"),
+    generateMemberData(JulianBrickman, "Julian Brickman", "Developer"),
+    generateMemberData(SophieEllwood, "Sophie Ellwood", "Developer"),
     generateMemberData(MichaelHan, "Michael Han", "Developer"),
 
-    //generateMemberData(ConnorRewa, "Connor Rewa", "Developer"),
-    //generateMemberData(DharsanRavindran, "Dharsan Ravindran", "Developer"),
-    //generateMemberData(XimingYu, "Ximing Yu", "Developer"),
+    generateMemberData(ConnorRewa, "Connor Rewa", "Developer"),
+    generateMemberData(DharsanRavindran, "Dharsan Ravindran", "Developer"),
+    generateMemberData(XimingYu, "Ximing Yu", "Developer"),
 
     generateMemberData(SavannahHan, "Savannah Han", "Developer"),
-    //generateMemberData(ConnorLeung, "Connor Leung", "Developer"),
+    generateMemberData(ConnorLeung, "Connor Leung", "Developer"),
     generateMemberData(DanielJoseph, "Daniel Joseph", "Developer"),
     generateMemberData(ShakibAbsar, "Shakib Absar", "Developer"),
 
@@ -136,23 +136,23 @@ const ClubMembers = [
     generateMemberData(AmandaLi, "Amanda Li", "UI/UX Designer", "", "Junior Designer"),
     generateMemberData(ErinZhang, "Erin Zhang", "UI/UX Designer", "", "Senior Designer"),
     generateMemberData(MikeNguyen, "Mike Nguyen", "UI/UX Designer", "", "Senior Designer"),
-    //generateMemberData(JasmineGao, "Jasmine Gao", "UI/UX Designer", "", "Senior Designer"),
+    generateMemberData(JasmineGao, "Jasmine Gao", "UI/UX Designer", "", "Senior Designer"),
 
     // Sr. BAs
-    //generateMemberData(AidanBrown, "Aidan Brown", "Senior Business Analyst"),
+    generateMemberData(AidanBrown, "Aidan Brown", "Senior Business Analyst"),
     generateMemberData(BeatriceBeneciaSetiawan, "Beatrice Benecia Setiawan", "Senior Business Analyst"),
     generateMemberData(StevenVuong, "Steven Vuong", "Senior Business Analyst"),
-    //generateMemberData(NickArchambault, "Nick Archambault", "Senior Business Analyst"),
+    generateMemberData(NickArchambault, "Nick Archambault", "Senior Business Analyst"),
 
     // BAs
-    //generateMemberData(VasiliPiliouras, "Vasili Piliouras", "Business Analyst"),
+    generateMemberData(VasiliPiliouras, "Vasili Piliouras", "Business Analyst"),
     generateMemberData(JennieChoi, "Jennie Choi", "Business Analyst"),
     generateMemberData(HannahHe, "Hannah He", "Business Analyst"),
     generateMemberData(WilliamDu, "William Du", "Business Analyst"),
     generateMemberData(AminahRizvan, "Aminah Rizvan", "Business Analyst"),
     generateMemberData(MarcusHui, "Marcus Hui", "Business Analyst"),
     generateMemberData(CynthiaChoi, "Cynthia Choi", "Business Analyst"),
-    //generateMemberData(CalireHu, "Calire Hu", "Business Analyst"),
+    generateMemberData(ClaireHu, "Calire Hu", "Business Analyst"),
     generateMemberData(EmanuelPiccinini, "Emanuel Piccinini", "Business Analyst"),
 
     // Web devs 🙂
