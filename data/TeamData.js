@@ -152,7 +152,7 @@ const ClubMembers = [
     generateMemberData(AminahRizvan, "Aminah Rizvan", "Business Analyst"),
     generateMemberData(MarcusHui, "Marcus Hui", "Business Analyst"),
     generateMemberData(CynthiaChoi, "Cynthia Choi", "Business Analyst"),
-    generateMemberData(ClaireHu, "Calire Hu", "Business Analyst"),
+    generateMemberData(ClaireHu, "Claire Hu", "Business Analyst"),
     generateMemberData(EmanuelPiccinini, "Emanuel Piccinini", "Business Analyst"),
 
     // Web devs 🙂
