@@ -1,4 +1,4 @@
-import Layout from "../../components/layout";
+import Layout from "../components/layout";
 import Image from "next/image";
 import Email from "../../public/assets/Visuals/Email.png";
 import Nav from "../Nav";

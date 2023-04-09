@@ -1,4 +1,4 @@
-import Layout from "../../components/layout";
+import Layout from "../components/layout";
 import Image from "next/image";
 //import FamilyPhoto from "../../public/assets/Members/2021-2022/FamilyPhoto.png";
 import Nav from "../Nav";

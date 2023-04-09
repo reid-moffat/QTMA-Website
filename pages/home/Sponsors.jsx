@@ -1,4 +1,4 @@
-import Layout from "../../components/layout";
+import Layout from "../components/layout";
 import Image from "next/image";
 
 const getSponsorImg = (name) => `/assets/Data/Homepage/Sponsors/${name}.png`;

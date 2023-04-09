@@ -1,4 +1,4 @@
-import Layout from "../../components/layout";
+import Layout from "../components/layout";
 import Image from "next/image";
 import Zack from "../../public/assets/Data/Homepage/Zack.png";
 import Jamyang from "../../public/assets/Data/Homepage/Jamyang.png";

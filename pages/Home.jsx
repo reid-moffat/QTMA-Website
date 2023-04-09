@@ -1,7 +1,7 @@
 import Image from "next/image";
 import qtmaLogo from "../public/assets/Data/QTMA_logo.png";
 import startup from "../public/assets/Visuals/Startup_SVG.png";
-import Layout from "../components/layout";
+import Layout from "./components/layout";
 import { Link as SLink } from "react-scroll";
 import React, { useEffect, useState } from "react";
 

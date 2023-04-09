@@ -1,4 +1,4 @@
-import Layout from "../../components/layout";
+import Layout from "../components/layout";
 import Image from "next/image";
 import TeamStructureLg from "../../public/assets/Data/Homepage/TeamStructureLg.png";
 import TeamStructureSm1 from "../../public/assets/Data/Homepage/TeamStructureSm1.png";

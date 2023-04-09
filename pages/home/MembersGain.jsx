@@ -1,4 +1,4 @@
-import Layout from "../../components/layout";
+import Layout from "../components/layout";
 import Image from "next/image";
 import Box from "../../public/assets/Visuals/Box.png";
 import FlashLight from "../../public/assets/Visuals/Flashlight.png";

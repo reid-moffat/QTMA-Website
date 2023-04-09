@@ -5,7 +5,7 @@ import { BsInstagram } from "react-icons/bs";
 
 export default function footer() {
     return (
-        <Layout background="#222831">
+        <Layout background="components#222831">
             <div className="footer-container container">
                 <div className="socials-container">
                     <a className="social-icon" href="https://www.facebook.com/QTMANews/" target="_blank"

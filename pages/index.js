@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Layout from '../components/layout';
+import Layout from './components/layout';
 import Home from "./Home";
 import Nav from "./Nav";
 import Product from './products';
@@ -9,7 +9,7 @@ import MembersGain from "./home/MembersGain";
 import ProgramTimeline from './home/ProgramTimeline';
 import Testimonials from './home/Testimonials';
 import Sponsors from "./home/Sponsors";
-import Footer from "../components/footer";
+import Footer from "./home/footer";
 
 export async function getStaticProps({ params }) {
     return {
