@@ -53,11 +53,6 @@ const Team = () => {
             <Layout background={ "#edf5fc" }>
                 <div className="history-container container">
                     <h1 className="section-title">2023/2024 Team</h1>
-                    {/*<div className="family-photo-container">*/}
-                    {/*    <div className="family-border">*/}
-                    {/*        <Image alt="Team Photo" src={ FamilyPhoto } className="family-photo"/>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
                     {renderClubMembers()}
                 </div>
             </Layout>
