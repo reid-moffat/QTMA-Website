@@ -22,7 +22,7 @@ export default function footer() {
                         <BsInstagram/>
                     </a>
                 </div>
-                <p className="copyright">QTMA © 2021</p>
+                <p className="copyright">QTMA © 2023</p>
             </div>
         </Layout>
     );
