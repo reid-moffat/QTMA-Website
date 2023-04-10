@@ -5,55 +5,11 @@
 const getTeamPhoto = (name, year) => `/assets/Products/${year}/${name}_Team.png`;
 const getPitch = (name, year) => `/assets/Products/${year}/Pitches/${name}_Pitch.pdf`;
 
-/*
-interface IProductData {
-    productName: string;
-    slogan: string;
-    studentInfo: {
-        studentName: string;
-        linkedin: string;
-    }[];
-    teamPhoto: string;
-    photoXY: object;
-    productOverview: string;
-    productPitch: string;
-    productDemo: string;
-}
-*/
-
 const ProductData = [
-    {
-        productName: "Eagle",
-        slogan: "Your Delivery Service Companion",
-        studentInfo: [],
-        teamPhoto: "",
-        photoXY: {},
-        productOverview: "",
-        productPitch: getPitch("Eagle", "2020-2021"),
-        productDemo: ""
-    },
-    {
-        productName: "Pronto",
-        slogan: "Convenient lending for everyone",
-        studentInfo: [],
-        teamPhoto: "",
-        photoXY: {},
-        productOverview: "",
-        productPitch: getPitch("Pronto", "2020-2021"),
-        productDemo: ""
-    },
-    {
-        productName: "Voluntera",
-        slogan: "The one-stop shop for social impact",
-        studentInfo: [],
-        teamPhoto: "",
-        photoXY: {},
-        productOverview: "",
-        productPitch: getPitch("Voluntera", "2020-2021"),
-        productDemo: ""
-    },
+    // 2019-2020
     {
         productName: "Hungover",
+        year: "2019-2020",
         slogan: "Taking your pregame to the next level",
         studentInfo: [
             {
@@ -100,6 +56,7 @@ const ProductData = [
     },
     {
         productName: "Studii",
+        year: "2019-2020",
         slogan: "Academic collaboration at your fingertips",
         studentInfo: [
             {
@@ -146,6 +103,7 @@ const ProductData = [
     },
     {
         productName: "Wob",
+        year: "2019-2020",
         slogan: "Get the latest word on the street",
         studentInfo: [
             {
@@ -192,6 +150,7 @@ const ProductData = [
     },
     {
         productName: "Stocked",
+        year: "2019-2020",
         slogan: "The best a fridge can get.",
         studentInfo: [
             {
@@ -236,6 +195,45 @@ const ProductData = [
         productPitch: getPitch("Stocked", "2020-2021"),
         productDemo: "https://www.youtube.com/embed/JghgqwDF0NU",
     },
+
+    // 2020-2021
+    {
+        productName: "Eagle",
+        year: "2020-2021",
+        slogan: "Your Delivery Service Companion",
+        studentInfo: [],
+        teamPhoto: "",
+        photoXY: {},
+        productOverview: "",
+        productPitch: getPitch("Eagle", "2020-2021"),
+        productDemo: ""
+    },
+    {
+        productName: "Pronto",
+        year: "2020-2021",
+        slogan: "Convenient lending for everyone",
+        studentInfo: [],
+        teamPhoto: "",
+        photoXY: {},
+        productOverview: "",
+        productPitch: getPitch("Pronto", "2020-2021"),
+        productDemo: ""
+    },
+    {
+        productName: "Voluntera",
+        year: "2020-2021",
+        slogan: "The one-stop shop for social impact",
+        studentInfo: [],
+        teamPhoto: "",
+        photoXY: {},
+        productOverview: "",
+        productPitch: getPitch("Voluntera", "2020-2021"),
+        productDemo: ""
+    },
+
+    // 2021-2022
+
+    // 2022-2023
 ]
 
 export default ProductData;
