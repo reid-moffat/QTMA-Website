@@ -1,4 +1,4 @@
-import Layout from "../components/layout";
+import Layout from "./layout";
 import { FaFacebookF } from "react-icons/fa";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsInstagram } from "react-icons/bs";
