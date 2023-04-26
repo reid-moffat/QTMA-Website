@@ -1,4 +1,4 @@
-import Layout from "../components/layout";
+import Layout from "../../components/layout";
 import { HiOutlineDocumentDownload } from "react-icons/hi";
 import Nav from "../Nav";
 import Head from "next/head";

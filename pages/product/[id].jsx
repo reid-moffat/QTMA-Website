@@ -1,4 +1,4 @@
-import Layout from "../components/layout";
+import Layout from "../../components/layout";
 import Nav from "../Nav";
 import React, { useEffect, useState } from "react";
 import productData from "../../data/ProductsData";

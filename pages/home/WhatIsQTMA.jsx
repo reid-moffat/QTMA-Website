@@ -1,4 +1,4 @@
-import Layout from "../components/layout";
+import Layout from "../../components/layout";
 import Image from "next/image";
 import Business from "../../public/assets/Visuals/Business.png";
 import ComSci from "../../public/assets/Visuals/Computer_Scientist.png";

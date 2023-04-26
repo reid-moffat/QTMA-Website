@@ -1,4 +1,4 @@
-import Layout from "../components/layout";
+import Layout from "../../components/layout";
 import Image from "next/image";
 
 import ComSoc from "../../public/assets/Club Data/Homepage/Sponsors/ComSoc.png";

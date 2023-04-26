@@ -1,6 +1,6 @@
 import qtmaLogo from "../public/assets/Club Data/QTMA_logo.png";
 import Image from "next/image";
-import Layout from "./components/layout";
+import Layout from "../components/layout";
 import Link from "next/link";
 import { AiOutlineMenu } from "react-icons/ai";
 import React, { useEffect, useState } from "react";
