@@ -1,11 +1,11 @@
 import Layout from "../components/layout";
 import Image from "next/image";
 
-import ComSoc from "../../public/assets/Data/Homepage/Sponsors/ComSoc.png";
-import McKinsey from "../../public/assets/Data/Homepage/Sponsors/McKinsey.png";
-import QueensArtsci from "../../public/assets/Data/Homepage/Sponsors/Queens_Artsci.png";
-import QueensComputing from "../../public/assets/Data/Homepage/Sponsors/Queens_Computing.png";
-import TrendMicro from "../../public/assets/Data/Homepage/Sponsors/Trend_Micro.png";
+import ComSoc from "../../public/assets/Club Data/Homepage/Sponsors/ComSoc.png";
+import McKinsey from "../../public/assets/Club Data/Homepage/Sponsors/McKinsey.png";
+import QueensArtsci from "../../public/assets/Club Data/Homepage/Sponsors/Queens_Artsci.png";
+import QueensComputing from "../../public/assets/Club Data/Homepage/Sponsors/Queens_Computing.png";
+import TrendMicro from "../../public/assets/Club Data/Homepage/Sponsors/Trend_Micro.png";
 
 export default function Sponsors() {
     return (

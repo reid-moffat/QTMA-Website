@@ -1,8 +1,8 @@
 import Layout from "../components/layout";
 import Image from "next/image";
-import TeamStructureLg from "../../public/assets/Data/Homepage/TeamStructureLg.png";
-import TeamStructureSm1 from "../../public/assets/Data/Homepage/TeamStructureSm1.png";
-import TeamStructureSm2 from "../../public/assets/Data/Homepage/TeamStructureSm2.png";
+import TeamStructureLg from "../../public/assets/Club Data/Homepage/TeamStructureLg.png";
+import TeamStructureSm1 from "../../public/assets/Club Data/Homepage/TeamStructureSm1.png";
+import TeamStructureSm2 from "../../public/assets/Club Data/Homepage/TeamStructureSm2.png";
 
 export default function OurTeamStructure() {
     return (

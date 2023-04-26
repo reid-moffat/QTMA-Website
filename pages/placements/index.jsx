@@ -3,25 +3,25 @@ import Image from "next/image";
 import Nav from "../Nav";
 import Head from "next/head";
 
-import Recruit1 from "../../public/assets/Data/Placements/recruit1.png";
-import Recruit2 from "../../public/assets/Data/Placements/recruit2.png";
-import Recruit3 from "../../public/assets/Data/Placements/recruit3.png";
-import Recruit4 from "../../public/assets/Data/Placements/recruit4.png";
-import Recruit5 from "../../public/assets/Data/Placements/recruit5.png";
-import Recruit6 from "../../public/assets/Data/Placements/recruit6.png";
-import Recruit7 from "../../public/assets/Data/Placements/recruit7.png";
-import Recruit8 from "../../public/assets/Data/Placements/recruit8.png";
-import Recruit9 from "../../public/assets/Data/Placements/recruit9.png";
-import Recruit10 from "../../public/assets/Data/Placements/recruit10.png";
-import Recruit11 from "../../public/assets/Data/Placements/recruit11.png";
-import Recruit12 from "../../public/assets/Data/Placements/recruit12.png";
-import Recruit13 from "../../public/assets/Data/Placements/recruit13.png";
-import Recruit14 from "../../public/assets/Data/Placements/recruit14.png";
-import Recruit15 from "../../public/assets/Data/Placements/recruit15.png";
-import Recruit16 from "../../public/assets/Data/Placements/recruit16.png";
-import Recruit17 from "../../public/assets/Data/Placements/recruit17.png";
-import Recruit18 from "../../public/assets/Data/Placements/recruit18.png";
-import Recruit19 from "../../public/assets/Data/Placements/recruit19.png";
+import Recruit1 from "../../public/assets/Club Data/Placements/recruit1.png";
+import Recruit2 from "../../public/assets/Club Data/Placements/recruit2.png";
+import Recruit3 from "../../public/assets/Club Data/Placements/recruit3.png";
+import Recruit4 from "../../public/assets/Club Data/Placements/recruit4.png";
+import Recruit5 from "../../public/assets/Club Data/Placements/recruit5.png";
+import Recruit6 from "../../public/assets/Club Data/Placements/recruit6.png";
+import Recruit7 from "../../public/assets/Club Data/Placements/recruit7.png";
+import Recruit8 from "../../public/assets/Club Data/Placements/recruit8.png";
+import Recruit9 from "../../public/assets/Club Data/Placements/recruit9.png";
+import Recruit10 from "../../public/assets/Club Data/Placements/recruit10.png";
+import Recruit11 from "../../public/assets/Club Data/Placements/recruit11.png";
+import Recruit12 from "../../public/assets/Club Data/Placements/recruit12.png";
+import Recruit13 from "../../public/assets/Club Data/Placements/recruit13.png";
+import Recruit14 from "../../public/assets/Club Data/Placements/recruit14.png";
+import Recruit15 from "../../public/assets/Club Data/Placements/recruit15.png";
+import Recruit16 from "../../public/assets/Club Data/Placements/recruit16.png";
+import Recruit17 from "../../public/assets/Club Data/Placements/recruit17.png";
+import Recruit18 from "../../public/assets/Club Data/Placements/recruit18.png";
+import Recruit19 from "../../public/assets/Club Data/Placements/recruit19.png";
 
 
 export async function getStaticProps({ params }) {

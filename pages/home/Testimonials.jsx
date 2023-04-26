@@ -1,8 +1,8 @@
 import Layout from "../components/layout";
 import Image from "next/image";
-import Zack from "../../public/assets/Data/Homepage/Zack.png";
-import Jamyang from "../../public/assets/Data/Homepage/Jamyang.png";
-import Justin from "../../public/assets/Data/Homepage/Justin.png";
+import Zack from "../../public/assets/Club Data/Homepage/Zack.png";
+import Jamyang from "../../public/assets/Club Data/Homepage/Jamyang.png";
+import Justin from "../../public/assets/Club Data/Homepage/Justin.png";
 
 export default function Testimonials() {
     return (

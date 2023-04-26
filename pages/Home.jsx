@@ -1,5 +1,5 @@
 import Image from "next/image";
-import qtmaLogo from "../public/assets/Data/QTMA_logo.png";
+import qtmaLogo from "../public/assets/Club Data/QTMA_logo.png";
 import startup from "../public/assets/Visuals/Startup_SVG.png";
 import Layout from "./components/layout";
 import { Link as SLink } from "react-scroll";
