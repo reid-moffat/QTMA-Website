@@ -5,6 +5,15 @@
 const getTeamPhoto = (name, year) => `/assets/Products/${year}/${name}_Team.png`;
 const getPitch = (name, year) => `/assets/Products/${year}/Pitches/${name}_Pitch.pdf`;
 
+// TODO: Make a function like in teamData.js to take in the minimum required info, verify and return a product object
+const generateProductData = () => {
+    return {
+        productName: "",
+        year: "",
+        slogan: "",
+    }
+}
+
 const ProductData = [
     // 2019-2020
     {
