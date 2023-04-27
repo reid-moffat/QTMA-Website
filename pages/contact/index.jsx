@@ -27,14 +27,10 @@ export default function Contact() {
         e.preventDefault();
         setSendingMessage(true);
         setTimeout(async () => {
-            //Request payload data
-            let value1 = email.current.value;
-            let value2 = subject.current.value;
-            let value3 = message.current.value;
             try {
                 if (validator.isEmail(email.current.value)) {
                     const response = await axios.post(
-                        `https://maker.ifttt.com/trigger/New_Email/with/key/bx66spDE0qGrEwyi0z6TpM?value1=${ value1 }&value2=${ value2 }&value3=${ value3 }`,
+                        `https://maker.ifttt.com/trigger/New_Email/with/key/bx66spDE0qGrEwyi0z6TpM?value1=${ email.current.value }&value2=${ subject.current.value }&value3=${ message.current.value }`,
                         // JSON.stringify(contactData),
                         { headers: { "Content-Type": "application/json" } }
                     );
@@ -56,7 +52,7 @@ export default function Contact() {
                 subject.current.value = "";
                 message.current.value = "";
             }
-            setSendingMessage(false); //Renables the button.
+            setSendingMessage(false); // Re-enables the button.
         }, 3000);
     };
 
