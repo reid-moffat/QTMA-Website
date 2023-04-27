@@ -73,10 +73,24 @@ const Positions = [
 ];
 
 const generateMemberData = (image, name, position, linkedin = "", subPosition = "") => {
-    if (!Positions.includes(position)) {
+    // Param verification
+    if (typeof image !== 'object') {
+        throw new Error(`Team member's image must be an image object (import it). Image value: ${JSON.stringify(image)} Type: ${typeof image}`);
+    }
+    if (typeof name !== 'string' || name.match(/^([A-Za-z -])+?$/) == null) {
+        throw new Error(`Name: ${name} is invalid, see regex above`);
+    }
+    if (typeof position !== 'string' || !Positions.includes(position)) {
         throw new Error(`'${position}' is not a valid position`);
     }
+    if (typeof linkedin !== 'string' || (linkedin !== "" && linkedin.match(/^https:\/\/www.linkedin.com\/in\/[a-z1-9-]+\/$/) === null)) {
+        throw new Error(`Linkedin is invalid, must be an empty string (no linkedin) or a valid profile url. Parameter value: ${linkedin}`);
+    }
+    if (typeof subPosition !== 'string') {
+        throw new Error(`Invalid Sub-Position, must be a string (can be empty). Value: ${subPosition}`);
+    }
 
+    // Construct & return new object
     return {
         image: image,
         name: name,
