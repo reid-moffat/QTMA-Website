@@ -15,9 +15,8 @@ export default function MembersGain() {
                         <h3>Product Experience</h3>
                         <Image alt="Illustration" src={ Box } width={ 77.05 } height={ 150 }/>
                         <p className="card-desc">
-                            Teams of eight students build products throughout the year to prepare them for competitive
-                            roles
-                            in the tech industry.
+                            Teams of nine students build products throughout the year to prepare them for competitive
+                            roles in the tech industry.
                         </p>
                     </div>
                     <div className="card">

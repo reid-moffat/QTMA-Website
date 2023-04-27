@@ -7,12 +7,12 @@ export default function ProgramTimeline() {
         {
             title: "Co-Chair Hiring",
             date: "February",
-            description: "Each year QTMA hires 4 Co-Chairs to lead the club. Applications include a written application and interview with the current Co - Chairs."
+            description: "Each year QTMA hires 3 Co-Chairs to lead the club. Applications include a written application and interview with the current Co - Chairs."
         },
         {
             title: "General Hiring",
             date: "March",
-            description: "QTMA hires 12 Developers, 4 Product Manager, 4 Designers, 8 Business Analysts to complete our product teams. We also hire various operating roles. Applications include a written application and interview with the incoming Co - Chairs."
+            description: "QTMA hires 4 Product Manager, 4-8 UI/UX Designers, 4 Senior & 12 Junior Developers as well as 4 Senior & 8 Junior Business Analysts to complete our product teams. We also hire various operating roles. Applications include a written application and interview with the incoming Co - Chairs."
         },
         {
             title: "Team Formation",
@@ -22,32 +22,32 @@ export default function ProgramTimeline() {
         {
             title: "Summer Bootcamp Program & Product Ideation Starts",
             date: "May - August",
-            description: "to their discipline. The Product Lead Co - Chair and the Head of Development Co - Chair meets remotely with each team on a monthly basis to lead them through the product ideation process."
+            description: "Each team brainstorms product ideas, discusses them with the Co - Chairs, then decides on a products and it's main features."
         },
         {
             title: "Product Ideation - Brainstorming Phase",
             date: "May",
-            description: "Each team brainstorms 10+ ideas with the goal of generating as many ideas as possible."
+            description: "Each team brainstorms 10+ product ideas with the goal of generating as many profitable ideas as possible."
         },
         {
             title: "Product Ideation - Initiation Filter Phase",
             date: "June",
-            description: "Head of Development Co - Chair and Product Lead Co - Chair."
+            description: "The Co - Chairs meet with each product team and discuss their product ideas, giving feedback about which one has the most potential."
         },
         {
             title: "Product Ideation - Final Filter Phase",
             date: "July",
-            description: "Each team explores their top three ideas in greater depth and finalizes their product idea with the guidance of the Head of Development Co - Chair and the Product Lead Co - Chair."
+            description: "Each team explores their top three ideas in greater depth and finalizes their product idea with the guidance of the Co - Chairs."
         },
         {
             title: "Product Ideation - Feature Prioritization",
             date: "August",
-            description: "Each product team prioritizes the top three features for their product with the guidance of the Head of Development Co - Chair and Product Lead Co- Chair."
+            description: "Each product team prioritizes the top three features for their product with the guidance of the Co- Chairs."
         },
         {
             title: "Junior Analyst Hiring",
             date: "Early September",
-            description: "Each year we hire 4 junior analysts from the freshman class of commerce, computer science or engineering who each join a product team."
+            description: "Each year we hire 4 junior analysts from the freshman class of commerce, computer science or engineering who each join a product team to fill any role required."
         },
         {
             title: "Product Development & Weekly Workshops Start",
@@ -55,14 +55,19 @@ export default function ProgramTimeline() {
             description: "Students return to campus with a fully scoped product idea and begin designing and developing their product idea. Our ‘all hands’ team meetings begin which feature a Weekly Workshop presented by the Co - Chairs or guest speaker."
         },
         {
-            title: "Mentorship Matches & Product Feedback",
+            title: "Product MVP features & Feedback",
             date: "October",
-            description: "Product team members are paired with a mentor in the technology industry to help them further their learning and widen their network. Additionally, the Product Lead Co-Chair and Head of Development Co-Chair begin respectively meeting with the PMs and Sr.Devs on each team on a biweekly basis to give feedback on the product's development."
+            description: "By October, the product should start to have some of the MVP (Minimum Viable Product) features implemented. The Co-Chairs begin respectively meeting with the PMs and Sr.Devs on each team on a biweekly basis to give feedback on the product's development."
         },
         {
             title: "First External Product Pitch",
             date: "November",
             description: "Each team prepares a pitch and live demo of their product to present to a panel of judges. The judges give the product teams feedback on how they can improve their product before the culminating pitch."
+        },
+        {
+            title: "Improvements & Launch",
+            date: "December - February",
+            description: "Teams augment their business strategy and technical plan to improve their product based on feedback from the first pitch. The product is completed with all required features, tested through a beta release and then launched to the public."
         },
         {
             title: "Final External Product Pitch",
