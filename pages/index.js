@@ -17,6 +17,7 @@ export async function getStaticProps({ params }) {
     };
 }
 
+// Top-level component which renders the homepage
 export default function Main() {
     return (
         <>

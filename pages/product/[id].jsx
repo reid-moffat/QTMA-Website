@@ -5,6 +5,10 @@ import productData from "../../data/ProductsData";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
+//
+// This file is used to dynamically render each product (e.g. <Link passHref href="/product/Eagle>">)
+//
+
 export const getStaticProps = async () => {
     return { props: {} };
 };
@@ -12,15 +16,26 @@ export const getStaticProps = async () => {
 export const getStaticPaths = async () => {
     return {
         paths: [
-            // 2020-2021
-            { params: { id: "Eagle" } },
-            { params: { id: "Pronto" } },
-            { params: { id: "Voluntera" } },
-            { params: { id: "Stocked" } },
             // 2019-2020
             { params: { id: "Studii" } },
             { params: { id: "Hungover" } },
             { params: { id: "Wob" } },
+            { params: { id: "Stocked" } },
+            // 2020-2021
+            { params: { id: "Eagle" } },
+            { params: { id: "Pronto" } },
+            { params: { id: "Voluntera" } },
+            { params: { id: "Loop" } },
+            // 2021-2022
+            { params: { id: "Casa" } },
+            { params: { id: "Haus" } },
+            { params: { id: "Loco" } },
+            { params: { id: "Soar" } },
+            // 2022-2023
+            { params: { id: "Feastly" } },
+            { params: { id: "Kartt" } },
+            { params: { id: "Sift" } },
+            { params: { id: "Venato" } },
         ],
         fallback: false,
     };

@@ -3,10 +3,28 @@ import Image from "next/image";
 import Nav from "../Nav";
 import Link from "next/link";
 import Head from "next/head";
+import productData from "../../data/ProductsData";
 
 const getLogo = (name, year) => `/assets/Products/${year}/${name}_Logo.png`;
 
 export default function Products() {
+    const productContainer = (name, logoWidth, logoHeight) => {
+        const link = `/product/${name}`;
+        const data = productData.find(product => product.productName === name);
+
+        return (
+            <Link passHref href={ link }>
+                <div className="product2">
+                    <div className="product-info2">
+                        <h3>{ name }</h3>
+                        <p>{ data["slogan"] }</p>
+                    </div>
+                    <Image alt="Product Logo" src={ getLogo(name, data["year"]) } width={ logoWidth } height={ logoHeight }/>
+                </div>
+            </Link>
+        )
+    }
+
     return (
         <>
             <Head>
@@ -32,6 +50,15 @@ export default function Products() {
                         problems.
                     </p>
                     <div className="products-container2">
+
+                        { productContainer("Eagle", 200, 122) }
+                        { productContainer("Pronto", 120, 116) }
+                        { productContainer("Voluntera", 250, 60) }
+                        { productContainer("Stocked", 252.59, 60) }
+                        { productContainer("Hungover", 120, 133.13) }
+                        { productContainer("Wob", 151.4, 90) }
+                        { productContainer("Studii", 176.21, 59) }
+
                         <Link passHref href="/product/Eagle">
                             <div className="product2">
                                 <div className="product-info2">
@@ -41,6 +68,7 @@ export default function Products() {
                                 <Image alt="Product Logo" src={ getLogo("Eagle", "2020-2021") } width={ 200 } height={ 122 }/>
                             </div>
                         </Link>
+
                         <Link passHref href="/product/Pronto">
                             <div className="product2">
                                 <div className="product-info2">
@@ -50,6 +78,7 @@ export default function Products() {
                                 <Image alt="Product Logo" src={ getLogo("Pronto", "2020-2021") } width={ 120 } height={ 116 }/>
                             </div>
                         </Link>
+
                         <Link passHref href="/product/Voluntera">
                             <div className="product2">
                                 <div className="product-info2">
@@ -59,6 +88,7 @@ export default function Products() {
                                 <Image alt="Product Logo" src={ getLogo("Voluntera", "2020-2021") } width={ 250 } height={ 60 }/>
                             </div>
                         </Link>
+
                         <Link passHref href="/product/Stocked">
                             <div className="product2">
                                 <div className="product-info2">
@@ -68,6 +98,7 @@ export default function Products() {
                                 <Image alt="Product Logo" src={ getLogo("Stocked", "2020-2021") } width={ 252.59 } height={ 62 }/>
                             </div>
                         </Link>
+
                         <Link passHref href="/product/Hungover">
                             <div className="product2">
                                 <div className="product-info2">
@@ -77,6 +108,7 @@ export default function Products() {
                                 <Image alt="Product Logo" src={ getLogo("Hungover", "2019-2020") } width={ 120 } height={ 133.13 }/>
                             </div>
                         </Link>
+
                         <Link passHref href="/product/Wob">
                             <div className="product2">
                                 <div className="product-info2">
@@ -86,6 +118,7 @@ export default function Products() {
                                 <Image alt="Product Logo" src={ getLogo("Wob", "2019-2020") } width={ 151.4 } height={ 90 }/>
                             </div>
                         </Link>
+
                         <Link passHref href="/product/Studii">
                             <div className="product2">
                                 <div className="product-info2">
