@@ -153,7 +153,7 @@ const ProductData = [
             width: 2000,
             height: 1333
         },
-        productOverview: "A geo-based, anti-harassment conscious anonymosus messaging and content platform meant to strengthen relationships in local communities.",
+        productOverview: "A geo-based, anti-harassment conscious anonymous messaging and content platform meant to strengthen relationships in local communities.",
         productPitch: getPitch("Wob", "2019-2020"),
         productDemo: "https://www.youtube.com/embed/6dHJOGqdT8M",
     },
