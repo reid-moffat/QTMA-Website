@@ -18,20 +18,24 @@ const generateProductData = (name, year, slogan, students, photoxy, overview, de
 	}
 
 	const studentData = [];
-	if (!Array.isArray(students) || students.length === 0) {
-		throw new Error(`Students ${ students } is invalid, must be an array`);
+	if (!Array.isArray(students) || !students || students.length === 0) {
+		throw new Error(`Students ${ students } is invalid, must be a non-empty array`);
 	}
 	for (let i = 0; i < students.length; ++i) {
-		const memberData = ClubMembers.find((member) => member.name === students[i]);
-		if (!memberData) {
-			throw new Error(`Student ${ students[i] } could not be found in the team data file`);
+		const student = students[i];
+		if (!Array.isArray(student) || student.length !== 2) {
+			throw new Error(`Student ${ student } is invalid, must be an array with a student name and their linkedin id`);
+		}
+		if (typeof student[0] !== "string" || !student[0] || typeof student[1] !== "string" || !student[1]) {
+			throw new Error(`Student ${ student } need a valid name & linkedin id (# if they don't have one)`);
 		}
 
 		studentData.push({
-			studentName: memberData.name,
-			linkedin: `https://www.linkedin.com/in/${ memberData.linkedin }`
+			studentName: student[0],
+			linkedin: student[1] === '#' ? '#' : `https://www.linkedin.com/in/${ student[1] }/`
 		});
 	}
+	console.log(students, null, 4);
 
 	if (typeof photoxy != "object" || photoxy === null || typeof photoxy.width != "number" || typeof photoxy.height != "number") {
 		throw new Error(`Photoxy ${ photoxy } is invalid, must be an object with width and height`);
@@ -58,53 +62,23 @@ const generateProductData = (name, year, slogan, students, photoxy, overview, de
 
 const ProductData = [
 	// 2019-2020
-	{
-		productName: "Hungover",
-		year: "2019-2020",
-		slogan: "Taking your pregame to the next level",
-		studentInfo: [
-			{
-				studentName: "Diane Huang",
-				linkedin: "https://www.linkedin.com/in/dianehuang11/"
-			},
-			{
-				studentName: "Ben Kitor",
-				linkedin: "https://www.linkedin.com/in/bkitor/"
-			},
-			{
-				studentName: "Tim Lampen",
-				linkedin: "https://www.linkedin.com/in/timlampen/"
-			},
-			{
-				studentName: "Sam Mcphail",
-				linkedin: "https://www.linkedin.com/in/sam-mcphail/"
-			},
-			{
-				studentName: "Sierra Cache angus",
-				linkedin: "https://www.linkedin.com/in/sierra-cache/"
-			},
-			{
-				studentName: "Victor Gao",
-				linkedin: "https://www.linkedin.com/in/victor-gao/"
-			},
-			{
-				studentName: "Tina Huang",
-				linkedin: "https://www.linkedin.com/in/tina-c-huang/"
-			},
-			{
-				studentName: "Ethan Blumberg",
-				linkedin: "#"
-			},
+	generateProductData("Hungover", "2019-2020", "Taking your pregame to the next level", [
+			["Diane Huang", "dianehuang11"],
+			["Ben Kitor", 'bkitor'],
+			["Tim Lampen", 'timlampen'],
+			["Sam Mcphail", 'sam-mcphail'],
+			["Sierra Cache angus", 'sierra-cache'],
+			["Victor Gao", 'victor-gao'],
+			["Tina Huang", 'tina-c-huang'],
+			["Ethan Blumberg", '#'],
 		],
-		teamPhoto: getTeamPhoto("Hungover", "2019-2020"),
-		photoXY: {
+		{
 			width: 2000,
 			height: 1470
 		},
-		productOverview: "Hangover is a social gaming app inspired by Cards Against Humanity and Kahoot. Enter a lobby to play with your friends, with one as the Host. Each round, the players will answer a mixture of different question types for the Host to judge at the end. The Host decides on a punishment (e.g. take a shot), a winner, and a loser. The loser must take the punishment while the winner can give the punishment to another player. The loser is then the new host for the subsequent round. Let Hangover be the perfect addition to your night!",
-		productPitch: getPitch("Hungover", "2019-2020"),
-		productDemo: "https://www.youtube.com/embed/xOm3xY2QCik",
-	},
+		"Hangover is a social gaming app inspired by Cards Against Humanity and Kahoot. Enter a lobby to play with your friends, with one as the Host. Each round, the players will answer a mixture of different question types for the Host to judge at the end. The Host decides on a punishment (e.g. take a shot), a winner, and a loser. The loser must take the punishment while the winner can give the punishment to another player. The loser is then the new host for the subsequent round. Let Hangover be the perfect addition to your night!",
+		"https://www.youtube.com/embed/xOm3xY2QCik"
+	),
 	{
 		productName: "Studii",
 		year: "2019-2020",
@@ -288,3 +262,6 @@ const ProductData = [
 ]
 
 export default ProductData;
+
+console.log('Generated:\n' + JSON.stringify(ProductData[0], null, 4));
+console.log('Hard-coded:\n' + JSON.stringify(ProductData[1], null, 4));
