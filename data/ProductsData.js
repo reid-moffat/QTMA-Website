@@ -3,33 +3,33 @@
  */
 import { ClubMembers } from "./TeamData.js";
 
-const getTeamPhoto = (name, year) => `/assets/Products/${year}/${name}_Team.png`;
-const getPitch = (name, year) => `/assets/Products/${year}/Pitches/${name}_Pitch.pdf`;
+const getTeamPhoto = (name, year) => `/assets/Products/${ year }/${ name }_Team.png`;
+const getPitch = (name, year) => `/assets/Products/${ year }/Pitches/${ name }_Pitch.pdf`;
 
 const generateProductData = (name, year, slogan, students) => {
 	if (typeof name != "string" || name === '') {
-		throw new Error(`Name ${name} is invalid, must be a non-empty string`);
+		throw new Error(`Name ${ name } is invalid, must be a non-empty string`);
 	}
 	if (year.match(/^20(19|20|21|22)-202[0-3]$/) == null || Number(year.substring(0, 4)) + 1 !== Number(year.substring(5, 9))) {
-		throw new Error(`Year ${year} is invalid, see regex`);
+		throw new Error(`Year ${ year } is invalid, see regex`);
 	}
 	if (typeof slogan != "string" || slogan === '') {
-		throw new Error(`Slogan ${slogan} is invalid, must be a non-empty string`);
+		throw new Error(`Slogan ${ slogan } is invalid, must be a non-empty string`);
 	}
 
 	const studentData = [];
 	if (!Array.isArray(students) || students.length === 0) {
-		throw new Error(`Students ${students} is invalid, must be an array`);
+		throw new Error(`Students ${ students } is invalid, must be an array`);
 	}
 	for (let i = 0; i < students.length; ++i) {
 		const memberData = ClubMembers.find((member) => member.name === students[i]);
 		if (!memberData) {
-			throw new Error(`Student ${students[i]} could not be found in the team data file`);
+			throw new Error(`Student ${ students[i] } could not be found in the team data file`);
 		}
 
 		studentData.push({
 			studentName: memberData.name,
-			linkedin: `https://www.linkedin.com/in/${memberData.linkedin}`
+			linkedin: `https://www.linkedin.com/in/${ memberData.linkedin }`
 		});
 	}
 
