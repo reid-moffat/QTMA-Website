@@ -6,7 +6,7 @@ import { ClubMembers } from "./TeamData.js";
 const getTeamPhoto = (name, year) => `/assets/Products/${ year }/${ name }_Team.png`;
 const getPitch = (name, year) => `/assets/Products/${ year }/Pitches/${ name }_Pitch.pdf`;
 
-const generateProductData = (name, year, slogan, students) => {
+const generateProductData = (name, year, slogan, students, photoxy, overview, demo = '') => {
 	if (typeof name != "string" || name === '') {
 		throw new Error(`Name ${ name } is invalid, must be a non-empty string`);
 	}
@@ -33,19 +33,26 @@ const generateProductData = (name, year, slogan, students) => {
 		});
 	}
 
+	if (typeof photoxy != "object" || photoxy === null || typeof photoxy.width != "number" || typeof photoxy.height != "number") {
+		throw new Error(`Photoxy ${ photoxy } is invalid, must be an object with width and height`);
+	}
+	if (typeof overview !== "string" || !overview) {
+		throw new Error(`Overview ${ overview } is invalid, must be a non-empty string`);
+	}
+	if (!(demo === '' || demo.match(/^https:\/\/www\.youtube\.com\/embed\/[a-zA-Z0-9_-]{11}$/))) {
+		throw new Error(`Demo ${ demo } is invalid, must be either an empty string, or a valid youtube embed link`);
+	}
+
 	return {
 		productName: name,
 		year: year,
 		slogan: slogan,
-		studentInfo: [],
+		studentInfo: studentData,
 		teamPhoto: getTeamPhoto(name, year),
-		photoXY: {
-			width: 2000,
-			height: 1470
-		},
-		productOverview: "",
+		photoXY: photoxy,
+		productOverview: overview,
 		productPitch: getPitch(name, year),
-		productDemo: "",
+		productDemo: demo,
 	}
 }
 
