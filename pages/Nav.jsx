@@ -21,7 +21,9 @@ function getWindowDimensions() {
 }
 
 export function useWindowDimensions() {
-	const [windowdimensions, setWindowDimensions] = useState(getWindowDimensions());
+	const [windowdimensions, setWindowDimensions] = useState(
+		getWindowDimensions()
+	);
 
 	useEffect(() => {
 		function handleResize() {
@@ -52,50 +54,110 @@ export default function Nav() {
 
 	return (
 		<>
-			<Layout background="#222831" isNav={ true }>
+			<Layout background="#222831" isNav={true}>
 				<div className="nav-container container">
 					<div
 						className="nav-toggle-container"
-						onClick={ () => {
+						onClick={() => {
 							setNavOn(!navOn);
-						} }
+						}}
 					>
-						<AiOutlineMenu/>
+						<AiOutlineMenu />
 					</div>
 					<div className="logo-container">
 						<Link passHref href="/">
-							<Image alt="QTMA logo" src={ qtmaLogo } className="nav-logo" height={ 41.71 }
-								   width={ 154 }/>
+							<Image
+								alt="QTMA logo"
+								src={qtmaLogo}
+								className="nav-logo"
+								height={41.71}
+								width={154}
+							/>
 						</Link>
 					</div>
 					<div
 						className="links-container"
-						style={ {
+						style={{
 							transform:
-								navOn && isTablet ? "translateX(0)" : isTablet ? "translateX(100%)" : "translateX(0)",
-						} }
+								navOn && isTablet
+									? "translateX(0)"
+									: isTablet
+									? "translateX(100%)"
+									: "translateX(0)",
+						}}
 					>
 						<Link className="nav-links" href="/">
-							<a className={ router.pathname == "/" ? "active-link" : "nav-link" }>Home</a>
+							<a
+								className={
+									router.pathname == "/"
+										? "active-link"
+										: "nav-link"
+								}
+							>
+								Home
+							</a>
 						</Link>
 						<Link className="nav-links" href="/products">
-							<a className={ router.pathname == "/products" ? "active-link" : "nav-link" }>Products</a>
+							<a
+								className={
+									router.pathname == "/products"
+										? "active-link"
+										: "nav-link"
+								}
+							>
+								Products
+							</a>
 						</Link>
 						<Link className="nav-links" href="/history">
-							<a className={ router.pathname == "/history" ? "active-link" : "nav-link" }>History</a>
+							<a
+								className={
+									router.pathname == "/history"
+										? "active-link"
+										: "nav-link"
+								}
+							>
+								History
+							</a>
 						</Link>
 						<Link className="nav-links" href="/team">
-							<a className={ router.pathname == "/team" ? "active-link" : "nav-link" }>Team</a>
+							<a
+								className={
+									router.pathname == "/team"
+										? "active-link"
+										: "nav-link"
+								}
+							>
+								Team
+							</a>
 						</Link>
 						<Link className="nav-links" href="/placements">
-							<a className={ router.pathname == "/placements" ? "active-link" : "nav-link" }>Placements</a>
+							<a
+								className={
+									router.pathname == "/placements"
+										? "active-link"
+										: "nav-link"
+								}
+							>
+								Placements
+							</a>
 						</Link>
-						<Link className="nav-links" href="/reports">
+						<Link className="nav-links" href="/info">
+							<a
+								className={
+									router.pathname == "/info"
+										? "active-link"
+										: "nav-link"
+								}
+							>
+								Info
+							</a>
+						</Link>
+						{/* <Link className="nav-links" href="/reports">
 							<a className={ router.pathname == "/reports" ? "active-link" : "nav-link" }>Reports</a>
 						</Link>
 						<Link className="nav-links" href="/contact">
 							<a className={ router.pathname == "/contact" ? "active-link" : "nav-link" }>Contact</a>
-						</Link>
+						</Link> */}
 					</div>
 				</div>
 			</Layout>
