@@ -18,7 +18,7 @@ const generateProductData = (name, year, slogan, students, photoxy, overview, de
 	}
 
 	const studentData = [];
-	if (!Array.isArray(students) || !students || students.length === 0) {
+	if (!Array.isArray(students) || !students || (!year === "2020-2021" && students.length === 0)) {
 		throw new Error(`Students ${ students } is invalid, must be a non-empty array`);
 	}
 	for (let i = 0; i < students.length; ++i) {
@@ -36,10 +36,10 @@ const generateProductData = (name, year, slogan, students, photoxy, overview, de
 		});
 	}
 
-	if (typeof photoxy != "object" || photoxy === null || typeof photoxy.width != "number" || typeof photoxy.height != "number") {
+	if (!year === "2020-2021" && (typeof photoxy != "object" || photoxy === null || typeof photoxy.width != "number" || typeof photoxy.height != "number")) {
 		throw new Error(`Photoxy ${ photoxy } is invalid, must be an object with width and height`);
 	}
-	if (typeof overview !== "string" || !overview) {
+	if (!year === "2020-2021" && (typeof overview !== "string" || !overview)) {
 		throw new Error(`Overview ${ overview } is invalid, must be a non-empty string`);
 	}
 	if (!(demo === '' || demo.match(/^https:\/\/www\.youtube\.com\/embed\/[a-zA-Z0-9_-]{11}$/))) {
@@ -51,7 +51,7 @@ const generateProductData = (name, year, slogan, students, photoxy, overview, de
 		year: year,
 		slogan: slogan,
 		studentInfo: studentData,
-		teamPhoto: getTeamPhoto(name, year),
+		teamPhoto: year === "2020-2021" ? "" : getTeamPhoto(name, year),
 		photoXY: photoxy,
 		productOverview: overview,
 		productPitch: getPitch(name, year),
@@ -131,39 +131,22 @@ const ProductData = [
 	),
 
 	// 2020-2021
-	{
-		productName: "Eagle",
-		year: "2020-2021",
-		slogan: "Your Delivery Service Companion",
-		studentInfo: [],
-		teamPhoto: "",
-		photoXY: {},
-		productOverview: "",
-		productPitch: getPitch("Eagle", "2020-2021"),
-		productDemo: ""
-	},
-	{
-		productName: "Pronto",
-		year: "2020-2021",
-		slogan: "Convenient lending for everyone",
-		studentInfo: [],
-		teamPhoto: "",
-		photoXY: {},
-		productOverview: "",
-		productPitch: getPitch("Pronto", "2020-2021"),
-		productDemo: ""
-	},
-	{
-		productName: "Voluntera",
-		year: "2020-2021",
-		slogan: "The one-stop shop for social impact",
-		studentInfo: [],
-		teamPhoto: "",
-		photoXY: {},
-		productOverview: "",
-		productPitch: getPitch("Voluntera", "2020-2021"),
-		productDemo: ""
-	},
+	generateProductData("Eagle", "2020-2021", "Your Delivery Service Companion", [],
+		{},
+		"",
+	),
+	generateProductData("Pronto", "2020-2021", "Convenient lending for everyone", [],
+		{},
+		"",
+	),
+	generateProductData("Voluntera", "2020-2021", "The one-stop shop for social impact", [],
+		{},
+		"",
+	),
+	generateProductData("Loop", "2020-2021", "Authentic connections with good friends", [],
+		{},
+		"",
+	),
 
 	// 2021-2022
 

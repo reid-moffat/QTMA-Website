@@ -14,6 +14,7 @@ export default function Products() {
 		if (!data) {
 			throw new Error(`Product ${ name } not found`);
 		}
+		console.log(JSON.stringify(data, null, 4));
 
 		return (
 			<Link passHref href={ link }>
@@ -63,7 +64,7 @@ export default function Products() {
 						{ productContainer("Eagle", 200, 122) }
 						{ productContainer("Pronto", 120, 116) }
 						{ productContainer("Voluntera", 250, 60) }
-						{ /* TODO: add loop */ }
+						{ productContainer("Loop", 200, 100) }
 						{ /* 2021 - 2022 */ }
 						{ /* 2022 - 2023 */ }
 					</div>
