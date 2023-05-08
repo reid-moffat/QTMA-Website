@@ -5,7 +5,7 @@ import { BsInstagram } from 'react-icons/bs'
 import qtmaLogo from '../public/assets/Club Data/QTMA_logo.png'
 import Image from 'next/image'
 
-export default function footer() {
+export default function Footer() {
   return (
     <Layout background="#222831">
       <div className="footer-container container">
