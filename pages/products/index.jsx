@@ -11,6 +11,9 @@ export default function Products() {
 	const productContainer = (name, logoWidth, logoHeight) => {
 		const link = `/product/${ name }`;
 		const data = productData.find(product => product.productName === name);
+		if (!data) {
+			throw new Error(`Product ${ name } not found`);
+		}
 
 		return (
 			<Link passHref href={ link }>

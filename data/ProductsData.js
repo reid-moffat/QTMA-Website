@@ -35,7 +35,6 @@ const generateProductData = (name, year, slogan, students, photoxy, overview, de
 			linkedin: student[1] === '#' ? '#' : `https://www.linkedin.com/in/${ student[1] }/`
 		});
 	}
-	console.log(students, null, 4);
 
 	if (typeof photoxy != "object" || photoxy === null || typeof photoxy.width != "number" || typeof photoxy.height != "number") {
 		throw new Error(`Photoxy ${ photoxy } is invalid, must be an object with width and height`);
@@ -79,147 +78,57 @@ const ProductData = [
 		"Hangover is a social gaming app inspired by Cards Against Humanity and Kahoot. Enter a lobby to play with your friends, with one as the Host. Each round, the players will answer a mixture of different question types for the Host to judge at the end. The Host decides on a punishment (e.g. take a shot), a winner, and a loser. The loser must take the punishment while the winner can give the punishment to another player. The loser is then the new host for the subsequent round. Let Hangover be the perfect addition to your night!",
 		"https://www.youtube.com/embed/xOm3xY2QCik"
 	),
-	{
-		productName: "Studii",
-		year: "2019-2020",
-		slogan: "Academic collaboration at your fingertips",
-		studentInfo: [
-			{
-				studentName: "Shwetha Sivakumar",
-				linkedin: "https://www.linkedin.com/in/shwethasivakumar/"
-			},
-			{
-				studentName: "Patrick Lenover",
-				linkedin: "https://www.linkedin.com/in/patrick-lenover-ab2ab5178/"
-			},
-			{
-				studentName: "Max Eisen",
-				linkedin: "https://www.linkedin.com/in/maxeisen/"
-			},
-			{
-				studentName: "Ross Hill",
-				linkedin: "https://www.linkedin.com/in/rosslh/"
-			},
-			{
-				studentName: "Carolyn Day",
-				linkedin: "https://www.linkedin.com/in/carolyn155/"
-			},
-			{
-				studentName: "Andrew Simmons",
-				linkedin: "https://www.linkedin.com/in/andrew-simmons-87a321153/"
-			},
-			{
-				studentName: "Kevin Ding",
-				linkedin: "https://www.linkedin.com/in/kevding/"
-			},
-			{
-				studentName: "Connor Colwill",
-				linkedin: "https://www.linkedin.com/in/connorcolwill/"
-			},
+	generateProductData("Studii", "2019-2020", "Academic collaboration at your fingertips", [
+			["Shwetha Sivakumar", "shwethasivakumar"],
+			["Patrick Lenover", 'patrick-lenover-ab2ab5178'],
+			["Max Eisen", 'maxeisen'],
+			["Ross Hill", 'rosslh'],
+			["Carolyn Day", 'carolyn155'],
+			["Andrew Simmons", 'andrew-simmons-87a321153'],
+			["Kevin Ding", 'kevding'],
+			["Connor Colwill", 'connorcolwill'],
 		],
-		teamPhoto: getTeamPhoto("Studii", "2019-2020"),
-		photoXY: {
+		{
 			width: 2000,
 			height: 1333
 		},
-		productOverview: "Studii offers a collaborative forum that provides both peer support and expert advice for a student’s course questions. Our vision is to harness the knowledge of students and academic experts on a nationwide study platform to improve the performance of Canadian university students.",
-		productPitch: "",
-		productDemo: "https://www.youtube.com/embed/WvmwBEX_7iU",
-	},
-	{
-		productName: "Wob",
-		year: "2019-2020",
-		slogan: "Get the latest word on the street",
-		studentInfo: [
-			{
-				studentName: "David Hao",
-				linkedin: "https://www.linkedin.com/in/david-hao/"
-			},
-			{
-				studentName: "Jonathan Stroz",
-				linkedin: "https://www.linkedin.com/in/jonathan-stroz/"
-			},
-			{
-				studentName: "Kyle Meade",
-				linkedin: "https://www.linkedin.com/in/kymed/"
-			},
-			{
-				studentName: "Kasthuri Thambipillai",
-				linkedin: "https://www.linkedin.com/in/kasthuri-t-ba8531144/"
-			},
-			{
-				studentName: "Sophia Yang",
-				linkedin: "https://www.linkedin.com/in/sophia-yangg/"
-			},
-			{
-				studentName: "Ehsan Merati",
-				linkedin: "https://www.linkedin.com/in/ehsanmerati/"
-			},
-			{
-				studentName: "Julien Lin",
-				linkedin: "https://www.linkedin.com/in/julien-lin/"
-			},
-			{
-				studentName: "Graham Carkner",
-				linkedin: "#"
-			},
+		"Studii offers a collaborative forum that provides both peer support and expert advice for a student’s course questions. Our vision is to harness the knowledge of students and academic experts on a nationwide study platform to improve the performance of Canadian university students",
+		"https://www.youtube.com/embed/WvmwBEX_7iU"
+	),
+	generateProductData("Wob", "2019-2020", "Get the latest word on the street", [
+			["David Hao", "david-hao"],
+			["Jonathan Stroz", 'jonathan-stroz'],
+			["Kyle Meade", 'kyle-meade'],
+			["Kasthuri Thambipillai", 'kasthuri-t-ba8531144'],
+			["Sophia Yang", 'sophia-yang'],
+			["Ehsan Merati", 'ehsanmerati'],
+			["Julien Lin", 'julien-lin'],
+			["Graham Carkner", 'gcarkner'],
 		],
-		teamPhoto: getTeamPhoto("Wob", "2019-2020"),
-		photoXY: {
+		{
 			width: 2000,
 			height: 1333
 		},
-		productOverview: "A geo-based, anti-harassment conscious anonymous messaging and content platform meant to strengthen relationships in local communities.",
-		productPitch: getPitch("Wob", "2019-2020"),
-		productDemo: "https://www.youtube.com/embed/6dHJOGqdT8M",
-	},
-	{
-		productName: "Stocked",
-		year: "2019-2020",
-		slogan: "The best a fridge can get.",
-		studentInfo: [
-			{
-				studentName: "Jason Yang",
-				linkedin: ""
-			},
-			{
-				studentName: "Quentin Roy-Foster",
-				linkedin: ""
-			},
-			{
-				studentName: "Victor Uemura",
-				linkedin: ""
-			},
-			{
-				studentName: "Sydney Tschritter",
-				linkedin: ""
-			},
-			{
-				studentName: "Ricky Zhang",
-				linkedin: ""
-			},
-			{
-				studentName: "Shani Mithani",
-				linkedin: ""
-			},
-			{
-				studentName: "Alice QI",
-				linkedin: ""
-			},
-			{
-				studentName: "Jake Koszczewski",
-				linkedin: ""
-			},
+		"A geo-based, anti-harassment conscious anonymous messaging and content platform meant to strengthen relationships in local communities.",
+		"https://www.youtube.com/embed/6dHJOGqdT8M",
+	),
+	generateProductData("Stocked", "2019-2020", "The best a fridge can get.", [
+			["Jason Yang", "jason-yang-1b1a1a1a1"],
+			["Quentin Roy-Foster", 'quentin-roy-foster-1b1a1a1a1'],
+			["Victor Uemura", 'victor-uemura-1b1a1a1a1'],
+			["Sydney Tschritter", 'sydney-tschritter-1b1a1a1a1'],
+			["Ricky Zhang", 'ricky-zhang-1b1a1a1a1'],
+			["Shani Mithani", 'shani-mithani-1b1a1a1a1'],
+			["Alice QI", 'alice-qi-1b1a1a1a1'],
+			["Jake Koszczewski", 'jenny-zhang-1b1a1a1a1'],
 		],
-		teamPhoto: getTeamPhoto("Stocked", "2020-2021"),
-		photoXY: {
+		{
 			width: 2000,
 			height: 1333
 		},
-		productOverview: "As a mobile app for both iOS and Android, Stocked is a dynamic meal generator which minimizes the shopping you need to do by suggesting recipes based on the ingredients already in your fridge. Other features include a receipt scanner and expiration tracker that helps save time and money.",
-		productPitch: getPitch("Stocked", "2020-2021"),
-		productDemo: "https://www.youtube.com/embed/JghgqwDF0NU",
-	},
+		"As a mobile app for both iOS and Android, Stocked is a dynamic meal generator which minimizes the shopping you need to do by suggesting recipes based on the ingredients already in your fridge. Other features include a receipt scanner and expiration tracker that helps save time and money.",
+		"https://www.youtube.com/embed/JghgqwDF0NU",
+	),
 
 	// 2020-2021
 	{
@@ -262,6 +171,3 @@ const ProductData = [
 ]
 
 export default ProductData;
-
-console.log('Generated:\n' + JSON.stringify(ProductData[0], null, 4));
-console.log('Hard-coded:\n' + JSON.stringify(ProductData[1], null, 4));
