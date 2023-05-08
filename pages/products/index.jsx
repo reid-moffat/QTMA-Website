@@ -14,7 +14,6 @@ export default function Products() {
 		if (!data) {
 			throw new Error(`Product ${ name } not found`);
 		}
-		console.log(JSON.stringify(data, null, 4));
 
 		return (
 			<Link passHref href={ link }>

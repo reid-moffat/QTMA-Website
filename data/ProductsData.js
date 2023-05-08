@@ -4,7 +4,7 @@
 import { ClubMembers } from "./TeamData.js";
 
 const getTeamPhoto = (name, year) => `/assets/Products/${ year }/${ name }_Team.png`;
-const getPitch = (name, year) => `/assets/Products/${ year }/Pitches/${ name }_Pitch.pdf`;
+const getPitch = (name, year) => `/assets/Products/${ year }/${ name }_Pitch.pdf`;
 
 const generateProductData = (name, year, slogan, students, photoxy, overview, demo = '') => {
 	if (typeof name != "string" || name === '') {
