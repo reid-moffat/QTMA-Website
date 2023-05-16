@@ -1,24 +1,24 @@
 .team-structure-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 5rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 5rem;
 
-  h1 {
-    padding-bottom: 4rem;
-  }
+	h1 {
+		padding-bottom: 4rem;
+	}
 }
 
 .team-structure-lg {
-  @media only screen and(max-width: 650px) {
-    display: none;
-  }
+	@media only screen and(max-width: 650px) {
+		display: none;
+	}
 }
 
 .team-structure-sm {
-  display: none;
-  @media only screen and(max-width: 650px) {
-    display: block;
-  }
+	display: none;
+	@media only screen and(max-width: 650px) {
+		display: block;
+	}
 }
