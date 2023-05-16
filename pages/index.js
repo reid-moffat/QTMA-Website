@@ -52,5 +52,5 @@ export default function Main() {
         </div>
       </Layout>
     </>
-  )
+  );
 }

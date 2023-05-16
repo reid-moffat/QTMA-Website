@@ -1,15 +1,15 @@
 .sponsors-container {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-bottom: 5rem;
-  overflow-x: hidden;
-  @media only screen and(max-width: 650px) {
-    padding-top: 0rem;
-    padding-bottom: 2rem;
-  }
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 5rem;
+	overflow-x: hidden;
+	@media only screen and(max-width: 650px) {
+		padding-top: 0rem;
+		padding-bottom: 2rem;
+	}
 }
 
 .sponsors {
@@ -24,10 +24,13 @@
     justify-items: center;
     padding-top: 1rem;
   }
-
 }
 
 .sponsor {
+  padding: 20px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
   @media only screen and(max-width: 1100px) {
     display: flex;
     justify-content: center;
@@ -35,19 +38,9 @@
   }
   @media only screen and(max-width: 900px) {
     width: 200px;
-    &:nth-child(1) {
-    }
-    &:nth-child(2) {
-    }
-    &:nth-child(3) {
-      width: 100px;
-    }
   }
   @media only screen and(max-width: 650px) {
-    width: 200px;
+    width: 300px;
     padding: 2rem 0;
-    &:nth-child(3) {
-      width: 90px;
-    }
   }
 }

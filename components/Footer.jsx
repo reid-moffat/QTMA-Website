@@ -67,5 +67,5 @@ export default function Footer() {
         <p className="copyright">QTMA © 2014-2023</p>
       </div>
     </Layout>
-  )
+  );
 }
