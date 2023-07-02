@@ -59,7 +59,9 @@ const generateProductData = (name, year, slogan, students, photoxy, overview, de
 }
 
 const ProductData = [
-	// 2019-2020
+	/*
+	 * 2019-2020
+	 */
 	generateProductData("Hungover", "2019-2020", "Taking your pregame to the next level", [
 			["Diane Huang", "dianehuang11"],
 			["Ben Kitor", 'bkitor'],
@@ -77,6 +79,7 @@ const ProductData = [
 		"Hangover is a social gaming app inspired by Cards Against Humanity and Kahoot. Enter a lobby to play with your friends, with one as the Host. Each round, the players will answer a mixture of different question types for the Host to judge at the end. The Host decides on a punishment (e.g. take a shot), a winner, and a loser. The loser must take the punishment while the winner can give the punishment to another player. The loser is then the new host for the subsequent round. Let Hangover be the perfect addition to your night!",
 		"https://www.youtube.com/embed/xOm3xY2QCik"
 	),
+
 	generateProductData("Studii", "2019-2020", "Academic collaboration at your fingertips", [
 			["Shwetha Sivakumar", "shwethasivakumar"],
 			["Patrick Lenover", 'patrick-lenover-ab2ab5178'],
@@ -94,6 +97,7 @@ const ProductData = [
 		"Studii offers a collaborative forum that provides both peer support and expert advice for a student’s course questions. Our vision is to harness the knowledge of students and academic experts on a nationwide study platform to improve the performance of Canadian university students",
 		"https://www.youtube.com/embed/WvmwBEX_7iU"
 	),
+
 	generateProductData("Wob", "2019-2020", "Get the latest word on the street", [
 			["David Hao", "david-hao"],
 			["Jonathan Stroz", 'jonathan-stroz'],
@@ -111,6 +115,7 @@ const ProductData = [
 		"A geo-based, anti-harassment conscious anonymous messaging and content platform meant to strengthen relationships in local communities.",
 		"https://www.youtube.com/embed/6dHJOGqdT8M",
 	),
+
 	generateProductData("Stocked", "2019-2020", "The best a fridge can get.", [
 			["Jason Yang", "jason-yang-1b1a1a1a1"],
 			["Quentin Roy-Foster", 'quentin-roy-foster-1b1a1a1a1'],
@@ -129,27 +134,74 @@ const ProductData = [
 		"https://www.youtube.com/embed/JghgqwDF0NU",
 	),
 
-	// 2020-2021
+	/*
+	 * 2020-2021
+	 */
 	generateProductData("Eagle", "2020-2021", "Your Delivery Service Companion", [],
 		{},
 		"",
 	),
+
 	generateProductData("Pronto", "2020-2021", "Convenient lending for everyone", [],
 		{},
 		"",
 	),
+
 	generateProductData("Voluntera", "2020-2021", "The one-stop shop for social impact", [],
 		{},
 		"",
 	),
+
 	generateProductData("Loop", "2020-2021", "Authentic connections with good friends", [],
 		{},
 		"",
 	),
 
-	// 2021-2022
+	/*
+	 * 2021-2022
+	 */
+	generateProductData("Casa", "2021-2022", "", [],
+		{},
+		"",
+	),
 
-	// 2022-2023
+	generateProductData("Haus", "2021-2022", "", [],
+		{},
+		"",
+	),
+
+	generateProductData("Loco", "2021-2022", "", [],
+		{},
+		"",
+	),
+
+	generateProductData("Soar", "2021-2022", "", [],
+		{},
+		"",
+	),
+
+	/*
+	 * 2022-2023
+	 */
+	generateProductData("Feastly", "2022-2023", "", [],
+		{},
+		"",
+	),
+
+	generateProductData("Kartt", "2022-2023", "", [],
+		{},
+		"",
+	),
+
+	generateProductData("Sift", "2022-2023", "", [],
+		{},
+		"",
+	),
+
+	generateProductData("Venato", "2022-2023", "", [],
+		{},
+		"",
+	),
 ]
 
 export default ProductData;

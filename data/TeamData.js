@@ -59,6 +59,7 @@ import CynthiaChoi from "../public/assets/Members/2023-2024/Cynthia_Choi.png";
 import ClaireHu from "../public/assets/Members/2023-2024/Claire_Hu.png";
 import EmanuelPiccinini from "../public/assets/Members/2023-2024/Emanuel_Piccinini.png";
 
+// All positions team members can have
 const Positions = [
 	"Co-Chair",
 	"Club Operations",
