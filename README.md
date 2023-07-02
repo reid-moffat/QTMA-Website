@@ -11,6 +11,11 @@ products which are judged by industry specialists at the end of each school term
 
 ## Running locally
 
+First, install dependencies:
+```bash
+npm ci # can use 'npm i' but it's slower and re-writes package-lock.json
+```
+
 To start the site in development mode (recommended for dev work):
 ```bash
 next dev
