@@ -12,20 +12,21 @@ products which are judged by industry specialists at the end of each school term
 ## Running locally
 
 First, install dependencies:
+
 ```bash
-npm ci # can use 'npm i' but it's slower and re-writes package-lock.json
+npm ci # Can use 'npm i' but it's slower & re-writes package-lock
 ```
 
-To start the site in development mode (recommended for dev work):
-```bash
-next dev
-```
+To start the site, you have a few options:
 
-To start the site in production mode:
-```bash
-next build
-next start
-```
-*(Note: Vercel deploys all changes to a preview site if you want to check it that way)*
+1. Run in development mode (recommended for dev work):
 
-Then to see the site, go to [http://localhost:3000](http://localhost:3000)
+        next dev
+2. Run in production mode:
+
+        next build
+        next start
+3. View a preview deployment of staging [here](https://qtma-website-git-staging-reid-moffat.vercel.app/)
+   (not local, but you can view non-production views)
+
+When running locally, the site is available at http://localhost:3000
