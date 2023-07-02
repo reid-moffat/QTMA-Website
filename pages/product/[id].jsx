@@ -10,32 +10,32 @@ import { useRouter } from "next/router";
 //
 
 export const getStaticProps = async () => {
-	return { props: {} };
+	return {props: {}};
 };
 
 export const getStaticPaths = async () => {
 	return {
 		paths: [
 			// 2019-2020
-			{ params: { id: "Studii" } },
-			{ params: { id: "Hungover" } },
-			{ params: { id: "Wob" } },
-			{ params: { id: "Stocked" } },
+			{params: {id: "Studii"}},
+			{params: {id: "Hungover"}},
+			{params: {id: "Wob"}},
+			{params: {id: "Stocked"}},
 			// 2020-2021
-			{ params: { id: "Eagle" } },
-			{ params: { id: "Pronto" } },
-			{ params: { id: "Voluntera" } },
-			{ params: { id: "Loop" } },
+			{params: {id: "Eagle"}},
+			{params: {id: "Pronto"}},
+			{params: {id: "Voluntera"}},
+			{params: {id: "Loop"}},
 			// 2021-2022
-			{ params: { id: "Casa" } },
-			{ params: { id: "Haus" } },
-			{ params: { id: "Loco" } },
-			{ params: { id: "Soar" } },
+			{params: {id: "Casa"}},
+			{params: {id: "Haus"}},
+			{params: {id: "Loco"}},
+			{params: {id: "Soar"}},
 			// 2022-2023
-			{ params: { id: "Feastly" } },
-			{ params: { id: "Kartt" } },
-			{ params: { id: "Sift" } },
-			{ params: { id: "Venato" } },
+			{params: {id: "Feastly"}},
+			{params: {id: "Kartt"}},
+			{params: {id: "Sift"}},
+			{params: {id: "Venato"}},
 		],
 		fallback: false,
 	};
@@ -55,64 +55,64 @@ export default function Product() {
 		<>
 			<Nav/>
 			<Layout>
-				{ product && (
+				{product && (
 					<div className="product-container-id container">
 						<div className="product-header-container">
-							<h1 className="product-name">{ product.productName }</h1>
-							<p className="product-slogan">{ product.slogan }</p>
+							<h1 className="product-name">{product.productName}</h1>
+							<p className="product-slogan">{product.slogan}</p>
 						</div>
 
-						{ product.teamPhoto !== "" && (
+						{product.teamPhoto !== "" && (
 							<div className="team-container">
 								<h2 className="team-heading">The Team</h2>
 								<div className="team-names">
-									{ product.studentInfo.map((info, i) => (
-										<a key={ i } className="student-name" href={ info.linkedin } rel="noreferrer"
+									{product.studentInfo.map((info, i) => (
+										<a key={i} className="student-name" href={info.linkedin} rel="noreferrer"
 										   target="_blank">
-											{ info.studentName }
+											{info.studentName}
 										</a>
-									)) }
+									))}
 								</div>
 								<div className="team-photo">
 									<Image
 										alt="team photo"
-										src={ product.teamPhoto }
-										width={ product.photoXY.width }
-										height={ product.photoXY.height }
+										src={product.teamPhoto}
+										width={product.photoXY.width}
+										height={product.photoXY.height}
 									/>
 								</div>
 							</div>
-						) }
+						)}
 
-						{ product.teamPhoto !== "" && (
+						{product.teamPhoto !== "" && (
 							<div className="overview-container">
 								<h2 className="overview-heading">Product Overview</h2>
-								<p className="product-desc">{ product.productOverview }</p>
+								<p className="product-desc">{product.productOverview}</p>
 							</div>
-						) }
+						)}
 
 						<div className="pitch-container">
 							<h2 className="pitch-heading">Product Pitch</h2>
-							<iframe className="product-pdf" type="pdf" src={ product.productPitch }></iframe>
+							<iframe className="product-pdf" type="pdf" src={product.productPitch}></iframe>
 						</div>
 
-						{ product.teamPhoto !== "" && (
+						{product.teamPhoto !== "" && (
 							<div className="demo-container">
 								<h2 className="demo-heading">Product Demo</h2>
 								<iframe
 									className="demo-video"
 									width="560"
 									height="315"
-									src={ product.productDemo }
+									src={product.productDemo}
 									title="YouTube video player"
 									// frameborder="0"
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 									// allowfullscreen
 								></iframe>
 							</div>
-						) }
+						)}
 					</div>
-				) }
+				)}
 			</Layout>
 		</>
 	);

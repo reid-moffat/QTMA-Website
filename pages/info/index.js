@@ -1,13 +1,12 @@
 import Contact from "../contact";
 import Report from "../reports";
 import Layout from "../../components/layout";
-import Email from "../../public/assets/Visuals/Email.png";
 import Nav from "../Nav";
 import Head from "next/head";
 import Image from "next/image";
 import FamilyPhoto from "../../public/assets/Members/2021-2022/FamilyPhoto.png";
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({params}) {
 	return {
 		props: {},
 	};
@@ -17,11 +16,11 @@ export default function About() {
 	return (
 		<>
 			<Head>
-				<meta name="description" content="Info" />
+				<meta name="description" content="Info"/>
 				<title>QTMA</title>
-				<meta name="og:title" content={"QTMA"} />
+				<meta name="og:title" content={"QTMA"}/>
 			</Head>
-			<Nav />
+			<Nav/>
 			<Layout background={"#edf5fc"}>
 				<div className="about-us-container container">
 					<div className="info-container">
@@ -50,8 +49,8 @@ export default function About() {
 						/>
 					</div>
 				</div>
-				<Report />
-				<Contact />
+				<Report/>
+				<Contact/>
 			</Layout>
 		</>
 	);

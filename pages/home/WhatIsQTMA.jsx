@@ -14,18 +14,18 @@ export default function WhatIsQTMA() {
 						Queen’s Tech and Media Association (QTMA) is Canada’s premier product development club and tech
 						incubator. Over the course of the year, four multi-disciplinary teams of nine primarily
 						Commerce, Computer Science and Engineering students compete to build and launch the best
-						software product.{ " " }
+						software product.{" "}
 					</p>
 				</div>
 				<div className="about-illustration-container">
 					<div className="about-illustration">
-						<Image alt="illustration" src={ Business } width={ 316 } height={ 300 }/>
+						<Image alt="illustration" src={Business} width={316} height={300}/>
 					</div>
 					<div className="about-illustration">
-						<Image alt="illustration" src={ ComSci } width={ 316 } height={ 300 }/>
+						<Image alt="illustration" src={ComSci} width={316} height={300}/>
 					</div>
 					<div className="about-illustration">
-						<Image alt="illustration" src={ Engineer } width={ 316 } height={ 300 }/>
+						<Image alt="illustration" src={Engineer} width={316} height={300}/>
 					</div>
 				</div>
 			</section>

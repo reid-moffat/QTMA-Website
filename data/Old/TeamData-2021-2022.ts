@@ -408,4 +408,4 @@ const ClubMembers: IClubMember[] = [
 	},
 ]
 
-export { Positions, ClubMembers };
+export {Positions, ClubMembers};

@@ -12,8 +12,8 @@ export default function Testimonials() {
 				<div className="alumni-container">
 					<div className="alumni-card">
 						<div className="alumni-image-container">
-							<Image alt="alumni photo" className="alumni-image" src={ Jamyang } width={ 118 }
-								   height={ 118 }/>
+							<Image alt="alumni photo" className="alumni-image" src={Jamyang} width={118}
+								   height={118}/>
 						</div>
 						<div className="alumni-info">
 							<h2 className="alumni-name">Jamyang Tenzin</h2>
@@ -28,8 +28,8 @@ export default function Testimonials() {
 					</div>
 					<div className="alumni-card">
 						<div className="alumni-image-container">
-							<Image alt="alumni photo" className="alumni-image" src={ Zack } width={ 118 }
-								   height={ 118 }/>
+							<Image alt="alumni photo" className="alumni-image" src={Zack} width={118}
+								   height={118}/>
 						</div>
 						<div className="alumni-info">
 							<h2 className="alumni-name">Zack Harley</h2>
@@ -47,8 +47,8 @@ export default function Testimonials() {
 					</div>
 					<div className="alumni-card">
 						<div className="alumni-image-container">
-							<Image alt="alumni photo" className="alumni-image" src={ Justin } width={ 118 }
-								   height={ 118 }/>
+							<Image alt="alumni photo" className="alumni-image" src={Justin} width={118}
+								   height={118}/>
 						</div>
 						<div className="alumni-info">
 							<h2 className="alumni-name">Justin Herlick</h2>

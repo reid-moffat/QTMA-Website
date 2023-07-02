@@ -1,49 +1,48 @@
 /**
  * Data for all current and previous products
  */
-import { ClubMembers } from "./TeamData.js";
 
-const getTeamPhoto = (name, year) => `/assets/Products/${ year }/${ name }_Team.png`;
-const getPitch = (name, year) => `/assets/Products/${ year }/${ name }_Pitch.pdf`;
+const getTeamPhoto = (name, year) => `/assets/Products/${year}/${name}_Team.png`;
+const getPitch = (name, year) => `/assets/Products/${year}/${name}_Pitch.pdf`;
 
 const generateProductData = (name, year, slogan, students, photoxy, overview, demo = '') => {
 	if (typeof name != "string" || name === '') {
-		throw new Error(`Name ${ name } is invalid, must be a non-empty string`);
+		throw new Error(`Name ${name} is invalid, must be a non-empty string`);
 	}
 	if (year.match(/^20(19|20|21|22)-202[0-3]$/) == null || Number(year.substring(0, 4)) + 1 !== Number(year.substring(5, 9))) {
-		throw new Error(`Year ${ year } is invalid, see regex`);
+		throw new Error(`Year ${year} is invalid, see regex`);
 	}
 	if (typeof slogan != "string" || slogan === '') {
-		throw new Error(`Slogan ${ slogan } is invalid, must be a non-empty string`);
+		throw new Error(`Slogan ${slogan} is invalid, must be a non-empty string`);
 	}
 
 	const studentData = [];
 	if (!Array.isArray(students) || !students || (!year === "2020-2021" && students.length === 0)) {
-		throw new Error(`Students ${ students } is invalid, must be a non-empty array`);
+		throw new Error(`Students ${students} is invalid, must be a non-empty array`);
 	}
 	for (let i = 0; i < students.length; ++i) {
 		const student = students[i];
 		if (!Array.isArray(student) || student.length !== 2) {
-			throw new Error(`Student ${ student } is invalid, must be an array with a student name and their linkedin id`);
+			throw new Error(`Student ${student} is invalid, must be an array with a student name and their linkedin id`);
 		}
 		if (typeof student[0] !== "string" || !student[0] || typeof student[1] !== "string" || !student[1]) {
-			throw new Error(`Student ${ student } need a valid name & linkedin id (# if they don't have one)`);
+			throw new Error(`Student ${student} need a valid name & linkedin id (# if they don't have one)`);
 		}
 
 		studentData.push({
 			studentName: student[0],
-			linkedin: student[1] === '#' ? '#' : `https://www.linkedin.com/in/${ student[1] }/`
+			linkedin: student[1] === '#' ? '#' : `https://www.linkedin.com/in/${student[1]}/`
 		});
 	}
 
 	if (!year === "2020-2021" && (typeof photoxy != "object" || photoxy === null || typeof photoxy.width != "number" || typeof photoxy.height != "number")) {
-		throw new Error(`Photoxy ${ photoxy } is invalid, must be an object with width and height`);
+		throw new Error(`Photoxy ${photoxy} is invalid, must be an object with width and height`);
 	}
 	if (!year === "2020-2021" && (typeof overview !== "string" || !overview)) {
-		throw new Error(`Overview ${ overview } is invalid, must be a non-empty string`);
+		throw new Error(`Overview ${overview} is invalid, must be a non-empty string`);
 	}
 	if (!(demo === '' || demo.match(/^https:\/\/www\.youtube\.com\/embed\/[a-zA-Z0-9_-]{11}$/))) {
-		throw new Error(`Demo ${ demo } is invalid, must be either an empty string, or a valid youtube embed link`);
+		throw new Error(`Demo ${demo} is invalid, must be either an empty string, or a valid youtube embed link`);
 	}
 
 	return {

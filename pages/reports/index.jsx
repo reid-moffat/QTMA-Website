@@ -3,7 +3,7 @@ import { HiOutlineDocumentDownload } from "react-icons/hi";
 import Nav from "../Nav";
 import Head from "next/head";
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({params}) {
 	return {
 		props: {},
 	};
@@ -18,9 +18,9 @@ export default function Report() {
 					content="Recruiting Guide & Research Update"
 				/>
 				<title>QTMA</title>
-				<meta name="og:title" content={"QTMA"} />
+				<meta name="og:title" content={"QTMA"}/>
 			</Head>
-			<Nav />
+			<Nav/>
 			<Layout background={"#edf5fc"}>
 				<div className="history-container container">
 					<h1 className="section-title">Reports</h1>

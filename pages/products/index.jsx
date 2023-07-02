@@ -5,25 +5,25 @@ import Link from "next/link";
 import Head from "next/head";
 import productData from "../../data/ProductsData";
 
-const getLogo = (name, year) => `/assets/Products/${ year }/${ name }_Logo.png`;
+const getLogo = (name, year) => `/assets/Products/${year}/${name}_Logo.png`;
 
 export default function Products() {
 	const productContainer = (name, logoWidth, logoHeight) => {
-		const link = `/product/${ name }`;
+		const link = `/product/${name}`;
 		const data = productData.find(product => product.productName === name);
 		if (!data) {
-			throw new Error(`Product ${ name } not found`);
+			throw new Error(`Product ${name} not found`);
 		}
 
 		return (
-			<Link passHref href={ link }>
+			<Link passHref href={link}>
 				<div className="product2">
 					<div className="product-info2">
-						<h3>{ name }</h3>
-						<p>{ data["slogan"] }</p>
+						<h3>{name}</h3>
+						<p>{data["slogan"]}</p>
 					</div>
-					<Image alt="Product Logo" src={ getLogo(name, data["year"]) } width={ logoWidth }
-						   height={ logoHeight }/>
+					<Image alt="Product Logo" src={getLogo(name, data["year"])} width={logoWidth}
+						   height={logoHeight}/>
 				</div>
 			</Link>
 		)
@@ -38,7 +38,7 @@ export default function Products() {
             problems."
 				/>
 				<title>QTMA</title>
-				<meta name="og:title" content={ "QTMA" }/>
+				<meta name="og:title" content={"QTMA"}/>
 			</Head>
 			<Nav/>
 			<Layout
@@ -54,18 +54,18 @@ export default function Products() {
 						problems.
 					</p>
 					<div className="products-container2">
-						{ /* 2019 - 2020 */ }
-						{ productContainer("Stocked", 252.59, 60) }
-						{ productContainer("Hungover", 120, 133.13) }
-						{ productContainer("Wob", 151.4, 90) }
-						{ productContainer("Studii", 176.21, 59) }
-						{ /* 2020 - 2021 */ }
-						{ productContainer("Eagle", 200, 122) }
-						{ productContainer("Pronto", 120, 116) }
-						{ productContainer("Voluntera", 250, 60) }
-						{ productContainer("Loop", 200, 100) }
-						{ /* 2021 - 2022 */ }
-						{ /* 2022 - 2023 */ }
+						{ /* 2019 - 2020 */}
+						{productContainer("Stocked", 252.59, 60)}
+						{productContainer("Hungover", 120, 133.13)}
+						{productContainer("Wob", 151.4, 90)}
+						{productContainer("Studii", 176.21, 59)}
+						{ /* 2020 - 2021 */}
+						{productContainer("Eagle", 200, 122)}
+						{productContainer("Pronto", 120, 116)}
+						{productContainer("Voluntera", 250, 60)}
+						{productContainer("Loop", 200, 100)}
+						{ /* 2021 - 2022 */}
+						{ /* 2022 - 2023 */}
 					</div>
 				</div>
 			</Layout>

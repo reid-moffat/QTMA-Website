@@ -7,7 +7,7 @@ import FamilyPhoto from "../../public/assets/Club Data/History/Innovation.png";
 import Nav from "../Nav";
 import Head from "next/head";
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({params}) {
 	return {
 		props: {}
 	};
@@ -25,10 +25,10 @@ export default function History() {
           launched including tech recruiting panels and a fintech hackathon."
 				/>
 				<title>QTMA</title>
-				<meta name="og:title" content={ "QTMA" }/>
+				<meta name="og:title" content={"QTMA"}/>
 			</Head>
 			<Nav/>
-			<Layout background={ "#edf5fc" }>
+			<Layout background={"#edf5fc"}>
 				<div className="history-container container">
 					<h1 className="section-title">Our History</h1>
 					<div className="history-events-container">
@@ -59,7 +59,7 @@ export default function History() {
 								</p>
 							</div>
 							<div className="event-image">
-								<Image alt="Event photo" src={ Founding } width={ 508 } height={ 346 }/>
+								<Image alt="Event photo" src={Founding} width={508} height={346}/>
 							</div>
 						</div>
 						<div className="event">
@@ -79,7 +79,7 @@ export default function History() {
 								</p>
 							</div>
 							<div className="event-image">
-								<Image alt="Event photo" src={ Expansion } width={ 508 } height={ 337.64 }/>
+								<Image alt="Event photo" src={Expansion} width={508} height={337.64}/>
 							</div>
 						</div>
 						<div className="event">
@@ -97,7 +97,7 @@ export default function History() {
 								</p>
 							</div>
 							<div className="event-image">
-								<Image alt="Event photo" src={ Initiatives } width={ 531 } height={ 354 }/>
+								<Image alt="Event photo" src={Initiatives} width={531} height={354}/>
 							</div>
 						</div>
 						<div className="event">
@@ -116,7 +116,7 @@ export default function History() {
 								</p>
 							</div>
 							<div className="event-image">
-								<Image alt="Event photo" src={ FamilyPhoto } width={ 1000 } height={ 527 }/>
+								<Image alt="Event photo" src={FamilyPhoto} width={1000} height={527}/>
 							</div>
 						</div>
 					</div>
