@@ -160,22 +160,26 @@ const ProductData = [
 	/*
 	 * 2021-2022
 	 */
-	generateProductData("Casa", "2021-2022", "", [],
+	generateProductData("Casa", "2021-2022", "Making the roommate finding process as easy as possible",
+		[],
 		{},
 		"",
 	),
 
-	generateProductData("Haus", "2021-2022", "", [],
+	generateProductData("Haus", "2021-2022", "Haus helps Hausmates collaborate and save on groceries",
+		[],
 		{},
 		"",
 	),
 
-	generateProductData("Loco", "2021-2022", "", [],
+	generateProductData("Loco", "2021-2022", "The travel app for true Locos",
+		[],
 		{},
 		"",
 	),
 
-	generateProductData("Soar", "2021-2022", "", [],
+	generateProductData("Soar", "2021-2022", "Find teammates to build your next side project",
+		[],
 		{},
 		"",
 	),
@@ -183,22 +187,26 @@ const ProductData = [
 	/*
 	 * 2022-2023
 	 */
-	generateProductData("Feastly", "2022-2023", "", [],
+	generateProductData("Feastly", "2022-2023", "Let's feast on something delicious",
+		[],
 		{},
 		"",
 	),
 
-	generateProductData("Kartt", "2022-2023", "", [],
+	generateProductData("Kartt", "2022-2023", "Shop smart with Kartt",
+		[],
 		{},
 		"",
 	),
 
-	generateProductData("Sift", "2022-2023", "", [],
+	generateProductData("Sift", "2022-2023", "Choose the gift you want, stress free",
+		[],
 		{},
 		"",
 	),
 
-	generateProductData("Venato", "2022-2023", "", [],
+	generateProductData("Venato", "2022-2023", "Helping students reach their full potential",
+		[],
 		{},
 		"",
 	),
