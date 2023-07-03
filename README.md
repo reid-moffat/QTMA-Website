@@ -14,19 +14,16 @@ products which are judged by industry specialists at the end of each school term
 First, install dependencies:
 
 ```bash
-npm ci # Can use 'npm i' but it's slower & re-writes package-lock
+npm ci # Or 'npm i', but this is faster & no package-lock re-write
 ```
 
-To start the site, you have a few options:
+Then run in development mode (recommended for dev work):
 
-1. Run in development mode (recommended for dev work):
+```bash
+next dev
+```
 
-        next dev
-2. Run in production mode:
+Then open the site at http://localhost:3000
 
-        next build
-        next start
-3. View a preview deployment of staging [here](https://qtma-website-git-staging-reid-moffat.vercel.app/)
-   (not local, but you can view non-production views)
-
-When running locally, the site is available at http://localhost:3000
+*Note: you can also view a preview deployment [here](https://qtma-website-git-staging-reid-moffat.vercel.app/)
+(this is for staging, but you can update the git branch in th URL)*
