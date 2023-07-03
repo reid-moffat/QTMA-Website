@@ -49,12 +49,14 @@ const generateProductData = (name, year, slogan, students, photoxy, overview, de
 		productName: name,
 		year: year,
 		slogan: slogan,
-		studentInfo: studentData,
-		teamPhoto: year === "2020-2021" ? "" : getTeamPhoto(name, year),
+		members: studentData,
+
 		photoXY: photoxy,
-		productOverview: overview,
-		productPitch: getPitch(name, year),
-		productDemo: demo,
+		overview: overview,
+		demo: demo,
+
+		teamPhoto: year === "2020-2021" ? "" : getTeamPhoto(name, year),
+		pitch: getPitch(name, year),
 	}
 }
 
@@ -64,12 +66,12 @@ let ProductBuilder = function () {
 		productName: undefined,
 		year: undefined,
 		slogan: undefined,
-		studentData: undefined,
+		members: undefined,
 
 		// Optional
 		photoXY: undefined,
-		productOverview: undefined,
-		productDemo: undefined,
+		overview: undefined,
+		demo: undefined,
 
 		setName: function (productName) {
 			if (typeof productName != "string" || productName === '') {
@@ -113,7 +115,7 @@ let ProductBuilder = function () {
 					linkedin: student[1] === '#' ? '#' : `https://www.linkedin.com/in/${student[1]}/`
 				});
 			}
-			this.studentData = studentData;
+			this.members = studentData;
 			return this;
 		},
 
@@ -124,41 +126,39 @@ let ProductBuilder = function () {
 			this.photoXY = photoXY;
 			return this;
 		},
-		setOverview: function (productOverview) {
-			if (!this.year === "2020-2021" && (typeof productOverview !== "string" || !productOverview)) {
-				throw new Error(`Overview ${productOverview} is invalid, must be a non-empty string`);
+		setOverview: function (overview) {
+			if (!this.year === "2020-2021" && (typeof overview !== "string" || !overview)) {
+				throw new Error(`Overview ${overview} is invalid, must be a non-empty string`);
 			}
-			this.productOverview = productOverview;
+			this.overview = overview;
 			return this;
 		},
-		setDemo: function (productDemo) {
-			if (!(productDemo === '' || productDemo.match(/^https:\/\/www\.youtube\.com\/embed\/[a-zA-Z0-9_-]{11}$/))) {
-				throw new Error(`Demo ${productDemo} is invalid, must be either an empty string, or a valid youtube embed link`);
+		setDemo: function (demo) {
+			if (!(demo === '' || demo.match(/^https:\/\/www\.youtube\.com\/embed\/[a-zA-Z0-9_-]{11}$/))) {
+				throw new Error(`Demo ${demo} is invalid, must be either an empty string, or a valid youtube embed link`);
 			}
-			this.productDemo = productDemo;
+			this.demo = demo;
 			return this;
 		},
 
 		build: function () {
-			if (this.productName === undefined || this.year === undefined || this.slogan === undefined || this.studentData === undefined) {
-				throw new Error("The fields productName, year, slogan and studentData must be defined. " +
-					`productName: ${this.productName} year: ${this.year} slogan: ${this.slogan} studentDate: ${this.studentData}`);
+			if (this.productName === undefined || this.year === undefined || this.slogan === undefined || this.members === undefined) {
+				throw new Error("The fields productName, year, slogan and members must be defined. " +
+					`productName: ${this.productName} year: ${this.year} slogan: ${this.slogan} studentDate: ${this.members}`);
 			}
 
-			const photo: string = this.year === "2020-2021" ? "" : getTeamPhoto(this.productName, this.year);
-			const pitch: string = getPitch(this.productName, this.year);
 			return {
 				productName: this.productName,
 				year: this.year,
 				slogan: this.slogan,
-				studentInfo: this.studentData,
+				members: this.members,
 
 				photoXY: this.photoXY,
-				productOverview: this.productOverview,
-				productDemo: this.productDemo,
+				overview: this.overview,
+				demo: this.demo,
 
-				teamPhoto: photo,
-				productPitch: pitch,
+				teamPhoto: `/assets/Products/${this.year}/${this.productName}_Team.png`,
+				pitch: `/assets/Products/${this.year}/${this.productName}_Pitch.pdf`,
 			}
 		}
 	};
@@ -192,25 +192,11 @@ const ProductData = [
 		.setDemo("https://www.youtube.com/embed/xOm3xY2QCik")
 		.build(),
 
-	generateProductData("Hungover", "2019-2020", "Taking your pregame to the next level", [
-			["Diane Huang", "dianehuang11"],
-			["Ben Kitor", 'bkitor'],
-			["Tim Lampen", 'timlampen'],
-			["Sam Mcphail", 'sam-mcphail'],
-			["Sierra Cache angus", 'sierra-cache'],
-			["Victor Gao", 'victor-gao'],
-			["Tina Huang", 'tina-c-huang'],
-			["Ethan Blumberg", '#'],
-		],
-		{
-			width: 2000,
-			height: 1470
-		},
-		"Hangover is a social gaming app inspired by Cards Against Humanity and Kahoot. Enter a lobby to play with your friends, with one as the Host. Each round, the players will answer a mixture of different question types for the Host to judge at the end. The Host decides on a punishment (e.g. take a shot), a winner, and a loser. The loser must take the punishment while the winner can give the punishment to another player. The loser is then the new host for the subsequent round. Let Hangover be the perfect addition to your night!",
-		"https://www.youtube.com/embed/xOm3xY2QCik"
-	),
-
-	generateProductData("Studii", "2019-2020", "Academic collaboration at your fingertips", [
+	new ProductBuilder()
+		.setName("Studii")
+		.setYear("2019-2020")
+		.setSlogan("Academic collaboration at your fingertips")
+		.setStudentData([
 			["Shwetha Sivakumar", "shwethasivakumar"],
 			["Patrick Lenover", 'patrick-lenover-ab2ab5178'],
 			["Max Eisen", 'maxeisen'],
@@ -219,16 +205,19 @@ const ProductData = [
 			["Andrew Simmons", 'andrew-simmons-87a321153'],
 			["Kevin Ding", 'kevding'],
 			["Connor Colwill", 'connorcolwill'],
-		],
-		{
-			width: 2000,
-			height: 1333
-		},
-		"Studii offers a collaborative forum that provides both peer support and expert advice for a student’s course questions. Our vision is to harness the knowledge of students and academic experts on a nationwide study platform to improve the performance of Canadian university students",
-		"https://www.youtube.com/embed/WvmwBEX_7iU"
-	),
+		])
+		.setPhotoXY({ width: 2000, height: 1333 })
+		.setOverview("Studii offers a collaborative forum that provides both peer support and expert advice " +
+			"for a student’s course questions. Our vision is to harness the knowledge of students and academic experts " +
+			"on a nationwide study platform to improve the performance of Canadian university students")
+		.setDemo("https://www.youtube.com/embed/WvmwBEX_7iU")
+		.build(),
 
-	generateProductData("Wob", "2019-2020", "Get the latest word on the street", [
+	new ProductBuilder()
+		.setName("Wob")
+		.setYear("2019-2020")
+		.setSlogan("Get the latest word on the street")
+		.setStudentData([
 			["David Hao", "david-hao"],
 			["Jonathan Stroz", 'jonathan-stroz'],
 			["Kyle Meade", 'kyle-meade'],
@@ -237,16 +226,18 @@ const ProductData = [
 			["Ehsan Merati", 'ehsanmerati'],
 			["Julien Lin", 'julien-lin'],
 			["Graham Carkner", 'gcarkner'],
-		],
-		{
-			width: 2000,
-			height: 1333
-		},
-		"A geo-based, anti-harassment conscious anonymous messaging and content platform meant to strengthen relationships in local communities.",
-		"https://www.youtube.com/embed/6dHJOGqdT8M",
-	),
+		])
+		.setPhotoXY({ width: 2000, height: 1333 })
+		.setOverview("A geo-based, anti-harassment conscious anonymous messaging and content platform meant " +
+			"to strengthen relationships in local communities.")
+		.setDemo("https://www.youtube.com/embed/6dHJOGqdT8M")
+		.build(),
 
-	generateProductData("Stocked", "2019-2020", "The best a fridge can get.", [
+	new ProductBuilder()
+		.setName("Stocked")
+		.setYear("2019-2020")
+		.setSlogan("The best a fridge can get.")
+		.setStudentData([
 			["Jason Yang", "jason-yang-1b1a1a1a1"],
 			["Quentin Roy-Foster", 'quentin-roy-foster-1b1a1a1a1'],
 			["Victor Uemura", 'victor-uemura-1b1a1a1a1'],
@@ -255,14 +246,13 @@ const ProductData = [
 			["Shani Mithani", 'shani-mithani-1b1a1a1a1'],
 			["Alice QI", 'alice-qi-1b1a1a1a1'],
 			["Jake Koszczewski", 'jenny-zhang-1b1a1a1a1'],
-		],
-		{
-			width: 2000,
-			height: 1333
-		},
-		"As a mobile app for both iOS and Android, Stocked is a dynamic meal generator which minimizes the shopping you need to do by suggesting recipes based on the ingredients already in your fridge. Other features include a receipt scanner and expiration tracker that helps save time and money.",
-		"https://www.youtube.com/embed/JghgqwDF0NU",
-	),
+		])
+		.setPhotoXY({ width: 2000, height: 1333 })
+		.setOverview("As a mobile app for both iOS and Android, Stocked is a dynamic meal generator which " +
+			"minimizes the shopping you need to do by suggesting recipes based on the ingredients already in your " +
+			"fridge. Other features include a receipt scanner and expiration tracker that helps save time and money.")
+		.setDemo("https://www.youtube.com/embed/JghgqwDF0NU")
+		.build(),
 
 	/*
 	 * 2020-2021

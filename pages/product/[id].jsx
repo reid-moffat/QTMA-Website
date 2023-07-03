@@ -66,7 +66,7 @@ export default function Product() {
 							<div className="team-container">
 								<h2 className="team-heading">The Team</h2>
 								<div className="team-names">
-									{product.studentInfo.map((info, i) => (
+									{product.members.map((info, i) => (
 										<a key={i} className="student-name" href={info.linkedin} rel="noreferrer"
 										   target="_blank">
 											{info.studentName}
@@ -87,13 +87,13 @@ export default function Product() {
 						{product.teamPhoto !== "" && (
 							<div className="overview-container">
 								<h2 className="overview-heading">Product Overview</h2>
-								<p className="product-desc">{product.productOverview}</p>
+								<p className="product-desc">{product.overview}</p>
 							</div>
 						)}
 
 						<div className="pitch-container">
 							<h2 className="pitch-heading">Product Pitch</h2>
-							<iframe className="product-pdf" type="pdf" src={product.productPitch}></iframe>
+							<iframe className="product-pdf" type="pdf" src={product.pitch}></iframe>
 						</div>
 
 						{product.teamPhoto !== "" && (
@@ -103,7 +103,7 @@ export default function Product() {
 									className="demo-video"
 									width="560"
 									height="315"
-									src={product.productDemo}
+									src={product.demo}
 									title="YouTube video player"
 									// frameborder="0"
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
