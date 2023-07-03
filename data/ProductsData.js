@@ -58,10 +58,138 @@ const generateProductData = (name, year, slogan, students, photoxy, overview, de
 	}
 }
 
+let ProductBuilder = function () {
+	return {
+		// Required
+		productName: undefined,
+		year: undefined,
+		slogan: undefined,
+		studentData: undefined,
+
+		// Optional
+		photoXY: undefined,
+		productOverview: undefined,
+		productDemo: undefined,
+
+		setName: function (productName) {
+			if (typeof productName != "string" || productName === '') {
+				throw new Error(`Name ${productName} is invalid, must be a non-empty string`);
+			}
+			this.productName = productName;
+			console.log("Product name value 1:" + productName);
+			return this;
+		},
+		setYear: function (year) {
+			if (year.match(/^20(19|20|21|22)-202[0-3]$/) == null || Number(year.substring(0, 4)) + 1 !== Number(year.substring(5, 9))) {
+				throw new Error(`Year ${year} is invalid, see regex`);
+			}
+			this.year = year;
+			return this;
+		},
+		setSlogan: function (slogan) {
+			if (typeof slogan != "string" || slogan === '') {
+				throw new Error(`Slogan ${slogan} is invalid, must be a non-empty string`);
+			}
+			this.slogan = slogan;
+			console.log("Product name value 2:" + this.productName);
+			return this;
+		},
+		setStudentData: function (studentInfo) {
+			const studentData = [];
+			if (!Array.isArray(studentInfo) || !studentInfo || (!this.year === "2020-2021" && studentInfo.length === 0)) {
+				throw new Error(`Students ${studentInfo} is invalid, must be a non-empty array`);
+			}
+			for (let i = 0; i < studentInfo.length; ++i) {
+				const student = studentInfo[i];
+				if (!Array.isArray(student) || student.length !== 2) {
+					throw new Error(`Student ${student} is invalid, must be an array with a student name and their linkedin id`);
+				}
+				if (typeof student[0] !== "string" || !student[0] || typeof student[1] !== "string" || !student[1]) {
+					throw new Error(`Student ${student} need a valid name & linkedin id (# if they don't have one)`);
+				}
+
+				studentData.push({
+					studentName: student[0],
+					linkedin: student[1] === '#' ? '#' : `https://www.linkedin.com/in/${student[1]}/`
+				});
+			}
+			this.studentData = studentData;
+			return this;
+		},
+
+		setPhotoXY: function (photoXY) {
+			if (!this.year === "2020-2021" && (typeof photoXY != "object" || photoXY === null || typeof photoXY.width != "number" || typeof photoXY.height != "number")) {
+				throw new Error(`Photoxy ${photoXY} is invalid, must be an object with width and height`);
+			}
+			this.photoXY = photoXY;
+			return this;
+		},
+		setOverview: function (productOverview) {
+			if (!this.year === "2020-2021" && (typeof productOverview !== "string" || !productOverview)) {
+				throw new Error(`Overview ${productOverview} is invalid, must be a non-empty string`);
+			}
+			this.productOverview = productOverview;
+			return this;
+		},
+		setDemo: function (productDemo) {
+			if (!(productDemo === '' || productDemo.match(/^https:\/\/www\.youtube\.com\/embed\/[a-zA-Z0-9_-]{11}$/))) {
+				throw new Error(`Demo ${productDemo} is invalid, must be either an empty string, or a valid youtube embed link`);
+			}
+			this.productDemo = productDemo;
+			return this;
+		},
+
+		build: function () {
+			if (this.productName === undefined || this.year === undefined || this.slogan === undefined || this.studentData === undefined) {
+				throw new Error("The fields productName, year, slogan and studentData must be defined. " +
+					`productName: ${this.productName} year: ${this.year} slogan: ${this.slogan} studentDate: ${this.studentData}`);
+			}
+
+			return {
+				productName: this.productName,
+				year: this.year,
+				slogan: this.slogan,
+				studentInfo: this.studentData,
+
+				photoXY: this.photoXY,
+				productOverview: this.productOverview,
+				productDemo: this.productDemo,
+
+				teamPhoto: this.year === "2020-2021" ? "" : getTeamPhoto(this.productName, this.year),
+				productPitch: getPitch(this.productName, this.year),
+			}
+		}
+	};
+};
+
 const ProductData = [
 	/*
 	 * 2019-2020
 	 */
+	new ProductBuilder()
+		.setName("Hungover")
+		.setYear("2019-2020")
+		.setSlogan("Taking your pregame to the next level")
+		.setStudentData([
+			["Diane Huang", "dianehuang11"],
+			["Ben Kitor", 'bkitor'],
+			["Tim Lampen", 'timlampen'],
+			["Sam Mcphail", 'sam-mcphail'],
+			["Sierra Cache angus", 'sierra-cache'],
+			["Victor Gao", 'victor-gao'],
+			["Tina Huang", 'tina-c-huang'],
+			["Ethan Blumberg", '#'],
+		])
+		.setPhotoXY( { width: 2000, height: 1470 })
+		.setOverview("Hangover is a social gaming app inspired by Cards Against Humanity and Kahoot. " +
+			"Enter a lobby to play with your friends, with one as the Host. Each round, the players will answer a " +
+			"mixture of different question types for the Host to judge at the end. The Host decides on a punishment " +
+			"(e.g. take a shot), a winner, and a loser. The loser must take the punishment while the winner can give " +
+			"the punishment to another player. The loser is then the new host for the subsequent round. Let Hangover " +
+			"be the perfect addition to your night!")
+		.setDemo("https://www.youtube.com/embed/xOm3xY2QCik")
+		.build(),
+
 	generateProductData("Hungover", "2019-2020", "Taking your pregame to the next level", [
 			["Diane Huang", "dianehuang11"],
 			["Ben Kitor", 'bkitor'],
@@ -211,5 +339,7 @@ const ProductData = [
 		"",
 	),
 ]
+
+console.log(JSON.stringify(ProductData[0], null, 4));
 
 export default ProductData;
