@@ -2,65 +2,8 @@
  * Data for all current and previous products
  */
 
-const getTeamPhoto = (name, year) => `/assets/Products/${year}/${name}_Team.png`;
-const getPitch = (name, year) => `/assets/Products/${year}/${name}_Pitch.pdf`;
-
-const generateProductData = (name, year, slogan, students, photoxy, overview, demo = '') => {
-	if (typeof name != "string" || name === '') {
-		throw new Error(`Name ${name} is invalid, must be a non-empty string`);
-	}
-	if (year.match(/^20(19|20|21|22)-202[0-3]$/) == null || Number(year.substring(0, 4)) + 1 !== Number(year.substring(5, 9))) {
-		throw new Error(`Year ${year} is invalid, see regex`);
-	}
-	if (typeof slogan != "string" || slogan === '') {
-		throw new Error(`Slogan ${slogan} is invalid, must be a non-empty string`);
-	}
-
-	const studentData = [];
-	if (!Array.isArray(students) || !students || (!year === "2020-2021" && students.length === 0)) {
-		throw new Error(`Students ${students} is invalid, must be a non-empty array`);
-	}
-	for (let i = 0; i < students.length; ++i) {
-		const student = students[i];
-		if (!Array.isArray(student) || student.length !== 2) {
-			throw new Error(`Student ${student} is invalid, must be an array with a student name and their linkedin id`);
-		}
-		if (typeof student[0] !== "string" || !student[0] || typeof student[1] !== "string" || !student[1]) {
-			throw new Error(`Student ${student} need a valid name & linkedin id (# if they don't have one)`);
-		}
-
-		studentData.push({
-			studentName: student[0],
-			linkedin: student[1] === '#' ? '#' : `https://www.linkedin.com/in/${student[1]}/`
-		});
-	}
-
-	if (!year === "2020-2021" && (typeof photoxy != "object" || photoxy === null || typeof photoxy.width != "number" || typeof photoxy.height != "number")) {
-		throw new Error(`Photoxy ${photoxy} is invalid, must be an object with width and height`);
-	}
-	if (!year === "2020-2021" && (typeof overview !== "string" || !overview)) {
-		throw new Error(`Overview ${overview} is invalid, must be a non-empty string`);
-	}
-	if (!(demo === '' || demo.match(/^https:\/\/www\.youtube\.com\/embed\/[a-zA-Z0-9_-]{11}$/))) {
-		throw new Error(`Demo ${demo} is invalid, must be either an empty string, or a valid youtube embed link`);
-	}
-
-	return {
-		productName: name,
-		year: year,
-		slogan: slogan,
-		members: studentData,
-
-		photoXY: photoxy,
-		overview: overview,
-		demo: demo,
-
-		teamPhoto: year === "2020-2021" ? "" : getTeamPhoto(name, year),
-		pitch: getPitch(name, year),
-	}
-}
-
-let ProductBuilder = function () {
+// Builder pattern object for creating & verifying a product object
+const ProductBuilder = function () {
 	return {
 		// Required
 		productName: undefined,
@@ -69,7 +12,6 @@ let ProductBuilder = function () {
 		members: undefined,
 
 		// Optional
-		photoXY: undefined,
 		overview: undefined,
 		demo: undefined,
 
@@ -78,7 +20,6 @@ let ProductBuilder = function () {
 				throw new Error(`Name ${productName} is invalid, must be a non-empty string`);
 			}
 			this.productName = productName;
-			console.log("Product name value 1:" + productName);
 			return this;
 		},
 		setYear: function (year) {
@@ -93,7 +34,6 @@ let ProductBuilder = function () {
 				throw new Error(`Slogan ${slogan} is invalid, must be a non-empty string`);
 			}
 			this.slogan = slogan;
-			console.log("Product name value 2:" + this.productName);
 			return this;
 		},
 		setStudentData: function (studentInfo) {
@@ -119,13 +59,6 @@ let ProductBuilder = function () {
 			return this;
 		},
 
-		setPhotoXY: function (photoXY) {
-			if (!this.year === "2020-2021" && (typeof photoXY != "object" || photoXY === null || typeof photoXY.width != "number" || typeof photoXY.height != "number")) {
-				throw new Error(`Photoxy ${photoXY} is invalid, must be an object with width and height`);
-			}
-			this.photoXY = photoXY;
-			return this;
-		},
 		setOverview: function (overview) {
 			if (!this.year === "2020-2021" && (typeof overview !== "string" || !overview)) {
 				throw new Error(`Overview ${overview} is invalid, must be a non-empty string`);
@@ -153,7 +86,7 @@ let ProductBuilder = function () {
 				slogan: this.slogan,
 				members: this.members,
 
-				photoXY: this.photoXY,
+				photoXY: { width: 2000, height: 1333 },
 				overview: this.overview,
 				demo: this.demo,
 
@@ -182,7 +115,6 @@ const ProductData = [
 			["Tina Huang", 'tina-c-huang'],
 			["Ethan Blumberg", '#'],
 		])
-		.setPhotoXY( { width: 2000, height: 1470 })
 		.setOverview("Hangover is a social gaming app inspired by Cards Against Humanity and Kahoot. " +
 			"Enter a lobby to play with your friends, with one as the Host. Each round, the players will answer a " +
 			"mixture of different question types for the Host to judge at the end. The Host decides on a punishment " +
@@ -206,7 +138,6 @@ const ProductData = [
 			["Kevin Ding", 'kevding'],
 			["Connor Colwill", 'connorcolwill'],
 		])
-		.setPhotoXY({ width: 2000, height: 1333 })
 		.setOverview("Studii offers a collaborative forum that provides both peer support and expert advice " +
 			"for a student’s course questions. Our vision is to harness the knowledge of students and academic experts " +
 			"on a nationwide study platform to improve the performance of Canadian university students")
@@ -227,7 +158,6 @@ const ProductData = [
 			["Julien Lin", 'julien-lin'],
 			["Graham Carkner", 'gcarkner'],
 		])
-		.setPhotoXY({ width: 2000, height: 1333 })
 		.setOverview("A geo-based, anti-harassment conscious anonymous messaging and content platform meant " +
 			"to strengthen relationships in local communities.")
 		.setDemo("https://www.youtube.com/embed/6dHJOGqdT8M")
@@ -247,7 +177,6 @@ const ProductData = [
 			["Alice QI", 'alice-qi-1b1a1a1a1'],
 			["Jake Koszczewski", 'jenny-zhang-1b1a1a1a1'],
 		])
-		.setPhotoXY({ width: 2000, height: 1333 })
 		.setOverview("As a mobile app for both iOS and Android, Stocked is a dynamic meal generator which " +
 			"minimizes the shopping you need to do by suggesting recipes based on the ingredients already in your " +
 			"fridge. Other features include a receipt scanner and expiration tracker that helps save time and money.")
@@ -319,31 +248,33 @@ const ProductData = [
 	/*
 	 * 2022-2023
 	 */
-	generateProductData("Feastly", "2022-2023", "Let's feast on something delicious",
-		[],
-		{},
-		"",
-	),
+	new ProductBuilder()
+		.setName("Feastly")
+		.setYear("2022-2023")
+		.setSlogan("Let's feast on something delicious")
+		.setStudentData([])
+		.build(),
 
-	generateProductData("Kartt", "2022-2023", "Shop smart with Kartt",
-		[],
-		{},
-		"",
-	),
+	new ProductBuilder()
+		.setName("Kartt")
+		.setYear("2022-2023")
+		.setSlogan("Shop smart with Kartt")
+		.setStudentData([])
+		.build(),
 
-	generateProductData("Sift", "2022-2023", "Choose the gift you want, stress free",
-		[],
-		{},
-		"",
-	),
+	new ProductBuilder()
+		.setName("Sift")
+		.setYear("2022-2023")
+		.setSlogan("Choose the gift you want, stress free")
+		.setStudentData([])
+		.build(),
 
-	generateProductData("Venato", "2022-2023", "Helping students reach their full potential",
-		[],
-		{},
-		"",
-	),
+	new ProductBuilder()
+		.setName("Venato")
+		.setYear("2022-2023")
+		.setSlogan("Helping students reach their full potential")
+		.setStudentData([])
+		.build(),
 ]
-
-console.log(JSON.stringify(ProductData[0], null, 4));
 
 export default ProductData;
