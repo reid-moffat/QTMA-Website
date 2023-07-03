@@ -257,52 +257,64 @@ const ProductData = [
 	/*
 	 * 2020-2021
 	 */
-	generateProductData("Eagle", "2020-2021", "Your Delivery Service Companion", [],
-		{},
-		"",
-	),
+	new ProductBuilder()
+		.setName("Eagle")
+		.setYear("2020-2021")
+		.setSlogan("Your Delivery Service Companion")
+		.setStudentData([])
+		.build(),
 
-	generateProductData("Pronto", "2020-2021", "Convenient lending for everyone", [],
-		{},
-		"",
-	),
+	new ProductBuilder()
+		.setName("Pronto")
+		.setYear("2020-2021")
+		.setSlogan("Convenient lending for everyone")
+		.setStudentData([])
+		.build(),
 
-	generateProductData("Voluntera", "2020-2021", "The one-stop shop for social impact", [],
-		{},
-		"",
-	),
+	new ProductBuilder()
+		.setName("Voluntera")
+		.setYear("2020-2021")
+		.setSlogan("The one-stop shop for social impact")
+		.setStudentData([])
+		.build(),
 
-	generateProductData("Loop", "2020-2021", "Authentic connections with good friends", [],
-		{},
-		"",
-	),
+	new ProductBuilder()
+		.setName("Loop")
+		.setYear("2020-2021")
+		.setSlogan("Authentic connections with good friends")
+		.setStudentData([])
+		.build(),
 
 	/*
 	 * 2021-2022
 	 */
-	generateProductData("Casa", "2021-2022", "Making the roommate finding process as easy as possible",
-		[],
-		{},
-		"",
-	),
+	new ProductBuilder()
+		.setName("Casa")
+		.setYear("2021-2022")
+		.setSlogan("Making the roommate finding process as easy as possible")
+		.setStudentData([])
+		.build(),
 
-	generateProductData("Haus", "2021-2022", "Haus helps Hausmates collaborate and save on groceries",
-		[],
-		{},
-		"",
-	),
+	new ProductBuilder()
+		.setName("Haus")
+		.setYear("2021-2022")
+		.setSlogan("Haus helps Hausmates collaborate and save on groceries")
+		.setStudentData([])
+		.build(),
 
-	generateProductData("Loco", "2021-2022", "The travel app for true Locos",
-		[],
-		{},
-		"",
-	),
+	new ProductBuilder()
+		.setName("Loco")
+		.setYear("2021-2022")
+		.setSlogan("The travel app for true Locos")
+		.setStudentData([])
+		.build(),
 
-	generateProductData("Soar", "2021-2022", "Find teammates to build your next side project",
-		[],
-		{},
-		"",
-	),
+	new ProductBuilder()
+		.setName("Soar")
+		.setYear("2021-2022")
+		.setSlogan("Find teammates to build your next side project")
+		.setStudentData([])
+		.build(),
 
 	/*
 	 * 2022-2023
