@@ -5,6 +5,7 @@ import Nav from "../Nav";
 import { ClubMembers, Positions } from "../../data/TeamData.js";
 import { AiFillLinkedin } from "react-icons/ai";
 import Head from "next/head";
+import Footer from "../../components/Footer";
 
 const Team = () => {
 
@@ -56,6 +57,7 @@ const Team = () => {
 					{renderClubMembers()}
 				</div>
 			</Layout>
+			<Footer/>
 		</>
 	);
 }

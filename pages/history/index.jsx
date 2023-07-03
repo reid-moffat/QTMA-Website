@@ -6,6 +6,7 @@ import Initiatives from "../../public/assets/Club Data/History/Initiatives.png";
 import FamilyPhoto from "../../public/assets/Club Data/History/Innovation.png";
 import Nav from "../Nav";
 import Head from "next/head";
+import Footer from "../../components/Footer";
 
 export async function getStaticProps({params}) {
 	return {
@@ -122,6 +123,7 @@ export default function History() {
 					</div>
 				</div>
 			</Layout>
+			<Footer/>
 		</>
 	);
 }

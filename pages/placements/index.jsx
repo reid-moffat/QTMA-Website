@@ -22,6 +22,7 @@ import Recruit16 from "../../public/assets/Club Data/Placements/recruit16.png";
 import Recruit17 from "../../public/assets/Club Data/Placements/recruit17.png";
 import Recruit18 from "../../public/assets/Club Data/Placements/recruit18.png";
 import Recruit19 from "../../public/assets/Club Data/Placements/recruit19.png";
+import Footer from "../../components/Footer";
 
 
 export async function getStaticProps({params}) {
@@ -106,6 +107,7 @@ export default function Placements() {
 					</div>
 				</div>
 			</Layout>
+			<Footer/>
 		</>
 	);
 }

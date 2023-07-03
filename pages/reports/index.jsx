@@ -2,6 +2,7 @@ import Layout from "../../components/layout";
 import { HiOutlineDocumentDownload } from "react-icons/hi";
 import Nav from "../Nav";
 import Head from "next/head";
+import Footer from "../../components/Footer";
 
 export async function getStaticProps({params}) {
 	return {
@@ -42,6 +43,7 @@ export default function Report() {
 					</a> */}
 				</div>
 			</Layout>
+			<Footer/>
 		</>
 	);
 }

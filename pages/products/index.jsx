@@ -4,6 +4,7 @@ import Nav from "../Nav";
 import Link from "next/link";
 import Head from "next/head";
 import productData from "../../data/ProductsData";
+import Footer from "../../components/Footer";
 
 const getLogo = (name, year) => `/assets/Products/${year}/${name}_Logo.png`;
 
@@ -69,6 +70,7 @@ export default function Products() {
 					</div>
 				</div>
 			</Layout>
+			<Footer/>
 		</>
 	);
 }

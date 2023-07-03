@@ -6,6 +6,7 @@ import React, { useRef, useState } from "react";
 import validator from "validator";
 import axios from "axios";
 import Head from "next/head";
+import Footer from "../../components/Footer";
 
 
 export async function getStaticProps({params}) {
@@ -127,6 +128,7 @@ export default function Contact() {
 					</div>
 				</div>
 			</Layout>
+			<Footer/>
 		</>
 	);
 }
