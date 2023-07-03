@@ -145,6 +145,8 @@ let ProductBuilder = function () {
 					`productName: ${this.productName} year: ${this.year} slogan: ${this.slogan} studentDate: ${this.studentData}`);
 			}
 
+			const photo: string = this.year === "2020-2021" ? "" : getTeamPhoto(this.productName, this.year);
+			const pitch: string = getPitch(this.productName, this.year);
 			return {
 				productName: this.productName,
 				year: this.year,
@@ -155,8 +157,8 @@ let ProductBuilder = function () {
 				productOverview: this.productOverview,
 				productDemo: this.productDemo,
 
-				teamPhoto: this.year === "2020-2021" ? "" : getTeamPhoto(this.productName, this.year),
-				productPitch: getPitch(this.productName, this.year),
+				teamPhoto: photo,
+				productPitch: pitch,
 			}
 		}
 	};
