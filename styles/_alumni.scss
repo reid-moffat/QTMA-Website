@@ -37,7 +37,7 @@
     align-items: center;
     background-color: white;
     width: 409px;
-    height: 419px;
+    height: 500px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     @media only screen and(max-width: 1300px) {
       width: 330px;
@@ -64,8 +64,14 @@
       .alumni-title {
         font-size: 0.9rem;
         font-weight: normal;
-        padding-top: .5rem;
+        padding-top: .2rem;
         color: lightslategray;
+      }
+      .alumni-program {
+        font-size: 1rem;
+        font-weight: normal;
+        padding-top: .2rem;
+        color: rgb(145, 160, 175);
       }
     }
 
@@ -80,11 +86,20 @@
     }
 
     .alumni-desc {
-      width: 80%;
+      width: 90%;
       line-height: 25px;
+      margin-top: -6rem;
       @media only screen and(max-width: 1300px) {
-        line-height: 23px;
+        line-height: 25px;
         width: 85%;
+      }
+      .alumni-bold{
+        color: rgb(108, 105, 105);
+        font-size: large;
+      }
+      .alumni-quotation{
+        color: rgb(108, 105, 105);
+        font-size: 30px;
       }
 
     }
@@ -96,5 +111,41 @@
         top: 0;
       }
     }
+  }
+}
+
+.alumni-social-icon {
+  cursor: pointer;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  border-radius: 100%/100%;
+  border: solid 2px white;
+
+  &:nth-child(2) {
+    margin: 0 3rem;
+  }
+
+  font-size: 1.3rem;
+  @media only screen and(max-width: 650px) {
+    font-size: 1.1rem;
+  }
+  @media only screen and(max-width: 340px) {
+    font-size: 1rem;
+    padding: .7rem;
+  }
+  transition: border .7s;
+
+  &:hover:nth-child(1) {
+    border-color: #17a9fc;
+  }
+
+  &:hover:nth-child(2) {
+    border-color: #0a66c2;
+  }
+
+  &:hover:nth-child(3) {
+    border-color: #c72d8e;
   }
 }
