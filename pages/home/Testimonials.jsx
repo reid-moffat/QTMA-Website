@@ -3,6 +3,7 @@ import Image from "next/image";
 import Zack from "../../public/assets/Data/Zack.png";
 import Jamyang from "../../public/assets/Data/Jamyang.png";
 import Justin from "../../public/assets/Data/Justin.png";
+import { AiFillLinkedin } from "react-icons/ai";
 
 export default function Testimonials() {
     return (
@@ -16,14 +17,20 @@ export default function Testimonials() {
                                    height={ 118 }/>
                         </div>
                         <div className="alumni-info">
-                            <h2 className="alumni-name">Jamyang Tenzin</h2>
-                            <h3 className="alumni-title">Business Operations & Strategy @ Shopify</h3>
+                            <h2 className="alumni-name">Jamyang Tenzin - Co-Chair '17</h2>
+                            <h3 className="alumni-program">Commerce '18</h3>
+                            <a className="alumni-social-icon"
+                                href="https://www.linkedin.com/in/jamyangtenzin/"
+                                target="_blank" rel="noreferrer">
+                                <AiFillLinkedin/>
+                            </a>
+                            <h3 className="alumni-title">CEO @ Centro Commerce</h3>
                         </div>
                         <p className="alumni-desc">
-                            “At university, while you’re growing and changing, the people you are around matter! I found
+                            <strong className="alumni-quotation">“</strong>At university, while you’re growing and changing, the people you are around matter! <strong className="alumni-bold">I found
                             being on QTMA gave me a group of consistently exceptional people, smart, kind, and
                             interesting,
-                            who bettered me. If you’re looking for the same - join us!”
+                            who bettered me.</strong> If you’re looking for the same - join us!
                         </p>
                     </div>
                     <div className="alumni-card">
@@ -32,17 +39,23 @@ export default function Testimonials() {
                                    height={ 118 }/>
                         </div>
                         <div className="alumni-info">
-                            <h2 className="alumni-name">Zack Harley</h2>
-                            <h3 className="alumni-title">Software Engineer @ Ten Thousand Coffees</h3>
+                            <h2 className="alumni-name">Zackery Harley - Lead Dev '17</h2>
+                            <h3 className="alumni-program">Computer Engineering '18</h3>
+                            <a className="alumni-social-icon"
+                                href="https://www.linkedin.com/in/zackharley/?originalSubdomain=ca"
+                                target="_blank" rel="noreferrer">
+                                <AiFillLinkedin/>
+                            </a>
+                            <h3 className="alumni-title">Lead Engineer @ The Commons</h3>
                         </div>
                         <p className="alumni-desc">
-                            “QTMA allowed me to work with students across multiple faculties to design and build
+                            <strong className="alumni-quotation">“</strong><strong className="alumni-bold">QTMA allowed me to work with students across multiple faculties to design and build
                             long-term
-                            projects. Earning this valuable experience is definitely one of the reasons I think I stood
+                            projects.</strong> Earning this valuable experience is definitely one of the reasons I think I stood
                             out
                             to potential employers. The communication and teamwork skills I developed through QTMA are
                             ones
-                            I still use today. I can not recommend this organization enough!”
+                            I still use today. I can not recommend this organization enough!
                         </p>
                     </div>
                     <div className="alumni-card">
@@ -51,14 +64,21 @@ export default function Testimonials() {
                                    height={ 118 }/>
                         </div>
                         <div className="alumni-info">
-                            <h2 className="alumni-name">Justin Herlick</h2>
+                            <h2 className="alumni-name">Justin Herlick - Co-Founder '13</h2>
+                            <h3 className="alumni-program">Commerce and Computing '16</h3>
+                            <a className="alumni-social-icon"
+                                href="https://www.linkedin.com/in/jherlick/"
+                                target="_blank" rel="noreferrer">
+                                <AiFillLinkedin/>
+                            </a>
                             <h3 className="alumni-title">Co-founder @ Pine</h3>
                         </div>
                         <p className="alumni-desc">
-                            “When I founded QTMA over 5 years ago I had no idea how large it would become. Looking back
-                            now
-                            I am thrilled that we have been able to help launch so many students’ careers in tech across
-                            North America. Even today I advocate for QTMA in Silicon Valley”
+                            <strong className="alumni-quotation">“</strong>When I founded QTMA over 5 years ago I had no idea how large it would become. Looking back
+                            now.
+                            <strong className="alumni-bold"> I am thrilled that we have been able to help launch so many students’ careers in tech across
+                            North America.</strong>
+                             Even today I advocate for QTMA in Silicon Valley
                         </p>
                     </div>
                 </div>
