@@ -103,9 +103,9 @@ const generateMemberData = (image, name, position, linkedin = "", subPosition = 
 
 const ClubMembers = [
 	// Co-chairs
-	generateMemberData(MatthewMacEachern, "Matthew MacEachern", "Co-Chair"),
-	generateMemberData(AlisonXia, "Alison Xia", "Co-Chair"),
-	generateMemberData(EgorPetrov, "Egor Petrov", "Co-Chair"),
+	generateMemberData(MatthewMacEachern, "Matthew MacEachern", "Co-Chair", "https://www.linkedin.com/in/matthew-maceachern/"),
+	generateMemberData(AlisonXia, "Alison Xia", "Co-Chair", "https://www.linkedin.com/in/alison-xia/"),
+	generateMemberData(EgorPetrov, "Jegor Petrov", "Co-Chair"),
 
 	// Club operations
 	generateMemberData(KevinLiang, "Kevin Liang", "Club Operations", "", "Director"),

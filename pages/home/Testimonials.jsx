@@ -77,8 +77,8 @@ export default function Testimonials() {
                             <strong className="alumni-quotation">“</strong>When I founded QTMA over 5 years ago I had no idea how large it would become. Looking back
                             now.
                             <strong className="alumni-bold"> I am thrilled that we have been able to help launch so many students’ careers in tech across
-                            North America.</strong>
-                             Even today I advocate for QTMA in Silicon Valley
+                            North America. </strong>
+                            Even today I advocate for QTMA in Silicon Valley
                         </p>
                     </div>
                 </div>
