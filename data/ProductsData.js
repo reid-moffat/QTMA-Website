@@ -274,6 +274,12 @@ const ProductData = [
 		.setYear("2022-2023")
 		.setSlogan("Helping students reach their full potential")
 		.setStudentData([])
+		.setOverview("As securing an internship is becoming increasingly " +
+			"competitive, students have a hard time finding and staying on top of " +
+			"every opportunity. Students’ lack of job application tools further cause " +
+			"unnecessary stress and worry. Venato solves that by Helping students " +
+			"reach their full potential: a one-stop,simple, easy-to-use internship hub to " +
+			"organize your job application processes.")
 		.build(),
 ]
 
