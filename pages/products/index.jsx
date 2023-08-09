@@ -88,7 +88,6 @@ export default function Products() {
 					</div>
 				</div>
 			</Layout>
-			<Footer/>
 		</>
 	);
 }
