@@ -5,7 +5,7 @@
 	justify-content: space-between;
 	flex-direction: column;
 	padding-bottom: 5rem;
-  
+
 	h1 {
 	  padding-bottom: 12rem;
 	  @media only screen and(max-width: 1350px) {
@@ -16,7 +16,7 @@
 	  }
 	}
   }
-  
+
   .alumni-container {
 	display: flex;
 	justify-content: space-around;
@@ -27,7 +27,7 @@
 	  grid-template-columns: 1fr;
 	  justify-items: center;
 	}
-  
+
 	.alumni-card {
 	  position: relative;
 	  text-align: center;
@@ -55,12 +55,12 @@
 	  @media only screen and(max-width: 340px) {
 		width: 300px;
 	  }
-  
+
 	  .alumni-info {
 		.alumni-name {
-		  padding-top: 59px;
+		  padding-top: 10px;
 		}
-  
+
 		.alumni-title {
 		  font-size: 0.9rem;
 		  font-weight: normal;
@@ -74,21 +74,21 @@
 		  color: rgb(145, 160, 175);
 		}
 	  }
-  
+
 	  .alumni-image-container {
 		position: absolute;
 		top: -59px;
-  
+
 		.alumni-image {
 		  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 		  border-radius: 50%;
 		}
 	  }
-  
+
 	  .alumni-desc {
 		width: 90%;
 		line-height: 25px;
-		margin-top: -6rem;
+		margin-top: -120px;
 		@media only screen and(max-width: 1300px) {
 		  line-height: 25px;
 		  width: 85%;
@@ -101,9 +101,9 @@
 		  color: rgb(108, 105, 105);
 		  font-size: 30px;
 		}
-  
+
 	  }
-  
+
 	  &:nth-child(2) {
 		position: relative;
 		top: -50px;
@@ -113,7 +113,7 @@
 	  }
 	}
   }
-  
+
   .alumni-social-icon {
 	cursor: pointer;
 	display: inline-block;
@@ -122,11 +122,11 @@
 	padding: 0.8rem;
 	border-radius: 100%/100%;
 	border: solid 2px white;
-  
+
 	&:nth-child(2) {
 	  margin: 0 3rem;
 	}
-  
+
 	font-size: 1.3rem;
 	@media only screen and(max-width: 650px) {
 	  font-size: 1.1rem;
@@ -136,15 +136,15 @@
 	  padding: .7rem;
 	}
 	transition: border .7s;
-  
+
 	&:hover:nth-child(1) {
 	  border-color: #17a9fc;
 	}
-  
+
 	&:hover:nth-child(2) {
 	  border-color: #0a66c2;
 	}
-  
+
 	&:hover:nth-child(3) {
 	  border-color: #c72d8e;
 	}
