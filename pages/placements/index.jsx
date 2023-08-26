@@ -4,24 +4,25 @@ import Nav from "../Nav";
 import Head from "next/head";
 
 import Recruit1 from "../../public/assets/Club Data/Placements/recruit1.png";
-import Recruit2 from "../../public/assets/Club Data/Placements/recruit2.png";
-import Recruit3 from "../../public/assets/Club Data/Placements/recruit3.png";
+import Recruit2 from "../../public/assets/Club Data/Placements/amazon.png";
+import Recruit3 from "../../public/assets/Club Data/Placements/bain&co.png";
 import Recruit4 from "../../public/assets/Club Data/Placements/recruit4.png";
 import Recruit5 from "../../public/assets/Club Data/Placements/recruit5.png";
-import Recruit6 from "../../public/assets/Club Data/Placements/recruit6.png";
+import Recruit6 from "../../public/assets/Club Data/Placements/dropbox.png";
 import Recruit7 from "../../public/assets/Club Data/Placements/recruit7.png";
-import Recruit8 from "../../public/assets/Club Data/Placements/recruit8.png";
-import Recruit9 from "../../public/assets/Club Data/Placements/recruit9.png";
-import Recruit10 from "../../public/assets/Club Data/Placements/recruit10.png";
-import Recruit11 from "../../public/assets/Club Data/Placements/recruit11.png";
-import Recruit12 from "../../public/assets/Club Data/Placements/recruit12.png";
+import Recruit8 from "../../public/assets/Club Data/Placements/instagram.png";
+import Recruit9 from "../../public/assets/Club Data/Placements/jpmorgan.png";
+import Recruit10 from "../../public/assets/Club Data/Placements/mckinsey.png";
+import Recruit11 from "../../public/assets/Club Data/Placements/morganstanley.png";
+import Recruit12 from "../../public/assets/Club Data/Placements/microsoft.png";
 import Recruit13 from "../../public/assets/Club Data/Placements/recruit13.png";
-import Recruit14 from "../../public/assets/Club Data/Placements/recruit14.png";
-import Recruit15 from "../../public/assets/Club Data/Placements/recruit15.png";
-import Recruit16 from "../../public/assets/Club Data/Placements/recruit16.png";
-import Recruit17 from "../../public/assets/Club Data/Placements/recruit17.png";
-import Recruit18 from "../../public/assets/Club Data/Placements/recruit18.png";
-import Recruit19 from "../../public/assets/Club Data/Placements/recruit19.png";
+import Recruit14 from "../../public/assets/Club Data/Placements/google.png";
+import Recruit15 from "../../public/assets/Club Data/Placements/shopify.png";
+import Recruit16 from "../../public/assets/Club Data/Placements/tesla.png";
+import Recruit17 from "../../public/assets/Club Data/Placements/tenthousandcoffees.png";
+import Recruit18 from "../../public/assets/Club Data/Placements/uber.png";
+import Recruit19 from "../../public/assets/Club Data/Placements/wealthsimple.png";
+
 import Footer from "../../components/Footer";
 
 
@@ -32,6 +33,15 @@ export async function getStaticProps({params}) {
 }
 
 export default function Placements() {
+
+	const generateRecruit = (recruit) =>  {
+		return (
+			<div className="recruitment">
+				<Image alt="Company logo" src={recruit}/>
+			</div>
+		);
+	};
+
 	return (
 		<>
 			<Head>
@@ -47,63 +57,25 @@ export default function Placements() {
 						Our members have sucessfully recruited at these organizations:
 					</p>
 					<div className="recruitment-container">
-						<div className="recruitment">
-							<Image alt="Company logos" src={Recruit1} width={108} height={108}/>
-						</div>
-						<div className="recruitment">
-							<Image alt="Company logos" src={Recruit2} width={208} height={75}/>
-						</div>
-						<div className="recruitment">
-							<Image alt="Company logos" src={Recruit3} width={200} height={125}/>
-						</div>
-						<div className="recruitment">
-							<Image alt="Company logos" src={Recruit4} width={102} height={100}/>
-						</div>
-						<div className="recruitment">
-							<Image alt="Company logos" src={Recruit5} width={270} height={135.183}/>
-						</div>
-						<div className="recruitment">
-							<Image alt="Company logos" src={Recruit6} width={89} height={89}/>
-						</div>
-						<div className="recruitment">
-							<Image alt="Company logos" src={Recruit7} width={275} height={120}/>
-						</div>
-						<div className="recruitment">
-							<Image alt="Company logos" src={Recruit8} width={170} height={170}/>
-						</div>
-						<div className="recruitment">
-							<Image alt="Company logos" src={Recruit9} width={281} height={56}/>
-						</div>
-						<div className="recruitment">
-							<Image alt="Company logos" src={Recruit10} width={266} height={135}/>
-						</div>
-						<div className="recruitment">
-							<Image alt="Company logos" src={Recruit11} width={260} height={64}/>
-						</div>
-						<div className="recruitment">
-							<Image alt="Company logos" src={Recruit12} width={227} height={60}/>
-						</div>
-						<div className="recruitment">
-							<Image alt="Company logos" src={Recruit13} width={297} height={79}/>
-						</div>
-						<div className="recruitment">
-							<Image alt="Company logos" src={Recruit14} width={249} height={81}/>
-						</div>
-						<div className="recruitment">
-							<Image alt="Company logos" src={Recruit15} width={247} height={72}/>
-						</div>
-						<div className="recruitment">
-							<Image alt="Company logos" src={Recruit16} width={249} height={189}/>
-						</div>
-						<div className="recruitment">
-							<Image alt="Company logos" src={Recruit17} width={172} height={170}/>
-						</div>
-						<div className="recruitment">
-							<Image alt="Company logos" src={Recruit18} width={291} height={193}/>
-						</div>
-						<div className="recruitment">
-							<Image alt="Company logos" src={Recruit19} width={95} height={93}/>
-						</div>
+						{generateRecruit(Recruit1)}
+						{generateRecruit(Recruit2)}
+						{generateRecruit(Recruit3)}
+						{generateRecruit(Recruit4)}
+						{generateRecruit(Recruit5)}
+						{generateRecruit(Recruit6)}
+						{generateRecruit(Recruit7)}
+						{generateRecruit(Recruit8)}
+						{generateRecruit(Recruit9)}
+						{generateRecruit(Recruit10)}
+						{generateRecruit(Recruit11)}
+						{generateRecruit(Recruit12)}
+						{generateRecruit(Recruit13)}
+						{generateRecruit(Recruit14)}
+						{generateRecruit(Recruit15)}
+						{generateRecruit(Recruit16)}
+						{generateRecruit(Recruit17)}
+						{generateRecruit(Recruit18)}
+						{generateRecruit(Recruit19)}
 					</div>
 				</div>
 			</Layout>
