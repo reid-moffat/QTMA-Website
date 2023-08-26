@@ -34,10 +34,12 @@ export async function getStaticProps({params}) {
 
 export default function Placements() {
 
-	const generateRecruit = (recruit) =>  {
+	const generateRecruit = (recruit, url) =>  {
 		return (
 			<div className="recruitment">
-				<Image alt="Company logo" src={recruit}/>
+				<a href={url} target="_blank">
+					<Image alt="Company logo" src={recruit}/>
+				</a>
 			</div>
 		);
 	};
@@ -58,7 +60,7 @@ export default function Placements() {
 					</p>
 					<div className="recruitment-container">
 						{generateRecruit(Recruit1)}
-						{generateRecruit(Recruit2)}
+						{generateRecruit(Recruit2, "https://www.amazon.jobs/en/")}
 						{generateRecruit(Recruit3)}
 						{generateRecruit(Recruit4)}
 						{generateRecruit(Recruit5)}
