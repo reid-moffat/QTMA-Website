@@ -19,7 +19,9 @@ const Team = () => {
 			<>
 				<p className="position-name">{category + (category.endsWith("s") ? "" : "s")}</p>
 				<div className="student-photos">
-					{ClubMembers
+					{category === "Frosh Rep"
+						? <h1>TBD</h1>
+						: ClubMembers
 						.filter((student) => student.position === category)
 						.map((student, i) => (
 							<div key={i} className="student-container">
