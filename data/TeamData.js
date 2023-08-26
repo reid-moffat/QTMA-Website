@@ -173,7 +173,6 @@ const ClubMembers = [
 	// Web devs 🙂
 	generateMemberData(ReidMoffat, "Reid Moffat", "Website Developer"),
 	generateMemberData(YvesAlikalfic, "Yves Alikalfic", "Website Developer"),
-	generateMemberData(KevinLiang, "Kevin Liang", "Website Developer"),
 ]
 
 export { Positions, ClubMembers };

@@ -1,6 +1,5 @@
 import Layout from "../../components/layout";
 import Image from "next/image";
-//import FamilyPhoto from "../../public/assets/Members/2021-2022/FamilyPhoto.png";
 import Nav from "../Nav";
 import { ClubMembers, Positions } from "../../data/TeamData.js";
 import { AiFillLinkedin } from "react-icons/ai";
