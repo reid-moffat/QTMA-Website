@@ -9,13 +9,14 @@ import Footer from "../../components/Footer";
 const getLogo = (name, year) => `/assets/Products/${year}/${name}_Logo.png`;
 
 export default function Products() {
-	const productContainer = (name, logoWidth, logoHeight) => {
+	const productContainer = (name) => {
 		const link = `/product/${name}`;
 		const data = productData.find(product => product.productName === name);
 		if (!data) {
 			throw new Error(`Product ${name} not found`);
 		}
 
+		console.log('Data: ' + JSON.stringify(data, null, 4));
 		return (
 			<Link passHref href={link}>
 				<div className="product2">
@@ -23,8 +24,8 @@ export default function Products() {
 						<h3>{name}</h3>
 						<p>{data["slogan"]}</p>
 					</div>
-					<Image alt="Product Logo" src={getLogo(name, data["year"])} width={logoWidth}
-						   height={logoHeight}/>
+					<Image alt="Product Logo" src={data.logo} width={data.logoWidth}
+						   height={data.logoHeight}/>
 				</div>
 			</Link>
 		)

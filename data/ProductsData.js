@@ -10,6 +10,8 @@ const ProductBuilder = function () {
 		year: undefined,
 		slogan: undefined,
 		members: undefined,
+		logoWidth: undefined,
+		logoHeight: undefined,
 
 		// Optional
 		overview: undefined,
@@ -58,6 +60,11 @@ const ProductBuilder = function () {
 			this.members = studentData;
 			return this;
 		},
+		setLogoDimensions: function (dimensions) {
+			this.logoWidth = dimensions.width;
+			this.logoHeight = dimensions.height;
+			return this;
+		},
 
 		setOverview: function (overview) {
 			if (!this.year === "2020-2021" && (typeof overview !== "string" || !overview)) {
@@ -90,6 +97,8 @@ const ProductBuilder = function () {
 				overview: this.overview,
 				demo: this.demo,
 
+				logoHeight: this.logoHeight,
+				logoWidth: this.logoWidth,
 				logo: `/assets/Products/${this.year}/${this.productName}_Logo.png`,
 				teamPhoto: `/assets/Products/${this.year}/${this.productName}_Team.png`,
 				pitch: `/assets/Products/${this.year}/${this.productName}_Pitch.pdf`,
@@ -116,6 +125,7 @@ const ProductData = [
 			["Tina Huang", 'tina-c-huang'],
 			["Ethan Blumberg", '#'],
 		])
+		.setLogoDimensions({width: 120, height: 133.13})
 		.setOverview("Hangover is a social gaming app inspired by Cards Against Humanity and Kahoot. " +
 			"Enter a lobby to play with your friends, with one as the Host. Each round, the players will answer a " +
 			"mixture of different question types for the Host to judge at the end. The Host decides on a punishment " +
@@ -139,6 +149,7 @@ const ProductData = [
 			["Kevin Ding", 'kevding'],
 			["Connor Colwill", 'connorcolwill'],
 		])
+		.setLogoDimensions({width: 176.21, height: 59})
 		.setOverview("Studii offers a collaborative forum that provides both peer support and expert advice " +
 			"for a student’s course questions. Our vision is to harness the knowledge of students and academic experts " +
 			"on a nationwide study platform to improve the performance of Canadian university students")
@@ -159,6 +170,7 @@ const ProductData = [
 			["Julien Lin", 'julien-lin'],
 			["Graham Carkner", 'gcarkner'],
 		])
+		.setLogoDimensions({width: 151.4, height: 90})
 		.setOverview("A geo-based, anti-harassment conscious anonymous messaging and content platform meant " +
 			"to strengthen relationships in local communities.")
 		.setDemo("https://www.youtube.com/embed/6dHJOGqdT8M")
@@ -178,6 +190,7 @@ const ProductData = [
 			["Alice QI", 'alice-qi-1b1a1a1a1'],
 			["Jake Koszczewski", 'jenny-zhang-1b1a1a1a1'],
 		])
+		.setLogoDimensions({width: 252.59, height: 60})
 		.setOverview("As a mobile app for both iOS and Android, Stocked is a dynamic meal generator which " +
 			"minimizes the shopping you need to do by suggesting recipes based on the ingredients already in your " +
 			"fridge. Other features include a receipt scanner and expiration tracker that helps save time and money.")
@@ -192,6 +205,7 @@ const ProductData = [
 		.setYear("2020-2021")
 		.setSlogan("Your Delivery Service Companion")
 		.setStudentData([])
+		.setLogoDimensions({width: 200, height: 122})
 		.build(),
 
 	new ProductBuilder()
@@ -199,6 +213,7 @@ const ProductData = [
 		.setYear("2020-2021")
 		.setSlogan("Convenient lending for everyone")
 		.setStudentData([])
+		.setLogoDimensions({width: 120, height: 116})
 		.build(),
 
 	new ProductBuilder()
@@ -206,6 +221,7 @@ const ProductData = [
 		.setYear("2020-2021")
 		.setSlogan("The one-stop shop for social impact")
 		.setStudentData([])
+		.setLogoDimensions({width: 250, height: 60})
 		.build(),
 
 	new ProductBuilder()
@@ -213,6 +229,7 @@ const ProductData = [
 		.setYear("2020-2021")
 		.setSlogan("Authentic connections with good friends")
 		.setStudentData([])
+		.setLogoDimensions({width: 200, height: 100})
 		.build(),
 
 	/*
@@ -223,6 +240,7 @@ const ProductData = [
 		.setYear("2021-2022")
 		.setSlogan("Making the roommate finding process as easy as possible")
 		.setStudentData([])
+		.setLogoDimensions({width: 200, height: 150})
 		.build(),
 
 	new ProductBuilder()
@@ -230,6 +248,7 @@ const ProductData = [
 		.setYear("2021-2022")
 		.setSlogan("Haus helps Hausmates collaborate and save on groceries")
 		.setStudentData([])
+		.setLogoDimensions({width: 180, height: 120})
 		.build(),
 
 	new ProductBuilder()
@@ -237,6 +256,7 @@ const ProductData = [
 		.setYear("2021-2022")
 		.setSlogan("The travel app for true Locos")
 		.setStudentData([])
+		.setLogoDimensions({width: 200, height: 100})
 		.build(),
 
 	new ProductBuilder()
@@ -244,6 +264,7 @@ const ProductData = [
 		.setYear("2021-2022")
 		.setSlogan("Find teammates to build your next side project")
 		.setStudentData([])
+		.setLogoDimensions({width: 200, height: 100})
 		.build(),
 
 	/*
@@ -254,6 +275,7 @@ const ProductData = [
 		.setYear("2022-2023")
 		.setSlogan("Let's feast on something delicious")
 		.setStudentData([])
+		.setLogoDimensions({width: 200, height: 100})
 		.build(),
 
 	new ProductBuilder()
@@ -261,6 +283,7 @@ const ProductData = [
 		.setYear("2022-2023")
 		.setSlogan("Shop smart with Kartt")
 		.setStudentData([])
+		.setLogoDimensions({width: 200, height: 100})
 		.build(),
 
 	new ProductBuilder()
@@ -268,6 +291,7 @@ const ProductData = [
 		.setYear("2022-2023")
 		.setSlogan("Choose the gift you want, stress free")
 		.setStudentData([])
+		.setLogoDimensions({width: 200, height: 200})
 		.build(),
 
 	new ProductBuilder()
@@ -275,6 +299,7 @@ const ProductData = [
 		.setYear("2022-2023")
 		.setSlogan("Helping students reach their full potential")
 		.setStudentData([])
+		.setLogoDimensions({width: 200, height: 200})
 		.setOverview("As securing an internship is becoming increasingly " +
 			"competitive, students have a hard time finding and staying on top of " +
 			"every opportunity. Students’ lack of job application tools further cause " +
