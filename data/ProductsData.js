@@ -90,6 +90,7 @@ const ProductBuilder = function () {
 				overview: this.overview,
 				demo: this.demo,
 
+				logo: `/assets/Products/${this.year}/${this.productName}_Logo.png`,
 				teamPhoto: `/assets/Products/${this.year}/${this.productName}_Team.png`,
 				pitch: `/assets/Products/${this.year}/${this.productName}_Pitch.pdf`,
 			}
