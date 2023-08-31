@@ -9,26 +9,32 @@ import Footer from "../../components/Footer";
 const getLogo = (name, year) => `/assets/Products/${year}/${name}_Logo.png`;
 
 export default function Products() {
-	const productContainer = (name) => {
-		const link = `/product/${name}`;
-		const data = productData.find(product => product.productName === name);
-		if (!data) {
-			throw new Error(`Product ${name} not found`);
-		}
 
-		console.log('Data: ' + JSON.stringify(data, null, 4));
+	const renderYear = (year) => {
+		const products = productData.filter(product => product.year === year);
 		return (
-			<Link passHref href={link}>
-				<div className="product2">
-					<div className="product-info2">
-						<h3>{name}</h3>
-						<p>{data["slogan"]}</p>
-					</div>
-					<Image alt="Product Logo" src={data.logo} width={data.logoWidth}
-						   height={data.logoHeight}/>
+			<>
+				<p className="product-subheading2"><i>{year}:</i></p>
+				<div className="products-container2">
+					{products.map(product => {
+						const name = product.productName;
+
+						return (
+							<Link passHref href={`/product/${name}`}>
+								<div className="product2">
+									<div className="product-info2">
+										<h3>{name}</h3>
+										<p>{product.slogan}</p>
+									</div>
+									<Image alt="Product Logo" src={product.logo} width={product.logoWidth}
+										   height={product.logoHeight}/>
+								</div>
+							</Link>
+						)
+					})}
 				</div>
-			</Link>
-		)
+			</>
+		);
 	}
 
 	return (
@@ -56,37 +62,10 @@ export default function Products() {
 						problems.
 					</p>
 
-					<p className="product-subheading2"><i>2022-2023:</i></p>
-					<div className="products-container2">
-						{productContainer("Feastly")}
-						{productContainer("Kartt")}
-						{productContainer("Sift")}
-						{productContainer("Venato")}
-					</div>
-
-					<p className="product-subheading2"><i>2021-2022:</i></p>
-					<div className="products-container2">
-						{productContainer("Casa")}
-						{productContainer("Haus")}
-						{productContainer("Loco")}
-						{productContainer("Soar")}
-					</div>
-
-					<p className="product-subheading2"><i>2020-2021:</i></p>
-					<div className="products-container2">
-						{productContainer("Eagle")}
-						{productContainer("Pronto")}
-						{productContainer("Voluntera")}
-						{productContainer("Loop")}
-					</div>
-
-					<p className="product-subheading2"><i>2019-2020:</i></p>
-					<div className="products-container2">
-						{productContainer("Stocked")}
-						{productContainer("Hungover")}
-						{productContainer("Wob")}
-						{productContainer("Studii")}
-					</div>
+					{renderYear('2022-2023')}
+					{renderYear('2021-2022')}
+					{renderYear('2020-2021')}
+					{renderYear('2019-2020')}
 				</div>
 			</Layout>
 		</>
