@@ -283,7 +283,7 @@ const ProductData = [
 		.setYear("2022-2023")
 		.setSlogan("Shop smart with Kartt")
 		.setStudentData([])
-		.setLogoDimensions({width: 200, height: 100})
+		.setLogoDimensions({width: 200, height: 80})
 		.build(),
 
 	new ProductBuilder()
@@ -291,7 +291,7 @@ const ProductData = [
 		.setYear("2022-2023")
 		.setSlogan("Choose the gift you want, stress free")
 		.setStudentData([])
-		.setLogoDimensions({width: 200, height: 200})
+		.setLogoDimensions({width: 200, height: 100})
 		.build(),
 
 	new ProductBuilder()
@@ -299,7 +299,7 @@ const ProductData = [
 		.setYear("2022-2023")
 		.setSlogan("Helping students reach their full potential")
 		.setStudentData([])
-		.setLogoDimensions({width: 200, height: 200})
+		.setLogoDimensions({width: 200, height: 100})
 		.setOverview("As securing an internship is becoming increasingly " +
 			"competitive, students have a hard time finding and staying on top of " +
 			"every opportunity. Students’ lack of job application tools further cause " +
