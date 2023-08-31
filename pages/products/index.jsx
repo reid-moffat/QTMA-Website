@@ -56,36 +56,36 @@ export default function Products() {
 						problems.
 					</p>
 
-					<p className="product-subheading2">2019-2020</p>
+					<p className="product-subheading2"><i>2022-2023:</i></p>
 					<div className="products-container2">
-						{productContainer("Stocked", 252.59, 60)}
-						{productContainer("Hungover", 120, 133.13)}
-						{productContainer("Wob", 151.4, 90)}
-						{productContainer("Studii", 176.21, 59)}
+						{productContainer("Feastly")}
+						{productContainer("Kartt")}
+						{productContainer("Sift")}
+						{productContainer("Venato")}
 					</div>
 
-					<p className="product-subheading2">2020-2021</p>
+					<p className="product-subheading2"><i>2021-2022:</i></p>
 					<div className="products-container2">
-						{productContainer("Eagle", 200, 122)}
-						{productContainer("Pronto", 120, 116)}
-						{productContainer("Voluntera", 250, 60)}
-						{productContainer("Loop", 200, 100)}
+						{productContainer("Casa")}
+						{productContainer("Haus")}
+						{productContainer("Loco")}
+						{productContainer("Soar")}
 					</div>
 
-					<p className="product-subheading2">2021-2022</p>
+					<p className="product-subheading2"><i>2020-2021:</i></p>
 					<div className="products-container2">
-						{productContainer("Casa", 200, 150)}
-						{productContainer("Haus", 180, 120)}
-						{productContainer("Loco", 200, 100)}
-						{productContainer("Soar", 200, 100)}
+						{productContainer("Eagle")}
+						{productContainer("Pronto")}
+						{productContainer("Voluntera")}
+						{productContainer("Loop")}
 					</div>
 
-					<p className="product-subheading2">2022-2023</p>
+					<p className="product-subheading2"><i>2019-2020:</i></p>
 					<div className="products-container2">
-						{productContainer("Feastly", 200, 100)}
-						{productContainer("Kartt", 200, 100)}
-						{productContainer("Sift", 200, 200)}
-						{productContainer("Venato", 200, 200)}
+						{productContainer("Stocked")}
+						{productContainer("Hungover")}
+						{productContainer("Wob")}
+						{productContainer("Studii")}
 					</div>
 				</div>
 			</Layout>
