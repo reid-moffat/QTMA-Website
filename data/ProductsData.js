@@ -248,7 +248,7 @@ const ProductData = [
 		.setYear("2021-2022")
 		.setSlogan("Haus helps Hausmates collaborate and save on groceries")
 		.setStudentData([])
-		.setLogoDimensions({width: 180, height: 120})
+		.setLogoDimensions({width: 90, height: 100})
 		.build(),
 
 	new ProductBuilder()
