@@ -4,24 +4,24 @@ import Nav from "../Nav";
 import Head from "next/head";
 
 import Recruit1 from "../../public/assets/Club Data/Placements/recruit1.png";
-import Recruit2 from "../../public/assets/Club Data/Placements/amazon.png";
-import Recruit3 from "../../public/assets/Club Data/Placements/bain&co.png";
+import Amazon from "../../public/assets/Club Data/Placements/amazon.png";
+import BainAndCo from "../../public/assets/Club Data/Placements/bain&co.png";
 import Recruit4 from "../../public/assets/Club Data/Placements/recruit4.png";
 import Recruit5 from "../../public/assets/Club Data/Placements/recruit5.png";
-import Recruit6 from "../../public/assets/Club Data/Placements/dropbox.png";
-import Recruit7 from "../../public/assets/Club Data/Placements/recruit7.png";
-import Recruit8 from "../../public/assets/Club Data/Placements/instagram.png";
-import Recruit9 from "../../public/assets/Club Data/Placements/jpmorgan.png";
-import Recruit10 from "../../public/assets/Club Data/Placements/mckinsey.png";
-import Recruit11 from "../../public/assets/Club Data/Placements/morganstanley.png";
-import Recruit12 from "../../public/assets/Club Data/Placements/microsoft.png";
+import Dropbox from "../../public/assets/Club Data/Placements/dropbox.png";
+import Evercore from "../../public/assets/Club Data/Placements/evercore.png";
+import Instagram from "../../public/assets/Club Data/Placements/instagram.png";
+import JPMorgan from "../../public/assets/Club Data/Placements/jpmorgan.png";
+import McKinsey from "../../public/assets/Club Data/Placements/mckinsey.png";
+import MorganStanley from "../../public/assets/Club Data/Placements/morganstanley.png";
+import Microsoft from "../../public/assets/Club Data/Placements/microsoft.png";
 import Recruit13 from "../../public/assets/Club Data/Placements/recruit13.png";
-import Recruit14 from "../../public/assets/Club Data/Placements/google.png";
-import Recruit15 from "../../public/assets/Club Data/Placements/shopify.png";
-import Recruit16 from "../../public/assets/Club Data/Placements/tesla.png";
-import Recruit17 from "../../public/assets/Club Data/Placements/tenthousandcoffees.png";
-import Recruit18 from "../../public/assets/Club Data/Placements/uber.png";
-import Recruit19 from "../../public/assets/Club Data/Placements/wealthsimple.png";
+import Google from "../../public/assets/Club Data/Placements/google.png";
+import Shopify from "../../public/assets/Club Data/Placements/shopify.png";
+import Tesla from "../../public/assets/Club Data/Placements/tesla.png";
+import TenThousandCoffees from "../../public/assets/Club Data/Placements/tenthousandcoffees.png";
+import Uber from "../../public/assets/Club Data/Placements/uber.png";
+import Wealthsimple from "../../public/assets/Club Data/Placements/wealthsimple.png";
 
 import Footer from "../../components/Footer";
 
@@ -60,24 +60,24 @@ export default function Placements() {
 					</p>
 					<div className="recruitment-container">
 						{generateRecruit(Recruit1)}
-						{generateRecruit(Recruit2, "https://www.amazon.jobs/en/")}
-						{generateRecruit(Recruit3)}
+						{generateRecruit(Amazon, "https://www.amazon.jobs/en/")}
+						{generateRecruit(BainAndCo)}
 						{generateRecruit(Recruit4)}
 						{generateRecruit(Recruit5)}
-						{generateRecruit(Recruit6)}
-						{generateRecruit(Recruit7)}
-						{generateRecruit(Recruit8)}
-						{generateRecruit(Recruit9)}
-						{generateRecruit(Recruit10)}
-						{generateRecruit(Recruit11)}
-						{generateRecruit(Recruit12)}
+						{generateRecruit(Dropbox)}
+						{generateRecruit(Evercore, "https://www.evercore.com/join-our-team/")}
+						{generateRecruit(Instagram)}
+						{generateRecruit(JPMorgan)}
+						{generateRecruit(McKinsey)}
+						{generateRecruit(MorganStanley)}
+						{generateRecruit(Microsoft)}
 						{generateRecruit(Recruit13)}
-						{generateRecruit(Recruit14)}
-						{generateRecruit(Recruit15)}
-						{generateRecruit(Recruit16)}
-						{generateRecruit(Recruit17)}
-						{generateRecruit(Recruit18)}
-						{generateRecruit(Recruit19)}
+						{generateRecruit(Google)}
+						{generateRecruit(Shopify)}
+						{generateRecruit(Tesla)}
+						{generateRecruit(TenThousandCoffees)}
+						{generateRecruit(Uber)}
+						{generateRecruit(Wealthsimple)}
 					</div>
 				</div>
 			</Layout>
