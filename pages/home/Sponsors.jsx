@@ -18,7 +18,7 @@ export default function Sponsors() {
 							<Image
 								alt="Sponsor logo"
 								src={ComSoc}
-								height={135}
+								height={125}
 								width={'500%'}
 							/>
 						</a>
@@ -28,7 +28,7 @@ export default function Sponsors() {
 							<Image
 								alt="Sponsor logo"
 								src={McKinsey}
-								height={145}
+								height={155}
 								width={'300%'}
 							/>
 						</a>
@@ -38,7 +38,7 @@ export default function Sponsors() {
 							<Image
 								alt="Sponsor logo"
 								src={QueensArtsci}
-								height={115}
+								height={105}
 								width={'400%'}
 							/>
 						</a>
