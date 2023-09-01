@@ -240,7 +240,7 @@ const ProductData = [
 		.setYear("2021-2022")
 		.setSlogan("Making the roommate finding process as easy as possible")
 		.setStudentData([])
-		.setLogoDimensions({width: 200, height: 150})
+		.setLogoDimensions({width: 205, height: 65})
 		.build(),
 
 	new ProductBuilder()
