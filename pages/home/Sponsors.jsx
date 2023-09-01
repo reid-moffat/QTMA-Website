@@ -14,46 +14,56 @@ export default function Sponsors() {
 				<h1 className="section-title">Our Sponsors</h1>
 				<div className="sponsors">
 					<div className="sponsor">
-						<Image
-							alt="Sponsor logo"
-							src={ComSoc}
-							height={135}
-							width={'500%'}
-						/>
+						<a href={"https://comsoc.ca/"} target="_blank">
+							<Image
+								alt="Sponsor logo"
+								src={ComSoc}
+								height={135}
+								width={'500%'}
+							/>
+						</a>
 					</div>
 					<div className="sponsor">
-						<Image
-							alt="Sponsor logo"
-							src={McKinsey}
-							height={145}
-							width={'300%'}
-						/>
+						<a href={"https://www.mckinsey.com/"} target="_blank">
+							<Image
+								alt="Sponsor logo"
+								src={McKinsey}
+								height={145}
+								width={'300%'}
+							/>
+						</a>
 					</div>
 					<div className="sponsor">
-						<Image
-							alt="Sponsor logo"
-							src={QueensArtsci}
-							height={115}
-							width={'400%'}
-						/>
+						<a href={"https://www.queensu.ca/artsci/"} target="_blank">
+							<Image
+								alt="Sponsor logo"
+								src={QueensArtsci}
+								height={115}
+								width={'400%'}
+							/>
+						</a>
 					</div>
 				</div>
 				<div className="sponsors">
 					<div className="sponsor">
-						<Image
-							alt="Sponsor logo"
-							src={QueensComputing}
-							height={115}
-							width={'500%'}
-						/>
+						<a href={"https://www.cs.queensu.ca/"} target="_blank">
+							<Image
+								alt="Sponsor logo"
+								src={QueensComputing}
+								height={115}
+								width={'500%'}
+							/>
+						</a>
 					</div>
 					<div className="sponsor">
-						<Image
-							alt="Sponsor logo"
-							src={TrendMicro}
-							height={155}
-							width={'350%'}
-						/>
+						<a href={"https://www.trendmicro.com/"} target="_blank">
+							<Image
+								alt="Sponsor logo"
+								src={TrendMicro}
+								height={155}
+								width={'350%'}
+							/>
+						</a>
 					</div>
 				</div>
 			</div>
