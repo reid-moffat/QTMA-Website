@@ -7,7 +7,6 @@ import products from './../../data/ProductsData';
 
 export default function Products() {
 	const recentProducts = products.filter(prod => prod.year === '2022-2023');
-	products[0].slogan
 
 	const renderProduct = (product) => {
 		const link = `/product/${product.productName}`;
@@ -19,7 +18,7 @@ export default function Products() {
 						<h3>{product.productName}</h3>
 						<p>{product.slogan}</p>
 					</div>
-					<Image alt="Product Logo" src={product.logo} width={200} height={122}/>
+					<Image alt="Product Logo" src={product.logo} width={product.logoWidth} height={product.logoHeight}/>
 				</div>
 			</Link>
 		);
