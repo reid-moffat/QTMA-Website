@@ -24,7 +24,7 @@ export default function Products() {
 								<div className="product2">
 									<div className="product-info2">
 										<h3>{name}</h3>
-										<p>{product.slogan}</p>
+										<p><i>'{product.slogan}'</i></p>
 									</div>
 									<Image alt="Product Logo" src={product.logo} width={product.logoWidth}
 										   height={product.logoHeight}/>
