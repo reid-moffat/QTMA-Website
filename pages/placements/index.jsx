@@ -3,11 +3,11 @@ import Image from "next/image";
 import Nav from "../Nav";
 import Head from "next/head";
 
-import Recruit1 from "../../public/assets/Club Data/Placements/recruit1.png";
+import AdaSupport from "../../public/assets/Club Data/Placements/adaSupport.png";
 import Amazon from "../../public/assets/Club Data/Placements/amazon.png";
 import BainAndCo from "../../public/assets/Club Data/Placements/bain&co.png";
-import Recruit4 from "../../public/assets/Club Data/Placements/recruit4.png";
-import Recruit5 from "../../public/assets/Club Data/Placements/recruit5.png";
+import BostonConsulting from "../../public/assets/Club Data/Placements/bostonConsultingGroup.png";
+import Blend from "../../public/assets/Club Data/Placements/blend.png";
 import Dropbox from "../../public/assets/Club Data/Placements/dropbox.png";
 import Evercore from "../../public/assets/Club Data/Placements/evercore.png";
 import Instagram from "../../public/assets/Club Data/Placements/instagram.png";
@@ -15,7 +15,7 @@ import JPMorgan from "../../public/assets/Club Data/Placements/jpmorgan.png";
 import McKinsey from "../../public/assets/Club Data/Placements/mckinsey.png";
 import MorganStanley from "../../public/assets/Club Data/Placements/morganstanley.png";
 import Microsoft from "../../public/assets/Club Data/Placements/microsoft.png";
-import Recruit13 from "../../public/assets/Club Data/Placements/recruit13.png";
+import Next36 from "../../public/assets/Club Data/Placements/next36.png";
 import Google from "../../public/assets/Club Data/Placements/google.png";
 import Shopify from "../../public/assets/Club Data/Placements/shopify.png";
 import Tesla from "../../public/assets/Club Data/Placements/tesla.png";
@@ -59,11 +59,11 @@ export default function Placements() {
 						Our members have sucessfully recruited at these organizations:
 					</p>
 					<div className="recruitment-container">
-						{generateRecruit(Recruit1)}
+						{generateRecruit(AdaSupport,  "https://www.ada.cx/careers")}
 						{generateRecruit(Amazon, "https://www.amazon.jobs/en/")}
 						{generateRecruit(BainAndCo, "https://www.bain.com/careers/")}
-						{generateRecruit(Recruit4)}
-						{generateRecruit(Recruit5)}
+						{generateRecruit(BostonConsulting, "https://careers.bcg.com/")}
+						{generateRecruit(Blend, "https://blend.com/company/careers/")}
 						{generateRecruit(Dropbox, "https://jobs.dropbox.com/all-jobs")}
 						{generateRecruit(Evercore, "https://www.evercore.com/join-our-team/")}
 						{generateRecruit(Instagram, "https://about.instagram.com/about-us/careers")}
@@ -71,7 +71,7 @@ export default function Placements() {
 						{generateRecruit(McKinsey, "https://www.mckinsey.com/careers/search-jobs")}
 						{generateRecruit(MorganStanley, "https://www.morganstanley.com/careers/career-opportunities-search")}
 						{generateRecruit(Microsoft, "https://careers.microsoft.com/v2/global/en/home.html")}
-						{generateRecruit(Recruit13)}
+						{generateRecruit(Next36, "https://www.nextcanada.com/next-36/")}
 						{generateRecruit(Google, "https://www.google.com/about/careers/applications/jobs/results/")}
 						{generateRecruit(Shopify, "https://www.shopify.com/ca/careers")}
 						{generateRecruit(Tesla, "https://www.tesla.com/en_ca/careers")}
