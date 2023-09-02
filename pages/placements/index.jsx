@@ -61,23 +61,23 @@ export default function Placements() {
 					<div className="recruitment-container">
 						{generateRecruit(Recruit1)}
 						{generateRecruit(Amazon, "https://www.amazon.jobs/en/")}
-						{generateRecruit(BainAndCo)}
+						{generateRecruit(BainAndCo, "https://www.bain.com/careers/")}
 						{generateRecruit(Recruit4)}
 						{generateRecruit(Recruit5)}
-						{generateRecruit(Dropbox)}
+						{generateRecruit(Dropbox, "https://jobs.dropbox.com/all-jobs")}
 						{generateRecruit(Evercore, "https://www.evercore.com/join-our-team/")}
-						{generateRecruit(Instagram)}
-						{generateRecruit(JPMorgan)}
-						{generateRecruit(McKinsey)}
-						{generateRecruit(MorganStanley)}
-						{generateRecruit(Microsoft)}
+						{generateRecruit(Instagram, "https://about.instagram.com/about-us/careers")}
+						{generateRecruit(JPMorgan, "https://careers.jpmorgan.com/us/en/home")}
+						{generateRecruit(McKinsey, "https://www.mckinsey.com/careers/search-jobs")}
+						{generateRecruit(MorganStanley, "https://www.morganstanley.com/careers/career-opportunities-search")}
+						{generateRecruit(Microsoft, "https://careers.microsoft.com/v2/global/en/home.html")}
 						{generateRecruit(Recruit13)}
-						{generateRecruit(Google)}
-						{generateRecruit(Shopify)}
-						{generateRecruit(Tesla)}
-						{generateRecruit(TenThousandCoffees)}
-						{generateRecruit(Uber)}
-						{generateRecruit(Wealthsimple)}
+						{generateRecruit(Google, "https://www.google.com/about/careers/applications/jobs/results/")}
+						{generateRecruit(Shopify, "https://www.shopify.com/ca/careers")}
+						{generateRecruit(Tesla, "https://www.tesla.com/en_ca/careers")}
+						{generateRecruit(TenThousandCoffees, "https://www.tenthousandcoffees.com/")}
+						{generateRecruit(Uber, "https://www.uber.com/ca/en/careers/")}
+						{generateRecruit(Wealthsimple, "https://www.wealthsimple.com/en-ca/careers")}
 					</div>
 				</div>
 			</Layout>
