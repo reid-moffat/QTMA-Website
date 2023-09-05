@@ -248,7 +248,7 @@ const ProductData = [
 		.setYear("2021-2022")
 		.setSlogan("Haus helps Hausmates collaborate and save on groceries")
 		.setStudentData([])
-		.setLogoDimensions({width: 90, height: 100})
+		.setLogoDimensions({width: 90, height: 110})
 		.build(),
 
 	new ProductBuilder()
@@ -256,7 +256,7 @@ const ProductData = [
 		.setYear("2021-2022")
 		.setSlogan("The travel app for true Locos")
 		.setStudentData([])
-		.setLogoDimensions({width: 200, height: 100})
+		.setLogoDimensions({width: 200, height: 80})
 		.build(),
 
 	new ProductBuilder()
@@ -264,7 +264,7 @@ const ProductData = [
 		.setYear("2021-2022")
 		.setSlogan("Find teammates to build your next side project")
 		.setStudentData([])
-		.setLogoDimensions({width: 200, height: 100})
+		.setLogoDimensions({width: 220, height: 80})
 		.build(),
 
 	/*
@@ -299,7 +299,7 @@ const ProductData = [
 		.setYear("2022-2023")
 		.setSlogan("Helping students reach their full potential")
 		.setStudentData([])
-		.setLogoDimensions({width: 240, height: 80})
+		.setLogoDimensions({width: 260, height: 75})
 		.setOverview("As securing an internship is becoming increasingly " +
 			"competitive, students have a hard time finding and staying on top of " +
 			"every opportunity. Students’ lack of job application tools further cause " +
