@@ -93,7 +93,7 @@ export default function Product() {
 
 						<div className="pitch-container">
 							<h2 className="pitch-heading">Product Pitch</h2>
-							<iframe className="product-pdf" type="pdf" src={product.pitch}></iframe>
+							<iframe className="product-pdf" src={product.pitch}></iframe>
 						</div>
 
 						{product.demo !== "" && (
