@@ -206,6 +206,10 @@ const ProductData = [
 		.setSlogan("Your Delivery Service Companion")
 		.setStudentData([])
 		.setLogoDimensions({width: 200, height: 122})
+		.setOverview("Food delivery apps are expensive and time-consuming - either we quickly choose a deal " +
+			"from one app and waste money, or spend plenty of time switching though different apps to find the best " +
+			"deal, defeating the purpose of convenience apps in the first place. What if you could aggregate all " +
+			"this data into one convenient app? Well, you can; that's Eagle!")
 		.build(),
 
 	new ProductBuilder()
