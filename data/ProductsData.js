@@ -15,7 +15,7 @@ const ProductBuilder = function () {
 
 		// Optional
 		overview: undefined,
-		demo: undefined,
+		demo: '',
 
 		setName: function (productName) {
 			if (typeof productName != "string" || productName === '') {
@@ -74,8 +74,8 @@ const ProductBuilder = function () {
 			return this;
 		},
 		setDemo: function (demo) {
-			if (!(demo === '' || demo.match(/^https:\/\/www\.youtube\.com\/embed\/[a-zA-Z0-9_-]{11}$/))) {
-				throw new Error(`Demo ${demo} is invalid, must be either an empty string, or a valid youtube embed link`);
+			if (!demo.match(/^https:\/\/www\.youtube\.com\/embed\/[a-zA-Z0-9_-]{11}$/)) {
+				throw new Error(`Demo ${demo} is invalid, must be a valid youtube embed link`);
 			}
 			this.demo = demo;
 			return this;
