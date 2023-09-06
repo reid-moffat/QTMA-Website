@@ -62,7 +62,8 @@ export default function Product() {
 							<p className="product-slogan">{product.slogan}</p>
 						</div>
 
-						{product.teamPhoto !== "" && (
+						{/* 2020-2021 was the covid year, so no team photos were taken. All other years have them */}
+						{product.year !== "2020-2021" && (
 							<div className="team-container">
 								<h2 className="team-heading">The Team</h2>
 								<div className="team-names">
@@ -84,12 +85,10 @@ export default function Product() {
 							</div>
 						)}
 
-						{product.teamPhoto !== "" && (
-							<div className="overview-container">
-								<h2 className="overview-heading">Product Overview</h2>
-								<p className="product-desc">{product.overview}</p>
-							</div>
-						)}
+						<div className="overview-container">
+							<h2 className="overview-heading">Product Overview</h2>
+							<p className="product-desc">{product.overview}</p>
+						</div>
 
 						<div className="pitch-container">
 							<h2 className="pitch-heading">Product Pitch</h2>
