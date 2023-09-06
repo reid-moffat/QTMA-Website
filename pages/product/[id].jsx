@@ -96,7 +96,7 @@ export default function Product() {
 							<iframe className="product-pdf" type="pdf" src={product.pitch}></iframe>
 						</div>
 
-						{product.teamPhoto !== "" && (
+						{product.demo !== "" && (
 							<div className="demo-container">
 								<h2 className="demo-heading">Product Demo</h2>
 								<iframe
@@ -105,9 +105,7 @@ export default function Product() {
 									height="315"
 									src={product.demo}
 									title="YouTube video player"
-									// frameborder="0"
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-									// allowfullscreen
 								></iframe>
 							</div>
 						)}
