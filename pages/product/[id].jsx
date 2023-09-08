@@ -68,9 +68,10 @@ export default function Product() {
 								<h2 className="team-heading">The Team</h2>
 								<div className="team-names">
 									{product.members.map((info, i) => (
-										<a key={i} className="student-name" href={info.linkedin} rel="noreferrer"
-										   target="_blank">
-											{info.studentName}
+										<a className="alumni-social-icon"
+										   href={info.linkedin}
+										   target="_blank" rel="noreferrer">
+											{info.studentName}<br/><small><i>{info.position}</i></small>
 										</a>
 									))}
 								</div>

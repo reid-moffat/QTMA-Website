@@ -1,6 +1,7 @@
 /**
  * Data for all current and previous products
  */
+import { Positions } from "./TeamData";
 
 // Builder pattern object for creating & verifying a product object
 const ProductBuilder = function () {
@@ -45,12 +46,14 @@ const ProductBuilder = function () {
 			}
 			for (let i = 0; i < studentInfo.length; ++i) {
 				const student = studentInfo[i];
-				if (!Array.isArray(student) || student.length !== 2) {
-					throw new Error(`Student ${student} is invalid, must be an array with a student name and their linkedin id`);
+				if (!Array.isArray(student) || student.length !== 3) {
+					throw new Error(`Student ${student} is invalid, must be an array with a student name, their linkedin id and position`);
 				}
-				if (typeof student[0] !== "string" || !student[0] || typeof student[1] !== "string" || !student[1]) {
-					throw new Error(`Student ${student} need a valid name & linkedin id (# if they don't have one)`);
+				if (typeof student[0] !== "string" || !student[0] || typeof student[1] !== "string" || !student[1]
+					|| typeof student[2] !== "string" || !student[2] || !Positions.includes(student[2])) {
+					throw new Error(`Student ${student} need a valid name, linkedin id (# if they don't have one) and position`);
 				}
+
 
 				studentData.push({
 					studentName: student[0],
@@ -116,14 +119,14 @@ const ProductData = [
 		.setYear("2019-2020")
 		.setSlogan("Taking your pregame to the next level")
 		.setStudentData([
-			["Diane Huang", "dianehuang11"],
-			["Ben Kitor", 'bkitor'],
-			["Tim Lampen", 'timlampen'],
-			["Sam Mcphail", 'sam-mcphail'],
-			["Sierra Cache angus", 'sierra-cache'],
-			["Victor Gao", 'victor-gao'],
-			["Tina Huang", 'tina-c-huang'],
-			["Ethan Blumberg", '#'],
+			["Diane Huang", "dianehuang11", ""],
+			["Ben Kitor", 'bkitor', ""],
+			["Tim Lampen", 'timlampen', ""],
+			["Sam Mcphail", 'sam-mcphail', ""],
+			["Sierra Cache angus", 'sierra-cache', ""],
+			["Victor Gao", 'victor-gao', ""],
+			["Tina Huang", 'tina-c-huang', ""],
+			["Ethan Blumberg", '#', ""],
 		])
 		.setLogoDimensions({width: 120, height: 133.13})
 		.setOverview("Hangover is a social gaming app inspired by Cards Against Humanity and Kahoot. " +
@@ -181,14 +184,14 @@ const ProductData = [
 		.setYear("2019-2020")
 		.setSlogan("The best a fridge can get.")
 		.setStudentData([
-			["Jason Yang", "jason-yang-1b1a1a1a1"],
-			["Quentin Roy-Foster", 'quentin-roy-foster-1b1a1a1a1'],
-			["Victor Uemura", 'victor-uemura-1b1a1a1a1'],
-			["Sydney Tschritter", 'sydney-tschritter-1b1a1a1a1'],
-			["Ricky Zhang", 'ricky-zhang-1b1a1a1a1'],
-			["Shani Mithani", 'shani-mithani-1b1a1a1a1'],
-			["Alice QI", 'alice-qi-1b1a1a1a1'],
-			["Jake Koszczewski", 'jenny-zhang-1b1a1a1a1'],
+			["Jason Yang", "jason-yang-1b1a1a1a1", "Product Manager"],
+			["Quentin Roy-Foster", 'quentin-roy-foster-1b1a1a1a1', "Senior Developer"],
+			["Victor Uemura", 'victor-uemura-1b1a1a1a1', "Developer"],
+			["Sydney Tschritter", 'sydney-tschritter-1b1a1a1a1', "Developer"],
+			["Ricky Zhang", 'ricky-zhang-1b1a1a1a1', "UI/UX Designer"],
+			["Shani Mithani", 'shani-mithani-1b1a1a1a1', "Business Analyst"],
+			["Alice QI", 'alice-qi-1b1a1a1a1', "Senior Business Analyst"],
+			["Jake Koszczewski", 'jenny-zhang-1b1a1a1a1', "Business Analyst"],
 		])
 		.setLogoDimensions({width: 252.59, height: 60})
 		.setOverview("As a mobile app for both iOS and Android, Stocked is a dynamic meal generator which " +
