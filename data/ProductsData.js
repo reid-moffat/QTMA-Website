@@ -184,14 +184,14 @@ const ProductData = [
 		.setYear("2019-2020")
 		.setSlogan("The best a fridge can get.")
 		.setStudentData([
-			["Jason Yang", "jason-yang-1b1a1a1a1", "Product Manager"],
-			["Quentin Roy-Foster", 'quentin-roy-foster-1b1a1a1a1', "Senior Developer"],
-			["Victor Uemura", 'victor-uemura-1b1a1a1a1', "Developer"],
-			["Sydney Tschritter", 'sydney-tschritter-1b1a1a1a1', "Developer"],
-			["Ricky Zhang", 'ricky-zhang-1b1a1a1a1', "UI/UX Designer"],
-			["Shani Mithani", 'shani-mithani-1b1a1a1a1', "Business Analyst"],
-			["Alice QI", 'alice-qi-1b1a1a1a1', "Senior Business Analyst"],
-			["Jake Koszczewski", 'jenny-zhang-1b1a1a1a1', "Business Analyst"],
+			["Jason Yang", "jason-z-yang", "Product Manager"],
+			["Quentin Roy-Foster", 'quentin-roy-foster', "Senior Developer"],
+			["Victor Uemura", 'victor-uemura', "Developer"],
+			["Sydney Tschritter", 'sydneytschritter', "Developer"],
+			["Ricky Zhang", 'ricky-zhang', "UI/UX Designer"],
+			["Shani Mithani", "shanimithani", "Business Analyst"],
+			["Alice QI", '#', "Senior Business Analyst"],
+			["Jake Koszczewski", 'jakekoszczewski', "Business Analyst"],
 		])
 		.setLogoDimensions({width: 252.59, height: 60})
 		.setOverview("As a mobile app for both iOS and Android, Stocked is a dynamic meal generator which " +
