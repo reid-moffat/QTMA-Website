@@ -227,7 +227,17 @@ const ProductData = [
 		.setName("Pronto")
 		.setYear("2020-2021")
 		.setSlogan("Convenient lending for everyone")
-		.setStudentData([])
+		.setStudentData([
+			["Victor Gao", "https://www.linkedin.com/in/victor-gao/"],
+			["Travis Cossarini", "https://www.linkedin.com/in/travis-cossarini/"],
+			["Arsh Koshar", "#"],
+			["Alice Qi", "#"],
+			["Adil Natalwalla", "https://www.linkedin.com/in/adil-natalwalla/"],
+			["Flora Lin", "https://www.linkedin.com/in/flora-l/"],
+			["Kevin Subagaran", "#"],
+			["Helen Xu", "https://www.linkedin.com/in/helencxu/"],
+			["Richard Li", "https://www.linkedin.com/in/richardliqu/"]
+		])
 		.setLogoDimensions({width: 120, height: 116})
 		.build(),
 
