@@ -164,14 +164,14 @@ const ProductData = [
 		.setYear("2019-2020")
 		.setSlogan("Get the latest word on the street")
 		.setStudentData([
-			["David Hao", "david-hao"],
-			["Jonathan Stroz", 'jonathan-stroz'],
-			["Kyle Meade", 'kyle-meade'],
-			["Kasthuri Thambipillai", 'kasthuri-t-ba8531144'],
-			["Sophia Yang", 'sophia-yang'],
-			["Ehsan Merati", 'ehsanmerati'],
-			["Julien Lin", 'julien-lin'],
-			["Graham Carkner", 'gcarkner'],
+			["David Hao", "david-hao", "Product Manager"],
+			["Jonathan Stroz", 'jonathan-stroz', "Senior Developer"],
+			["Kyle Meade", 'kymed', "Developer"],
+			["Kasthuri Thambipillai", 'kasthuri-t-ba8531144', "Developer"],
+			["Sophia Yang", 'sophia-yangg', "UI/UX Designer"],
+			["Ehsan Merati", 'ehsanmerati', "Senior Business Analyst"],
+			["Julien Lin", 'julien-lin', "Business Analyst"],
+			["Graham Carkner", 'gcarkner', "Frosh Rep"],
 		])
 		.setLogoDimensions({width: 151.4, height: 90})
 		.setOverview("A geo-based, anti-harassment conscious anonymous messaging and content platform meant " +
