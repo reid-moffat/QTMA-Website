@@ -123,10 +123,10 @@ const ProductData = [
 			["Ben Kitor", 'bkitor', "Senior Developer"],
 			["Tim Lampen", 'timlampen', "Developer"],
 			["Sam Mcphail", 'sam-mcphail', "Developer"],
-			["Sierra Cache angus", 'sierra-cache', "UI/UX Designer"],
+			["Sierra Cache Angus", 'sierra-cache', "UI/UX Designer"],
 			["Victor Gao", 'victor-gao', "Business Analyst"],
 			["Tina Huang", 'tina-c-huang', "Business Analyst"],
-			["Ethan Blumberg", '#', "Frosh Rep"],
+			["Ethan Blumberg", 'ethan-blumberg-96a379208', "Frosh Rep"],
 		])
 		.setLogoDimensions({width: 120, height: 133.13})
 		.setOverview("Hangover is a social gaming app inspired by Cards Against Humanity and Kahoot. " +
@@ -143,14 +143,14 @@ const ProductData = [
 		.setYear("2019-2020")
 		.setSlogan("Academic collaboration at your fingertips")
 		.setStudentData([
-			["Shwetha Sivakumar", "https://www.linkedin.com/in/shwethasivakumar/", "Product Manager"],
-			["Patrick Lenover", 'https://www.linkedin.com/in/patrick-lenover-ab2ab5178/', "Senior Developer"],
-			["Max Eisen", 'https://www.linkedin.com/in/maxeisen/', "Developer"],
-			["Ross Hill", 'https://www.linkedin.com/in/rosslh/', "Developer"],
-			["Carolyn Day", 'https://www.linkedin.com/in/carolyn155/', "UI/UX Designer"],
-			["Andrew Simmons", 'https://www.linkedin.com/in/andrew-simmons1/', "Senior Business Analyst"],
-			["Kevin Ding", 'https://www.linkedin.com/in/kevding/', "Business Analyst"],
-			["Connor Colwill", 'https://www.linkedin.com/in/connorcolwill/', "Frosh Rep"],
+			["Shwetha Sivakumar", "shwethasivakumar", "Product Manager"],
+			["Patrick Lenover", 'patrick-lenover-ab2ab5178', "Senior Developer"],
+			["Max Eisen", 'maxeisen', "Developer"],
+			["Ross Hill", 'rosslh', "Developer"],
+			["Carolyn Day", 'carolyn155', "UI/UX Designer"],
+			["Andrew Simmons", 'andrew-simmons1', "Senior Business Analyst"],
+			["Kevin Ding", 'kevding', "Business Analyst"],
+			["Connor Colwill", 'connorcolwill', "Frosh Rep"],
 		])
 		.setLogoDimensions({width: 176.21, height: 59})
 		.setOverview("Studii offers a collaborative forum that provides both peer support and expert advice " +
