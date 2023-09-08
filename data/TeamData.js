@@ -63,14 +63,16 @@ import EmanuelPiccinini from "../public/assets/Members/2023-2024/Emanuel_Piccini
 const Positions = [
 	"Co-Chair",
 	"Club Operations",
+
 	"Product Manager",
 	"Senior Developer",
 	"Developer",
 	"UI/UX Designer",
 	"Senior Business Analyst",
 	"Business Analyst",
-	"Website Developer",
 	"Frosh Rep",
+
+	"Website Developer",
 ];
 
 const generateMemberData = (image, name, position, linkedin = "", subPosition = "") => {
