@@ -204,7 +204,18 @@ const ProductData = [
 		.setName("Eagle")
 		.setYear("2020-2021")
 		.setSlogan("Your Delivery Service Companion")
-		.setStudentData([])
+		.setStudentData([
+			["Max Eisen", "https://www.linkedin.com/in/maxeisen/"],
+			["Aman Dhaliwal", "https://www.linkedin.com/in/amandhaliwal44/"],
+			["Truman Be", "https://www.linkedin.com/in/truman-be/"],
+			["Ben Minor", "https://www.linkedin.com/in/ben-minor/"],
+			["James McDonald", "https://www.linkedin.com/in/jamesgregorymcdonald/"],
+			["Emily Zhao", "https://www.linkedin.com/in/emily-zhaoo/"],
+			["Riya Shah", "https://www.linkedin.com/in/riya-shah-queens-university/"],
+			["Mark Gragtmans", "https://www.linkedin.com/in/mark-gragtmans/"],
+			["Tina Huang", "https://www.linkedin.com/in/tina-c-huang/"],
+			["Jake Koszczewski", "https://www.linkedin.com/in/jakekoszczewski/"]
+		])
 		.setLogoDimensions({width: 200, height: 122})
 		.setOverview("Food delivery apps are expensive and time-consuming - either we quickly choose a deal " +
 			"from one app and waste money, or spend plenty of time switching though different apps to find the best " +
