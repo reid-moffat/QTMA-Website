@@ -57,7 +57,8 @@ const ProductBuilder = function () {
 
 				studentData.push({
 					studentName: student[0],
-					linkedin: student[1] === '#' ? '#' : `https://www.linkedin.com/in/${student[1]}/`
+					linkedin: student[1] === '#' ? '#' : `https://www.linkedin.com/in/${student[1]}/`,
+					position: student[2]
 				});
 			}
 			this.members = studentData;
