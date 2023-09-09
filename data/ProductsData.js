@@ -208,16 +208,16 @@ const ProductData = [
 		.setYear("2020-2021")
 		.setSlogan("Your Delivery Service Companion")
 		.setStudentData([
-			["Max Eisen", "https://www.linkedin.com/in/maxeisen/"],
-			["Aman Dhaliwal", "https://www.linkedin.com/in/amandhaliwal44/"],
-			["Truman Be", "https://www.linkedin.com/in/truman-be/"],
-			["Ben Minor", "https://www.linkedin.com/in/ben-minor/"],
-			["James McDonald", "https://www.linkedin.com/in/jamesgregorymcdonald/"],
-			["Emily Zhao", "https://www.linkedin.com/in/emily-zhaoo/"],
-			["Riya Shah", "https://www.linkedin.com/in/riya-shah-queens-university/"],
-			["Mark Gragtmans", "https://www.linkedin.com/in/mark-gragtmans/"],
-			["Tina Huang", "https://www.linkedin.com/in/tina-c-huang/"],
-			["Jake Koszczewski", "https://www.linkedin.com/in/jakekoszczewski/"]
+			["Max Eisen", "maxeisen", "Product Manager"],
+			["Aman Dhaliwal", "amandhaliwal44", "Senior Developer"],
+			["Truman Be", "truman-be", "Developer"],
+			["Ben Minor", "ben-minor", "Developer"],
+			["James McDonald", "jamesgregorymcdonald", "Developer"],
+			["Emily Zhao", "emily-zhaoo", "UI/UX Designer"],
+			["Riya Shah", "riya-shah-queens-university", "Business Analyst"],
+			["Mark Gragtmans", "mark-gragtmans", "Business Analyst"],
+			["Tina Huang", "tina-c-huang", "Senior Business Analyst"],
+			["Jake Koszczewski", "jakekoszczewski", "Business Analyst"]
 		])
 		.setLogoDimensions({width: 200, height: 122})
 		.setOverview("Food delivery apps are expensive and time-consuming - either we quickly choose a deal " +
@@ -231,15 +231,15 @@ const ProductData = [
 		.setYear("2020-2021")
 		.setSlogan("Convenient lending for everyone")
 		.setStudentData([
-			["Victor Gao", "https://www.linkedin.com/in/victor-gao/"],
-			["Travis Cossarini", "https://www.linkedin.com/in/travis-cossarini/"],
-			["Arsh Koshar", "#"],
-			["Alice Qi", "#"],
-			["Adil Natalwalla", "https://www.linkedin.com/in/adil-natalwalla/"],
-			["Flora Lin", "https://www.linkedin.com/in/flora-l/"],
-			["Kevin Subagaran", "#"],
-			["Helen Xu", "https://www.linkedin.com/in/helencxu/"],
-			["Richard Li", "https://www.linkedin.com/in/richardliqu/"]
+			["Victor Gao", "victor-gao", "Product Manager"],
+			["Travis Cossarini", "travis-cossarini", "Senior Developer"],
+			["Arsh Koshar", "#", "Developer"],
+			["Alice Qi", "#", "Senior Business Analyst"],
+			["Adil Natalwalla", "adil-natalwalla", "Business Analyst"],
+			["Flora Lin", "flora-l", "UI/UX Designer"],
+			["Kevin Subagaran", "#", "Developer"],
+			["Helen Xu", "helencxu", "Business Analyst"],
+			["Richard Li", "richardliqu", "Business Analyst"]
 		])
 		.setLogoDimensions({width: 120, height: 116})
 		.build(),
