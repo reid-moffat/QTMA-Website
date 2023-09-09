@@ -21,16 +21,19 @@ export const getStaticPaths = async () => {
 			{params: {id: "Hungover"}},
 			{params: {id: "Wob"}},
 			{params: {id: "Stocked"}},
+
 			// 2020-2021
 			{params: {id: "Eagle"}},
 			{params: {id: "Pronto"}},
 			{params: {id: "Voluntera"}},
 			{params: {id: "Loop"}},
+
 			// 2021-2022
 			{params: {id: "Casa"}},
 			{params: {id: "Haus"}},
 			{params: {id: "Loco"}},
 			{params: {id: "Soar"}},
+
 			// 2022-2023
 			{params: {id: "Feastly"}},
 			{params: {id: "Kartt"}},
@@ -68,7 +71,7 @@ export default function Product() {
 								<h2 className="team-heading">The Team</h2>
 								<div className="team-names">
 									{product.members.map((info, i) => (
-										<a className="alumni-social-icon"
+										<a className="member-name"
 										   href={info.linkedin}
 										   target="_blank" rel="noreferrer">
 											{info.studentName}<br/><small><i>{info.position}</i></small>
