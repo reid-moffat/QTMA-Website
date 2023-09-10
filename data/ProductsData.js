@@ -299,6 +299,10 @@ const ProductData = [
 			["Krishaan Thyagarajan", "krishaan-thyagarajan", "Frosh Rep"]
 		])
 		.setLogoDimensions({width: 205, height: 65})
+		.setOverview("When looking for roommates, traditionally convenience and basic info " +
+			"are only considered, and you could be left living with people you don't really vibe with. " +
+			"Casa adds a fun swiping mechanism to your detailed choices where you can find roommates " +
+			"based on interests so you'll never have a bad house again!")
 		.build(),
 
 	new ProductBuilder()
@@ -316,6 +320,9 @@ const ProductData = [
 			["Kevin Wu", "wu-kevin", "Business Analyst"]
 		])
 		.setLogoDimensions({width: 90, height: 110})
+		.setOverview("Shopping for yourself is a pain. So many trips, wasted food, planning, " +
+			"cooking - even though there's probably an easy solution to this. Collaboration with your " +
+			"housemates saves so much time & money, in an all-in-one app to manage everything at once")
 		.build(),
 
 	new ProductBuilder()
@@ -335,6 +342,11 @@ const ProductData = [
 			["Olivia Xu", "olivia-chen-xu", "Frosh Rep"]
 		])
 		.setLogoDimensions({width: 200, height: 80})
+		.setOverview("Take a look at 'Things do to in city x' on Google and what to do you see? " +
+			"Tourist trap after tourist trap. Sure, climbing the CN tower or the Empire State building " +
+			"is fun once, but there's so much more genuine local experiences that you miss. Small " +
+			"delicious restaurants? Cool thrift shops? Local artists? You deserve more when you travel, " +
+			"Loco finds you the best local places for you to enjoy")
 		.build(),
 
 	new ProductBuilder()
@@ -354,6 +366,11 @@ const ProductData = [
 			["Manush Patel", "manushpatel", "Frosh Rep"],
 		])
 		.setLogoDimensions({width: 220, height: 80})
+		.setOverview("Everyone loves thinking about and starting side projects, but we " +
+			"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
+			"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +
+			"developers so you can focus & collaborate on making effective projects to beef up your " +
+			"portfolio!")
 		.build(),
 
 	/*
@@ -372,6 +389,9 @@ const ProductData = [
 			["Larry Han", "larry-han", "Frosh Rep"],
 		])
 		.setLogoDimensions({width: 200, height: 100})
+		.setOverview("Students miss home-cooked meals and the feeling of home; hyper-" +
+			"consumerist delivery apps with unnatural fast foods just aren't good. What if you could " +
+			"support local businesses and get quality & affordable meals? Well, Feastly has you back")
 		.build(),
 
 	new ProductBuilder()
@@ -387,6 +407,10 @@ const ProductData = [
 			["Chad Huang", "chad-huang", "Senior Business Analyst"],
 		])
 		.setLogoDimensions({width: 200, height: 70})
+		.setOverview("Oh sick, a cool sweater I want for only $30! Wait, $23 shipping? " +
+			"$5 tax? $4 'online fee'? This isn't even good at all... If only there was a way you " +
+			"could see the true cost of online shopping every time, without any surprises. We'll " +
+			"you're in luck with Kartt!")
 		.build(),
 
 	new ProductBuilder()
@@ -406,6 +430,11 @@ const ProductData = [
 			["Cynthia Choi", "choicynthia", "Business Analyst"],
 		])
 		.setLogoDimensions({width: 200, height: 100})
+		.setOverview("Buying gifts for friends is too much of a chore - you never " +
+			"know what to get. Sure, you know their hobbies & interests, but they probably " +
+			"already have most of the potential things you might get them. Paint for artists? " +
+			"Sports cards for sports enthusiasts? How about an easier, more accurate and " +
+			"fun way to get gifts so it's not a pain anymore, but an experience.")
 		.build(),
 
 	new ProductBuilder()
