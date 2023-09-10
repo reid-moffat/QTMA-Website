@@ -2,6 +2,7 @@
  * Data for all current and previous products
  */
 import { Positions } from "./TeamData";
+import { setLazyProp } from "next/dist/server/api-utils";
 
 // Builder pattern object for creating & verifying a product object
 const ProductBuilder = function () {
@@ -17,6 +18,7 @@ const ProductBuilder = function () {
 
 		// Optional
 		demo: '',
+		link: '',
 
 		setName: function (productName) {
 			if (typeof productName != "string" || !productName) {
@@ -85,6 +87,13 @@ const ProductBuilder = function () {
 			this.demo = demo;
 			return this;
 		},
+		setLink: function (link) {
+			if (typeof link !== "string" || !link) {
+				throw new Error(`Link ${link} is invalid, must be a non-empty string`);
+			}
+			this.link = link;
+			return this;
+		},
 
 		build: function () {
 			if (!this.productName || !this.year || !this.slogan || !this.members || !this.logoWidth || !this.logoHeight || !this.overview) {
@@ -101,6 +110,7 @@ const ProductBuilder = function () {
 				photoXY: { width: 2000, height: 1333 },
 				overview: this.overview,
 				demo: this.demo,
+				link: this.link,
 
 				logoHeight: this.logoHeight,
 				logoWidth: this.logoWidth,
@@ -318,6 +328,7 @@ const ProductData = [
 			"are only considered, and you could be left living with people you don't really vibe with. " +
 			"Casa adds a fun swiping mechanism to your detailed choices where you can find roommates " +
 			"based on interests so you'll never have a bad house again!")
+		.setLink("https://www.homiis.com/")
 		.build(),
 
 	new ProductBuilder()
@@ -473,6 +484,7 @@ const ProductData = [
 			"unnecessary stress and worry. Venato solves that by Helping students " +
 			"reach their full potential: a one-stop, simple, easy-to-use internship hub to " +
 			"organize your job application processes.")
+		.setLink("https://venatoapp.ca/")
 		.build(),
 ]
 

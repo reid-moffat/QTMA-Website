@@ -73,6 +73,13 @@ export default function Product() {
 		);
 	}
 
+	const renderProductName = (product) => {
+		if (product.link !== '') {
+			return <a href={product.link} target="_blank">{product.productName}</a>;
+		}
+		return product.productName;
+	}
+
 	return (
 		<>
 			<Nav/>
@@ -80,7 +87,7 @@ export default function Product() {
 				{product && (
 					<div className="product-container-id container">
 						<div className="product-header-container">
-							<h1 className="product-name">{product.productName}</h1>
+							<h1 className="product-name">{renderProductName(product)}</h1>
 							<p className="product-slogan">{product.slogan}</p>
 						</div>
 
