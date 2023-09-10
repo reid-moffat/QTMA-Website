@@ -387,7 +387,16 @@ const ProductData = [
 		.setName("Venato")
 		.setYear("2022-2023")
 		.setSlogan("Helping students reach their full potential")
-		.setStudentData([])
+		.setStudentData([
+			["Cameron Beaulieu", "cameron-beaulieu", "Product Manager"],
+			["Olivia Xu", "olivia-chen-xu", "Senior Developer"],
+			["Reid Moffat", "reid-moffat", "Developer"],
+			["Daniel Joseph", "danieljoseph8", "Developer"],
+			["Shabicha Sureshkumar", "shabicha-sureshkumar-0b7372200", "UI/UX Designer"],
+			["Helen Xu", "helencxu", "Senior Business Analyst"],
+			["Nick Archambault", "nickarchambault", "Business Analyst"],
+			["Steven Vuong", "steven--vuong", "Business Analyst"],
+		])
 		.setLogoDimensions({width: 260, height: 75})
 		.setOverview("As securing an internship is becoming increasingly " +
 			"competitive, students have a hard time finding and staying on top of " +
