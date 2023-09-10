@@ -2,7 +2,6 @@
  * Data for all current and previous products
  */
 import { Positions } from "./TeamData";
-import { setLazyProp } from "next/dist/server/api-utils";
 
 // Builder pattern object for creating & verifying a product object
 const ProductBuilder = function () {
@@ -107,7 +106,7 @@ const ProductBuilder = function () {
 				slogan: this.slogan,
 				members: this.members,
 
-				photoXY: { width: 2000, height: 1333 },
+				photoXY: {width: 2000, height: 1333},
 				overview: this.overview,
 				demo: this.demo,
 				link: this.link,

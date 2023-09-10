@@ -34,7 +34,7 @@ export async function getStaticProps({params}) {
 
 export default function Placements() {
 
-	const generateRecruit = (recruit, url) =>  {
+	const generateRecruit = (recruit, url) => {
 		return (
 			<div className="recruitment">
 				<a href={url} target="_blank">
@@ -59,7 +59,7 @@ export default function Placements() {
 						Our members have sucessfully recruited at these organizations:
 					</p>
 					<div className="recruitment-container">
-						{generateRecruit(AdaSupport,  "https://www.ada.cx/careers")}
+						{generateRecruit(AdaSupport, "https://www.ada.cx/careers")}
 						{generateRecruit(Amazon, "https://www.amazon.jobs/en/")}
 						{generateRecruit(BainAndCo, "https://www.bain.com/careers/")}
 						{generateRecruit(BostonConsulting, "https://careers.bcg.com/")}
