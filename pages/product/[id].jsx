@@ -54,6 +54,24 @@ export default function Product() {
 		setProduct(details[0]);
 	}, [queryId]);
 
+	const renderTeamMemberName = (member) => {
+		if (member.linkedin !== "#") {
+			return (
+				<a className="member-name"
+				   href={member.linkedin}
+				   target="_blank" rel="noreferrer">
+					{member.studentName}<br/><small><i>{member.position}</i></small>
+				</a>
+			);
+		}
+
+		return (
+			<div className="member-name-no-linkedin">
+				{member.studentName}<br/><small><i>{member.position}</i></small>
+			</div>
+		);
+	}
+
 	return (
 		<>
 			<Nav/>
@@ -65,19 +83,14 @@ export default function Product() {
 							<p className="product-slogan">{product.slogan}</p>
 						</div>
 
-						{/* 2020-2021 was the covid year, so no team photos were taken. All other years have them */}
-						{product.year !== "2020-2021" && (
-							<div className="team-container">
-								<h2 className="team-heading">The Team</h2>
-								<div className="team-names">
-									{product.members.map((info, i) => (
-										<a className="member-name"
-										   href={info.linkedin}
-										   target="_blank" rel="noreferrer">
-											{info.studentName}<br/><small><i>{info.position}</i></small>
-										</a>
-									))}
-								</div>
+						<div className="team-container">
+							<h2 className="team-heading">The Team</h2>
+							<div className="team-names">
+								{product.members.map((member) => renderTeamMemberName(member))}
+							</div>
+
+							{/* 2020-2021 was the covid year, so no team photos were taken. All other years have them */}
+							{product.year !== "2020-2021" && (
 								<div className="team-photo">
 									<Image
 										alt="team photo"
@@ -86,8 +99,8 @@ export default function Product() {
 										height={product.photoXY.height}
 									/>
 								</div>
-							</div>
-						)}
+							)}
+						</div>
 
 						<div className="overview-container">
 							<h2 className="overview-heading">Product Overview</h2>
