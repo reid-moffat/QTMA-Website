@@ -296,9 +296,9 @@ const ProductData = [
 			["Lia Mason", "lia-k-mason", "Developer"],
 			["Graham Carkner", 'gcarkner', "UI/UX Designer"],
 			["Helen Xu", 'helencxu', "Senior Business Analyst"],
-			["Naomi Juntas", "#", ""],
+			["Naomi Juntas", "#", "Business Analyst"],
 			["Aaron Chen", "aaronnchen", "Business Analyst"],
-			["Krishaan Thyagarajan", "krishaan-thyagarajan", "Frosh rep"]
+			["Krishaan Thyagarajan", "krishaan-thyagarajan", "Frosh Rep"]
 		])
 		.setLogoDimensions({width: 205, height: 65})
 		.build(),
@@ -307,7 +307,16 @@ const ProductData = [
 		.setName("Haus")
 		.setYear("2021-2022")
 		.setSlogan("Haus helps Hausmates collaborate and save on groceries")
-		.setStudentData([])
+		.setStudentData([
+			["Richard Li", "richardliqu", "Product Manager"],
+			["Kevin Quijalvo", "marc-quijalvo", "Senior Developer"],
+			["Matthew MacEachern", "matthew-maceachern", "Developer"],
+			["Isabella Enriquez", "isabellaenriquez", "Developer"],
+			["Flora Lin", "flora-l", "UI/UX Designer"],
+			["Chloe Hung", "chloe-hung", "Senior Business Analyst"],
+			["Egor Petrov", "#", "Business Analyst"],
+			["Kevin Wu", "wu-kevin", "Business Analyst"]
+		])
 		.setLogoDimensions({width: 90, height: 110})
 		.build(),
 
@@ -315,7 +324,9 @@ const ProductData = [
 		.setName("Loco")
 		.setYear("2021-2022")
 		.setSlogan("The travel app for true Locos")
-		.setStudentData([])
+		.setStudentData([
+			//["", "", ""],
+		])
 		.setLogoDimensions({width: 200, height: 80})
 		.build(),
 
@@ -323,7 +334,9 @@ const ProductData = [
 		.setName("Soar")
 		.setYear("2021-2022")
 		.setSlogan("Find teammates to build your next side project")
-		.setStudentData([])
+		.setStudentData([
+
+		])
 		.setLogoDimensions({width: 220, height: 80})
 		.build(),
 
