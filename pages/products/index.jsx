@@ -68,6 +68,7 @@ export default function Products() {
 					{renderYear('2019-2020')}
 				</div>
 			</Layout>
+			<Footer/>
 		</>
 	);
 }

@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import productData from "../../data/ProductsData";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import Footer from "../../components/Footer";
 
 //
 // This file is used to dynamically render each product (e.g. <Link passHref href="/product/Eagle>">)
@@ -21,16 +22,19 @@ export const getStaticPaths = async () => {
 			{params: {id: "Hungover"}},
 			{params: {id: "Wob"}},
 			{params: {id: "Stocked"}},
+
 			// 2020-2021
 			{params: {id: "Eagle"}},
 			{params: {id: "Pronto"}},
 			{params: {id: "Voluntera"}},
 			{params: {id: "Loop"}},
+
 			// 2021-2022
 			{params: {id: "Casa"}},
 			{params: {id: "Haus"}},
 			{params: {id: "Loco"}},
 			{params: {id: "Soar"}},
+
 			// 2022-2023
 			{params: {id: "Feastly"}},
 			{params: {id: "Kartt"}},
@@ -51,6 +55,31 @@ export default function Product() {
 		setProduct(details[0]);
 	}, [queryId]);
 
+	const renderTeamMemberName = (member) => {
+		if (member.linkedin !== "#") {
+			return (
+				<a className="member-name"
+				   href={member.linkedin}
+				   target="_blank" rel="noreferrer">
+					{member.studentName}<br/><small><i>{member.position}</i></small>
+				</a>
+			);
+		}
+
+		return (
+			<div className="member-name-no-linkedin">
+				{member.studentName}<br/><small><i>{member.position}</i></small>
+			</div>
+		);
+	}
+
+	const renderProductName = (product) => {
+		if (product.link !== '') {
+			return <a href={product.link} target="_blank">{product.productName}</a>;
+		}
+		return product.productName;
+	}
+
 	return (
 		<>
 			<Nav/>
@@ -58,21 +87,18 @@ export default function Product() {
 				{product && (
 					<div className="product-container-id container">
 						<div className="product-header-container">
-							<h1 className="product-name">{product.productName}</h1>
+							<h1 className="product-name">{renderProductName(product)}</h1>
 							<p className="product-slogan">{product.slogan}</p>
 						</div>
 
-						{product.teamPhoto !== "" && (
-							<div className="team-container">
-								<h2 className="team-heading">The Team</h2>
-								<div className="team-names">
-									{product.members.map((info, i) => (
-										<a key={i} className="student-name" href={info.linkedin} rel="noreferrer"
-										   target="_blank">
-											{info.studentName}
-										</a>
-									))}
-								</div>
+						<div className="team-container">
+							<h2 className="team-heading">The Team</h2>
+							<div className="team-names">
+								{product.members.map((member) => renderTeamMemberName(member))}
+							</div>
+
+							{/* 2020-2021 was the covid year, so no team photos were taken. All other years have them */}
+							{product.year !== "2020-2021" && (
 								<div className="team-photo">
 									<Image
 										alt="team photo"
@@ -81,22 +107,20 @@ export default function Product() {
 										height={product.photoXY.height}
 									/>
 								</div>
-							</div>
-						)}
+							)}
+						</div>
 
-						{product.teamPhoto !== "" && (
-							<div className="overview-container">
-								<h2 className="overview-heading">Product Overview</h2>
-								<p className="product-desc">{product.overview}</p>
-							</div>
-						)}
+						<div className="overview-container">
+							<h2 className="overview-heading">Product Overview</h2>
+							<p className="product-desc">{product.overview}</p>
+						</div>
 
 						<div className="pitch-container">
 							<h2 className="pitch-heading">Product Pitch</h2>
-							<iframe className="product-pdf" type="pdf" src={product.pitch}></iframe>
+							<iframe className="product-pdf" src={product.pitch}></iframe>
 						</div>
 
-						{product.teamPhoto !== "" && (
+						{product.demo !== "" && (
 							<div className="demo-container">
 								<h2 className="demo-heading">Product Demo</h2>
 								<iframe
@@ -105,15 +129,14 @@ export default function Product() {
 									height="315"
 									src={product.demo}
 									title="YouTube video player"
-									// frameborder="0"
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-									// allowfullscreen
 								></iframe>
 							</div>
 						)}
 					</div>
 				)}
 			</Layout>
+			<Footer/>
 		</>
 	);
 }

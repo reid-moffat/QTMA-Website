@@ -63,14 +63,16 @@ import EmanuelPiccinini from "../public/assets/Members/2023-2024/Emanuel_Piccini
 const Positions = [
 	"Co-Chair",
 	"Club Operations",
+
 	"Product Manager",
 	"Senior Developer",
 	"Developer",
 	"UI/UX Designer",
 	"Senior Business Analyst",
 	"Business Analyst",
-	"Website Developer",
 	"Frosh Rep",
+
+	"Website Developer",
 ];
 
 const generateMemberData = (image, name, position, linkedin = "", subPosition = "") => {
@@ -84,7 +86,7 @@ const generateMemberData = (image, name, position, linkedin = "", subPosition = 
 	if (typeof position !== 'string' || !Positions.includes(position)) {
 		throw new Error(`'${position}' is not a valid position`);
 	}
-	if (typeof linkedin !== 'string' || (linkedin !== "" && linkedin.match(/^https:\/\/www.linkedin.com\/in\/[a-z1-9-]+\/$/) === null)) {
+	if (typeof linkedin !== 'string' || !linkedin) {
 		throw new Error(`Linkedin is invalid, must be an empty string (no linkedin) or a valid profile url. Parameter value: ${linkedin}`);
 	}
 	if (typeof subPosition !== 'string') {
@@ -97,82 +99,82 @@ const generateMemberData = (image, name, position, linkedin = "", subPosition = 
 		name: name,
 		position: position,
 		subPosition: subPosition,
-		linkedIn: linkedin,
+		linkedIn: linkedin === '#' ? '#' : `https://www.linkedin.com/in/${linkedin}/`,
 	};
 };
 
 const ClubMembers = [
 	// Co-chairs
-	generateMemberData(MatthewMacEachern, "Matthew MacEachern", "Co-Chair", "https://www.linkedin.com/in/matthew-maceachern/"),
-	generateMemberData(AlisonXia, "Alison Xia", "Co-Chair", "https://www.linkedin.com/in/alison-xia/"),
-	generateMemberData(EgorPetrov, "Jegor Petrov", "Co-Chair"),
+	generateMemberData(MatthewMacEachern, "Matthew MacEachern", "Co-Chair", "matthew-maceachern"),
+	generateMemberData(AlisonXia, "Alison Xia", "Co-Chair", "alison-xia"),
+	generateMemberData(EgorPetrov, "Jegor Petrov", "Co-Chair", "egorpetrov1402"),
 
 	// Club operations
-	generateMemberData(KevinLiang, "Kevin Liang", "Club Operations", "", "Director"),
-	generateMemberData(OliviaXu, "Olivia Xu", "Club Operations", "", "Director"),
-	generateMemberData(HelenXu, "Helen Xu", "Club Operations", "", "Director"),
-	generateMemberData(MahirHamid, "Mahir Hamid", "Club Operations", "", "Senior Advisor"),
-	generateMemberData(SriyaNarra, "Sriya Narra", "Club Operations", "", "Operations"),
-	generateMemberData(ArchitaSabhani, "Archita Sabhani", "Club Operations", "", "Operations"),
-	generateMemberData(MathhewKim, "Mathhew Kim", "Club Operations", "", "Operations"),
+	generateMemberData(KevinLiang, "Kevin Liang", "Club Operations", "keviniang", "Director"),
+	generateMemberData(OliviaXu, "Olivia Xu", "Club Operations", "olivia-chen-xu", "Director"),
+	generateMemberData(HelenXu, "Helen Xu", "Club Operations", "helencxu", "Director"),
+	generateMemberData(MahirHamid, "Mahir Hamid", "Club Operations", "mahirhamid", "Senior Advisor"),
+	generateMemberData(SriyaNarra, "Sriya Narra", "Club Operations", "sriya-narra", "Operations"),
+	generateMemberData(ArchitaSabhani, "Archita Sabhani", "Club Operations", "architasabhani", "Operations"),
+	generateMemberData(MathhewKim, "Mathhew Kim", "Club Operations", "geonho-mattkim", "Operations"),
 
 	// PMs
-	generateMemberData(ThomasHuang, "Thomas Huang", "Product Manager"),
-	generateMemberData(GrahamCarkner, "Graham Carkner", "Product Manager"),
-	generateMemberData(AlexLian, "Alex Lian", "Product Manager"),
-	generateMemberData(ManushPatel, "Manush Patel", "Product Manager"),
+	generateMemberData(ThomasHuang, "Thomas Huang", "Product Manager", "thomas-huang-805958205"),
+	generateMemberData(GrahamCarkner, "Graham Carkner", "Product Manager", "gcarkner"),
+	generateMemberData(AlexLian, "Alex Lian", "Product Manager", "alex-lian"),
+	generateMemberData(ManushPatel, "Manush Patel", "Product Manager", "manushpatel"),
 
 	// Sr. devs
-	generateMemberData(JadeWei, "Jade Wei", "Senior Developer"),
-	generateMemberData(ReidMoffat, "Reid Moffat", "Senior Developer"),
-	generateMemberData(CainSusko, "Cain Susko", "Senior Developer"),
-	generateMemberData(YvesAlikalfic, "Yves Alikalfic", "Senior Developer"),
+	generateMemberData(JadeWei, "Jade Wei", "Senior Developer", "jade-wei"),
+	generateMemberData(ReidMoffat, "Reid Moffat", "Senior Developer", "reid-moffat"),
+	generateMemberData(CainSusko, "Cain Susko", "Senior Developer", "cain-susko-688203202"),
+	generateMemberData(YvesAlikalfic, "Yves Alikalfic", "Senior Developer", "yves-alikalfic"),
 
 	// Devs
-	generateMemberData(JulianBrickman, "Julian Brickman", "Developer"),
-	generateMemberData(SophieEllwood, "Sophie Ellwood", "Developer"),
-	generateMemberData(MichaelHan, "Michael Han", "Developer"),
+	generateMemberData(JulianBrickman, "Julian Brickman", "Developer", "julian-brickman-962995255"),
+	generateMemberData(SophieEllwood, "Sophie Ellwood", "Developer", "sophie-ellwood"),
+	generateMemberData(MichaelHan, "Michael Han", "Developer", "michael-y-han"),
 
-	generateMemberData(ConnorRewa, "Connor Rewa", "Developer"),
-	generateMemberData(DharsanRavindran, "Dharsan Ravindran", "Developer"),
-	generateMemberData(XimingYu, "Ximing Yu", "Developer"),
+	generateMemberData(ConnorRewa, "Connor Rewa", "Developer", "connorrewa"),
+	generateMemberData(DharsanRavindran, "Dharsan Ravindran", "Developer", "dharsanravi"),
+	generateMemberData(XimingYu, "Ximing Yu", "Developer", "yuximing"),
 
-	generateMemberData(SavannahHan, "Savannah Han", "Developer"),
-	generateMemberData(ConnorLeung, "Connor Leung", "Developer"),
-	generateMemberData(DanielJoseph, "Daniel Joseph", "Developer"),
-	generateMemberData(ShakibAbsar, "Shakib Absar", "Developer"),
+	generateMemberData(SavannahHan, "Savannah Han", "Developer", "savannah-han"),
+	generateMemberData(ConnorLeung, "Connor Leung", "Developer", "connorleung"),
+	generateMemberData(DanielJoseph, "Daniel Joseph", "Developer", "danieljoseph8"),
+	generateMemberData(ShakibAbsar, "Shakib Absar", "Developer", "shakib-absar"),
 
-	generateMemberData(AlBarrAjiboye, "Al-Barr Ajiboye", "Developer"),
-	generateMemberData(MattDobaj, "Matt Dobaj", "Developer"),
-	generateMemberData(KeelyMcSpurren, "Keely McSpurren", "Developer"),
+	generateMemberData(AlBarrAjiboye, "Al-Barr Ajiboye", "Developer", "al-barr"),
+	generateMemberData(MattDobaj, "Matt Dobaj", "Developer", "mattdobaj"),
+	generateMemberData(KeelyMcSpurren, "Keely McSpurren", "Developer", "keely-mcspurren"),
 
 	// UI/UX
-	generateMemberData(ShabichaSureshkumar, "Shabicha Sureshkumar", "UI/UX Designer", "", "Senior Designer"),
-	generateMemberData(AmandaLi, "Amanda Li", "UI/UX Designer", "", "Junior Designer"),
-	generateMemberData(ErinZhang, "Erin Zhang", "UI/UX Designer", "", "Senior Designer"),
-	generateMemberData(MikeNguyen, "Mike Nguyen", "UI/UX Designer", "", "Senior Designer"),
-	generateMemberData(JasmineGao, "Jasmine Gao", "UI/UX Designer", "", "Senior Designer"),
+	generateMemberData(ShabichaSureshkumar, "Shabicha Sureshkumar", "UI/UX Designer", "shabicha-sureshkumar-0b7372200", "Senior Designer"),
+	generateMemberData(AmandaLi, "Amanda Li", "UI/UX Designer", "amanda-li-1889a9252", "Junior Designer"),
+	generateMemberData(ErinZhang, "Erin Zhang", "UI/UX Designer", "erin-r-zhang", "Senior Designer"),
+	generateMemberData(MikeNguyen, "Mike Nguyen", "UI/UX Designer", "mike-ngn", "Senior Designer"),
+	generateMemberData(JasmineGao, "Jasmine Gao", "UI/UX Designer", "gao-jasmine", "Senior Designer"),
 
 	// Sr. BAs
-	generateMemberData(AidanBrown, "Aidan Brown", "Senior Business Analyst"),
-	generateMemberData(BeatriceBeneciaSetiawan, "Beatrice Benecia Setiawan", "Senior Business Analyst"),
-	generateMemberData(StevenVuong, "Steven Vuong", "Senior Business Analyst"),
-	generateMemberData(NickArchambault, "Nick Archambault", "Senior Business Analyst"),
+	generateMemberData(AidanBrown, "Aidan Brown", "Senior Business Analyst", "aidanbrownd"),
+	generateMemberData(BeatriceBeneciaSetiawan, "Beatrice Benecia Setiawan", "Senior Business Analyst", "beatricebenecia"),
+	generateMemberData(StevenVuong, "Steven Vuong", "Senior Business Analyst", "steven--vuong"),
+	generateMemberData(NickArchambault, "Nick Archambault", "Senior Business Analyst", "nickarchambault"),
 
 	// BAs
-	generateMemberData(VasiliPiliouras, "Vasili Piliouras", "Business Analyst"),
-	generateMemberData(JennieChoi, "Jennie Choi", "Business Analyst"),
-	generateMemberData(HannahHe, "Hannah He", "Business Analyst"),
-	generateMemberData(WilliamDu, "William Du", "Business Analyst"),
-	generateMemberData(AminahRizvan, "Aminah Rizvan", "Business Analyst"),
-	generateMemberData(MarcusHui, "Marcus Hui", "Business Analyst"),
-	generateMemberData(CynthiaChoi, "Cynthia Choi", "Business Analyst"),
-	generateMemberData(ClaireHu, "Claire Hu", "Business Analyst"),
-	generateMemberData(EmanuelPiccinini, "Emanuel Piccinini", "Business Analyst"),
+	generateMemberData(VasiliPiliouras, "Vasili Piliouras", "Business Analyst", "vasili-piliouras"),
+	generateMemberData(JennieChoi, "Jennie Choi", "Business Analyst", "jennie-choi-994314254"),
+	generateMemberData(HannahHe, "Hannah He", "Business Analyst", "hannah21"),
+	generateMemberData(WilliamDu, "William Du", "Business Analyst", "williamdu853"),
+	generateMemberData(AminahRizvan, "Aminah Rizvan", "Business Analyst", "aminahrizwan"),
+	generateMemberData(MarcusHui, "Marcus Hui", "Business Analyst", "marcuscameronhui"),
+	generateMemberData(CynthiaChoi, "Cynthia Choi", "Business Analyst", "choicynthia"),
+	generateMemberData(ClaireHu, "Claire Hu", "Business Analyst", "huclaire"),
+	generateMemberData(EmanuelPiccinini, "Emanuel Piccinini", "Business Analyst", "emanuel-piccininni"),
 
 	// Web devs 🙂
-	generateMemberData(ReidMoffat, "Reid Moffat", "Website Developer"),
-	generateMemberData(YvesAlikalfic, "Yves Alikalfic", "Website Developer"),
+	generateMemberData(ReidMoffat, "Reid Moffat", "Website Developer", "reid-moffat"),
+	generateMemberData(YvesAlikalfic, "Yves Alikalfic", "Website Developer", "yves-alikalfic"),
 ]
 
 export { Positions, ClubMembers };

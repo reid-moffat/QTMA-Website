@@ -55,6 +55,57 @@
 	}
 }
 
+.member-name {
+	cursor: pointer;
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+	padding: 0.8rem;
+	border-radius: 100%/100%;
+	border: solid 2px white;
+
+	&:nth-child(2) {
+		margin: 0 3rem;
+	}
+
+	font-size: 1.3rem;
+	@media only screen and(max-width: 650px) {
+		font-size: 1.1rem;
+	}
+	@media only screen and(max-width: 340px) {
+		font-size: 1rem;
+		padding: .7rem;
+	}
+	transition: border .7s;
+
+	&:hover {
+		border-color: #17a9fc;
+	}
+}
+
+.member-name-no-linkedin {
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+	padding: 0.8rem;
+	border-radius: 100%/100%;
+	border: solid 2px white;
+
+	&:nth-child(2) {
+		margin: 0 3rem;
+	}
+
+	font-size: 1.3rem;
+	@media only screen and(max-width: 650px) {
+		font-size: 1.1rem;
+	}
+	@media only screen and(max-width: 340px) {
+		font-size: 1rem;
+		padding: .7rem;
+	}
+	transition: border .7s;
+}
+
 .team-photo {
 	display: flex;
 	width: 70%;
