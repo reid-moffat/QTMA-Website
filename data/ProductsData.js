@@ -266,7 +266,18 @@ const ProductData = [
 		.setName("Loop")
 		.setYear("2020-2021")
 		.setSlogan("Authentic connections with good friends")
-		.setStudentData([])
+		.setStudentData([
+			// TODO
+			//["Allen Chen", "allen-chen0", ""],
+			//["Sydney Tschritter", 'sydneytschritter', ""],
+			//["Graham Carkner", 'gcarkner', "Developer"],
+			//["Connor Colwill", "connorcolwill", ""],
+			//["", "", ""],
+			//["Mudra Patel", "mudrapatel", ""],
+			//["Zaais Van Zyl", "zaais-van-zyl", ""],
+			//["Anastasia Krause", "anakrause", ""],
+			//["", "", ""]
+		])
 		.setLogoDimensions({width: 200, height: 100})
 		.build(),
 
