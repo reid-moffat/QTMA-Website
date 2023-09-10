@@ -325,7 +325,17 @@ const ProductData = [
 		.setYear("2021-2022")
 		.setSlogan("The travel app for true Locos")
 		.setStudentData([
-			//["", "", ""],
+			["Julien Lin", "julien-lin", "Product Manager"],
+			["Emily Zhao", "emily-zhaoo", "Senior Developer"],
+			["Reid Moffat", "reid-moffat", "Developer"],
+			["Kevin Liang", "keviniang", "Developer"],
+			["Khoa Nguyen", "khoa-qd-nguyen", "Developer"],
+			["Doris Zhou", "doris-zhuo", "UI/UX Designer"],
+			["Vicky Deng", "dengvicky", "Senior Business Analyst"],
+			["Aaron Chen", "aaronnchen", "Business Analyst"],
+			["Jacob Xu", "jacobx", "Business Analyst"],
+			["Mahir Hamimd", "mahirhamid", "Business Analyst"],
+			["Olivia Xu", "olivia-chen-xu", "Frosh Rep"]
 		])
 		.setLogoDimensions({width: 200, height: 80})
 		.build(),
@@ -335,7 +345,16 @@ const ProductData = [
 		.setYear("2021-2022")
 		.setSlogan("Find teammates to build your next side project")
 		.setStudentData([
-
+			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
+			["Truman Be", "truman-be", "Senior Developer"],
+			["Jessica Li", "jessica-a-li", "Developer"],
+			["Kevin Subagaran", "#", "Developer"],
+			["Ronan Almeida", "#", "Developer"],
+			["Randy Shao", "randyshao", "UI/UX Designer"],
+			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
+			["Chris Power", "#", "Business Analyst"],
+			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
+			["Manush Patel", "manushpatel", "Frosh Rep"],
 		])
 		.setLogoDimensions({width: 220, height: 80})
 		.build(),
