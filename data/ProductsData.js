@@ -192,7 +192,7 @@ const ProductData = [
 			["Ricky Zhang", 'ricky-zhang', "UI/UX Designer"],
 			["Shani Mithani", "shanimithani", "Business Analyst"],
 			["Alice QI", '#', "Senior Business Analyst"],
-			["Jake Koszczewski", 'jakekoszczewski', "Business Analyst"],
+			["Jake Koszczewski", 'jakekoszczewski', "Frosh Rep"],
 		])
 		.setLogoDimensions({width: 252.59, height: 60})
 		.setOverview("As a mobile app for both iOS and Android, Stocked is a dynamic meal generator which " +
@@ -235,10 +235,10 @@ const ProductData = [
 			["Victor Gao", "victor-gao", "Product Manager"],
 			["Travis Cossarini", "travis-cossarini", "Senior Developer"],
 			["Arsh Koshar", "#", "Developer"],
+			["Kevin Subagaran", "#", "Developer"],
+			["Flora Lin", "flora-l", "UI/UX Designer"],
 			["Alice Qi", "#", "Senior Business Analyst"],
 			["Adil Natalwalla", "adil-natalwalla", "Business Analyst"],
-			["Flora Lin", "flora-l", "UI/UX Designer"],
-			["Kevin Subagaran", "#", "Developer"],
 			["Helen Xu", "helencxu", "Business Analyst"],
 			["Richard Li", "richardliqu", "Business Analyst"]
 		])
@@ -249,7 +249,16 @@ const ProductData = [
 		.setName("Voluntera")
 		.setYear("2020-2021")
 		.setSlogan("The one-stop shop for social impact")
-		.setStudentData([])
+		.setStudentData([
+			["Langni Zeng", "langnizeng", "Product Manager"],
+			["Victor Uemura", "victor-uemura", "Senior Developer"],
+			["Lexi Locca", "#", "Developer"],
+			["Brandon Ye", "yebrandon", "Developer"],
+			["Sophia Yang", "sophia-yangg", "UI/UX Designer"],
+			["Kevin Ding", "kevding", "Senior Business Analyst"],
+			["Karan Polobotu", "karan-polobotu-367812111", "Business Analyst"],
+			["Dylan Ratti", "dylan-ratti", "Business Analyst"]
+		])
 		.setLogoDimensions({width: 250, height: 60})
 		.build(),
 
