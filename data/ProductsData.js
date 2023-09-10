@@ -363,7 +363,13 @@ const ProductData = [
 		.setName("Feastly")
 		.setYear("2022-2023")
 		.setSlogan("Let's feast on something delicious")
-		.setStudentData([])
+		.setStudentData([
+			["Manush Patel", "manushpatel", "Product Manager"],
+			["Jack Studiner", "jackstudiner", "Senior Developer"],
+			["Connor Rewa", "connorrewa", "Developer"],
+			["Alison Xia", "alison-xia", "UI/UX Designer"],
+			["Larry Han", "larry-han", "Frosh Rep"],
+		])
 		.setLogoDimensions({width: 200, height: 100})
 		.build(),
 
@@ -372,6 +378,8 @@ const ProductData = [
 		.setYear("2022-2023")
 		.setSlogan("Shop smart with Kartt")
 		.setStudentData([
+			//["", "", ""],
+			//["", "", ""],
 			//["", "", ""],
 			//["", "", ""],
 			//["", "", ""],
