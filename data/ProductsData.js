@@ -215,9 +215,9 @@ const ProductData = [
 			["Ben Minor", "ben-minor", "Developer"],
 			["James McDonald", "jamesgregorymcdonald", "Developer"],
 			["Emily Zhao", "emily-zhaoo", "UI/UX Designer"],
+			["Tina Huang", "tina-c-huang", "Senior Business Analyst"],
 			["Riya Shah", "riya-shah-queens-university", "Business Analyst"],
 			["Mark Gragtmans", "mark-gragtmans", "Business Analyst"],
-			["Tina Huang", "tina-c-huang", "Senior Business Analyst"],
 			["Jake Koszczewski", "jakekoszczewski", "Business Analyst"]
 		])
 		.setLogoDimensions({width: 200, height: 122})
@@ -239,8 +239,8 @@ const ProductData = [
 			["Flora Lin", "flora-l", "UI/UX Designer"],
 			["Alice Qi", "#", "Senior Business Analyst"],
 			["Adil Natalwalla", "adil-natalwalla", "Business Analyst"],
-			["Helen Xu", "helencxu", "Business Analyst"],
-			["Richard Li", "richardliqu", "Business Analyst"]
+			["Richard Li", "richardliqu", "Business Analyst"],
+			["Helen Xu", "helencxu", "Frosh Rep"]
 		])
 		.setLogoDimensions({width: 120, height: 116})
 		.build(),
@@ -256,7 +256,7 @@ const ProductData = [
 			["Brandon Ye", "yebrandon", "Developer"],
 			["Sophia Yang", "sophia-yangg", "UI/UX Designer"],
 			["Kevin Ding", "kevding", "Senior Business Analyst"],
-			["Karan Polobotu", "karan-polobotu-367812111", "Business Analyst"],
+			["Karan Goyal", "karangoyal22", "Business Analyst"],
 			["Dylan Ratti", "dylan-ratti", "Business Analyst"]
 		])
 		.setLogoDimensions({width: 250, height: 60})
@@ -267,16 +267,14 @@ const ProductData = [
 		.setYear("2020-2021")
 		.setSlogan("Authentic connections with good friends")
 		.setStudentData([
-			// TODO
-			//["Allen Chen", "allen-chen0", ""],
-			//["Sydney Tschritter", 'sydneytschritter', ""],
-			//["Graham Carkner", 'gcarkner', "Developer"],
-			//["Connor Colwill", "connorcolwill", ""],
-			//["", "", ""],
-			//["Mudra Patel", "mudrapatel", ""],
-			//["Zaais Van Zyl", "zaais-van-zyl", ""],
-			//["Anastasia Krause", "anakrause", ""],
-			//["", "", ""]
+			["Sydney Tschritter", 'sydneytschritter', "Product Manager"],
+			["Anastasia Krause", "anakrause", "Senior Developer"],
+			["Graham Carkner", 'gcarkner', "Developer"],
+			["Adam Dolan", "adam-dolan-", "Developer"],
+			["Connor Colwill", "connorcolwill", "UI/UX Designer"],
+			["Allen Chen", "allen-chen0", "Senior Business Analyst"],
+			["Mudra Patel", "mudrapatel", "Business Analyst"],
+			["Zaais Van Zyl", "zaais-van-zyl", "Business Analyst"],
 		])
 		.setLogoDimensions({width: 200, height: 100})
 		.build(),
@@ -331,10 +329,9 @@ const ProductData = [
 			["Kevin Liang", "keviniang", "Developer"],
 			["Khoa Nguyen", "khoa-qd-nguyen", "Developer"],
 			["Doris Zhou", "doris-zhuo", "UI/UX Designer"],
-			["Vicky Deng", "dengvicky", "Senior Business Analyst"],
-			["Aaron Chen", "aaronnchen", "Business Analyst"],
+			["Mahir Hamimd", "mahirhamid", "Senior Business Analyst"],
+			["Vicky Deng", "dengvicky", "Business Analyst"],
 			["Jacob Xu", "jacobx", "Business Analyst"],
-			["Mahir Hamimd", "mahirhamid", "Business Analyst"],
 			["Olivia Xu", "olivia-chen-xu", "Frosh Rep"]
 		])
 		.setLogoDimensions({width: 200, height: 80})
