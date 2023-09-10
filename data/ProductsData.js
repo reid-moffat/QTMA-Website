@@ -13,13 +13,13 @@ const ProductBuilder = function () {
 		members: undefined,
 		logoWidth: undefined,
 		logoHeight: undefined,
+		overview: undefined,
 
 		// Optional
-		overview: undefined,
 		demo: '',
 
 		setName: function (productName) {
-			if (typeof productName != "string" || productName === '') {
+			if (typeof productName != "string" || !productName) {
 				throw new Error(`Name ${productName} is invalid, must be a non-empty string`);
 			}
 			this.productName = productName;
@@ -33,17 +33,18 @@ const ProductBuilder = function () {
 			return this;
 		},
 		setSlogan: function (slogan) {
-			if (typeof slogan != "string" || slogan === '') {
+			if (typeof slogan != "string" || !slogan) {
 				throw new Error(`Slogan ${slogan} is invalid, must be a non-empty string`);
 			}
 			this.slogan = slogan;
 			return this;
 		},
 		setStudentData: function (studentInfo) {
-			const studentData = [];
-			if (!Array.isArray(studentInfo) || !studentInfo || (!this.year === "2020-2021" && studentInfo.length === 0)) {
-				throw new Error(`Students ${studentInfo} is invalid, must be a non-empty array`);
+			if (!Array.isArray(studentInfo) || !studentInfo || studentInfo.length === 0) {
+				throw new Error(`Students ${studentInfo} is invalid (for product ${this.productName}), must be a non-empty array`);
 			}
+
+			const studentData = [];
 			for (let i = 0; i < studentInfo.length; ++i) {
 				const student = studentInfo[i];
 				if (!Array.isArray(student) || student.length !== 3) {
@@ -54,13 +55,13 @@ const ProductBuilder = function () {
 					throw new Error(`Student ${student} need a valid name, linkedin id (# if they don't have one) and position`);
 				}
 
-
 				studentData.push({
 					studentName: student[0],
 					linkedin: student[1] === '#' ? '#' : `https://www.linkedin.com/in/${student[1]}/`,
 					position: student[2]
 				});
 			}
+
 			this.members = studentData;
 			return this;
 		},
@@ -69,24 +70,24 @@ const ProductBuilder = function () {
 			this.logoHeight = dimensions.height;
 			return this;
 		},
-
 		setOverview: function (overview) {
-			if (!this.year === "2020-2021" && (typeof overview !== "string" || !overview)) {
+			if (typeof overview !== "string" || !overview) {
 				throw new Error(`Overview ${overview} is invalid, must be a non-empty string`);
 			}
 			this.overview = overview;
 			return this;
 		},
+
 		setDemo: function (demo) {
 			if (!demo.match(/^https:\/\/www\.youtube\.com\/embed\/[a-zA-Z0-9_-]{11}$/)) {
-				throw new Error(`Demo ${demo} is invalid, must be a valid youtube embed link`);
+				throw new Error(`Demo ${demo} is invalid, must be a valid youtube embedded link`);
 			}
 			this.demo = demo;
 			return this;
 		},
 
 		build: function () {
-			if (this.productName === undefined || this.year === undefined || this.slogan === undefined || this.members === undefined) {
+			if (!this.productName || !this.year || !this.slogan || !this.members || !this.logoWidth || !this.logoHeight || !this.overview) {
 				throw new Error("The fields productName, year, slogan and members must be defined. " +
 					`productName: ${this.productName} year: ${this.year} slogan: ${this.slogan} studentDate: ${this.members}`);
 			}
