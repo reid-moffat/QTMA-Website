@@ -371,7 +371,17 @@ const ProductData = [
 		.setName("Kartt")
 		.setYear("2022-2023")
 		.setSlogan("Shop smart with Kartt")
-		.setStudentData([])
+		.setStudentData([
+			//["", "", ""],
+			//["", "", ""],
+			//["", "", ""],
+			//["", "", ""],
+			//["", "", ""],
+			//["", "", ""],
+			//["", "", ""],
+			//["", "", ""],
+			//["", "", ""],
+		])
 		.setLogoDimensions({width: 200, height: 70})
 		.build(),
 
@@ -379,7 +389,18 @@ const ProductData = [
 		.setName("Sift")
 		.setYear("2022-2023")
 		.setSlogan("Choose the gift you want, stress free")
-		.setStudentData([])
+		.setStudentData([
+			["Aaron Chen", "aaronnchen", "Product Manager"],
+			["Grady Palfrey", "gradypalfrey", "Senior Developer"],
+			["Matthew MacEachern", "matthew-maceachern", "Developer"],
+			["David Courtis", "david-courtis", "Developer"],
+			["Yves Alikalfic", "yves-alikalfic", "Developer"],
+			["Alex Lian", "alex-lian", "UI/UX Designer"],
+			["Jegor Petrov", "egorpetrov1402", "Senior Business Analyst"],
+			["Thomas Huang", "thomas-huang-805958205", "Business Analyst"],
+			["Beatrice Setiawan", "beatricebenecia", "Business Analyst"],
+			["Cynthia Choi", "choicynthia", "Business Analyst"],
+		])
 		.setLogoDimensions({width: 200, height: 100})
 		.build(),
 
