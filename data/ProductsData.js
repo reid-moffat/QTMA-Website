@@ -288,7 +288,18 @@ const ProductData = [
 		.setName("Casa")
 		.setYear("2021-2022")
 		.setSlogan("Making the roommate finding process as easy as possible")
-		.setStudentData([])
+		.setStudentData([
+			["Riya Shah", "riya-shah-queens-university", "Product Manager"],
+			["Ben Minor", "ben-minor", "Senior Developer"],
+			["Connor Cowill", "connorcolwill", "Developer"],
+			["Grady Palfrey", "gradypalfrey", "Developer"],
+			["Lia Mason", "lia-k-mason", "Developer"],
+			["Graham Carkner", 'gcarkner', "UI/UX Designer"],
+			["Helen Xu", 'helencxu', "Senior Business Analyst"],
+			["Naomi Juntas", "#", ""],
+			["Aaron Chen", "aaronnchen", "Business Analyst"],
+			["Krishaan Thyagarajan", "krishaan-thyagarajan", "Frosh rep"]
+		])
 		.setLogoDimensions({width: 205, height: 65})
 		.build(),
 
