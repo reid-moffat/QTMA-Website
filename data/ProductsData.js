@@ -243,6 +243,11 @@ const ProductData = [
 			["Helen Xu", "helencxu", "Frosh Rep"]
 		])
 		.setLogoDimensions({width: 120, height: 116})
+		.setOverview("How many times did you buy something, use it once or twice then let it " +
+			"sit in your garage for years? Some tools and devices you need, but only occasionally and " +
+			"the cost is too much to justify buying this stuff all the time. Well, Pronto has you " +
+			"covered. Plenty of people already have these tools and doesn't cost them anything to " +
+			"help out, and Pronto helps you build the community")
 		.build(),
 
 	new ProductBuilder()
@@ -260,6 +265,11 @@ const ProductData = [
 			["Dylan Ratti", "dylan-ratti", "Business Analyst"]
 		])
 		.setLogoDimensions({width: 250, height: 60})
+		.setOverview("We all want to help charitable causes, but act of doing so can be " +
+			"tough. Who to donate to? Who is reputable? Where is the money going? How do I donate? " +
+			"Voluntera solves all this with an all-in-one spot to find the best charities to donate " +
+			"to, with a super simple donation mechanism so you can focus on helping out your " +
+			"community")
 		.build(),
 
 	new ProductBuilder()
@@ -277,6 +287,10 @@ const ProductData = [
 			["Zaais Van Zyl", "zaais-van-zyl", "Business Analyst"],
 		])
 		.setLogoDimensions({width: 200, height: 100})
+		.setOverview("Many social media platforms lack real connectedness - too " +
+			"many public figures, influences, etc leads to a not genuine experience. Loop, " +
+			"on the other hand, focuses on bringing together you and only your good friends " +
+			"so you can have genuine, fun interactions among friends")
 		.build(),
 
 	/*
