@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import productData from "../../data/ProductsData";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import Footer from "../../components/Footer";
 
 //
 // This file is used to dynamically render each product (e.g. <Link passHref href="/product/Eagle>">)
@@ -128,6 +129,7 @@ export default function Product() {
 					</div>
 				)}
 			</Layout>
+			<Footer/>
 		</>
 	);
 }
