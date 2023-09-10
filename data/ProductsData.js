@@ -368,6 +368,7 @@ const ProductData = [
 			["Jack Studiner", "jackstudiner", "Senior Developer"],
 			["Connor Rewa", "connorrewa", "Developer"],
 			["Alison Xia", "alison-xia", "UI/UX Designer"],
+			["Ryan Vuscan", "ryanvuscan", "Business Analyst"],
 			["Larry Han", "larry-han", "Frosh Rep"],
 		])
 		.setLogoDimensions({width: 200, height: 100})
@@ -378,17 +379,12 @@ const ProductData = [
 		.setYear("2022-2023")
 		.setSlogan("Shop smart with Kartt")
 		.setStudentData([
-			//["", "", ""],
-			//["", "", ""],
-			//["", "", ""],
-			//["", "", ""],
-			//["", "", ""],
-			//["", "", ""],
-			//["", "", ""],
-			//["", "", ""],
-			//["", "", ""],
-			//["", "", ""],
-			//["", "", ""],
+			["Naomi Juntas", "#", "Product Manager"],
+			["Benjamin Hui", "benjaminhui1", "Developer"],
+			["Harsh Kalyani", "harshkalyani", "Developer"],
+			["Sophie Ellwood", "sophie-ellwood", "Developer"],
+			["Kevin Liang", "keviniang", "UI/UX Designer"],
+			["Chad Huang", "chad-huang", "Senior Business Analyst"],
 		])
 		.setLogoDimensions({width: 200, height: 70})
 		.build(),
