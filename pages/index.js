@@ -32,7 +32,7 @@ export default function Main() {
 					name="description"
 					content="QTMA hires 12 Developers, 4 Product Manager, 4 Designers, 8 Business Analysts to complete our product teams. We also hire various operating roles. Applications include a written application and interview with the incoming Co - Chairs."
 				/>
-				<link rel="icon" href="/favicon.ico"/>
+				<link rel="icon" type="image/png" href="/favicon.ico"/>
 				<title>QTMA</title>
 				<meta name="og:title" content={'QTMA'}/>
 			</Head>
