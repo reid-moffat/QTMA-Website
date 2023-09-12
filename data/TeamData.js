@@ -101,7 +101,7 @@ const generateMemberData = (image, name, position, linkedin = "", subPosition = 
 		name: name,
 		position: position,
 		subPosition: subPosition,
-		linkedIn: linkedin === '#' ? '#' : `https://www.linkedin.com/in/${linkedin}/`,
+		linkedIn: linkedin.startsWith('https://') ? linkedin : `https://www.linkedin.com/in/${linkedin}/`,
 	};
 };
 
@@ -176,7 +176,7 @@ const ClubMembers = [
 
 	// Web devs 🙂
 	generateMemberData(ReidMoffat, "Reid Moffat", "Website Developer", "reid-moffat"),
-	generateMemberData(KevinYu, "Kevin Yu", "Website Developer", "#"),
+	generateMemberData(KevinYu, "Kevin Yu", "Website Developer", "https://kevinyu.ca/"),
 	generateMemberData(YvesAlikalfic, "Yves Alikalfic", "Website Developer", "yves-alikalfic"),
 ]
 

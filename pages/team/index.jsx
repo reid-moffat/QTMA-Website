@@ -34,6 +34,7 @@ const Team = () => {
 									/>
 									<p className="student-name">{student.name}</p>
 									{renderSpecialRole(student)}
+
 									<a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
 										<AiFillLinkedin/>
 									</a>
