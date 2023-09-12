@@ -59,7 +59,7 @@ import CynthiaChoi from "../public/assets/Members/2023-2024/Cynthia_Choi.png";
 import ClaireHu from "../public/assets/Members/2023-2024/Claire_Hu.png";
 import EmanuelPiccinini from "../public/assets/Members/2023-2024/Emanuel_Piccinini.png";
 
-import KevinYu from "../public/assets/Members/2021-2022/Kevin_Yu.png";
+import KevinYu from "../public/assets/Members/2023-2024/Kevin_Yu.png";
 
 // All positions team members can have
 const Positions = [
@@ -176,8 +176,8 @@ const ClubMembers = [
 
 	// Web devs 🙂
 	generateMemberData(ReidMoffat, "Reid Moffat", "Website Developer", "reid-moffat"),
-	generateMemberData(YvesAlikalfic, "Yves Alikalfic", "Website Developer", "yves-alikalfic"),
 	generateMemberData(KevinYu, "Kevin Yu", "Website Developer", "#"),
+	generateMemberData(YvesAlikalfic, "Yves Alikalfic", "Website Developer", "yves-alikalfic"),
 ]
 
 export { Positions, ClubMembers };
