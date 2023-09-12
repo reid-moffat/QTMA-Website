@@ -2,64 +2,64 @@
  * Data for all QTMA members
  */
 
-import MatthewMacEachern from "../public/assets/Members/2023-2024/Matthew_MacEachern.png";
-import AlisonXia from "../public/assets/Members/2023-2024/Alison_Xia.png";
-import EgorPetrov from "../public/assets/Members/2023-2024/Egor_Petrov.png";
+import MatthewMacEachern from "../public/assets/Members/Matthew_MacEachern.png";
+import AlisonXia from "../public/assets/Members/Alison_Xia.png";
+import EgorPetrov from "../public/assets/Members/Egor_Petrov.png";
 
-import KevinLiang from "../public/assets/Members/2023-2024/Kevin_Liang.png";
-import OliviaXu from "../public/assets/Members/2023-2024/Olivia_Xu.png";
-import HelenXu from "../public/assets/Members/2023-2024/Helen_Xu.png";
-import MahirHamid from "../public/assets/Members/2023-2024/Mahir_Hamid.png";
-import SriyaNarra from "../public/assets/Members/2023-2024/Sriya_Narra.png";
-import ArchitaSabhani from "../public/assets/Members/2023-2024/Archita_Sabhani.png";
-import MathhewKim from "../public/assets/Members/2023-2024/Mathhew_Kim.png";
+import KevinLiang from "../public/assets/Members/Kevin_Liang.png";
+import OliviaXu from "../public/assets/Members/Olivia_Xu.png";
+import HelenXu from "../public/assets/Members/Helen_Xu.png";
+import MahirHamid from "../public/assets/Members/Mahir_Hamid.png";
+import SriyaNarra from "../public/assets/Members/Sriya_Narra.png";
+import ArchitaSabhani from "../public/assets/Members/Archita_Sabhani.png";
+import MathhewKim from "../public/assets/Members/Mathhew_Kim.png";
 
-import ThomasHuang from "../public/assets/Members/2023-2024/Thomas_Huang.png";
-import GrahamCarkner from "../public/assets/Members/2023-2024/Graham_Carkner.png";
-import AlexLian from "../public/assets/Members/2023-2024/Alex_Lian.png";
-import ManushPatel from "../public/assets/Members/2023-2024/Manush_Patel.png";
+import ThomasHuang from "../public/assets/Members/Thomas_Huang.png";
+import GrahamCarkner from "../public/assets/Members/Graham_Carkner.png";
+import AlexLian from "../public/assets/Members/Alex_Lian.png";
+import ManushPatel from "../public/assets/Members/Manush_Patel.png";
 
-import JadeWei from "../public/assets/Members/2023-2024/Jade_Wei.png";
-import ReidMoffat from "../public/assets/Members/2023-2024/Reid_Moffat.png";
-import CainSusko from "../public/assets/Members/2023-2024/Cain_Susko.png";
-import YvesAlikalfic from "../public/assets/Members/2023-2024/Yves_Alikalfic.png";
+import JadeWei from "../public/assets/Members/Jade_Wei.png";
+import ReidMoffat from "../public/assets/Members/Reid_Moffat.png";
+import CainSusko from "../public/assets/Members/Cain_Susko.png";
+import YvesAlikalfic from "../public/assets/Members/Yves_Alikalfic.png";
 
-import JulianBrickman from "../public/assets/Members/2023-2024/Julian_Brickman.png";
-import SophieEllwood from "../public/assets/Members/2023-2024/Sophie_Ellwood.png";
-import MichaelHan from "../public/assets/Members/2023-2024/Michael_Han.png";
-import ConnorRewa from "../public/assets/Members/2023-2024/Connor_Rewa.png";
-import DharsanRavindran from "../public/assets/Members/2023-2024/Dharsan_Ravindran.png";
-import XimingYu from "../public/assets/Members/2023-2024/Ximing_Yu.png";
-import SavannahHan from "../public/assets/Members/2023-2024/Savannah_Han.png";
-import ConnorLeung from "../public/assets/Members/2023-2024/Connor_Leung.png";
-import DanielJoseph from "../public/assets/Members/2023-2024/Daniel_Joseph.png";
-import ShakibAbsar from "../public/assets/Members/2023-2024/Shakib_Absar.png";
-import AlBarrAjiboye from "../public/assets/Members/2023-2024/Al-Barr_Ajiboye.png";
-import MattDobaj from "../public/assets/Members/2023-2024/Matt_Dobaj.png";
-import KeelyMcSpurren from "../public/assets/Members/2023-2024/Keely_McSpurren.png";
+import JulianBrickman from "../public/assets/Members/Julian_Brickman.png";
+import SophieEllwood from "../public/assets/Members/Sophie_Ellwood.png";
+import MichaelHan from "../public/assets/Members/Michael_Han.png";
+import ConnorRewa from "../public/assets/Members/Connor_Rewa.png";
+import DharsanRavindran from "../public/assets/Members/Dharsan_Ravindran.png";
+import XimingYu from "../public/assets/Members/Ximing_Yu.png";
+import SavannahHan from "../public/assets/Members/Savannah_Han.png";
+import ConnorLeung from "../public/assets/Members/Connor_Leung.png";
+import DanielJoseph from "../public/assets/Members/Daniel_Joseph.png";
+import ShakibAbsar from "../public/assets/Members/Shakib_Absar.png";
+import AlBarrAjiboye from "../public/assets/Members/Al-Barr_Ajiboye.png";
+import MattDobaj from "../public/assets/Members/Matt_Dobaj.png";
+import KeelyMcSpurren from "../public/assets/Members/Keely_McSpurren.png";
 
-import ShabichaSureshkumar from "../public/assets/Members/2023-2024/Shabicha_Sureshkumar.png";
-import AmandaLi from "../public/assets/Members/2023-2024/Amanda_Li.png";
-import ErinZhang from "../public/assets/Members/2023-2024/Erin_Zhang.png";
-import MikeNguyen from "../public/assets/Members/2023-2024/Mike_Nguyen.png";
-import JasmineGao from "../public/assets/Members/2023-2024/Jasmine_Gao.png";
+import ShabichaSureshkumar from "../public/assets/Members/Shabicha_Sureshkumar.png";
+import AmandaLi from "../public/assets/Members/Amanda_Li.png";
+import ErinZhang from "../public/assets/Members/Erin_Zhang.png";
+import MikeNguyen from "../public/assets/Members/Mike_Nguyen.png";
+import JasmineGao from "../public/assets/Members/Jasmine_Gao.png";
 
-import AidanBrown from "../public/assets/Members/2023-2024/Aidan_Brown.png";
-import BeatriceBeneciaSetiawan from "../public/assets/Members/2023-2024/Beatrice_Benecia_Setiawan.png";
-import StevenVuong from "../public/assets/Members/2023-2024/Steven_Vuong.png";
-import NickArchambault from "../public/assets/Members/2023-2024/Nick_Archambault.png";
+import AidanBrown from "../public/assets/Members/Aidan_Brown.png";
+import BeatriceBeneciaSetiawan from "../public/assets/Members/Beatrice_Benecia_Setiawan.png";
+import StevenVuong from "../public/assets/Members/Steven_Vuong.png";
+import NickArchambault from "../public/assets/Members/Nick_Archambault.png";
 
-import VasiliPiliouras from "../public/assets/Members/2023-2024/Vasili_Piliouras.png";
-import JennieChoi from "../public/assets/Members/2023-2024/Jennie_Choi.png";
-import HannahHe from "../public/assets/Members/2023-2024/Hannah_He.png";
-import WilliamDu from "../public/assets/Members/2023-2024/William_Du.png";
-import AminahRizvan from "../public/assets/Members/2023-2024/Aminah_Rizvan.png";
-import MarcusHui from "../public/assets/Members/2023-2024/Marcus_Hui.png";
-import CynthiaChoi from "../public/assets/Members/2023-2024/Cynthia_Choi.png";
-import ClaireHu from "../public/assets/Members/2023-2024/Claire_Hu.png";
-import EmanuelPiccinini from "../public/assets/Members/2023-2024/Emanuel_Piccinini.png";
+import VasiliPiliouras from "../public/assets/Members/Vasili_Piliouras.png";
+import JennieChoi from "../public/assets/Members/Jennie_Choi.png";
+import HannahHe from "../public/assets/Members/Hannah_He.png";
+import WilliamDu from "../public/assets/Members/William_Du.png";
+import AminahRizvan from "../public/assets/Members/Aminah_Rizvan.png";
+import MarcusHui from "../public/assets/Members/Marcus_Hui.png";
+import CynthiaChoi from "../public/assets/Members/Cynthia_Choi.png";
+import ClaireHu from "../public/assets/Members/Claire_Hu.png";
+import EmanuelPiccinini from "../public/assets/Members/Emanuel_Piccinini.png";
 
-import KevinYu from "../public/assets/Members/2023-2024/Kevin_Yu.png";
+import KevinYu from "../public/assets/Members/Kevin_Yu.png";
 
 // All positions team members can have
 const Positions = [
