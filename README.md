@@ -6,15 +6,20 @@ QTMA is a product development club & tech incubator at [Queen's University](http
 devoted to helping tech & business students successfully plan, design, build and launch software
 products which are judged by industry specialists at the end of each school term.
 
-<i>This is the code for the site which can be found at [qtma.ca](https://qtma.ca). Built with
-[Next.js](https://nextjs.org/) and hosted with [Vercel](https://vercel.com/)</i>
+Dev team:
+
+* [Kevin Yu](https://github.com/KevinYuCode): Initial design & implementation
+* [Reid Moffat](https://github.com/reid-moffat): 2023 rework lead
+* [Yves Alikalfic](https://github.com/yves-a): 2023 rework developer
 
 ## Running locally
+
+<i>This site is built with [Next.js](https://nextjs.org/) and hosted with [Vercel](https://vercel.com/)</i>
 
 First, install dependencies:
 
 ```bash
-npm ci # Or 'npm i', but this is faster & no package-lock re-write
+npm ci # Or 'npm i', but this is faster & no package-lock.json re-write
 ```
 
 Then run in development mode (recommended for dev work):
