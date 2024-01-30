@@ -88,52 +88,42 @@ export default function Nav() {
 					>
 						<Link className="nav-links" href="/">
 							<a
-								className={router.pathname == '/' ? 'active-link' : 'nav-link'}
+								className={router.pathname === '/' ? 'active-link' : 'nav-link'}
 							>
 								Home
 							</a>
 						</Link>
 						<Link className="nav-links" href="/products">
 							<a
-								className={
-									router.pathname == '/products' ? 'active-link' : 'nav-link'
-								}
+								className={router.pathname === '/products' ? 'active-link' : 'nav-link'}
 							>
 								Products
 							</a>
 						</Link>
 						<Link className="nav-links" href="/history">
 							<a
-								className={
-									router.pathname == '/history' ? 'active-link' : 'nav-link'
-								}
+								className={router.pathname === '/history' ? 'active-link' : 'nav-link'}
 							>
 								History
 							</a>
 						</Link>
 						<Link className="nav-links" href="/team">
 							<a
-								className={
-									router.pathname == '/team' ? 'active-link' : 'nav-link'
-								}
+								className={router.pathname === '/team' ? 'active-link' : 'nav-link'}
 							>
 								Team
 							</a>
 						</Link>
 						<Link className="nav-links" href="/placements">
 							<a
-								className={
-									router.pathname == '/placements' ? 'active-link' : 'nav-link'
-								}
+								className={router.pathname === '/placements' ? 'active-link' : 'nav-link'}
 							>
 								Placements
 							</a>
 						</Link>
 						<Link className="nav-links" href="/contact">
 							<a
-								className={
-									router.pathname == '/contact' ? 'active-link' : 'nav-link'
-								}
+								className={router.pathname === '/contact' ? 'active-link' : 'nav-link'}
 							>
 								Contact
 							</a>
