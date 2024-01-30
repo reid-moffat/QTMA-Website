@@ -8,7 +8,7 @@ import { useRouter } from 'next/router'
 
 function getWindowDimensions() {
 	if (typeof window !== 'undefined') {
-		const {innerWidth: width, innerHeight: height} = window
+		const { innerWidth: width, innerHeight: height } = window
 		return {
 			width,
 			height,
@@ -41,7 +41,7 @@ export function useWindowDimensions() {
 export default function Nav() {
 	const router = useRouter()
 	const [navOn, setNavOn] = useState(false)
-	const {height, width} = useWindowDimensions()
+	const { height, width } = useWindowDimensions()
 	const [isTablet, setIsTablet] = useState(false)
 
 	useEffect(() => {
@@ -127,15 +127,6 @@ export default function Nav() {
 								}
 							>
 								Placements
-							</a>
-						</Link>
-						<Link className="nav-links" href="/reports">
-							<a
-								className={
-									router.pathname == '/reports' ? 'active-link' : 'nav-link'
-								}
-							>
-								Reports
 							</a>
 						</Link>
 						<Link className="nav-links" href="/contact">
