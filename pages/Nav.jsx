@@ -8,7 +8,7 @@ import { useRouter } from 'next/router'
 
 function getWindowDimensions() {
 	if (typeof window !== 'undefined') {
-		const {innerWidth: width, innerHeight: height} = window
+		const { innerWidth: width, innerHeight: height } = window
 		return {
 			width,
 			height,
@@ -41,7 +41,7 @@ export function useWindowDimensions() {
 export default function Nav() {
 	const router = useRouter()
 	const [navOn, setNavOn] = useState(false)
-	const {height, width} = useWindowDimensions()
+	const { height, width } = useWindowDimensions()
 	const [isTablet, setIsTablet] = useState(false)
 
 	useEffect(() => {
@@ -88,61 +88,42 @@ export default function Nav() {
 					>
 						<Link className="nav-links" href="/">
 							<a
-								className={router.pathname == '/' ? 'active-link' : 'nav-link'}
+								className={router.pathname === '/' ? 'active-link' : 'nav-link'}
 							>
 								Home
 							</a>
 						</Link>
 						<Link className="nav-links" href="/products">
 							<a
-								className={
-									router.pathname == '/products' ? 'active-link' : 'nav-link'
-								}
+								className={router.pathname === '/products' ? 'active-link' : 'nav-link'}
 							>
 								Products
 							</a>
 						</Link>
 						<Link className="nav-links" href="/history">
 							<a
-								className={
-									router.pathname == '/history' ? 'active-link' : 'nav-link'
-								}
+								className={router.pathname === '/history' ? 'active-link' : 'nav-link'}
 							>
 								History
 							</a>
 						</Link>
 						<Link className="nav-links" href="/team">
 							<a
-								className={
-									router.pathname == '/team' ? 'active-link' : 'nav-link'
-								}
+								className={router.pathname === '/team' ? 'active-link' : 'nav-link'}
 							>
 								Team
 							</a>
 						</Link>
 						<Link className="nav-links" href="/placements">
 							<a
-								className={
-									router.pathname == '/placements' ? 'active-link' : 'nav-link'
-								}
+								className={router.pathname === '/placements' ? 'active-link' : 'nav-link'}
 							>
 								Placements
 							</a>
 						</Link>
-						<Link className="nav-links" href="/reports">
-							<a
-								className={
-									router.pathname == '/reports' ? 'active-link' : 'nav-link'
-								}
-							>
-								Reports
-							</a>
-						</Link>
 						<Link className="nav-links" href="/contact">
 							<a
-								className={
-									router.pathname == '/contact' ? 'active-link' : 'nav-link'
-								}
+								className={router.pathname === '/contact' ? 'active-link' : 'nav-link'}
 							>
 								Contact
 							</a>

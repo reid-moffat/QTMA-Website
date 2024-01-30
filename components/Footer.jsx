@@ -32,8 +32,8 @@ export default function Footer() {
 					<div className="top-containers">
 						<p>CONTACT US</p>
 						<p>
-							Feel free to reach us at{' '}
-							<a href="mailto:qtmaweb@gmail.com">qtmaweb@gmail.com</a>
+							Feel free to reach us on instagram{' '}
+							<a href="https://www.instagram.com/queenstechmedia" target="_blank">@queenstechmedia</a>
 						</p>
 					</div>
 				</div>
@@ -64,7 +64,7 @@ export default function Footer() {
 						<BsInstagram/>
 					</a>
 				</div>
-				<p className="copyright">QTMA © 2014-2023</p>
+				<p className="copyright">QTMA © 2014-2024</p>
 			</div>
 		</Layout>
 	);
