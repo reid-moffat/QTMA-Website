@@ -1,6 +1,7 @@
 import Layout from "../../components/layout";
 import Image from "next/image";
 import Email from "../../public/assets/Visuals/Email.png";
+import Instagram from "../../public/assets/Visuals/instagram.png";
 import Nav from "../Nav";
 import React, { useRef, useState } from "react";
 import validator from "validator";
@@ -62,7 +63,7 @@ export default function Contact() {
 			<Head>
 				<meta
 					name="description"
-					content="You can reach us through the form below or by sending an email to qtmaweb@gmail.com"
+					content="You can reach us by sending a message to QTMA's instagram, @queenstechmedia"
 				/>
 				<title>QTMA</title>
 				<meta name="og:title" content={"QTMA"}/>
@@ -79,52 +80,13 @@ export default function Contact() {
 						<div className="contact-title-container">
 							<h1 className="section-title contact-title">Contact Us</h1>
 							<p className="contact-subheading">
-								You can reach us through the form below or by sending an email to{" "}
-								<a className="email-address" href="mailto:qtmaweb@gmail.com">
-									qtmaweb@gmail.com
-								</a>
+								You can reach us by sending a message to QTMA's instagram, {""}
+								<a href="https://www.instagram.com/queenstechmedia" style={{ color: "#0000EE" }}>@queenstechmedia</a>
 							</p>
 						</div>
-						<div className="inputs-container">
-							{emailError && <p className="error-email">Please enter a valid email.</p>}
-							<input
-								ref={email}
-								className="contact-input email-input"
-								type="text"
-								onKeyDown={() => {
-									setEmailError(false);
-								}}
-								placeholder="Email"
-								required
-							/>
-							<input
-								ref={subject}
-								className="contact-input subject-input"
-								type="text"
-								placeholder="Subject"
-								required
-							/>
-							<textarea
-								ref={message}
-								className="contact-input message-input"
-								rows="5"
-								cols="60"
-								name="text"
-								placeholder="Message"
-							/>
-						</div>
-						<button
-							disabled={sendingMessage}
-							className={`send-email ${sendingMessage ? "send-email-disabled" : ""}`}
-							onClick={(e) => {
-								validateInfo(e);
-							}}
-						>
-							SEND
-						</button>
 					</form>
 					<div className="email-illustration">
-						<Image alt="illustration" src={Email} width={444} height={437.87}/>
+						<Image alt="illustration" src={Instagram} width={400} height={400}/>
 					</div>
 				</div>
 			</Layout>
