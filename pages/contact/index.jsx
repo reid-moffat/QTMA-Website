@@ -6,13 +6,6 @@ import React from "react";
 import Head from "next/head";
 import Footer from "../../components/Footer";
 
-
-export async function getStaticProps({params}) {
-	return {
-		props: {}
-	};
-}
-
 export default function Contact() {
 	return (
 		<>
@@ -36,8 +29,10 @@ export default function Contact() {
 							</p>
 						</div>
 					</form>
-					<div className="email-illustration">
-						<Image alt="illustration" src={Instagram} width={400} height={400}/>
+					<div className="instagram-illustration">
+						<a href="https://www.instagram.com/queenstechmedia" target="_blank">
+							<Image alt="instagram" src={Instagram} width={400} height={400}/>
+						</a>
 					</div>
 				</div>
 			</Layout>
