@@ -19,27 +19,25 @@ const Team = () => {
 			<>
 				<p className="position-name">{category + (category.endsWith("s") ? "" : "s")}</p>
 				<div className="student-photos">
-					{category === "Frosh Rep"
-						? <h1>TBD</h1>
-						: ClubMembers
-							.filter((student) => student.position === category)
-							.map((student, i) => (
-								<div key={i} className="student-container">
-									<Image
-										alt="Student photo"
-										className="student-image"
-										src={student.image}
-										width={500}
-										height={500}
-									/>
-									<p className="student-name">{student.name}</p>
-									{renderSpecialRole(student)}
+					{ClubMembers
+						.filter((student) => student.position === category)
+						.map((student, i) => (
+							<div key={i} className="student-container">
+								<Image
+									alt="Student photo"
+									className="student-image"
+									src={student.image}
+									width={500}
+									height={500}
+								/>
+								<p className="student-name">{student.name}</p>
+								{renderSpecialRole(student)}
 
-									<a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
-										<AiFillLinkedin/>
-									</a>
-								</div>
-							))}
+								<a className="linkedIn" rel="noreferrer" target="_blank" href={student.linkedIn}>
+									<AiFillLinkedin/>
+								</a>
+							</div>
+						))}
 				</div>
 			</>
 		));

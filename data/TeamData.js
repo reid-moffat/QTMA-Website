@@ -59,6 +59,11 @@ import CynthiaChoi from "../public/assets/Members/Cynthia_Choi.png";
 import ClaireHu from "../public/assets/Members/Claire_Hu.png";
 import EmanuelPiccinini from "../public/assets/Members/Emanuel_Piccinini.png";
 
+import LukasCupsa from "../public/assets/Members/Lukas_Cupsa.png";
+import JanevraPier from "../public/assets/Members/Janevra_Pier.png";
+import SindusaraMunasinghe from "../public/assets/Members/Sindusara_munasinghe.png";
+import NathanReynolds from "../public/assets/Members/Nathan_Reynolds.png";
+
 import KevinYu from "../public/assets/Members/Kevin_Yu.png";
 
 // All positions team members can have
@@ -173,6 +178,12 @@ const ClubMembers = [
 	generateMemberData(CynthiaChoi, "Cynthia Choi", "Business Analyst", "choicynthia"),
 	generateMemberData(ClaireHu, "Claire Hu", "Business Analyst", "huclaire"),
 	generateMemberData(EmanuelPiccinini, "Emanuel Piccinini", "Business Analyst", "emanuel-piccininni"),
+
+	// Frosh reps
+	generateMemberData(LukasCupsa, "Lukas Cupsa", "Frosh Rep", "lukas-cupsa"),
+	generateMemberData(JanevraPier, "Janevra Pier", "Frosh Rep", "janevra-pier-687562277"),
+	generateMemberData(SindusaraMunasinghe, "Sindusara Munasinghe", "Frosh Rep", "sindusara-munasinghe"),
+	generateMemberData(NathanReynolds, "Nathan Reynolds", "Frosh Rep", "nathan-reynolds-78a47b290"),
 
 	// Web devs 🙂
 	generateMemberData(ReidMoffat, "Reid Moffat", "Website Developer", "reid-moffat"),
