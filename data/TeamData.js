@@ -61,7 +61,7 @@ import EmanuelPiccinini from "../public/assets/Members/Emanuel_Piccinini.png";
 
 import LukasCupsa from "../public/assets/Members/Lukas_Cupsa.png";
 import JanevraPier from "../public/assets/Members/Janevra_Pier.png";
-import SindusaraMunasinghe from "../public/assets/Members/Sindusara_munasinghe.png";
+import SindusaraMunasinghe from "../public/assets/Members/Sindusara_Munasinghe.png";
 import NathanReynolds from "../public/assets/Members/Nathan_Reynolds.png";
 
 import KevinYu from "../public/assets/Members/Kevin_Yu.png";
