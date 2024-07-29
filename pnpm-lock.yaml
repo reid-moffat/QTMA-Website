@@ -24,8 +24,8 @@ importers:
         specifier: ^3.2.23
         version: 3.2.23
       react-scroll:
-        specifier: ^1.8.4
-        version: 1.8.4(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        specifier: ^1.9.0
+        version: 1.9.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       sass:
         specifier: ^1.45.1
         version: 1.45.1
@@ -1093,11 +1093,11 @@ packages:
   react-responsive-carousel@3.2.23:
     resolution: {integrity: sha512-pqJLsBaKHWJhw/ItODgbVoziR2z4lpcJg+YwmRlSk4rKH32VE633mAtZZ9kDXjy4wFO+pgUZmDKPsPe1fPmHCg==}
 
-  react-scroll@1.8.4:
-    resolution: {integrity: sha512-J9rFqmdzularCXJoK2vleHVg2//y9Fs6zh7K13x7Yz3Y1kHPfQ/TTq029L09q1Gr5/5JjFLBOB2Sa3yYIqyTyQ==}
+  react-scroll@1.9.0:
+    resolution: {integrity: sha512-mamNcaX9Ng+JeSbBu97nWwRhYvL2oba+xR2GxvyXsbDeGP+gkYIKZ+aDMMj/n20TbV9SCWm/H7nyuNTSiXA6yA==}
     peerDependencies:
-      react: ^15.5.4 || ^16.0.0 || ^17.0.0
-      react-dom: ^15.5.4 || ^16.0.0 || ^17.0.0
+      react: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0
 
   react@17.0.2:
     resolution: {integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==}
@@ -2410,7 +2410,7 @@ snapshots:
       prop-types: 15.8.1
       react-easy-swipe: 0.0.21
 
-  react-scroll@1.8.4(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
+  react-scroll@1.9.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
     dependencies:
       lodash.throttle: 4.1.1
       prop-types: 15.8.1
