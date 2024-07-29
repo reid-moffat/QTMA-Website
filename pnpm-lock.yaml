@@ -21,8 +21,8 @@ importers:
         specifier: ^4.3.1
         version: 4.3.1(react@17.0.2)
       react-responsive-carousel:
-        specifier: ^3.2.22
-        version: 3.2.22
+        specifier: ^3.2.23
+        version: 3.2.23
       react-scroll:
         specifier: ^1.8.4
         version: 1.8.4(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
@@ -46,8 +46,8 @@ importers:
         specifier: ^18.0.1
         version: 18.0.1
       '@types/webpack-env':
-        specifier: ^1.18.0
-        version: 1.18.0
+        specifier: ^1.18.5
+        version: 1.18.5
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
@@ -742,8 +742,8 @@ packages:
   '@types/scheduler@0.16.3':
     resolution: {integrity: sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==}
 
-  '@types/webpack-env@1.18.0':
-    resolution: {integrity: sha512-56/MAlX5WMsPVbOg7tAxnYvNYMMWr/QJiIp6BxVSW3JJXUVzzOn64qW8TzQyMSqSUFM2+PVI4aUHcHOzIz/1tg==}
+  '@types/webpack-env@1.18.5':
+    resolution: {integrity: sha512-wz7kjjRRj8/Lty4B+Kr0LN6Ypc/3SymeCCGSbaXp2leH0ZVg/PriNiOwNj4bD4uphI7A8NXS4b6Gl373sfO5mA==}
 
   ansi-styles@3.2.1:
     resolution: {integrity: sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==}
@@ -1053,8 +1053,8 @@ packages:
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
-  react-responsive-carousel@3.2.22:
-    resolution: {integrity: sha512-/r7dsIaN+l417IYIS0Fr7Z5VlpK3KYnTIIsdVCWSqtuJRIZNM+qdBIA4RIbzQtuW/ZBTnQanBecblCxg0HCqLQ==}
+  react-responsive-carousel@3.2.23:
+    resolution: {integrity: sha512-pqJLsBaKHWJhw/ItODgbVoziR2z4lpcJg+YwmRlSk4rKH32VE633mAtZZ9kDXjy4wFO+pgUZmDKPsPe1fPmHCg==}
 
   react-scroll@1.8.4:
     resolution: {integrity: sha512-J9rFqmdzularCXJoK2vleHVg2//y9Fs6zh7K13x7Yz3Y1kHPfQ/TTq029L09q1Gr5/5JjFLBOB2Sa3yYIqyTyQ==}
@@ -2032,7 +2032,7 @@ snapshots:
 
   '@types/scheduler@0.16.3': {}
 
-  '@types/webpack-env@1.18.0': {}
+  '@types/webpack-env@1.18.5': {}
 
   ansi-styles@3.2.1:
     dependencies:
@@ -2324,7 +2324,7 @@ snapshots:
 
   react-is@16.13.1: {}
 
-  react-responsive-carousel@3.2.22:
+  react-responsive-carousel@3.2.23:
     dependencies:
       classnames: 2.2.6
       prop-types: 15.8.1
