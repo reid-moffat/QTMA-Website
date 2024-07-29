@@ -57,9 +57,6 @@ importers:
       eslint-config-next:
         specifier: 12.0.7
         version: 12.0.7(eslint@8.5.0)(next@12.1.0(@babel/core@7.22.5)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(sass@1.45.1))(typescript@5.0.2)
-      rimraf:
-        specifier: ^3.0.2
-        version: 3.0.2
       typescript:
         specifier: ^5.0.2
         version: 5.0.2
