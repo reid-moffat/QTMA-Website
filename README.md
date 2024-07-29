@@ -19,10 +19,10 @@ Dev team:
 First, install dependencies:
 
 ```bash
-npm ci # Or 'npm i', but this is faster & no package-lock.json re-write
+pnpm i # pnpm installs the same packages as npm but in a more efficient way
 ```
 
-Then run in development mode (recommended for dev work):
+Then run in development mode (detailed errors, hot reloading, etc):
 
 ```bash
 next dev
