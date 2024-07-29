@@ -51,9 +51,6 @@ importers:
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
-      eslint:
-        specifier: 8.5.0
-        version: 8.5.0
       eslint-config-next:
         specifier: 12.0.7
         version: 12.0.7(eslint@8.5.0)(next@12.1.0(@babel/core@7.22.5)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(sass@1.45.1))(typescript@5.0.2)
@@ -3182,8 +3179,8 @@ snapshots:
       '@typescript-eslint/parser': 5.8.0(eslint@8.5.0)(typescript@5.0.2)
       eslint: 8.5.0
       eslint-import-resolver-node: 0.3.6
-      eslint-import-resolver-typescript: 2.5.0(eslint-plugin-import@2.25.3(eslint@8.5.0))(eslint@8.5.0)
-      eslint-plugin-import: 2.25.3(@typescript-eslint/parser@5.8.0(eslint@8.5.0)(typescript@5.0.2))(eslint-import-resolver-typescript@2.5.0(eslint-plugin-import@2.25.3(eslint@8.5.0))(eslint@8.5.0))(eslint@8.5.0)
+      eslint-import-resolver-typescript: 2.5.0(eslint-plugin-import@2.25.3)(eslint@8.5.0)
+      eslint-plugin-import: 2.25.3(@typescript-eslint/parser@5.8.0(eslint@8.5.0)(typescript@5.0.2))(eslint-import-resolver-typescript@2.5.0)(eslint@8.5.0)
       eslint-plugin-jsx-a11y: 6.5.1(eslint@8.5.0)
       eslint-plugin-react: 7.32.2(eslint@8.5.0)
       eslint-plugin-react-hooks: 4.3.0(eslint@8.5.0)
@@ -3201,11 +3198,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-import-resolver-typescript@2.5.0(eslint-plugin-import@2.25.3(eslint@8.5.0))(eslint@8.5.0):
+  eslint-import-resolver-typescript@2.5.0(eslint-plugin-import@2.25.3)(eslint@8.5.0):
     dependencies:
       debug: 4.3.4
       eslint: 8.5.0
-      eslint-plugin-import: 2.25.3(@typescript-eslint/parser@5.8.0(eslint@8.5.0)(typescript@5.0.2))(eslint-import-resolver-typescript@2.5.0(eslint-plugin-import@2.25.3(eslint@8.5.0))(eslint@8.5.0))(eslint@8.5.0)
+      eslint-plugin-import: 2.25.3(@typescript-eslint/parser@5.8.0(eslint@8.5.0)(typescript@5.0.2))(eslint-import-resolver-typescript@2.5.0)(eslint@8.5.0)
       glob: 7.2.0
       is-glob: 4.0.3
       resolve: 1.20.0
@@ -3213,7 +3210,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.7.1(@typescript-eslint/parser@5.8.0(eslint@8.5.0)(typescript@5.0.2))(eslint-import-resolver-node@0.3.6)(eslint-import-resolver-typescript@2.5.0(eslint-plugin-import@2.25.3(eslint@8.5.0))(eslint@8.5.0)):
+  eslint-module-utils@2.7.1(@typescript-eslint/parser@5.8.0(eslint@8.5.0)(typescript@5.0.2))(eslint-import-resolver-node@0.3.6)(eslint-import-resolver-typescript@2.5.0(eslint-plugin-import@2.25.3)(eslint@8.5.0)):
     dependencies:
       debug: 3.2.7
       find-up: 2.1.0
@@ -3221,11 +3218,11 @@ snapshots:
     optionalDependencies:
       '@typescript-eslint/parser': 5.8.0(eslint@8.5.0)(typescript@5.0.2)
       eslint-import-resolver-node: 0.3.6
-      eslint-import-resolver-typescript: 2.5.0(eslint-plugin-import@2.25.3(eslint@8.5.0))(eslint@8.5.0)
+      eslint-import-resolver-typescript: 2.5.0(eslint-plugin-import@2.25.3)(eslint@8.5.0)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.25.3(@typescript-eslint/parser@5.8.0(eslint@8.5.0)(typescript@5.0.2))(eslint-import-resolver-typescript@2.5.0(eslint-plugin-import@2.25.3(eslint@8.5.0))(eslint@8.5.0))(eslint@8.5.0):
+  eslint-plugin-import@2.25.3(@typescript-eslint/parser@5.8.0(eslint@8.5.0)(typescript@5.0.2))(eslint-import-resolver-typescript@2.5.0)(eslint@8.5.0):
     dependencies:
       array-includes: 3.1.6
       array.prototype.flat: 1.2.5
@@ -3233,7 +3230,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.5.0
       eslint-import-resolver-node: 0.3.6
-      eslint-module-utils: 2.7.1(@typescript-eslint/parser@5.8.0(eslint@8.5.0)(typescript@5.0.2))(eslint-import-resolver-node@0.3.6)(eslint-import-resolver-typescript@2.5.0(eslint-plugin-import@2.25.3(eslint@8.5.0))(eslint@8.5.0))
+      eslint-module-utils: 2.7.1(@typescript-eslint/parser@5.8.0(eslint@8.5.0)(typescript@5.0.2))(eslint-import-resolver-node@0.3.6)(eslint-import-resolver-typescript@2.5.0(eslint-plugin-import@2.25.3)(eslint@8.5.0))
       has: 1.0.3
       is-core-module: 2.12.1
       is-glob: 4.0.3
