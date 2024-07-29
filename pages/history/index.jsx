@@ -117,7 +117,7 @@ export default function History() {
 								</p>
 							</div>
 							<div className="event-image">
-								<Image alt="Event photo" src={FamilyPhoto} width={1000} height={527}/>
+								<Image alt="Event photo" src={FamilyPhoto} width={530} height={340}/>
 							</div>
 						</div>
 					</div>
