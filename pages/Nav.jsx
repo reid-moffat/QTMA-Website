@@ -52,85 +52,71 @@ export default function Nav() {
 		}
 	}, [width])
 
-	return (
-		<>
-			<Layout background="#222831" isNav={true}>
-				<div className="nav-container container">
-					<div
-						className="nav-toggle-container"
-						onClick={() => {
-							setNavOn(!navOn)
-						}}
-					>
-						<AiOutlineMenu/>
-					</div>
-					<div className="logo-container">
-						<Link passHref href="/">
-							<Image
-								alt="QTMA logo"
-								src={qtmaLogo}
-								className="nav-logo"
-								height={41.71}
-								width={154}
-							/>
-						</Link>
-					</div>
-					<div
-						className="links-container"
-						style={{
-							transform:
-								navOn && isTablet
-									? 'translateX(0)'
-									: isTablet
-										? 'translateX(100%)'
-										: 'translateX(0)',
-						}}
-					>
-						<Link className="nav-links" href="/">
-							<a
-								className={router.pathname === '/' ? 'active-link' : 'nav-link'}
-							>
-								Home
-							</a>
-						</Link>
-						<Link className="nav-links" href="/products">
-							<a
-								className={router.pathname === '/products' ? 'active-link' : 'nav-link'}
-							>
-								Products
-							</a>
-						</Link>
-						<Link className="nav-links" href="/history">
-							<a
-								className={router.pathname === '/history' ? 'active-link' : 'nav-link'}
-							>
-								History
-							</a>
-						</Link>
-						<Link className="nav-links" href="/team">
-							<a
-								className={router.pathname === '/team' ? 'active-link' : 'nav-link'}
-							>
-								Team
-							</a>
-						</Link>
-						<Link className="nav-links" href="/placements">
-							<a
-								className={router.pathname === '/placements' ? 'active-link' : 'nav-link'}
-							>
-								Placements
-							</a>
-						</Link>
-						<Link className="nav-links" href="/contact">
-							<a
-								className={router.pathname === '/contact' ? 'active-link' : 'nav-link'}
-							>
-								Contact
-							</a>
-						</Link>
-					</div>
-				</div>
-			</Layout>
-		</>
-	);
+	return <>
+        <Layout background="#222831" isNav={true}>
+            <div className="nav-container container">
+                <div
+                    className="nav-toggle-container"
+                    onClick={() => {
+                        setNavOn(!navOn)
+                    }}
+                >
+                    <AiOutlineMenu/>
+                </div>
+                <div className="logo-container">
+                    <Link passHref href="/" legacyBehavior>
+                        <Image
+                            alt="QTMA logo"
+                            src={qtmaLogo}
+                            className="nav-logo"
+                            height={41.71}
+                            width={154}
+                        />
+                    </Link>
+                </div>
+                <div
+                    className="links-container"
+                    style={{
+                        transform:
+                            navOn && isTablet
+                                ? 'translateX(0)'
+                                : isTablet
+                                    ? 'translateX(100%)'
+                                    : 'translateX(0)',
+                    }}
+                >
+                    <Link className="nav-links" href="/">
+                        
+                            Home
+                        
+                    </Link>
+                    <Link className="nav-links" href="/products">
+                        
+                            Products
+                        
+                    </Link>
+                    <Link className="nav-links" href="/history">
+                        
+                            History
+                        
+                    </Link>
+                    <Link className="nav-links" href="/team">
+                        
+                            Team
+                        
+                    </Link>
+                    <Link className="nav-links" href="/placements">
+                        
+                            Placements
+                        
+                    </Link>
+                    <Link className="nav-links" href="/contact">
+                        
+                            Contact
+                        
+                    </Link>
+                </div>
+            </div>
+        </Layout>
+    </>;
 }

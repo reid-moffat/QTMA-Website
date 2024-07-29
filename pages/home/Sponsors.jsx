@@ -18,7 +18,7 @@ export default function Sponsors() {
 							<Image
 								alt="Sponsor logo"
 								src={ComSoc}
-								height={125}
+								height={100}
 								width={'500%'}
 							/>
 						</a>

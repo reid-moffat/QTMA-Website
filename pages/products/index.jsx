@@ -12,29 +12,27 @@ export default function Products() {
 
 	const renderYear = (year) => {
 		const products = productData.filter(product => product.year === year);
-		return (
-			<>
-				<p className="product-subheading2"><i>{year}:</i></p>
-				<div className="products-container2">
-					{products.map(product => {
-						const name = product.productName;
+		return <>
+            <p className="product-subheading2"><i>{year}:</i></p>
+            <div className="products-container2">
+                {products.map(product => {
+                    const name = product.productName;
 
-						return (
-							<Link passHref href={`/product/${name}`}>
-								<div className="product2">
-									<div className="product-info2">
-										<h3>{name}</h3>
-										<p><i>'{product.slogan}'</i></p>
-									</div>
-									<Image alt="Product Logo" src={product.logo} width={product.logoWidth}
-										   height={product.logoHeight}/>
-								</div>
-							</Link>
-						)
-					})}
-				</div>
-			</>
-		);
+                    return (
+                        <Link passHref href={`/product/${name}`} legacyBehavior>
+                            <div className="product2">
+                                <div className="product-info2">
+                                    <h3>{name}</h3>
+                                    <p><i>'{product.slogan}'</i></p>
+                                </div>
+                                <Image alt="Product Logo" src={product.logo} width={product.logoWidth}
+                                       height={product.logoHeight}/>
+                            </div>
+                        </Link>
+                    );
+                })}
+            </div>
+        </>;
 	}
 
 	return (

@@ -12,7 +12,7 @@ export default function Products() {
 		const link = `/product/${product.productName}`;
 
 		return (
-			<Link passHref href={link}>
+            <Link passHref href={link} legacyBehavior>
 				<div className="product">
 					<div className="product-info">
 						<h3>{product.productName}</h3>
@@ -21,7 +21,7 @@ export default function Products() {
 					<Image alt="Product Logo" src={product.logo} width={product.logoWidth} height={product.logoHeight}/>
 				</div>
 			</Link>
-		);
+        );
 	}
 
 	return (
