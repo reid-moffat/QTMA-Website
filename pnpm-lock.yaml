@@ -10,7 +10,7 @@ importers:
     dependencies:
       next:
         specifier: ^12.1.0
-        version: 12.1.0(@babel/core@7.24.9)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(sass@1.77.8)
+        version: 12.1.0(@babel/core@7.24.9)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(sass@1.45.1)
       react:
         specifier: 17.0.2
         version: 17.0.2
@@ -24,11 +24,11 @@ importers:
         specifier: ^3.2.23
         version: 3.2.23
       react-scroll:
-        specifier: ^1.9.0
-        version: 1.9.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        specifier: ^1.8.4
+        version: 1.8.4(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       sass:
-        specifier: ^1.77.8
-        version: 1.77.8
+        specifier: ^1.45.1
+        version: 1.45.1
     devDependencies:
       '@babel/cli':
         specifier: ^7.24.8
@@ -43,8 +43,8 @@ importers:
         specifier: ^18.15.10
         version: 18.15.10
       '@types/react':
-        specifier: ^18.3.3
-        version: 18.3.3
+        specifier: ^18.0.1
+        version: 18.0.1
       '@types/webpack-env':
         specifier: ^1.18.5
         version: 1.18.5
@@ -757,8 +757,11 @@ packages:
   '@types/prop-types@15.7.5':
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
 
-  '@types/react@18.3.3':
-    resolution: {integrity: sha512-hti/R0pS0q1/xx+TsI73XIqk26eBsISZ2R0wUijXIngRK9R/e7Xw/cXVxQK7R5JjW+SV4zGcn5hXjudkN/pLIw==}
+  '@types/react@18.0.1':
+    resolution: {integrity: sha512-VnWlrVgG0dYt+NqlfMI0yUYb8Rdl4XUROyH+c6gq/iFCiZ805Vi//26UW38DHnxQkbDhnrIWTBiy6oKZqL11cw==}
+
+  '@types/scheduler@0.16.3':
+    resolution: {integrity: sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==}
 
   '@types/webpack-env@1.18.5':
     resolution: {integrity: sha512-wz7kjjRRj8/Lty4B+Kr0LN6Ypc/3SymeCCGSbaXp2leH0ZVg/PriNiOwNj4bD4uphI7A8NXS4b6Gl373sfO5mA==}
@@ -1090,11 +1093,11 @@ packages:
   react-responsive-carousel@3.2.23:
     resolution: {integrity: sha512-pqJLsBaKHWJhw/ItODgbVoziR2z4lpcJg+YwmRlSk4rKH32VE633mAtZZ9kDXjy4wFO+pgUZmDKPsPe1fPmHCg==}
 
-  react-scroll@1.9.0:
-    resolution: {integrity: sha512-mamNcaX9Ng+JeSbBu97nWwRhYvL2oba+xR2GxvyXsbDeGP+gkYIKZ+aDMMj/n20TbV9SCWm/H7nyuNTSiXA6yA==}
+  react-scroll@1.8.4:
+    resolution: {integrity: sha512-J9rFqmdzularCXJoK2vleHVg2//y9Fs6zh7K13x7Yz3Y1kHPfQ/TTq029L09q1Gr5/5JjFLBOB2Sa3yYIqyTyQ==}
     peerDependencies:
-      react: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0
+      react: ^15.5.4 || ^16.0.0 || ^17.0.0
+      react-dom: ^15.5.4 || ^16.0.0 || ^17.0.0
 
   react@17.0.2:
     resolution: {integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==}
@@ -1129,9 +1132,9 @@ packages:
     resolution: {integrity: sha512-oKWePCxqpd6FlLvGV1VU0x7bkPmmCNolxzjMf4NczoDnQcIWrAF+cPtZn5i6n+RfD2d9i0tzpKnG6Yk168yIyw==}
     hasBin: true
 
-  sass@1.77.8:
-    resolution: {integrity: sha512-4UHg6prsrycW20fqLGPShtEvo/WyHRVRHwOP4DzkUrObWoWI05QBSfzU71TVB7PFaL104TwNaHpjlWXAZbQiNQ==}
-    engines: {node: '>=14.0.0'}
+  sass@1.45.1:
+    resolution: {integrity: sha512-pwPRiq29UR0o4X3fiQyCtrESldXvUQAAE0QmcJTpsI4kuHHcLzZ54M1oNBVIXybQv8QF2zfkpFcTxp8ta97dUA==}
+    engines: {node: '>=8.9.0'}
     hasBin: true
 
   scheduler@0.20.2:
@@ -2095,10 +2098,13 @@ snapshots:
 
   '@types/prop-types@15.7.5': {}
 
-  '@types/react@18.3.3':
+  '@types/react@18.0.1':
     dependencies:
       '@types/prop-types': 15.7.5
+      '@types/scheduler': 0.16.3
       csstype: 3.1.1
+
+  '@types/scheduler@0.16.3': {}
 
   '@types/webpack-env@1.18.5': {}
 
@@ -2319,7 +2325,7 @@ snapshots:
 
   nanoid@3.3.6: {}
 
-  next@12.1.0(@babel/core@7.24.9)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(sass@1.77.8):
+  next@12.1.0(@babel/core@7.24.9)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(sass@1.45.1):
     dependencies:
       '@next/env': 12.1.0
       caniuse-lite: 1.0.30001509
@@ -2340,7 +2346,7 @@ snapshots:
       '@next/swc-win32-arm64-msvc': 12.1.0
       '@next/swc-win32-ia32-msvc': 12.1.0
       '@next/swc-win32-x64-msvc': 12.1.0
-      sass: 1.77.8
+      sass: 1.45.1
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
@@ -2404,7 +2410,7 @@ snapshots:
       prop-types: 15.8.1
       react-easy-swipe: 0.0.21
 
-  react-scroll@1.9.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
+  react-scroll@1.8.4(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
     dependencies:
       lodash.throttle: 4.1.1
       prop-types: 15.8.1
@@ -2451,7 +2457,7 @@ snapshots:
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
 
-  sass@1.77.8:
+  sass@1.45.1:
     dependencies:
       chokidar: 3.5.1
       immutable: 4.0.0

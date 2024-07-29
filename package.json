@@ -15,15 +15,15 @@
 		"react-dom": "17.0.2",
 		"react-icons": "^4.3.1",
 		"react-responsive-carousel": "^3.2.23",
-		"react-scroll": "^1.9.0",
-		"sass": "^1.77.8"
+		"react-scroll": "^1.8.4",
+		"sass": "^1.45.1"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.24.8",
 		"@babel/core": "^7.24.9",
 		"@babel/preset-env": "^7.25.0",
 		"@types/node": "^18.15.10",
-		"@types/react": "^18.3.3",
+		"@types/react": "^18.0.1",
 		"@types/webpack-env": "^1.18.5",
 		"cross-env": "^7.0.3",
 		"typescript": "^5.0.2"
