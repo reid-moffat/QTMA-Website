@@ -24,22 +24,24 @@ export default function Sponsors() {
 						</a>
 					</div>
 					<div className="sponsor">
-						<a href={"https://www.mckinsey.com/"} target="_blank">
-							<Image
-								alt="Sponsor logo"
-								src={McKinsey}
-								height={155}
-								width={'300%'}
-							/>
-						</a>
-					</div>
-					<div className="sponsor">
 						<a href={"https://www.queensu.ca/artsci/"} target="_blank">
 							<Image
 								alt="Sponsor logo"
 								src={QueensArtsci}
 								height={105}
 								width={'400%'}
+							/>
+						</a>
+					</div>
+				</div>
+				<div className="sponsors">
+					<div className="sponsor">
+						<a href={"https://www.mckinsey.com/"} target="_blank">
+							<Image
+								alt="Sponsor logo"
+								src={McKinsey}
+								height={155}
+								width={'300%'}
 							/>
 						</a>
 					</div>
