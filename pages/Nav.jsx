@@ -85,35 +85,23 @@ export default function Nav() {
                                     : 'translateX(0)',
                     }}
                 >
-                    <Link className="nav-links" href="/">
-                        
+                    <Link className="nav-link" href="/">
                             Home
-                        
                     </Link>
-                    <Link className="nav-links" href="/products">
-                        
+                    <Link className="nav-link" href="/products">
                             Products
-                        
                     </Link>
-                    <Link className="nav-links" href="/history">
-                        
+                    <Link className="nav-link" href="/history">
                             History
-                        
                     </Link>
-                    <Link className="nav-links" href="/team">
-                        
+                    <Link className="nav-link" href="/team">
                             Team
-                        
                     </Link>
-                    <Link className="nav-links" href="/placements">
-                        
+                    <Link className="nav-link" href="/placements">
                             Placements
-                        
                     </Link>
-                    <Link className="nav-links" href="/contact">
-                        
+                    <Link className="nav-link" href="/contact">
                             Contact
-                        
                     </Link>
                 </div>
             </div>
